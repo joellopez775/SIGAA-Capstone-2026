@@ -1,0 +1,27 @@
+{
+  "source_time": "2026-10-15T21:20:39.308091+00:00",
+  "compared_records": 24,
+  "unrelated_records_preserved": 23,
+  "expected_sigaa_change_only": true,
+  "public_service_records_unchanged": 24,
+  "duplicates": 0,
+  "proxy_enabled_records": 1,
+  "unrelated_ttl_seconds": 14400,
+  "sigaa_ttl": "auto",
+  "delegation_changed": false,
+  "parent_nameservers": [
+    "ns1.donweb.com",
+    "ns2.donweb.com"
+  ],
+  "prepared_nameservers": [
+    "jade.ns.cloudflare.com",
+    "jay.ns.cloudflare.com"
+  ],
+  "sigaa_tunnel_created": true,
+  "tunnel_name": "sigaa-mac-servidor",
+  "tunnel_id": "7ac8287b-036d-4f67-8968-02f2ab0682b6",
+  "route_configured": true,
+  "route_service": "http://web:8080",
+  "public_hostname_activated": false,
+  "dkim_sha256": "6d18e0b234adfa3059da642b28a35f724478fee5d65d602f5cb8389c00a6e5bd"
+}

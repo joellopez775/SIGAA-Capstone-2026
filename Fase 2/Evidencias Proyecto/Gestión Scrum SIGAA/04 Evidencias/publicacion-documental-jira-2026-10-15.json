@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "repository": "https://github.com/joellopez775/SIGAA-Capstone-2026",
+  "branch": "rama histórica",
+  "documentationCommit": "149d9b1ea6837964b362288603171460bcce5f9c",
+  "pdfCount": 39,
+  "pageCount": 52,
+  "publication": "Push confirmado; seis comentarios confirmados por Jira con cuerpo y commentId; SCRUM-34 leído después de publicar.",
+  "jiraComments": [
+    {
+      "issue": "SCRUM-65",
+      "commentId": "10096",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-65?focusedCommentId=10096"
+    },
+    {
+      "issue": "SCRUM-90",
+      "commentId": "10097",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-90?focusedCommentId=10097"
+    },
+    {
+      "issue": "SCRUM-91",
+      "commentId": "10098",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-91?focusedCommentId=10098"
+    },
+    {
+      "issue": "SCRUM-34",
+      "commentId": "10099",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-34?focusedCommentId=10099"
+    },
+    {
+      "issue": "SCRUM-68",
+      "commentId": "10100",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-68?focusedCommentId=10100"
+    },
+    {
+      "issue": "SCRUM-73",
+      "commentId": "10101",
+      "url": "https://sigaa-duoc-2026.atlassian.net/browse/SCRUM-73?focusedCommentId=10101"
+    }
+  ],
+  "noNewIssues": true,
+  "noNewSprints": true,
+  "noStatusTransitions": true,
+  "finalVerification": "Reconsulta de 16 historias y tareas: estados, puntos y pertenencias coinciden con el corte; sprints existentes 1, 2, 3, 4 y 37.",
+  "boundaries": [
+    "No se inventaron reuniones, asistentes, acuerdos ni aprobaciones.",
+    "La aceptación por historia y reflexión grupal requieren validación real.",
+    "No se realizó una entrega en Campus."
+  ]
+}

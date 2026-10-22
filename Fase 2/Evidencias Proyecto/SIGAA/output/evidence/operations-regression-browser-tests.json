@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-15T20:33:11.590Z",
+  "browser": "Chromium",
+  "checks": [
+    {
+      "label": "Login incorrecto muestra error genérico",
+      "result": "pass"
+    },
+    {
+      "label": "Login administrador y recarga conservan sesión",
+      "result": "pass"
+    },
+    {
+      "label": "Alta y edición de estudiante persisten desde formulario",
+      "result": "pass"
+    },
+    {
+      "label": "Formulario duplicado conserva entradas y muestra error",
+      "result": "pass"
+    },
+    {
+      "label": "Matrícula desde formulario, duplicidad y cierre con historial",
+      "result": "pass"
+    },
+    {
+      "label": "Contraseña actual incorrecta no cierra una sesión válida",
+      "result": "pass"
+    },
+    {
+      "label": "Docente solo consulta sus estudiantes y no ve edición administrativa",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante solo ve sus datos y notas reales, sin datos demo",
+      "result": "pass"
+    },
+    {
+      "label": "Menú móvil 390px abre/cierra, navega y no tiene desbordamiento",
+      "result": "pass"
+    },
+    {
+      "label": "Logout impide recuperar datos al recargar",
+      "result": "pass"
+    },
+    {
+      "label": "Docente programa clase y guarda asistencia real",
+      "result": "pass"
+    },
+    {
+      "label": "Docente guarda borrador, publica y corrige notas con motivo",
+      "result": "pass"
+    },
+    {
+      "label": "Docente registra anotaciones públicas y privadas",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante consulta asistencia, notas y anotaciones propias en móvil",
+      "result": "pass"
+    }
+  ],
+  "pageErrors": [],
+  "result": "pass"
+}

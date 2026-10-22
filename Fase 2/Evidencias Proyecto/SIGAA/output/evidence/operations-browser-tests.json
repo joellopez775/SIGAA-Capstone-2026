@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-15T20:33:39.052Z",
+  "browser": "Chromium",
+  "environment": "Local isolated PostgreSQL 14; synthetic data",
+  "checks": [
+    {
+      "label": "Administración crea y edita establecimiento persistente",
+      "result": "pass"
+    },
+    {
+      "label": "Formulario de duplicado conserva datos y muestra error",
+      "result": "pass"
+    },
+    {
+      "label": "Todos los catálogos y asignaciones son navegables",
+      "result": "pass"
+    },
+    {
+      "label": "Recalcular genera tres alertas persistentes y no duplica",
+      "result": "pass"
+    },
+    {
+      "label": "Cambiar responsable y estado conserva historial y aplica los cuatro filtros",
+      "result": "pass"
+    },
+    {
+      "label": "Administración configura una nueva versión de regla",
+      "result": "pass"
+    },
+    {
+      "label": "Inspectoría registra respaldo y aprueba ausencia desde formularios",
+      "result": "pass"
+    },
+    {
+      "label": "Inspectoría no recibe menú de administración",
+      "result": "pass"
+    },
+    {
+      "label": "Pantallas de Inspectoría responden en móvil sin desborde",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante ve asistencia justificada y solo el estado de su respaldo",
+      "result": "pass"
+    },
+    {
+      "label": "Estructura escolar en móvil, foco por teclado y cero errores de JS",
+      "result": "pass"
+    }
+  ],
+  "result": "passed"
+}

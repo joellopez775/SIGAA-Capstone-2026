@@ -1,0 +1,30 @@
+Work item ID,Work type,Parent,Summary,Description,Priority,Status,Labels
+2000,Epic,,Seguimiento Scrum y ceremonias,"Backlogs, 21 registros Daily y retrospectivas exigidas para la trazabilidad del proyecto.",Highest,En revisión,seguimiento-scrum
+2001,Task,2000,Product Backlog priorizado,"Fuente: Gestión Scrum SIGAA/01 Producto/06 Épicas y Product Backlog.md",Highest,En revisión,backlog
+2002,Task,2000,Sprint Backlog 0,"Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 0/01-sprint-backlog.md",High,En revisión,sprint-0
+2003,Task,2000,Sprint Backlog 1,"Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 1/01-sprint-backlog.md",High,En revisión,sprint-1
+2004,Task,2000,Sprint Backlog 2,"Reconstrucción no presentada como contemporánea. Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 2/01-sprint-backlog.md",High,En revisión,sprint-2
+2005,Task,2000,Sprint Backlog 3,"Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 3/01-sprint-backlog-y-jira.md",Highest,En revisión,sprint-3
+2006,Task,2000,DAILY-01 10-08 Sprint 0,"Inicio del análisis y revisión del material Capstone.",Medium,En revisión,daily
+2007,Task,2000,DAILY-02 12-08 Sprint 0,"Problema, contexto y actores preliminares identificados.",Medium,En revisión,daily
+2008,Task,2000,DAILY-03 14-08 Sprint 0,"Visión, alcance y cuatro pilares redactados.",Medium,En revisión,daily
+2009,Task,2000,DAILY-04 18-08 Sprint 0,"Backlog, riesgos y Definition of Done preparados.",Medium,En revisión,daily
+2010,Task,2000,DAILY-05 21-08 Sprint 0,"Expediente de cierre y Docker inicial disponibles.",Medium,En revisión,daily
+2011,Task,2000,DAILY-06 24-08 Sprint 1,"Kickoff, objetivo y capacidad simulada documentados.",Medium,En revisión,daily
+2012,Task,2000,DAILY-07 25-08 Sprint 1,"Arquitectura y decisiones técnicas consolidadas.",Medium,En revisión,daily
+2013,Task,2000,DAILY-08 26-08 Sprint 1,"Modelo ER, restricciones y datos sintéticos definidos.",Medium,En revisión,daily
+2014,Task,2000,DAILY-09 27-08 Sprint 1,"Casos de uso y secuencias documentados.",Medium,En revisión,daily
+2015,Task,2000,DAILY-10 28-08 Sprint 1,"Prototipo inicial y entregables Fase 1 actualizados.",Medium,En revisión,daily
+2016,Task,2000,DAILY-11 01-09 Sprint 1,"Demo docente y estudiante disponible.",Medium,En revisión,daily
+2017,Task,2000,DAILY-12 07-09 Sprint 2,"Inicio de base técnica de seguridad y plataforma.",Medium,En revisión,daily
+2018,Task,2000,DAILY-13 09-09 Sprint 2,"Modelo escolar y contenedores revisados.",Medium,En revisión,daily
+2019,Task,2000,DAILY-14 11-09 Sprint 2,"Núcleo relacional PostgreSQL disponible.",Medium,En revisión,daily
+2020,Task,2000,DAILY-15 14-09 Sprint 2,"Modelo funcional docente implementado en demo.",Medium,En revisión,daily
+2021,Task,2000,DAILY-16 16-09 Sprint 2,"Modelo funcional estudiante implementado en demo.",Medium,En revisión,daily
+2022,Task,2000,DAILY-17 18-09 Sprint 2,"Review y Retrospective preparadas para ratificación.",Medium,En revisión,daily
+2023,Task,2000,DAILY-18 21-09 Sprint 3,"Objetivo de vertical persistente y segura definido.",Medium,En revisión,daily
+2024,Task,2000,DAILY-19 22-09 Sprint 3,"Backlog y criterios del Sprint 3 consolidados.",Medium,En revisión,daily
+2025,Task,2000,DAILY-20 23-09 Sprint 3,"Documentos de arquitectura, metodología y sprint separados.",Medium,En revisión,daily
+2026,Task,2000,DAILY-21 24-09 Sprint 3,"Jira configurado; backlog y expediente Scrum importados.",Medium,En revisión,daily
+2027,Task,2000,Retrospective Sprint 1,"Regularización basada en evidencia; pendiente ratificación del equipo. Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 1/06-retrospectiva.md",High,En revisión,retrospective
+2028,Task,2000,Retrospective Sprint 2,"Pauta basada en evidencia; pendiente ratificación del equipo. Fuente: Gestión Scrum SIGAA/02 Sprints/Sprint 2/05-retrospectiva.md",High,En revisión,retrospective

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-15",
+  "commit": "a9b6f65",
+  "transitions": [
+    {
+      "key": "SCRUM-25",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Issue SCRUM-25 transitioned successfully\",\"transitionId\":41,\"statusName\":\"En revisión\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-32",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Issue SCRUM-32 transitioned successfully\",\"transitionId\":41,\"statusName\":\"En revisión\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-33",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Issue SCRUM-33 transitioned successfully\",\"transitionId\":41,\"statusName\":\"En revisión\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-49",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Issue SCRUM-49 transitioned successfully\",\"transitionId\":41,\"statusName\":\"En revisión\"}}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "comments": [
+    {
+      "key": "SCRUM-25",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Comment added to SCRUM-25 successfully\",\"commentId\":\"10102\",\"body\":\"Implementación verificable 0.8.0 — 15-10-2026.\\n\\nAdministración real de establecimiento, año, nivel, asignaturas, cursos y asignaciones. Validaciones de relaciones, fechas, capacidad, duplicados y edición concurrente; persistencia y auditoría.\\n\\nCódigo publicado: https://github.com/joellopez775/SIGAA-Capstone-2026/commit/a9b6f65\\n\\nEvidencia: SIGAA/output/evidence/operations-\\\\*.json; 4 pruebas unitarias y 44 de integración en Docker/PostgreSQL 16, 11 recorridos nuevos y 14 de regresión local, 8 recorridos HTTPS entre docente, estudiante, administración e inspectoría. Pruebas de escritura en bases aisladas; servidor actualizado con migración 008 y respaldo previo, sin seeds.\\n\\nEn revisión, pendiente de aceptación del PO y validación escolar. No acredita ceremonia ni cierre retrospectivo. Se conserva esta incidencia y su sprint; no se crean duplicados.\",\"appliedContentFormat\":\"markdown\",\"jsmCommentType\":\"publicComment\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-32",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Comment added to SCRUM-32 successfully\",\"commentId\":\"10103\",\"body\":\"Implementación verificable 0.8.0 — 15-10-2026.\\n\\nTres reglas configurables y versionadas sobre asistencia/notas publicadas persistentes, explicación de umbrales, falta de datos sin falso positivo, deduplicación y resolución/reapertura. Recalcular manualmente tras notas/asistencia; cambios de regla y justificación aprobada recalculan automáticamente. Indicador preventivo, no promedio oficial.\\n\\nCódigo publicado: https://github.com/joellopez775/SIGAA-Capstone-2026/commit/a9b6f65\\n\\nEvidencia: SIGAA/output/evidence/operations-\\\\*.json; 4 pruebas unitarias y 44 de integración en Docker/PostgreSQL 16, 11 recorridos nuevos y 14 de regresión local, 8 recorridos HTTPS entre docente, estudiante, administración e inspectoría. Pruebas de escritura en bases aisladas; servidor actualizado con migración 008 y respaldo previo, sin seeds.\\n\\nEn revisión, pendiente de aceptación del PO y validación escolar. No acredita ceremonia ni cierre retrospectivo. Se conserva esta incidencia y su sprint; no se crean duplicados.\",\"appliedContentFormat\":\"markdown\",\"jsmCommentType\":\"publicComment\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-33",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Comment added to SCRUM-33 successfully\",\"commentId\":\"10104\",\"body\":\"Implementación verificable 0.8.0 — 15-10-2026.\\n\\nBandeja persistente con filtros por prioridad, curso, estado y responsable; indicadores filtrados, paginación, fecha, causa y siguiente acción. Cambios de responsable/estado con motivo, revisión concurrente e historial auditable. Alcance docente aplicado en servidor.\\n\\nCódigo publicado: https://github.com/joellopez775/SIGAA-Capstone-2026/commit/a9b6f65\\n\\nEvidencia: SIGAA/output/evidence/operations-\\\\*.json; 4 pruebas unitarias y 44 de integración en Docker/PostgreSQL 16, 11 recorridos nuevos y 14 de regresión local, 8 recorridos HTTPS entre docente, estudiante, administración e inspectoría. Pruebas de escritura en bases aisladas; servidor actualizado con migración 008 y respaldo previo, sin seeds.\\n\\nEn revisión, pendiente de aceptación del PO y validación escolar. No acredita ceremonia ni cierre retrospectivo. Se conserva esta incidencia y su sprint; no se crean duplicados.\",\"appliedContentFormat\":\"markdown\",\"jsmCommentType\":\"publicComment\"}}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "key": "SCRUM-49",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"data\":{\"message\":\"Comment added to SCRUM-49 successfully\",\"commentId\":\"10105\",\"body\":\"Implementación verificable 0.8.0 — 15-10-2026.\\n\\nInspectoría registra ausencia existente, motivo y referencia de respaldo privado. Aprobación/rechazo auditados; aprobación cambia asistencia a justificada y recalcula alertas en una transacción. Doble revisión rechazada. Estudiante solo consulta estado, sin exposición del respaldo ni motivo sensible.\\n\\nCódigo publicado: https://github.com/joellopez775/SIGAA-Capstone-2026/commit/a9b6f65\\n\\nEvidencia: SIGAA/output/evidence/operations-\\\\*.json; 4 pruebas unitarias y 44 de integración en Docker/PostgreSQL 16, 11 recorridos nuevos y 14 de regresión local, 8 recorridos HTTPS entre docente, estudiante, administración e inspectoría. Pruebas de escritura en bases aisladas; servidor actualizado con migración 008 y respaldo previo, sin seeds.\\n\\nEn revisión, pendiente de aceptación del PO y validación escolar. No acredita ceremonia ni cierre retrospectivo. Se conserva esta incidencia y su sprint; no se crean duplicados.\",\"appliedContentFormat\":\"markdown\",\"jsmCommentType\":\"publicComment\"}}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "duplicatesCreated": false,
+  "sprintsChanged": false
+}

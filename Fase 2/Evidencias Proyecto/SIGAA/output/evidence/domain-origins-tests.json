@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-15T22:16:31.186Z",
+  "transport": "https://winter-mount-aluminum-removable.trycloudflare.com",
+  "newHostnameTlsTested": false,
+  "checks": [
+    {
+      "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+      "role": "admin",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+      "role": "inspector",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+      "role": "teacher",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+      "role": "student",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://sigaa.ignisert.com",
+      "role": "admin",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://sigaa.ignisert.com",
+      "role": "inspector",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://sigaa.ignisert.com",
+      "role": "teacher",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    },
+    {
+      "origin": "https://sigaa.ignisert.com",
+      "role": "student",
+      "login": true,
+      "secureHostCookie": true,
+      "sessionRead": true,
+      "csrfRequired": true
+    }
+  ],
+  "rejectedOrigins": 4,
+  "result": "passed"
+}

@@ -1,0 +1,284 @@
+{
+  "pdfCount": 39,
+  "pageCount": 52,
+  "files": [
+    {
+      "index": 0,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/00-sprint-planning.pdf",
+      "pages": 1,
+      "textChars": 1817,
+      "sha256": "372f7822d9e07a52242eda3ba23f8fc178dcf21e88b4ad5fc9035d83ea46b64c"
+    },
+    {
+      "index": 1,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/01-sprint-backlog.pdf",
+      "pages": 1,
+      "textChars": 1232,
+      "sha256": "1d178ce1d29de4f2206c8cf0d13ccce1da96684bd28716e2612ca4839fd4ff21"
+    },
+    {
+      "index": 2,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/02-scrumboard.pdf",
+      "pages": 1,
+      "textChars": 1158,
+      "sha256": "651ef7f9f3ed53fdd8cf8befc9126e41b50915cc63122b717aaa5fd3f9e0f0d8"
+    },
+    {
+      "index": 3,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/03-burndown.pdf",
+      "pages": 1,
+      "textChars": 1454,
+      "sha256": "5ede7549138da1e169fc32ea4bb3d9a4cfb3bfdb6e65eb82ccefcc101a800e39"
+    },
+    {
+      "index": 4,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/04-sprint-review.pdf",
+      "pages": 1,
+      "textChars": 1832,
+      "sha256": "97300a92b5459fe5a0bced1e8e08c5356862aba37fe10dd20f62d49c2f0c8b4e"
+    },
+    {
+      "index": 5,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/05-retrospectiva.pdf",
+      "pages": 1,
+      "textChars": 1639,
+      "sha256": "9299e4381e656cdc66eccf77d75b441f00edaf8e5292958e2b3760bf16f77cce"
+    },
+    {
+      "index": 6,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/06-daily.pdf",
+      "pages": 1,
+      "textChars": 1635,
+      "sha256": "8c06dda312be7fc7d04da47d981b81e07fbf3a779afe0728dcb90d3ecb7b873a"
+    },
+    {
+      "index": 7,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/07-impediment-log.pdf",
+      "pages": 1,
+      "textChars": 1591,
+      "sha256": "a5e409d3ec7b452dfb280114507f7fba33ae3ec102b1a1e02447ca5369a89f7a"
+    },
+    {
+      "index": 8,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/08-release.pdf",
+      "pages": 1,
+      "textChars": 2192,
+      "sha256": "2077e6f4e3fa5cb91d171bdba4237b4bb8513248ef1196d10644009c178bacb7"
+    },
+    {
+      "index": 9,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/00-sprint-planning.pdf",
+      "pages": 1,
+      "textChars": 1878,
+      "sha256": "791a23004c43df37ecad91159ff954b20c79eeabdc2be0772695a809c9a9006c"
+    },
+    {
+      "index": 10,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/01-sprint-backlog-y-jira.pdf",
+      "pages": 1,
+      "textChars": 1855,
+      "sha256": "c8beb988104ffc5adace02c33558235fa32fd2a973dbfcd80dd592970b11eff0"
+    },
+    {
+      "index": 11,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/03-scrumboard-jira.pdf",
+      "pages": 1,
+      "textChars": 1383,
+      "sha256": "1e2ad2247a3bb9b679135843b4d75177ee23341191022cf5b7f317e8fc9d2689"
+    },
+    {
+      "index": 12,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/04-burndown.pdf",
+      "pages": 1,
+      "textChars": 1472,
+      "sha256": "153271bd305e081b5870f8f51ee9d996763827fa682ef1bfd4f4fa124fd71fde"
+    },
+    {
+      "index": 13,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/05-daily.pdf",
+      "pages": 1,
+      "textChars": 1719,
+      "sha256": "cacc2af1b50c61ed1e17a93af7f1d9e97a985a99bc7baf05bbfb4b37a857f721"
+    },
+    {
+      "index": 14,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/06-impediment-log.pdf",
+      "pages": 1,
+      "textChars": 1692,
+      "sha256": "fee384af6c5ac09700d0e18253d48f418b38cd7a92dff86829aba9e6d425ae8a"
+    },
+    {
+      "index": 15,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/07-release.pdf",
+      "pages": 1,
+      "textChars": 2348,
+      "sha256": "3ca42dfe5ca9ff32c58b3b97c3c7f2eaa83a24ad41d775a58e5ddbc1fb3e1cda"
+    },
+    {
+      "index": 16,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/08-sprint-review.pdf",
+      "pages": 1,
+      "textChars": 2315,
+      "sha256": "9c239d3158a03e30c05f63415b20e076d42b46876ebe68059637186520dfb932"
+    },
+    {
+      "index": 17,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/09-retrospective.pdf",
+      "pages": 1,
+      "textChars": 1740,
+      "sha256": "652f188c112569b6bdfe648dd96e39932b71b090b7d3326783aee6fe9b5a83ae"
+    },
+    {
+      "index": 18,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/02-guia-review-retro.pdf",
+      "pages": 1,
+      "textChars": 1269,
+      "sha256": "e809d778d5a2f77498d726a6d76261d0c07db44d7a392942e631a17d0fe3083a"
+    },
+    {
+      "index": 19,
+      "file": "SIGAA/output/pdf/Sprint 4/01 Planificación Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 1895,
+      "sha256": "00d93b0489d903d59ce219f98abf6391aff864177d40cf27ccf7fbf103e4e08a"
+    },
+    {
+      "index": 20,
+      "file": "SIGAA/output/pdf/Sprint 4/02 Sprint Backlog 4.pdf",
+      "pages": 1,
+      "textChars": 1826,
+      "sha256": "9fa39110b5c608839207c37b64e3d0980084b6c4824cc8bd10bbf7d4f268ab6e"
+    },
+    {
+      "index": 21,
+      "file": "SIGAA/output/pdf/Sprint 4/03 Scrumboard Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 1337,
+      "sha256": "d9fd011cd51bb73d1c625df842b713da0b26b7a4631b846ae6d53ad9f8fcf744"
+    },
+    {
+      "index": 22,
+      "file": "SIGAA/output/pdf/Sprint 4/04 Burndown Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 1487,
+      "sha256": "a4d80259269b4f48ddb8498743dd5160a4f7c2469693dc07c23cdfc6059f8e67"
+    },
+    {
+      "index": 23,
+      "file": "SIGAA/output/pdf/Sprint 4/05 Daily e Impedimentos Sprint 4.pdf",
+      "pages": 2,
+      "textChars": 2778,
+      "sha256": "50fd8321d84d1f108342825adaaecae33e599c92f231fbe020d9d5138213c544"
+    },
+    {
+      "index": 24,
+      "file": "SIGAA/output/pdf/Sprint 4/06 Release Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 2228,
+      "sha256": "2738884b64babb7383935f510e8091b94a32f910eb2f0f20109d3add361de3cc"
+    },
+    {
+      "index": 25,
+      "file": "SIGAA/output/pdf/Sprint 4/07 Review Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 2299,
+      "sha256": "70ad15f11d8bf4e5df2a38b1a0784d9eb86af9d4853cdbdaf6db60f273817a83"
+    },
+    {
+      "index": 26,
+      "file": "SIGAA/output/pdf/Sprint 4/08 Retrospectiva Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 1620,
+      "sha256": "bec282be940eba857b0404017381803c8c06e617dabc167cbf33dbb9bc360d84"
+    },
+    {
+      "index": 27,
+      "file": "SIGAA/output/pdf/Sprint 4/10 Registro Jira Sprint Backlog 4.pdf",
+      "pages": 1,
+      "textChars": 1587,
+      "sha256": "f122161e450f043b2019af816a7623dbfce068a3f0d0efdae88d690ddb7ade3f"
+    },
+    {
+      "index": 28,
+      "file": "SIGAA/output/pdf/Sprint 4/09 Informe de Avance Fase 2.pdf",
+      "pages": 4,
+      "textChars": 8850,
+      "sha256": "c32aa74f41f9e92cd37270726ffb712107144cd46808d07cad38948cc3fa3740"
+    },
+    {
+      "index": 29,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Reflexión Fase 2.pdf",
+      "pages": 1,
+      "textChars": 2738,
+      "sha256": "92acc15ef3bb692454d4a99c8693255ab58b7b1863b5e7ec98bc727ced7b8c28"
+    },
+    {
+      "index": 30,
+      "file": "SIGAA/output/pdf/Arquitectura de Software - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 3797,
+      "sha256": "2bbf861e69b13975b5e3a7f5ee03acaed29985f89ceb46e454bb12262e310c96"
+    },
+    {
+      "index": 31,
+      "file": "SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 4610,
+      "sha256": "a517fd9a99b12e5eca4bf2767e6bdaa89fc624b32d162cec86a2f68925fc99be"
+    },
+    {
+      "index": 32,
+      "file": "Gestión Scrum SIGAA/PDF/01 Producto/06 Épicas y Product Backlog.pdf",
+      "pages": 3,
+      "textChars": 5587,
+      "sha256": "02e4f8677360b6cf7cc567deb38bf87c82d7fa6452ce926cd7641018a421ff98"
+    },
+    {
+      "index": 33,
+      "file": "Gestión Scrum SIGAA/PDF/01 Producto/09 Retrospectiva del proyecto.pdf",
+      "pages": 1,
+      "textChars": 1613,
+      "sha256": "11fa55d2209b32cebdb9c7225a7373a263aa46554a3e6196b8a6dbadad58f087"
+    },
+    {
+      "index": 34,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Registro consolidado de 21 Daily Scrum.pdf",
+      "pages": 2,
+      "textChars": 5054,
+      "sha256": "701036cdb6562ff207a4874bc6d463b9b25e133459124767324cba23ff8c5e37"
+    },
+    {
+      "index": 35,
+      "file": "Gestión Scrum SIGAA/PDF/README.pdf",
+      "pages": 2,
+      "textChars": 3429,
+      "sha256": "f20cbc44dfe724b9209c094d4ab2ae2b5d73d51c36fba8bdd24fac335b740350"
+    },
+    {
+      "index": 36,
+      "file": "SIGAA/output/pdf/Control documental Capstone - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 3140,
+      "sha256": "5a9cfee775c5864cc3e15ec2a84635e232fc7cb5ef8a0850ff3f8aa45d0f6821"
+    },
+    {
+      "index": 37,
+      "file": "Gestión Scrum SIGAA/PDF/01 Producto/03 Mapa mental.pdf",
+      "pages": 1,
+      "textChars": 1000,
+      "sha256": "ee7df3294becbecdea5663769fb67ca817fd309ba75a38e05d3d055295680d5d"
+    },
+    {
+      "index": 38,
+      "file": "Gestión Scrum SIGAA/PDF/01 Producto/04 Mapa de actores e Impact Mapping.pdf",
+      "pages": 3,
+      "textChars": 3067,
+      "sha256": "385ac4fb02d29ae10d44441b8d01584137df546f37d10646af2c09e18b091106"
+    }
+  ],
+  "date": "2026-10-15",
+  "baseCommit": "899aab613e131960bdd2ed676c7fbdd65bfc5264",
+  "visualReview": "52 páginas renderizadas; inspección visual de mapas, tablas, encabezados y saltos de página",
+  "scope": "Documentación; no se repitieron pruebas funcionales de aplicación",
+  "jiraSnapshot": "Gestión Scrum SIGAA/04 Evidencias/jira-corte-2026-10-15.json"
+}

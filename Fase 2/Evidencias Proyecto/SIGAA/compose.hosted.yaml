@@ -1,0 +1,37 @@
+name: sigaa-current
+services:
+  api:
+    build:
+      context: ./apps/api
+      target: runtime
+    environment:
+      NODE_ENV: production
+      APP_ORIGIN: ${APP_ORIGIN:?HTTPS origin required}
+      APP_ADDITIONAL_ORIGINS: ${APP_ADDITIONAL_ORIGINS:-}
+      DATABASE_URL: ${DATABASE_URL:?Private database URL required}
+    networks: [frontend, database]
+    restart: unless-stopped
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3000/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 10s
+      retries: 6
+  web:
+    build: ./apps/web
+    depends_on:
+      api:
+        condition: service_healthy
+    networks: [frontend]
+    restart: unless-stopped
+    security_opt: [no-new-privileges:true]
+  tunnel:
+    image: cloudflare/cloudflared:2026.7.2
+    command: [tunnel, --no-autoupdate, --url, 'http://web:8080']
+    networks: [frontend]
+    restart: unless-stopped
+    security_opt: [no-new-privileges:true]
+networks:
+  frontend: {}
+  database:
+    external: true
+    name: sigaa_database_private

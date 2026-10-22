@@ -1,0 +1,22 @@
+Work item ID,Work type,Parent,Summary,Description,Priority,Labels
+1000,Epic,,Gestión ágil y entregables Capstone,"Expediente de evidencias Scrum y definición de producto requerido para SIGAA.",Highest,gestion-agil
+1001,Task,1000,Análisis del caso,"Consolidar problema, contexto, causas, oportunidad, alcance y restricciones. Evidencia: docs/gestion-agil/01-analisis-del-caso.md",Highest,documentacion
+1002,Task,1000,Squad y responsabilidades,"Ratificar integrantes, responsabilidades y forma de colaboración. Evidencia: docs/gestion-agil/02-squad-y-responsabilidades.md",Highest,equipo
+1003,Task,1000,Mapa mental,"Revisar el mapa mental del producto y mantenerlo actualizado. Evidencia: docs/gestion-agil/03-mapa-mental.md",Medium,descubrimiento
+1004,Task,1000,Mapa de actores,"Validar actores, necesidades, influencia y participación. Evidencia: docs/02-actores-impact-mapping.md",High,descubrimiento
+1005,Task,1000,Visión del proyecto y cuatro pilares,"Validar visión y pilares de prevención, trazabilidad, colaboración y seguridad. Evidencia: docs/01-product-vision.md",Highest,producto
+1006,Task,1000,Épicas,"Mantener las ocho épicas y sus resultados esperados. Evidencia: docs/03-product-backlog.md",High,backlog
+1007,Task,1000,Historias de usuario con criterios y estimación,"Revisar las 40 historias, criterios de aceptación, prioridad y puntos. Evidencia: docs/gestion-agil/05-historias-usuario-y-criterios.md",Highest,backlog
+1008,Task,1000,Impact Mapping,"Validar objetivos, actores, impactos y entregables. Evidencia: docs/02-actores-impact-mapping.md",High,descubrimiento
+1009,Task,1000,Product Backlog priorizado,"Refinar y ordenar el backlog con el Product Owner. Evidencia: docs/03-product-backlog.md",Highest,backlog
+1010,Task,1000,User Story Mapping,"Validar recorrido, actividades, entregas y releases. Evidencia: docs/gestion-agil/04-user-story-mapping.md",High,producto
+1011,Task,1000,Retrospectiva del proyecto,"Actualizar el checkpoint y cerrar la retrospectiva al final del proyecto. Evidencia: docs/gestion-agil/06-retrospectiva-del-proyecto.md",Medium,mejora-continua
+1012,Task,1000,Sprint Planning,"Planificar cada sprint con objetivo, capacidad y compromiso. Evidencia actual: docs/scrum/sprint-3/00-sprint-planning.md",Highest,sprint-3
+1013,Task,1000,Sprint Backlog,"Desglosar historias comprometidas, responsables y criterios. Evidencia actual: docs/scrum/sprint-3/01-sprint-backlog-y-jira.md",Highest,sprint-3
+1014,Task,1000,Scrumboard,"Mantener estados y límites de trabajo en Jira. Evidencia: docs/scrum/sprint-3/03-scrumboard-jira.md",Highest,sprint-3
+1015,Task,1000,Burndown Chart,"Actualizar puntos restantes con historias aceptadas. Evidencia: docs/scrum/sprint-3/04-burndown.md",High,sprint-3
+1016,Task,1000,Daily Meeting,"Registrar avances, próxima acción e impedimentos reales. Evidencia: docs/scrum/sprint-3/05-daily.md",High,sprint-3
+1017,Task,1000,Registro de impedimentos,"Dar responsable y siguiente acción a cada bloqueo. Evidencia: docs/scrum/sprint-3/06-impediment-log.md",Highest,sprint-3
+1018,Task,1000,Release,"Preparar y verificar la candidata v0.4.0. Evidencia: docs/scrum/sprint-3/07-release.md",Highest,sprint-3
+1019,Task,1000,Sprint Review,"Demostrar el incremento y registrar decisión del Product Owner. Evidencia: docs/scrum/sprint-3/08-sprint-review.md",Highest,sprint-3
+1020,Task,1000,Sprint Retrospective,"Realizar Start Stop Continue y acordar mejoras medibles. Evidencia: docs/scrum/sprint-3/09-retrospective.md",High,sprint-3

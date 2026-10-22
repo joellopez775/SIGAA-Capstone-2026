@@ -1,0 +1,96 @@
+{
+  "pdfCount": 15,
+  "pageCount": 27,
+  "files": [
+    {
+      "index": 0,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/01-sprint-backlog.pdf",
+      "pages": 1,
+      "textChars": 1388
+    },
+    {
+      "index": 1,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/02-scrumboard.pdf",
+      "pages": 1,
+      "textChars": 1234
+    },
+    {
+      "index": 2,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/04-sprint-review.pdf",
+      "pages": 1,
+      "textChars": 2202
+    },
+    {
+      "index": 3,
+      "file": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/08-release.pdf",
+      "pages": 1,
+      "textChars": 2446
+    },
+    {
+      "index": 4,
+      "file": "SIGAA/output/pdf/Sprint 4/02 Sprint Backlog 4.pdf",
+      "pages": 1,
+      "textChars": 2071
+    },
+    {
+      "index": 5,
+      "file": "SIGAA/output/pdf/Sprint 4/03 Scrumboard Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 1417
+    },
+    {
+      "index": 6,
+      "file": "SIGAA/output/pdf/Sprint 4/06 Release Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 2477
+    },
+    {
+      "index": 7,
+      "file": "SIGAA/output/pdf/Sprint 4/07 Review Sprint 4.pdf",
+      "pages": 1,
+      "textChars": 2489
+    },
+    {
+      "index": 8,
+      "file": "SIGAA/output/pdf/Sprint 4/09 Informe de Avance Fase 2.pdf",
+      "pages": 4,
+      "textChars": 9470
+    },
+    {
+      "index": 9,
+      "file": "SIGAA/output/pdf/Arquitectura de Software - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 4153
+    },
+    {
+      "index": 10,
+      "file": "SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 4314
+    },
+    {
+      "index": 11,
+      "file": "Gestión Scrum SIGAA/PDF/01 Producto/06 Épicas y Product Backlog.pdf",
+      "pages": 3,
+      "textChars": 6959
+    },
+    {
+      "index": 12,
+      "file": "Gestión Scrum SIGAA/PDF/README.pdf",
+      "pages": 2,
+      "textChars": 4996
+    },
+    {
+      "index": 13,
+      "file": "SIGAA/output/pdf/Control documental Capstone - SIGAA.pdf",
+      "pages": 2,
+      "textChars": 3476
+    },
+    {
+      "index": 14,
+      "file": "Gestión Scrum SIGAA/PDF/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.pdf",
+      "pages": 4,
+      "textChars": 11347
+    }
+  ]
+}

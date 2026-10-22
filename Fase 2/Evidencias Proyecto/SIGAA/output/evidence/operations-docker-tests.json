@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "environment": "Remote Docker, Node 22, PostgreSQL 16, isolated temporary database",
+  "project": "sigaa-ops-validation",
+  "command": "docker compose -p sigaa-ops-validation -f compose.test.yaml up --build --abort-on-container-exit --exit-code-from api-tests",
+  "unit": {"tests": 4, "passed": 4, "failed": 0},
+  "integration": {"tests": 44, "passed": 44, "failed": 0},
+  "newOperationsIntegrationTests": 14,
+  "exitCode": 0,
+  "freshStack": {
+    "project": "sigaa-ops-stack",
+    "db": "healthy",
+    "api": "healthy",
+    "web": "healthy",
+    "httpApiHealth": {"status": "ok", "version": "0.8.0"},
+    "hostBindings": "127.0.0.1:3018 and 127.0.0.1:8098; database not published"
+  },
+  "productionDataModifiedByTests": false
+}

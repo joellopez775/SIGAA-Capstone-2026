@@ -1,0 +1,67 @@
+name: SIGAA · Integración continua
+
+on:
+  push:
+    paths:
+      - "SIGAA/**"
+      - ".github/workflows/sigaa-ci.yml"
+  pull_request:
+    paths:
+      - "SIGAA/**"
+      - ".github/workflows/sigaa-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: SIGAA
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            SIGAA/apps/api/package-lock.json
+            SIGAA/apps/web/package-lock.json
+
+      - name: Probar API
+        run: npm ci && npm test
+        working-directory: SIGAA/apps/api
+
+      - name: Compilar aplicación web
+        run: npm ci && npm run build
+        working-directory: SIGAA/apps/web
+
+      - name: Validar Docker Compose
+        run: docker compose config --quiet
+
+      - name: Probar integración real en PostgreSQL 16 aislado
+        run: docker compose -f compose.test.yaml up --build --abort-on-container-exit --exit-code-from api-tests
+
+      - name: Cerrar entorno de pruebas aislado
+        if: always()
+        run: docker compose -f compose.test.yaml down
+
+      - name: Construir y levantar entorno
+        run: docker compose up --build --detach --wait
+
+      - name: Verificar servicios
+        run: sh scripts/verify-docker.sh
+
+      - name: Mostrar logs si falla
+        if: failure()
+        run: docker compose logs --no-color --tail=200
+
+      - name: Cerrar entorno
+        if: always()
+        run: docker compose down --volumes

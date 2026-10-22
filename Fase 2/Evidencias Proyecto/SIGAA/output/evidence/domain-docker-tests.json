@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-15",
+  "project": "sigaa-origin-tests",
+  "database": "disposable PostgreSQL; isolated Docker network",
+  "unit": {
+    "tests": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "integration": {
+    "tests": 44,
+    "passed": 44,
+    "failed": 0
+  },
+  "source": "Docker api-tests container logs and exit code 0",
+  "productionAcademicDataModified": false
+}

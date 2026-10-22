@@ -1,0 +1,28 @@
+# Permanent connector only. Does not replace the existing demo tunnel.
+# Supply TUNNEL_UID / TUNNEL_GID matching the owner of the 0600 token file.
+name: sigaa-permanent
+services:
+  connector:
+    image: cloudflare/cloudflared:2026.7.2
+    user: "${TUNNEL_UID:?Token owner UID required}:${TUNNEL_GID:?Token owner GID required}"
+    command:
+      - tunnel
+      - --no-autoupdate
+      - --loglevel
+      - warn
+      - --metrics
+      - 0.0.0.0:20241
+      - run
+      - --token-file
+      - /run/secrets/tunnel-token
+    volumes:
+      - ./.secrets/cloudflare-sigaa-tunnel.token:/run/secrets/tunnel-token:ro
+    networks: [frontend]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+networks:
+  frontend:
+    external: true
+    name: sigaa-current_frontend

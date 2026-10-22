@@ -1,0 +1,161 @@
+/* A shared glass lens moves between destinations. Transform-only magnification
+   keeps hit areas and layout stable; touch and reduced-motion stay predictable. */
+.secure-shell {
+  display: block;
+  padding: 26px 26px 26px 300px;
+  background: radial-gradient(ellipse at 15% 8%, #accbb88c, transparent 48%),
+    radial-gradient(ellipse at 94% 28%, #e3d4ac80, transparent 42%),
+    radial-gradient(ellipse at 65% 95%, #c1d2c480, transparent 50%), #edf0e9;
+  background-attachment: fixed;
+  color: #203e32;
+}
+.glass-navigation {
+  position: fixed;
+  z-index: 40;
+  inset: 24px auto 24px 24px;
+  width: 250px;
+  padding: 25px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff40 transparent;
+  border: 1px solid #ffffff55;
+  border-radius: 30px;
+  color: #f6f5eb;
+  background: linear-gradient(145deg, #315e4ec9, #123c30ed 65%, #214b3bdb);
+  -webkit-backdrop-filter: blur(28px) saturate(135%);
+  backdrop-filter: blur(28px) saturate(135%);
+  box-shadow: inset 0 1px 0 #ffffff38, inset 1px 0 0 #ffffff14, 0 24px 64px -24px #173f3170;
+}
+.glass-brand { display: flex; align-items: center; gap: 12px; padding: 4px 8px 28px; }
+.glass-brand img { width: 42px; height: 42px; object-fit: contain; border-radius: 12px; }
+.glass-brand strong { font-family: Georgia, serif; font-size: 25px; font-weight: 500; letter-spacing: .06em; }
+.glass-brand strong span { font: 9px system-ui; vertical-align: super; margin-left: 3px; }
+.glass-brand small { display: block; color: #e1e9dc; font-size: 10px; letter-spacing: .06em; margin-top: 4px; }
+.glass-brand-dot { width: 6px; height: 6px; background: #ddcd9c; border-radius: 50%; margin-left: auto; box-shadow: 0 0 14px #e9dbb36b; }
+.glass-nav-caption { color: #d4decf; font-size: 9px; font-weight: 650; letter-spacing: .2em; margin: 0 12px 15px; }
+.glass-navigation nav { display: grid; position: relative; gap: 6px; isolation: isolate; }
+.glass-active-lens {
+  pointer-events: none; position: absolute; z-index: -1; inset: 0 0 auto; height: 48px;
+  border-radius: 17px; border: 1px solid #ffffff69;
+  background: linear-gradient(115deg, #ffffff35, #ffffff12 55%, #e8d5a62b);
+  box-shadow: inset 0 1px 0 #ffffff63, inset 0 -1px 0 #ffffff19, 0 5px 16px #0c2c2626;
+  transform: translateY(calc(var(--active-index) * 54px));
+  transition: transform 480ms cubic-bezier(.2,.85,.22,1);
+}
+.glass-navigation nav button {
+  height: 48px; width: 100%; display: flex; align-items: center; gap: 11px; padding: 0 12px;
+  border: 0; border-radius: 17px; background: transparent; color: #e2eade;
+  text-align: left; font-size: 12px; font-weight: 500; white-space: nowrap;
+  transform: translateX(calc(var(--item-shift) * 1px)) scale(var(--item-scale));
+  transform-origin: left center;
+  transition: transform 180ms ease-out, color 180ms ease;
+}
+.glass-nav-icon { display: grid; place-items: center; flex-shrink: 0; transform: scale(var(--icon-scale)); transition: transform 180ms ease-out; }
+.glass-navigation nav button[aria-current] { color: #fff7dd; }
+.glass-navigation nav button:hover { color: white; }
+.glass-nav-dot { width: 4px; height: 4px; border-radius: 50%; background: #f3d998; margin-left: auto; opacity: 0; transition: opacity 200ms; flex-shrink: 0; }
+.glass-navigation nav button[aria-current] .glass-nav-dot { opacity: 1; }
+.glass-profile { display: flex; align-items: center; gap: 10px; padding: 24px 8px 15px; margin-top: auto; }
+.glass-avatar { width: 35px; height: 35px; flex-shrink: 0; display: grid; place-items: center; border-radius: 50%; border: 1px solid #fff5; background: linear-gradient(135deg, #dccb9770, #ffffff16); font-size: 11px; }
+.glass-profile strong { font-size: 11px; font-weight: 600; overflow-wrap: anywhere; }
+.glass-profile small { display: block; margin-top: 4px; color: #d8e2d3; font-size: 10px; }
+.glass-logout { border: 1px solid #ffffff30; border-radius: 13px; padding: 11px 13px; display: flex; justify-content: space-between; color: #f2f4e9; background: #ffffff0a; font-size: 11px; }
+.glass-logout:hover { background: #ffffff20; }
+.glass-private { display: flex; justify-content: center; align-items: center; gap: 6px; color: #cbd7c5; font-size: 9px; margin-top: 15px; }
+.glass-private i { width: 4px; height: 4px; background: #d6c38f; border-radius: 50%; }
+.glass-menu-trigger, .glass-scrim { display: none; }
+.secure-shell .secure-main { padding: 20px clamp(4px, 2vw, 32px); max-width: 1380px; }
+.secure-shell .secure-header { min-height: 76px; margin-bottom: 30px; }
+.secure-shell .secure-header h1 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -.035em; font-weight: 400; line-height: 1.15; }
+.secure-shell .eyebrow { font-size: 10px; letter-spacing: .16em; color: #496050; }
+.secure-shell .panel {
+  border: 1px solid #ffffffc7; border-radius: 24px;
+  background: linear-gradient(130deg, #ffffffb8, #ffffff6b);
+  -webkit-backdrop-filter: blur(16px) saturate(115%); backdrop-filter: blur(16px) saturate(115%);
+  box-shadow: inset 0 1px 0 #ffffff, 0 12px 36px -20px #304e393b;
+}
+.secure-shell .secure-welcome {
+  position: relative; isolation: isolate; overflow: hidden; border-radius: 28px; padding: 38px;
+  color: #163e30; background: linear-gradient(115deg, #ffffffae, #e5eddd9c, #d0dec47d);
+  border: 1px solid #ffffffcc; box-shadow: inset 0 1px 0 white, 0 16px 40px -30px #25473466;
+}
+.secure-welcome::after { content: ""; position: absolute; z-index: -1; width: 240px; height: 240px; right: -20px; top: -62px; border-radius: 50%; border: 1px solid #fff8; background: linear-gradient(130deg, #fff7, #afc6ac22); box-shadow: -40px 60px 0 20px #ffffff26, -85px 110px 0 35px #ffffff17; transform: rotate(-25deg); }
+.secure-shell .secure-welcome h2 { color: #173f31; font-size: clamp(32px, 4vw, 50px); font-weight: 400; letter-spacing: -.045em; }
+.secure-shell .secure-welcome p { color: #415c4d; max-width: 400px; line-height: 1.65; }
+.secure-shell .secure-welcome > span { color: #47614b; font-size: 10px; letter-spacing: .15em; }
+.secure-shell .secure-metrics .panel { transition: transform 250ms ease, box-shadow 250ms ease; }
+.secure-shell .secure-metrics strong { font-weight: 400; letter-spacing: -.05em; color: #1f4837; }
+.secure-shell .secure-list article { padding: 18px 10px; border-radius: 12px; transition: background 180ms; }
+.secure-shell .academic-note { border-radius: 14px; }
+.secure-shell .secure-main button:not(.primary-button) { border-radius: 13px; background-color: #ffffff80; border-color: #ffffffb3; box-shadow: inset 0 1px 0 #fff9, 0 3px 10px -6px #173f3140; }
+.secure-shell .secure-main button[aria-pressed="true"] { background: #23553f; color: #fff9e7; }
+.secure-shell .primary-button { border: 1px solid #ffffff45; background: linear-gradient(145deg, #376951, #173f31); box-shadow: inset 0 1px 0 #ffffff35, 0 9px 20px -12px #143f30aa; }
+.secure-shell .secure-form :is(input, select, textarea) { background: #ffffff8c; border: 1px solid #8ba28d80; border-radius: 13px; box-shadow: inset 0 1px 3px #213b2b05; }
+.secure-shell .secure-form select option { color: #173f31; background: #f5f6f0; }
+.glass-view { animation: glass-arrive 350ms cubic-bezier(.2,.8,.2,1) both; }
+.glass-navigation :focus-visible, .glass-menu-trigger:focus-visible { outline: 3px solid #e0c681; outline-offset: 3px; }
+@keyframes glass-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (hover: hover) and (pointer: fine) {
+  .secure-shell .secure-metrics .panel:hover { transform: translateY(-4px) scale(1.018); box-shadow: inset 0 1px 0 white, 0 20px 40px -20px #29463250; }
+  .secure-shell .secure-list article:hover { background: #ffffff6b; }
+}
+@media (min-width: 701px) and (max-height: 780px) {
+  .glass-navigation { inset-block: 14px; padding-block: 14px; }
+  .glass-brand { padding-bottom: 16px; }
+  .glass-profile { padding-top: 16px; }
+  .glass-private { display: none; }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .secure-shell { padding-left: 274px; padding-right: 16px; }
+  .glass-navigation { left: 14px; width: 240px; }
+}
+@media (max-width: 700px) {
+  .secure-shell { padding: 0; min-height: 100dvh; }
+  .secure-shell .secure-main { padding: calc(34px + env(safe-area-inset-top)) 18px 24px; }
+  .secure-shell .secure-header { padding-right: 60px; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; }
+  .secure-shell .secure-header h1 { font-size: 34px; }
+  .secure-shell .secure-header button { max-width: none; min-height: 38px; font-size: 11px; padding: 9px 14px; }
+  .glass-menu-trigger {
+    display: grid; align-content: center; justify-items: center; gap: 6px;
+    position: fixed; z-index: 65; right: 18px; top: calc(22px + env(safe-area-inset-top));
+    width: 50px; height: 50px; border-radius: 50%; border: 1px solid #ffffffaa;
+    background: linear-gradient(140deg, #e9f0e3bb, #c5d5bfb8); color: #173f31;
+    -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px);
+    box-shadow: inset 0 1px 0 #fff, 0 7px 24px #203f3026;
+    transition: background 240ms, transform 240ms;
+  }
+  .glass-menu-trigger span { display: block; width: 18px; height: 1.5px; background: currentColor; transition: transform 320ms cubic-bezier(.2,.8,.2,1); }
+  .glass-menu-trigger.is-open span:first-child { transform: translateY(3.75px) rotate(45deg); }
+  .glass-menu-trigger.is-open span:last-child { transform: translateY(-3.75px) rotate(-45deg); }
+  .glass-scrim { display: block; position: fixed; z-index: 50; inset: 0; border: 0; background: #173f3140; -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); animation: glass-arrive 220ms ease both; }
+  .glass-navigation {
+    z-index: 60; inset: calc(84px + env(safe-area-inset-top)) 14px auto auto;
+    width: min(340px, calc(100vw - 28px)); max-height: calc(100dvh - 104px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding: 20px 18px; border-radius: 28px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform-origin: top right; transform: translateY(-14px) scale(.86);
+    transition: opacity 240ms ease, transform 400ms cubic-bezier(.16,1,.3,1), visibility 400ms;
+  }
+  .glass-navigation.is-open { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+  .glass-brand { padding-bottom: 18px; }
+  .glass-navigation nav button { font-size: 13px; }
+  .glass-profile { padding-top: 20px; }
+  .glass-private { display: none; }
+  .secure-shell .panel { padding: 23px 20px; border-radius: 22px; }
+  .secure-shell .secure-welcome { padding: 28px 24px; }
+  .secure-shell .secure-metrics { gap: 8px; }
+  .secure-shell .secure-metrics .panel { padding: 20px 10px; border-radius: 18px; }
+  .secure-shell .secure-metrics strong { font-size: 30px; }
+  .secure-shell .secure-metrics span { font-size: 11px; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-navigation { background: #254d3f; }
+  .secure-shell .panel { background: #f8faf4; }
+  .glass-menu-trigger { background: #dfebd8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass-navigation, .glass-navigation *, .glass-menu-trigger, .glass-menu-trigger *, .glass-view, .glass-scrim, .secure-shell .secure-metrics .panel { animation: none !important; transition: none !important; }
+  .glass-navigation nav button, .glass-nav-icon, .secure-shell .secure-metrics .panel:hover { transform: none; }
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-16T00:43:25.457Z",
+  "origin": "https://sigaa.ignisert.com",
+  "checks": [
+    {
+      "role": "admin",
+      "result": "passed",
+      "courses": 4,
+      "teachers": 4,
+      "assignments": 16
+    },
+    {
+      "role": "inspector",
+      "result": "passed",
+      "alerts": 80,
+      "justifications": 12,
+      "adminAccessDenied": true
+    },
+    {
+      "role": "teacher",
+      "result": "passed",
+      "assignments": 4,
+      "studentsPerCourse": 20,
+      "gradesPerSubject": 40
+    },
+    {
+      "role": "student",
+      "result": "passed",
+      "grades": 8,
+      "attendance": 16,
+      "annotations": 2,
+      "otherStudentDenied": true,
+      "teacherAndAdminDenied": true
+    }
+  ],
+  "academicWrites": false,
+  "result": "passed"
+}

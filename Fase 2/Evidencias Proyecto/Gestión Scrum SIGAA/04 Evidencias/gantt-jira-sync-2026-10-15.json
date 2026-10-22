@@ -1,0 +1,953 @@
+{
+  "cutoff": "2026-10-15",
+  "verifiedAt": "2026-10-15T23:06:53.808Z",
+  "project": "SCRUM",
+  "board": 1,
+  "repositoryBranch": "rama histórica",
+  "workbook": "Gestión Scrum SIGAA/05 Planificación/Carta Gantt SIGAA por sprints.xlsx",
+  "scope": "Planificación de trabajo restante. No aceptación, reuniones ni ejecución retroactiva.",
+  "counts": {
+    "issuesBefore": 114,
+    "issuesAfter": 114,
+    "stories": 40,
+    "points": 255
+  },
+  "sprints": [
+    {
+      "id": 1,
+      "state": "active",
+      "name": "Sprint 1 - Histórico",
+      "startDate": "2026-10-14T23:02:14.245Z",
+      "endDate": "2026-10-28T23:02:00.000Z",
+      "originBoardId": 1,
+      "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+    },
+    {
+      "id": 2,
+      "state": "active",
+      "name": "Sprint 3 - Actual",
+      "startDate": "2026-09-24T22:42:35.000Z",
+      "endDate": "2026-10-08T22:42:35.000Z",
+      "originBoardId": 1,
+      "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas."
+    },
+    {
+      "id": 37,
+      "state": "active",
+      "name": "Sprint 4 - Asistencia/Alertas",
+      "startDate": "2026-10-05T12:00:00.000Z",
+      "endDate": "2026-10-17T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2."
+    },
+    {
+      "id": 3,
+      "state": "future",
+      "name": "Sprint 2 - Histórico",
+      "originBoardId": 1,
+      "goal": "Preparar la base técnica e iniciar la estructura escolar y el entorno reproducible."
+    },
+    {
+      "id": 4,
+      "state": "future",
+      "name": "Sprint 0 - Histórico",
+      "originBoardId": 1,
+      "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+    },
+    {
+      "id": 38,
+      "state": "future",
+      "name": "Sprint 5 - Seguimiento",
+      "startDate": "2026-10-19T12:00:00.000Z",
+      "endDate": "2026-10-31T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Planificar casos, ficha integral y apoderados; avisos según capacidad. Carta Gantt 15-10-2026. Reuniones y aceptación se registrarán cuando ocurran."
+    },
+    {
+      "id": 39,
+      "state": "future",
+      "name": "Sprint 7 - Entrega",
+      "startDate": "2026-11-16T12:00:00.000Z",
+      "endDate": "2026-11-28T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Entrega y presentación de Fase 2 del 16 al 21 de noviembre; correcciones y retrospectiva tras feedback. Defensa final 30 de noviembre al 12 de diciembre se mantiene fuera de esta ventana."
+    },
+    {
+      "id": 40,
+      "state": "future",
+      "name": "Sprint 6 - Calidad",
+      "startDate": "2026-11-02T12:00:00.000Z",
+      "endDate": "2026-11-14T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Indicadores, auditoría, pruebas integrales, manuales y preparación de entrega. Incluir prueba aislada de respaldo/restauración. Sin declarar aceptación ni ceremonias realizadas."
+    }
+  ],
+  "storyCountsBySprint": {
+    "1": {
+      "stories": 9,
+      "points": 67
+    },
+    "2": {
+      "stories": 4,
+      "points": 29
+    },
+    "3": {
+      "stories": 2,
+      "points": 13
+    },
+    "4": {
+      "stories": 5,
+      "points": 18
+    },
+    "37": {
+      "stories": 6,
+      "points": 42
+    },
+    "38": {
+      "stories": 4,
+      "points": 26
+    },
+    "39": {
+      "stories": 1,
+      "points": 8
+    },
+    "40": {
+      "stories": 6,
+      "points": 37
+    },
+    "backlog": {
+      "stories": 3,
+      "points": 15
+    }
+  },
+  "before": [
+    {
+      "key": "SCRUM-13",
+      "status": "En revisión",
+      "sprint": 4,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-14",
+      "status": "En revisión",
+      "sprint": 4,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-15",
+      "status": "En revisión",
+      "sprint": 4,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-16",
+      "status": "En revisión",
+      "sprint": 4,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-17",
+      "status": "En revisión",
+      "sprint": 4,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-18",
+      "status": "Terminada",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-19",
+      "status": "En revisión",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-20",
+      "status": "En revisión",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-21",
+      "status": "En curso",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-22",
+      "status": "En revisión",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-23",
+      "status": "En revisión",
+      "sprint": 2,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-24",
+      "status": "En revisión",
+      "sprint": 2,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-25",
+      "status": "En revisión",
+      "sprint": 3,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-26",
+      "status": "En revisión",
+      "sprint": 3,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-27",
+      "status": "En revisión",
+      "sprint": 2,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-28",
+      "status": "En revisión",
+      "sprint": 2,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-29",
+      "status": "En revisión",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-30",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-31",
+      "status": "En revisión",
+      "sprint": 37,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-32",
+      "status": "En revisión",
+      "sprint": 37,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-33",
+      "status": "En revisión",
+      "sprint": 37,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-34",
+      "status": "En revisión",
+      "sprint": 37,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-35",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-36",
+      "status": "En curso",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-37",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-38",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-39",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-40",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-41",
+      "status": "En curso",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-42",
+      "status": "En revisión",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-43",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-44",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-45",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-46",
+      "status": "Pendiente",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-47",
+      "status": "Terminada",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-48",
+      "status": "En curso",
+      "sprint": null,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-49",
+      "status": "En revisión",
+      "sprint": 37,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-50",
+      "status": "En revisión",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-51",
+      "status": "En curso",
+      "sprint": 1,
+      "duedate": null
+    },
+    {
+      "key": "SCRUM-52",
+      "status": "En curso",
+      "sprint": 1,
+      "duedate": null
+    }
+  ],
+  "after": [
+    {
+      "key": "SCRUM-13",
+      "summary": "PB-001 Validar problema usuarios y restricciones",
+      "status": "En revisión",
+      "sprint": 4,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-14",
+      "summary": "PB-002 Product Vision y cuatro pilares",
+      "status": "En revisión",
+      "sprint": 4,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 3
+    },
+    {
+      "key": "SCRUM-15",
+      "summary": "PB-003 Backlog priorizado y estimado",
+      "status": "En revisión",
+      "sprint": 4,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-16",
+      "summary": "PB-004 Definition of Done",
+      "status": "En revisión",
+      "sprint": 4,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 2
+    },
+    {
+      "key": "SCRUM-17",
+      "summary": "PB-005 Repositorio README y trazabilidad",
+      "status": "En revisión",
+      "sprint": 4,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 3
+    },
+    {
+      "key": "SCRUM-18",
+      "summary": "PB-006 Arquitectura y decisiones técnicas",
+      "status": "Terminada",
+      "sprint": 1,
+      "start": null,
+      "end": null,
+      "points": 5
+    },
+    {
+      "key": "SCRUM-19",
+      "summary": "PB-007 Modelo ER y diccionario de datos",
+      "status": "En revisión",
+      "sprint": 1,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-20",
+      "summary": "PB-008 Prototipo navegable validado",
+      "status": "En revisión",
+      "sprint": 1,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-21",
+      "summary": "PB-009 UML de flujos principales",
+      "status": "En curso",
+      "sprint": 1,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-22",
+      "summary": "PB-010 Entrega y presentación Fase 1",
+      "status": "En revisión",
+      "sprint": 1,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-23",
+      "summary": "PB-011 Autenticación segura",
+      "status": "En revisión",
+      "sprint": 2,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-24",
+      "summary": "PB-012 Roles y permisos",
+      "status": "En revisión",
+      "sprint": 2,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-25",
+      "summary": "PB-013 Estructura escolar",
+      "status": "En revisión",
+      "sprint": 3,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-26",
+      "summary": "PB-014 Entorno Docker reproducible",
+      "status": "En revisión",
+      "sprint": 3,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-27",
+      "summary": "PB-015 Gestión de estudiantes",
+      "status": "En revisión",
+      "sprint": 2,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-28",
+      "summary": "PB-016 Matrículas",
+      "status": "En revisión",
+      "sprint": 2,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-29",
+      "summary": "PB-017 Evaluaciones y calificaciones",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-30",
+      "summary": "PB-018 Importación validada",
+      "status": "Pendiente",
+      "sprint": null,
+      "start": null,
+      "end": null,
+      "points": 5
+    },
+    {
+      "key": "SCRUM-31",
+      "summary": "PB-019 Registro de asistencia",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-32",
+      "summary": "PB-020 Tres reglas explicables de alerta",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-33",
+      "summary": "PB-021 Bandeja y dashboard inicial de alertas",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-34",
+      "summary": "PB-022 Entrega de avance Fase 2",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-35",
+      "summary": "PB-023 Casos de seguimiento",
+      "status": "Pendiente",
+      "sprint": 38,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-36",
+      "summary": "PB-024 Ficha integral del estudiante",
+      "status": "Pendiente",
+      "sprint": 38,
+      "start": "2026-10-19",
+      "end": "2026-10-31",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-37",
+      "summary": "PB-025 Notificaciones",
+      "status": "Pendiente",
+      "sprint": 38,
+      "start": "2026-10-26",
+      "end": "2026-10-31",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-38",
+      "summary": "PB-026 Indicadores agregados",
+      "status": "Pendiente",
+      "sprint": 40,
+      "start": "2026-11-02",
+      "end": "2026-11-07",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-39",
+      "summary": "PB-027 Exportación de reportes",
+      "status": "Pendiente",
+      "sprint": null,
+      "start": null,
+      "end": null,
+      "points": 5
+    },
+    {
+      "key": "SCRUM-40",
+      "summary": "PB-028 Auditoría de cambios sensibles",
+      "status": "Pendiente",
+      "sprint": 40,
+      "start": "2026-11-02",
+      "end": "2026-11-07",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-41",
+      "summary": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso",
+      "sprint": 40,
+      "start": "2026-11-02",
+      "end": "2026-11-14",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-42",
+      "summary": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión",
+      "sprint": 40,
+      "start": "2026-11-09",
+      "end": "2026-11-14",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-43",
+      "summary": "PB-031 Manual de usuario",
+      "status": "Pendiente",
+      "sprint": 40,
+      "start": "2026-11-09",
+      "end": "2026-11-14",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-44",
+      "summary": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente",
+      "sprint": 40,
+      "start": "2026-11-09",
+      "end": "2026-11-14",
+      "points": 3
+    },
+    {
+      "key": "SCRUM-45",
+      "summary": "PB-033 Entrega final Fase 2",
+      "status": "Pendiente",
+      "sprint": 39,
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "points": 8
+    },
+    {
+      "key": "SCRUM-46",
+      "summary": "PB-034 Defensa y retrospectiva del proyecto",
+      "status": "Pendiente",
+      "sprint": null,
+      "start": "2026-11-23",
+      "end": "2026-12-12",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-47",
+      "summary": "PB-035 Corregir dominio universitario a escolar",
+      "status": "Terminada",
+      "sprint": 1,
+      "start": null,
+      "end": null,
+      "points": 8
+    },
+    {
+      "key": "SCRUM-48",
+      "summary": "PB-036 Gestión de apoderados",
+      "status": "Pendiente",
+      "sprint": 38,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-49",
+      "summary": "PB-037 Justificaciones por Inspectoría",
+      "status": "En revisión",
+      "sprint": 37,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 5
+    },
+    {
+      "key": "SCRUM-50",
+      "summary": "PB-038 Modelo docente",
+      "status": "En revisión",
+      "sprint": 1,
+      "start": "2026-10-15",
+      "end": "2026-10-17",
+      "points": 13
+    },
+    {
+      "key": "SCRUM-51",
+      "summary": "PB-039 Modelo estudiante",
+      "status": "En curso",
+      "sprint": 1,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 13
+    },
+    {
+      "key": "SCRUM-52",
+      "summary": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "sprint": 1,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "points": 8
+    }
+  ],
+  "operations": {
+    "createdIssues": 0,
+    "createdSprints": [
+      38,
+      40,
+      39
+    ],
+    "movedStories": {
+      "37": [
+        "SCRUM-29"
+      ],
+      "38": [
+        "SCRUM-35",
+        "SCRUM-36",
+        "SCRUM-37",
+        "SCRUM-48"
+      ],
+      "39": [
+        "SCRUM-45"
+      ],
+      "40": [
+        "SCRUM-38",
+        "SCRUM-40",
+        "SCRUM-41",
+        "SCRUM-42",
+        "SCRUM-43",
+        "SCRUM-44"
+      ]
+    },
+    "updatedStories": [
+      {
+        "key": "SCRUM-15",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-13",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-14",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-16",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-18",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-20",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-17",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-19",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-22",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-21",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-47",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-50",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-51",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-52",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-25",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-26",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-23",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-24",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-27",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-28",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-31",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-34",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-32",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-33",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-49",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-29",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-35",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-36",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-40",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-48",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-37",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-38",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-41",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-43",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-44",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-42",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-46",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-39",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-30",
+        "ok": true
+      },
+      {
+        "key": "SCRUM-45",
+        "ok": true
+      }
+    ],
+    "coordinationIssues": [
+      "SCRUM-77",
+      "SCRUM-78",
+      "SCRUM-81",
+      "SCRUM-84",
+      "SCRUM-85"
+    ],
+    "extraActivityReferences": {
+      "OPS-01": "SCRUM-52",
+      "OPS-02": "SCRUM-41",
+      "GEST-S5": "SCRUM-77/78/81/84/85",
+      "GEST-S6": "SCRUM-77/78/81/84/85",
+      "GEST-S7": "SCRUM-77/78/81/84/85"
+    },
+    "transitionsRequested": 0,
+    "closedSprints": 0,
+    "startedSprints": 0
+  },
+  "observedChangesNotRequested": [
+    "Sprint 1 pasó de future sin fechas a active con ventana 14–28 octubre entre lecturas. No se invocó start ni update sobre ese sprint.",
+    "SCRUM-36 y SCRUM-48 pasaron de En curso a Pendiente entre lecturas, con cambios de estado separados de nuestras ediciones de descripción y fechas. Se conservó el estado leído; causa no atribuida."
+  ],
+  "verification": {
+    "duplicateStoryIds": 0,
+    "duplicateIssueKeys": 0,
+    "duplicateSprintNumbers": 0,
+    "dateMismatches": [],
+    "optionalItemsWithoutDate": [
+      "SCRUM-30",
+      "SCRUM-39"
+    ],
+    "defenseOutsideSprint": "SCRUM-46",
+    "assigneesNotChanged": true,
+    "statusTransitionsNotRequested": true
+  }
+}

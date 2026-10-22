@@ -1,0 +1,22 @@
+{
+  "name": "@sigaa/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/security.test.js",
+    "test:integration": "node --test --test-concurrency=1 test/integration.test.js test/operations.test.js",
+    "migrate": "node src/migrate.js",
+    "user:create": "node src/manage-user.js",
+    "seed:local": "node src/seed-local.js"
+  },
+  "dependencies": {
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "pg": "8.23.0"
+  }
+}

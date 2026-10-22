@@ -1,0 +1,10 @@
+.env
+.env.server
+.secrets/
+**/node_modules/
+**/dist/
+**/coverage/
+*.log
+.DS_Store
+tmp/
+*.inspect.ndjson

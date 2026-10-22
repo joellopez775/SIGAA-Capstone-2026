@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "version": "0.8.0",
+  "server": "servidor-privado",
+  "migration": "008_school_operations.sql",
+  "backupBytes": 111842,
+  "backupInventoryVerified": true,
+  "backupRestoreTestedThisTurn": false,
+  "previousDataPreserved": true,
+  "seedApplied": false,
+  "tunnelRecreated": false,
+  "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+  "newRolesProvisioned": ["ADMINISTRADOR", "INSPECTORIA"],
+  "credentialsInRepository": false,
+  "limitations": ["Temporary tunnel", "Institutional validation and Product Owner acceptance pending", "No claim of TLS on private API to database segment"]
+}

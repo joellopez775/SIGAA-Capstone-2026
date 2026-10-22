@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-15T20:53:36.787Z",
+  "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+  "browser": "Chromium",
+  "checks": [
+    {
+      "role": "admin",
+      "width": 768,
+      "height": 1024,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "admin",
+      "width": 390,
+      "height": 844,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "admin",
+      "width": 320,
+      "height": 740,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "admin",
+      "width": 844,
+      "height": 390,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "inspector",
+      "width": 768,
+      "height": 1024,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "inspector",
+      "width": 390,
+      "height": 844,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "inspector",
+      "width": 320,
+      "height": 740,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "inspector",
+      "width": 844,
+      "height": 390,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "teacher",
+      "width": 768,
+      "height": 1024,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "teacher",
+      "width": 390,
+      "height": 844,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "teacher",
+      "width": 320,
+      "height": 740,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "teacher",
+      "width": 844,
+      "height": 390,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "student",
+      "width": 768,
+      "height": 1024,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    },
+    {
+      "role": "student",
+      "width": 390,
+      "height": 844,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "student",
+      "width": 320,
+      "height": 740,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "escape,focus return,focus containment"
+    },
+    {
+      "role": "student",
+      "width": 844,
+      "height": 390,
+      "navigation": true,
+      "overflow": false,
+      "keyboard": "desktop"
+    }
+  ],
+  "academicWrites": false,
+  "result": "passed"
+}

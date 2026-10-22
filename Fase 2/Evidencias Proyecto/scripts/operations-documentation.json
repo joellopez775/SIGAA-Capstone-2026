@@ -1,0 +1,62 @@
+[
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 2/01-sprint-backlog.md",
+    "output": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/01-sprint-backlog.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 2/02-scrumboard.md",
+    "output": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/02-scrumboard.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 2/04-sprint-review.md",
+    "output": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/04-sprint-review.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 2/08-release.md",
+    "output": "Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/08-release.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 4/02 Sprint Backlog 4.md",
+    "output": "SIGAA/output/pdf/Sprint 4/02 Sprint Backlog 4.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 4/03 Scrumboard Sprint 4.md",
+    "output": "SIGAA/output/pdf/Sprint 4/03 Scrumboard Sprint 4.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 4/06 Release Sprint 4.md",
+    "output": "SIGAA/output/pdf/Sprint 4/06 Release Sprint 4.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 4/07 Review Sprint 4.md",
+    "output": "SIGAA/output/pdf/Sprint 4/07 Review Sprint 4.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/02 Sprints/Sprint 4/09 Informe de Avance Fase 2.md",
+    "output": "SIGAA/output/pdf/Sprint 4/09 Informe de Avance Fase 2.pdf"
+  },
+  {
+    "source": "SIGAA/docs/defensa/02-arquitectura-vigente.md",
+    "output": "SIGAA/output/pdf/Arquitectura de Software - SIGAA.pdf"
+  },
+  {
+    "source": "SIGAA/docs/defensa/03-datos-vigentes.md",
+    "output": "SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/01 Producto/06 Épicas y Product Backlog.md",
+    "output": "Gestión Scrum SIGAA/PDF/01 Producto/06 Épicas y Product Backlog.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/README.md",
+    "output": "Gestión Scrum SIGAA/PDF/README.pdf"
+  },
+  {
+    "source": "SIGAA/docs/08-matriz-cumplimiento-capstone.md",
+    "output": "SIGAA/output/pdf/Control documental Capstone - SIGAA.pdf"
+  },
+  {
+    "source": "Gestión Scrum SIGAA/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.md",
+    "output": "Gestión Scrum SIGAA/PDF/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.pdf"
+  }
+]

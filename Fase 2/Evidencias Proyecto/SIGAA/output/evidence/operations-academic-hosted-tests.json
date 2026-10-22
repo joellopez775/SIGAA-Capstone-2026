@@ -1,0 +1,54 @@
+{
+  "origin": "https://winter-mount-aluminum-removable.trycloudflare.com",
+  "date": "2026-10-15T20:34:51.438Z",
+  "checks": [
+    {
+      "role": "teacher",
+      "width": 1440,
+      "login": true,
+      "cookieSecure": true,
+      "courseLinked": true,
+      "sessionReload": true,
+      "csrfReject": true,
+      "logout": true,
+      "noHorizontalOverflow": true,
+      "academicScreens": true
+    },
+    {
+      "role": "student",
+      "width": 1440,
+      "login": true,
+      "cookieSecure": true,
+      "courseLinked": true,
+      "sessionReload": true,
+      "csrfReject": true,
+      "logout": true,
+      "noHorizontalOverflow": true,
+      "academicScreens": true
+    },
+    {
+      "role": "teacher",
+      "width": 390,
+      "login": true,
+      "cookieSecure": true,
+      "courseLinked": true,
+      "sessionReload": true,
+      "csrfReject": true,
+      "logout": true,
+      "noHorizontalOverflow": true,
+      "academicScreens": true
+    },
+    {
+      "role": "student",
+      "width": 390,
+      "login": true,
+      "cookieSecure": true,
+      "courseLinked": true,
+      "sessionReload": true,
+      "csrfReject": true,
+      "logout": true,
+      "noHorizontalOverflow": true,
+      "academicScreens": true
+    }
+  ]
+}

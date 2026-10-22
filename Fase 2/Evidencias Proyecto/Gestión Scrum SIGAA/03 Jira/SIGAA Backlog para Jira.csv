@@ -1,0 +1,61 @@
+Work item ID,Work type,Parent,Summary,Description,Priority,Status,Story Points,Labels,Sprint
+1,Epic,,Descubrimiento y producto,"Problema, usuarios, visión y backlog validados.",Highest,In Progress,,epica-producto,
+2,Epic,,Diseño y arquitectura,"Arquitectura, modelo de datos, UML, API y requisitos no funcionales coherentes.",Highest,In Progress,,epica-arquitectura,
+3,Epic,,Seguridad y plataforma,"Autenticación, autorización por rol, Docker e integración continua.",Highest,To Do,,epica-seguridad,
+4,Epic,,Gestión escolar,"Establecimiento, cursos, estudiantes, apoderados, matrículas, evaluaciones y notas.",Highest,To Do,,epica-gestion-escolar,
+5,Epic,,Asistencia y alertas,"Registro de asistencia, reglas explicables y bandeja de alertas.",High,To Do,,epica-alertas,
+6,Epic,,Seguimiento,"Casos, intervenciones, ficha integral y avisos.",High,To Do,,epica-seguimiento,
+7,Epic,,Analítica y auditoría,"Indicadores, reportes y trazabilidad de cambios sensibles.",Medium,To Do,,epica-analitica,
+8,Epic,,Calidad y cierre,"Pruebas, manuales, despliegue, entrega y defensa.",Highest,To Do,,epica-cierre,
+101,Story,1,PB-001 Validar problema usuarios y restricciones,"Confirmar el problema escolar, los usuarios y las restricciones del proyecto.",Highest,In Progress,5,sprint-0,Sprint 0
+102,Story,1,PB-002 Product Vision y cuatro pilares,"Definir y validar la visión del producto y sus cuatro pilares.",Highest,In Progress,3,sprint-0,Sprint 0
+103,Story,1,PB-003 Backlog priorizado y estimado,"Mantener un backlog ordenado, estimado y trazable.",Highest,In Progress,5,sprint-0,Sprint 0
+104,Story,1,PB-004 Definition of Done,"Acordar las condiciones mínimas para considerar terminado un trabajo.",Highest,In Progress,2,sprint-0,Sprint 0
+105,Story,1,PB-005 Repositorio README y trazabilidad,"Disponer de repositorio, instrucciones y evidencias enlazadas.",Highest,In Progress,3,sprint-0,Sprint 0
+106,Story,2,PB-006 Arquitectura y decisiones técnicas,"Definir componentes, responsabilidades e integraciones del sistema.",Highest,In Progress,5,sprint-1,Sprint 1
+107,Story,2,PB-007 Modelo ER y diccionario de datos,"Modelar la información escolar y documentar entidades y campos.",Highest,In Progress,5,sprint-1,Sprint 1
+108,Story,2,PB-008 Prototipo navegable validado,"Demostrar las vistas de profesor y estudiante y registrar validación.",Highest,In Progress,5,sprint-1,Sprint 1
+109,Story,2,PB-009 UML de flujos principales,"Documentar actores, casos de uso y secuencias principales.",Highest,In Progress,5,sprint-1,Sprint 1
+110,Story,2,PB-010 Entrega y presentación Fase 1,"Preparar entrega, feedback y ensayo de la primera fase.",Highest,In Progress,5,sprint-1,Sprint 1
+111,Story,3,PB-011 Autenticación segura,"Como usuario de SIGAA quiero iniciar una sesión segura para acceder solamente a mi información.",Highest,To Do,8,sprint-3,Sprint 3
+112,Story,3,PB-012 Roles y permisos,"Como establecimiento quiero restringir acciones por rol y alcance para proteger los datos escolares.",Highest,To Do,8,sprint-3,Sprint 3
+113,Story,4,PB-013 Estructura escolar,"Persistir establecimiento, año, niveles, cursos y asignaturas.",Highest,In Progress,8,sprint-2,Sprint 2
+114,Story,3,PB-014 Entorno Docker reproducible,"Permitir ejecución consistente de web, API y base de datos.",Highest,In Progress,5,sprint-2,Sprint 2
+115,Story,4,PB-015 Gestión de estudiantes,"Como personal autorizado quiero crear y actualizar estudiantes para mantener registros vigentes.",Highest,To Do,8,sprint-3,Sprint 3
+116,Story,4,PB-016 Matrículas,"Como encargado académico quiero matricular un estudiante en un curso y periodo.",Highest,To Do,5,sprint-3,Sprint 3
+117,Story,4,PB-017 Evaluaciones y calificaciones,"Permitir al profesor crear evaluaciones y registrar calificaciones.",Highest,To Do,8,sprint-3,Sprint 3
+118,Story,4,PB-018 Importación validada,"Importar datos escolares con validación y reporte de errores.",Medium,To Do,5,sprint-3,Sprint 3
+119,Story,5,PB-019 Registro de asistencia,"Permitir al profesor registrar asistencia de sus cursos.",Highest,To Do,8,sprint-4,Sprint 4
+120,Story,5,PB-020 Tres reglas explicables de alerta,"Detectar riesgos mediante tres reglas comprensibles y auditables.",Highest,To Do,8,sprint-4,Sprint 4
+121,Story,5,PB-021 Bandeja y dashboard inicial de alertas,"Mostrar alertas priorizadas y un resumen accionable.",Highest,To Do,8,sprint-4,Sprint 4
+122,Story,5,PB-022 Entrega de avance Fase 2,"Preparar y presentar la evidencia del avance de desarrollo.",Highest,To Do,5,sprint-4,Sprint 4
+123,Story,6,PB-023 Casos de seguimiento,"Crear y gestionar casos derivados de alertas escolares.",Highest,To Do,8,sprint-5,Sprint 5
+124,Story,6,PB-024 Ficha integral del estudiante,"Consolidar información académica y de seguimiento autorizada.",Highest,To Do,8,sprint-5,Sprint 5
+125,Story,6,PB-025 Notificaciones,"Informar eventos relevantes a usuarios autorizados.",Medium,To Do,5,sprint-5,Sprint 5
+126,Story,7,PB-026 Indicadores agregados,"Mostrar indicadores académicos y de seguimiento sin exponer datos indebidos.",Medium,To Do,8,sprint-6,Sprint 6
+127,Story,7,PB-027 Exportación de reportes,"Exportar reportes autorizados para análisis y respaldo.",Low,To Do,5,sprint-6,Sprint 6
+128,Story,7,PB-028 Auditoría de cambios sensibles,"Registrar quién cambió datos sensibles, cuándo y qué cambió.",Highest,To Do,8,sprint-6,Sprint 6
+129,Story,8,PB-029 Pruebas integrales seguridad y rendimiento,"Verificar flujos críticos, permisos y comportamiento bajo carga definida.",Highest,To Do,8,sprint-6,Sprint 6
+130,Story,8,PB-030 Manual técnico y despliegue,"Documentar instalación, configuración, operación y recuperación.",Highest,To Do,5,sprint-7,Sprint 7
+131,Story,8,PB-031 Manual de usuario,"Explicar las operaciones principales por rol con ejemplos.",Medium,To Do,5,sprint-7,Sprint 7
+132,Story,8,PB-032 Innovación y propuesta de valor,"Demostrar el valor diferencial y la viabilidad de SIGAA.",Highest,To Do,3,sprint-7,Sprint 7
+133,Story,8,PB-033 Entrega final Fase 2,"Consolidar producto, documentación y evidencias de la fase.",Highest,To Do,8,sprint-7,Sprint 7
+134,Story,8,PB-034 Defensa y retrospectiva del proyecto,"Preparar defensa, responder observaciones y registrar aprendizajes.",Highest,To Do,5,release-final,Release final
+135,Story,2,PB-035 Corregir dominio universitario a escolar,"Validar que lenguaje, modelo y experiencia correspondan a liceos y colegios.",Highest,In Progress,8,sprint-1,Sprint 1
+136,Story,4,PB-036 Gestión de apoderados,"Gestionar apoderados y su vínculo autorizado con estudiantes.",Highest,To Do,5,sprint-3,Sprint 3
+137,Story,5,PB-037 Justificaciones por Inspectoría,"Registrar, revisar y resolver justificaciones de inasistencia.",Highest,To Do,5,sprint-4,Sprint 4
+138,Story,4,PB-038 Modelo docente,"Permitir cursos asignados, clases, asistencia, notas y anotaciones.",Highest,In Progress,13,sprint-1,Sprint 1
+139,Story,4,PB-039 Modelo estudiante,"Mostrar asignaturas, notas, asistencia, calendario y anotaciones visibles.",Highest,In Progress,13,sprint-1,Sprint 1
+140,Story,3,PB-040 Docker de equipo y aislamiento de servidor,"Permitir uso del sistema sin entregar acceso directo al servidor ni a PostgreSQL.",Highest,In Progress,8,sprint-1,Sprint 1
+201,Sub-task,111,SIGAA-011A Almacenar contraseñas con hash,"Implementar hash seguro y comprobar que ninguna contraseña quede en texto plano.",Highest,To Do,,owner-joel,Sprint 3
+202,Sub-task,111,SIGAA-011B Implementar sesión revocable y expirable,"Crear sesión segura, expiración y cierre de sesión con pruebas.",Highest,To Do,,owner-joel,Sprint 3
+203,Sub-task,111,SIGAA-011C Probar errores de autenticación,"Cubrir credenciales inválidas y respuesta genérica sin filtrar información.",High,To Do,,revision-cruzada,Sprint 3
+204,Sub-task,112,SIGAA-012A Definir matriz de permisos,"Documentar operaciones permitidas para profesor y estudiante.",Highest,To Do,,owner-agustin,Sprint 3
+205,Sub-task,112,SIGAA-012B Aplicar permisos en API,"Bloquear rutas fuera del rol y alcance del usuario.",Highest,To Do,,owner-agustin,Sprint 3
+206,Sub-task,112,SIGAA-012C Probar accesos permitidos y denegados,"Automatizar casos 200, 401 y 403 para ambos roles.",Highest,To Do,,revision-cruzada,Sprint 3
+207,Sub-task,115,SIGAA-015A Implementar repositorio PostgreSQL de estudiantes,"Crear lectura y escritura persistente sin datos simulados.",Highest,To Do,,owner-matias,Sprint 3
+208,Sub-task,115,SIGAA-015B Validar identificador y duplicados,"Rechazar datos incompletos o duplicados con mensajes controlados.",High,To Do,,owner-matias,Sprint 3
+209,Sub-task,115,SIGAA-015C Probar persistencia después de reinicio,"Comprobar que los registros sobreviven al reinicio de la API.",Highest,To Do,,revision-cruzada,Sprint 3
+210,Sub-task,116,SIGAA-016A Implementar reglas de matrícula,"Validar curso, periodo, estado y duplicidad activa.",Highest,To Do,,owner-equipo,Sprint 3
+211,Sub-task,116,SIGAA-016B Integrar matrícula en API e interfaz,"Conectar formulario, endpoint y persistencia PostgreSQL.",Highest,To Do,,owner-equipo,Sprint 3
+212,Sub-task,116,SIGAA-016C Probar y documentar matrícula,"Cubrir éxito, duplicidad y consulta tras reinicio; adjuntar evidencia.",High,To Do,,owner-equipo,Sprint 3

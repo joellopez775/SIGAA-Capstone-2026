@@ -1,0 +1,2001 @@
+{
+  "fecha": "2026-10-22",
+  "nota": "Inventario de la publicación inicial; excluye este archivo y dependencias locales.",
+  "archivos": [
+    {
+      "archivo": ".gitignore",
+      "bytes": 235,
+      "sha256": "d22063d6975df236fc93b64ac5b0467f883ff7337cc9e5eded0df1549e7aae2c"
+    },
+    {
+      "archivo": "ESTADO DE ENTREGAS.md",
+      "bytes": 2217,
+      "sha256": "447196accea7b52f0d3615e9b19e9f330def0ccb3a3fb490bd752a04aab9be33"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
+      "bytes": 58055,
+      "sha256": "37dd9547641c4645b59e5f394708cdb2fa3eda60fe18704964cde6814afe5296"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.pdf",
+      "bytes": 255274,
+      "sha256": "d549fcd01180de54f1ee553f4ca32ee7e3004324293b8b05d365cd089863bc2a"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/1.5_GuiaEstudiante_Fase 1_Definicion Proyecto APT (Español).docx",
+      "bytes": 156056,
+      "sha256": "b4b3a4fcf4acb64119120bcd00feb35a150c54265c8370b2de6ec23ee1fccc29"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/1.5_GuiaEstudiante_Fase 1_Definicion Proyecto APT (Español).pdf",
+      "bytes": 514116,
+      "sha256": "cdacf524363bc383dee59bc3e4fa72c51e5384501e1b683ccb879add07f31c3d"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/PLANILLA DE EVALUACIÓN FASE 1.xlsx",
+      "bytes": 39100,
+      "sha256": "988d8f25526ea1dab84defdd988165434057f76ea399808e103740e62dc57231"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/Presentación Proyecto.pdf",
+      "bytes": 371904,
+      "sha256": "9f761a7b59146967d2d9a9dc7eaa46f186917fb25abd8087e8d59060b4dce145"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/Presentación Proyecto.pptx",
+      "bytes": 115069,
+      "sha256": "238938e27208991974b5c15d3792aa533eeb10f8d0f1b8c9e9a04723ffa0830f"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/Primera reunión de equipo 4-08.docx",
+      "bytes": 11715,
+      "sha256": "2b1c08835d12c7f19a1a053b85013207ff170c767bd76570b20e83166b239475"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Grupales/Primera reunión de equipo 4-08.pdf",
+      "bytes": 19596,
+      "sha256": "fe11225c8cc35ef81569bb378ba9872de2816c006e9aa59a88070fe020f01208"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Lopez_Joel_1.1_APT122_AutoevaluacionCompetenciasFase1.docx",
+      "bytes": 887553,
+      "sha256": "7d477aba4e59a9a9224c740780af401de3d2bd0114c895911ee3eab01b7bd101"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Lopez_Joel_1.1_APT122_AutoevaluacionCompetenciasFase1.pdf",
+      "bytes": 151198,
+      "sha256": "b5ecbebe2e7e3c19e2b4c62c44b87b2cc961c5ec0e171b4832b83171e3338a30"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Lopez_Joel_1.3_APT122_AutoevaluacionFase1.docx",
+      "bytes": 59719,
+      "sha256": "dd73f0f8737c352bafa2af87ca67dc0fc41b21516f604ab70b252460b24a7ce5"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Lopez_Joel_1.3_APT122_AutoevaluacionFase1.pdf",
+      "bytes": 264786,
+      "sha256": "1e1485beda83411359a7c7a965e86ba42df1fb6d32f86631155486c7f8e0f849"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Martinez_Matias_1.3_APT122_AutoevaluacionFase1.docx",
+      "bytes": 59719,
+      "sha256": "dd73f0f8737c352bafa2af87ca67dc0fc41b21516f604ab70b252460b24a7ce5"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Martinez_Matias_1.3_APT122_AutoevaluacionFase1.pdf",
+      "bytes": 264786,
+      "sha256": "0fb274926d55ecbdd0a387443b553d5c6b6c20eae8703cef6645076b60dcc36c"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Sorolla_Agustin_1.1_APT122_AutoevaluacionCompetenciasFase1.docx",
+      "bytes": 887225,
+      "sha256": "a2bff4af56178a20d539f56b7bf6eba3b1e5d0dca93190296e68ad1ce8b48cff"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Sorolla_Agustin_1.1_APT122_AutoevaluacionCompetenciasFase1.pdf",
+      "bytes": 149192,
+      "sha256": "a2739d0551cf92f282d96625bc504104d2bd8e3cf593f901d94d35c3f41ec193"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Sorolla_Agustin_1.3_APT122_AutoevaluacionFase1.docx",
+      "bytes": 59719,
+      "sha256": "dd73f0f8737c352bafa2af87ca67dc0fc41b21516f604ab70b252460b24a7ce5"
+    },
+    {
+      "archivo": "Fase 1/Evidencias Individuales/Sorolla_Agustin_1.3_APT122_AutoevaluacionFase1.pdf",
+      "bytes": 264786,
+      "sha256": "250231eee5609fb0f6968c82eb97b195a1b233edde763593e9e8f167e5050954"
+    },
+    {
+      "archivo": "Fase 1/README.md",
+      "bytes": 1641,
+      "sha256": "c8f0913c1a6fe1a7ff304f10c94c5e569dfda27edd091ea91455f16c70b6f2f7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Grupales/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Grupales/Informe de avance Fase 2.pdf",
+      "bytes": 101849,
+      "sha256": "0328a53b1d244fc0d06f6134c4a3576361a09edeb14c8adae9dd53e6a319f069"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Individuales/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Individuales/Reflexión Fase 2 - Propuesta para revisión.pdf",
+      "bytes": 67214,
+      "sha256": "92acc15ef3bb692454d4a99c8693255ab58b7b1863b5e7ec98bc727ced7b8c28"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/01 Análisis del caso.md",
+      "bytes": 3112,
+      "sha256": "6495e9e2dd60d1e89090e01cc572fb1aa078c93a7591b0027f8f312f4e34fb56"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/02 Squad y responsabilidades.md",
+      "bytes": 1914,
+      "sha256": "a7e8718f2911ce23fe084455f09f50748b496075173500878a656664f0becb72"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/03 Mapa mental.md",
+      "bytes": 1241,
+      "sha256": "b9e4f4496df2f644dda22147f3e67ea22d12c1664eb8c1ccf953386bd9772245"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/04 Mapa de actores e Impact Mapping.md",
+      "bytes": 3550,
+      "sha256": "490e8bcdd4eef4c875756193458338b69e279be28f9c56e9a0d3d94349fd17fa"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/05 Visión del proyecto y cuatro pilares.md",
+      "bytes": 4807,
+      "sha256": "c919f214df6b350a0ee34cfdb541d3228bbd9a2d25e50ccf2889af8cdc89a5a2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/06 Épicas y Product Backlog.md",
+      "bytes": 7516,
+      "sha256": "fcaa28739c9f5c18476f575a67371668e68e2a80638044946532ec24db26388f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/07 Historias de usuario criterios y estimación.md",
+      "bytes": 14825,
+      "sha256": "6651362ba814b0ed74b75a8a580d0d34c7c2546c7df1e1f740bae1c793abdb01"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/08 User Story Mapping.md",
+      "bytes": 1954,
+      "sha256": "57a7d947dcade7e4e8fcab55550534fc567afa3f74d594be7af8735adee43371"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/09 Retrospectiva del proyecto.md",
+      "bytes": 1629,
+      "sha256": "f415bcf6074e0662218e365789255f373bc8e67ef496ebb7edcdf1a7c7abcd0b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/10 Definición de Terminado.md",
+      "bytes": 1514,
+      "sha256": "ba345a41c1024ff6e7b0c4a893f31c77e768cb3bc88c87989dabf85dd9a6688b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/01 Producto/11 Riesgos.md",
+      "bytes": 2267,
+      "sha256": "96bcd5fbae840fa03d7fe3387b3f13a671dc63ffc54f5fbfc5c77724468fe3b8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Reflexión Fase 2.md",
+      "bytes": 2739,
+      "sha256": "993cb73929c9d8bcd0248518ef9ebbca3559dde3cef4a3dc8eba7c1e69ee30d0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Registro consolidado de 21 Daily Scrum.md",
+      "bytes": 5296,
+      "sha256": "02fde940ae4fefa7d48299ee9b3f7456442a418bef9c7d97d54ea1e851ab0521"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/00-sprint-planning.md",
+      "bytes": 2296,
+      "sha256": "eb84c0a8c045f29e55e6a3e8cb24408dd3b16b3811ea644d37090300772a3d85"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/01-sprint-backlog.md",
+      "bytes": 2053,
+      "sha256": "9097f6d62dedc222451be68573cf172cb7f9b0fb790084091ca9b5524024c9d8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/02-scrumboard.md",
+      "bytes": 1465,
+      "sha256": "9b2cebda400f3f9b5639b61cc1007830e1f228002cde348e2b1dfd4a4e0790c7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/03-daily-e-impedimentos.md",
+      "bytes": 2238,
+      "sha256": "618ffa783b71e897f28b3dbb3b47ce1891a22fe85eeab8a76c79e530e68f93b2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/04-sprint-review.md",
+      "bytes": 2822,
+      "sha256": "af79f0b77bb0e81312aea0d9101fe26f59d278fda144595c7e8aabb96885755c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/05-retrospectiva.md",
+      "bytes": 2627,
+      "sha256": "1c730405e6c7dc1f0feae5d3a9ea2629eb27839cca0f8a6a57c570ecc0c3178f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/06-release-candidate.md",
+      "bytes": 1379,
+      "sha256": "479265406413e462958d9905235fc1423cb969ea3e3c2b5c195a771c1fe14361"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/07-informe-cierre.md",
+      "bytes": 5112,
+      "sha256": "11acaef04079ae048e2dfdff0d20cd86b3a4ef0574ff061492d3cc8ea8f5ee05"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 0/08-acta-aprobacion-po.md",
+      "bytes": 1286,
+      "sha256": "4b81200673122c3d92ed0f663a25b64c82f50c5241a6e7315843cc574299932a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/00-sprint-planning.md",
+      "bytes": 3221,
+      "sha256": "37ea7a121c346d70592b7b94e57f5315ca76a2f5f184887ada89cc4bd9ad1a81"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/01-sprint-backlog.md",
+      "bytes": 2706,
+      "sha256": "043c8756b4700ddfe2c286707f637870646991f393dd84d11de979387a725319"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/02-scrumboard.md",
+      "bytes": 2362,
+      "sha256": "84788455caec939adb4d7670fe1da3cd72a8bd30fba1e9f9c5f4505440f9bb09"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/03-daily-semana-3.md",
+      "bytes": 1561,
+      "sha256": "fe143e22d228cd10629307d00d1ab3289be7d72a19e5c2d3628c5fb0c40a2053"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/04-burndown.md",
+      "bytes": 1151,
+      "sha256": "f26958925923a4c08a5eb2e006fc43bc210264e56d09ddf3a54c1570c5a5ff57"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/05-evidencias-semana-3.md",
+      "bytes": 1800,
+      "sha256": "d1f290aae8bb88e2e507b38f19b8d51b954dad97f4a2eb346b4259fa459b7b75"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 1/06-retrospectiva.md",
+      "bytes": 1632,
+      "sha256": "15986cc40b9f318af49cc19315505cc386065f2c0bc8848eb4a0bc575f5708f2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/00-sprint-planning.md",
+      "bytes": 1819,
+      "sha256": "be9a0d5bdbebd2348249260c29c3238fd963c6fa18b7e0d83b53fbc92846a618"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/01-sprint-backlog.md",
+      "bytes": 1379,
+      "sha256": "3c64e282686254c379f68db85074a7973f8c31774271485c8748456b31a7c878"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/02-scrumboard.md",
+      "bytes": 1218,
+      "sha256": "41af06f2ac5617deb15deafe7d330e37aa5f291cc29800b943359e6c9b4a183a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/03-burndown.md",
+      "bytes": 1242,
+      "sha256": "a2a9644dd99fbba264cb30a32bf28ee5dd0ea80b6d66a8d04a1b9f82e210793d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/04-sprint-review.md",
+      "bytes": 2216,
+      "sha256": "e1b3f708fbf81f4c3a3532469a7f2f07001e850e92d27c2d021309167ef13d27"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/05-retrospectiva.md",
+      "bytes": 1669,
+      "sha256": "896bb799ba78ca18b55a73d70098a2ec6c4049bc19c49ee4e9237308efbb0b0e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/06-daily.md",
+      "bytes": 1645,
+      "sha256": "18352c625d750af44bf2c26c4a43532fa95e78d0ea788c8b20caddf3b0a2b304"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/07-impediment-log.md",
+      "bytes": 1637,
+      "sha256": "ea3861f7bae45537bca919a126b09be6503ce4c343aeeaa4aa8bebca89f42ea9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 2/08-release.md",
+      "bytes": 2428,
+      "sha256": "e44a33ba2d818506f11020debd1b9ae540b5707a7e68e9f0e7d75e930a63a5c5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/00-sprint-planning.md",
+      "bytes": 1905,
+      "sha256": "31c10886f98eeb09c111a52d4ed2d8aeb51afe537ec506df8232fb5fd44e284a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/01-sprint-backlog-y-jira.md",
+      "bytes": 1869,
+      "sha256": "6ac1371242d6569bfe78ed624a41d04027e50f8d07f94eaab3cf24f2c73a5160"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/02-guia-review-retro.md",
+      "bytes": 1218,
+      "sha256": "2b825a38a4ecadc366d84576f40b498e87ef2ef241f4f69a4d407a75ffa6747b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/03-scrumboard-jira.md",
+      "bytes": 1388,
+      "sha256": "fb2dfd63a3298c5adbb604c5c4ef0c1bca0c075fee82c9d248e0144aa63f431c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/04-burndown.md",
+      "bytes": 1258,
+      "sha256": "534f05909a8fee4c0f4e2c6a60c2efe57ac86a8fd70677b79011749aa19af37d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/05-daily.md",
+      "bytes": 1730,
+      "sha256": "898931f8e2f8f375cfcf7558009649ef9522f44eb01fde2206ab4b6319f89bf9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/06-impediment-log.md",
+      "bytes": 1739,
+      "sha256": "3e7f7c6fa9e90ff3a8ad3f354dc53d322c414e23995dd3c6adc8d7715dc0e235"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/07-release.md",
+      "bytes": 2323,
+      "sha256": "c6028111d43d2641eba862fcfbbf43007f58e2d5590c126abee68a15464aeb2c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/08-sprint-review.md",
+      "bytes": 2341,
+      "sha256": "3515a704f0a260f0557f27bc4f49b9fe6f582400fb6b04fbd14d8399f97d1219"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 3/09-retrospective.md",
+      "bytes": 1771,
+      "sha256": "e3563e2e118a9b697b0dd981472f480377d150d17e2637d7a277a676e69b539d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/01 Planificación Sprint 4.md",
+      "bytes": 1921,
+      "sha256": "a918a7606024f1e5f8dceec8ce30fc17542e50cfc8cdd258dbea02844640f078"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/02 Sprint Backlog 4.md",
+      "bytes": 2097,
+      "sha256": "8ec232905088729c66f9f606ef5c2d763d47274bb110ec872da63ae255b9aba3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/03 Scrumboard Sprint 4.md",
+      "bytes": 1427,
+      "sha256": "dd8d569ac17002c296c52c485e410c60c13434cbf395e86a0a6f0b765944e619"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/04 Burndown Sprint 4.md",
+      "bytes": 1278,
+      "sha256": "69ecad397419d925ba0dff46c53470e783a6e71159eb239e222543e5503e48eb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/05 Daily e Impedimentos Sprint 4.md",
+      "bytes": 2893,
+      "sha256": "780e8bd407a597707d97b4859060c75a3189fde6ffa52499c45439ee81da56cd"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/06 Release Sprint 4.md",
+      "bytes": 2461,
+      "sha256": "27f6486620c64a0d1cb8787ac286f12b7ca6c88c9d7ce7df2696565332400aaf"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/07 Review Sprint 4.md",
+      "bytes": 2524,
+      "sha256": "87ffdb63e5d0a0c0aa4d4a5096d2cfd07a1660154ccf55724a3eebdf6141872f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/08 Retrospectiva Sprint 4.md",
+      "bytes": 1648,
+      "sha256": "1914152cb76dfa7550980dc5f7cc2dc4c1fcb8e9e1f4d46e340c1d9c079a663e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/09 Informe de Avance Fase 2.md",
+      "bytes": 9848,
+      "sha256": "8c097c09bda9e8a09dea02077dbb2d4a0b8e2ba84a58d20cca67251dcab60254"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/02 Sprints/Sprint 4/10 Registro Jira Sprint Backlog 4.md",
+      "bytes": 1601,
+      "sha256": "01dca9a4daf405fe0d3d2a96a98c8abd262a6051ec957170f3d734ef10e2b3f4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Implementación/Diseño de cristal - Navegación e interacción.md",
+      "bytes": 3227,
+      "sha256": "bb09af5ecc8a1d62f539572ac0b694b339d418eaf2fbef891edafa01baf2c153"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.md",
+      "bytes": 11679,
+      "sha256": "7284f092849746ddc6512e4d67bf58f90bd664480820bb7066ea4bdbb0e99b2b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Jira/Guía de Jira SIGAA.md",
+      "bytes": 11496,
+      "sha256": "82c00ceb4e810e4403baf9f77acac95c18414ad3ffa9e4b39699fa066141675c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Jira/SIGAA Backlog para Jira.csv",
+      "bytes": 9210,
+      "sha256": "94e4c2b4b550f9d56c29f72e21852daabc143758c95e0e2bc9f4493aa16b06ea"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Jira/SIGAA Backlogs Daily y Retrospectivas para Jira.csv",
+      "bytes": 3854,
+      "sha256": "e0b45f7816d9fc3f4683199aa57ed6bcb05542ead3e84891f11d60c4c5977e95"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/03 Jira/SIGAA Entregables Scrum para Jira.csv",
+      "bytes": 3508,
+      "sha256": "192d5969fcae82cbb200e6e19c62ab97b61f24ab5ddc3b718381fa52a8c96be5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/Backlogs Daily y retrospectivas en Jira.md",
+      "bytes": 547,
+      "sha256": "b48a4eccfbba8aaa80d5a8f878d98afb9801afb1fcf8a6b063fe0f791b1f6c1d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/Registro de creación del expediente.md",
+      "bytes": 1105,
+      "sha256": "c409c9ef7c1b37af69efdb7a90f8c828983c0e820d16a083eb350db666978d31"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/gantt-jira-sync-2026-10-15.json",
+      "bytes": 20873,
+      "sha256": "4a48e78f7695fc74783a82dd55590a1e02492113ef6fce8f85b97f4beba55239"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/jira-corte-2026-10-15.json",
+      "bytes": 35748,
+      "sha256": "2b4bfcf6ff65516e115ddbafebe6653868a86bc14b3a4d1ddc1b6a40eb4475da"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/publicacion-documental-jira-2026-10-15.json",
+      "bytes": 1811,
+      "sha256": "15f9c6a3e9b86e336072a51e385cb0dbcbd9094734d27a6e07ef5f658ed2530e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/04 Evidencias/regularizacion-documental-2026-10-15.json",
+      "bytes": 9639,
+      "sha256": "54f3bea345dd361677e00b29e8d19cb56063afb4936b05113cf8afeaab263ee6"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/05 Planificación/Carta Gantt SIGAA por sprints.xlsx",
+      "bytes": 44476,
+      "sha256": "0420676a9443bd629e30dd59d08935f6db254abde24dbe3a481efca16e276650"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/01 Análisis del caso.pdf",
+      "bytes": 68247,
+      "sha256": "e534c4fa61a1e4b9d045f509c0eb84ac92e55e9be1c24b73c7be7801dd9409f8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/02 Squad y responsabilidades.pdf",
+      "bytes": 66888,
+      "sha256": "d62a3e8be53710ace8d35111e1e7668cf5f7cd3da62cd983a701f5ea0db4a8e5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/03 Mapa mental.pdf",
+      "bytes": 66533,
+      "sha256": "ee7df3294becbecdea5663769fb67ca817fd309ba75a38e05d3d055295680d5d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/04 Mapa de actores e Impact Mapping.pdf",
+      "bytes": 71875,
+      "sha256": "385ac4fb02d29ae10d44441b8d01584137df546f37d10646af2c09e18b091106"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/05 Visión del proyecto y cuatro pilares.pdf",
+      "bytes": 71317,
+      "sha256": "20c3ef9e2a4e30611dd03dd0babfe65af3b22fe484b7eed83bf39e5f93fa1e3f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/06 Épicas y Product Backlog.pdf",
+      "bytes": 73947,
+      "sha256": "53947fa17559b95de338bceb4aa80e4ad97220345d5f785f3bac413e15ea0d7e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/07 Historias de usuario criterios y estimación.pdf",
+      "bytes": 82325,
+      "sha256": "bb4f1786a8d0d2e500da8baca20d4d151252bb3c39b92d89427fa85ce34165e0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/08 User Story Mapping.pdf",
+      "bytes": 67692,
+      "sha256": "ff3b4300be689645086cd465041a11d2623487802cf08706f82140bc3bdafbb2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/09 Retrospectiva del proyecto.pdf",
+      "bytes": 66490,
+      "sha256": "11fa55d2209b32cebdb9c7225a7373a263aa46554a3e6196b8a6dbadad58f087"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/10 Definición de Terminado.pdf",
+      "bytes": 67166,
+      "sha256": "1d99045f68fde5d4e948cfeb4fa98be6586f36b59fc233080278f23c0dbd1303"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/01 Producto/11 Riesgos.pdf",
+      "bytes": 67123,
+      "sha256": "04d21ca8c595d24f1ecbe50d6dbdd735f986fd567a6eccb40f2ee677ca9e98d7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Reflexión Fase 2.pdf",
+      "bytes": 67214,
+      "sha256": "92acc15ef3bb692454d4a99c8693255ab58b7b1863b5e7ec98bc727ced7b8c28"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Registro consolidado de 21 Daily Scrum.pdf",
+      "bytes": 70764,
+      "sha256": "701036cdb6562ff207a4874bc6d463b9b25e133459124767324cba23ff8c5e37"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/00-sprint-planning.pdf",
+      "bytes": 68231,
+      "sha256": "863bb1ec046aaef650e33e4746be7e7ae2fb6c97eb0537e873a07d28ea85c78d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/01-sprint-backlog.pdf",
+      "bytes": 66867,
+      "sha256": "43e53b086ad278d42a147dfae1488346260af133dfba4805f58ac8ad7a104f3b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/02-scrumboard.pdf",
+      "bytes": 67073,
+      "sha256": "8d4a07fc575ea2a575eab4fd00b4a574f08529a809226c0794505c83cb7e84b2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/03-daily-e-impedimentos.pdf",
+      "bytes": 68827,
+      "sha256": "1383a8abd9dea0e7e692bd9976d8fcdda77b585660d600e663fd526ea30f21b5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/04-sprint-review.pdf",
+      "bytes": 68447,
+      "sha256": "1748ba6ec14f7795b4d3f21555fa8bf0e4dc4361881c6f2185ac2dff49671a92"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/05-retrospectiva.pdf",
+      "bytes": 68887,
+      "sha256": "4624e9e9b7fd850c6b817ace272bfa1c33074cd1275f334efcac5ce1f598b058"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/06-release-candidate.pdf",
+      "bytes": 66376,
+      "sha256": "69b29faac228c36e3f4d77c6d1742dc43b3c9155ed5961dc890a032fd55d6481"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/07-informe-cierre.pdf",
+      "bytes": 72360,
+      "sha256": "2cbcdb0f982ca85ad36680f9f8b62e370856ba6d8aabb417c4ab7e65e54accc7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 0/08-acta-aprobacion-po.pdf",
+      "bytes": 66773,
+      "sha256": "cb4810f388abc744035bbd29d4f684356134d25bb54d8b085c07ea3f376a2701"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/00-sprint-planning.pdf",
+      "bytes": 69818,
+      "sha256": "e481b677ec2b94121ea3adcc66137586a06cb2ceb262df98afcf93aed6ad1a6a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/01-sprint-backlog.pdf",
+      "bytes": 67497,
+      "sha256": "8e225fd1df19c8cdb1fbf753f34e242800588a3da42a24d6eb47a6ec5226534a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/02-scrumboard.pdf",
+      "bytes": 67704,
+      "sha256": "8c8cef1be50dcaabb2e1cefcd64f141068ee341854399759075ceb76af95b09f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/03-daily-semana-3.pdf",
+      "bytes": 66341,
+      "sha256": "e84dcb447a7d1ac5b6d78cf76b4f6108a9bd6296d6c7dd8b01d57063909b68b0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/04-burndown.pdf",
+      "bytes": 66153,
+      "sha256": "dd05322067e7d88eac12952bbedb6be292b1bbe3eb26ef4cb7ce3f6b6225f84c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/05-evidencias-semana-3.pdf",
+      "bytes": 67623,
+      "sha256": "a383789472d5051748795771470d2c381a91c00a3fd46bf5fc7db0cc2de4de16"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 1/06-retrospectiva.pdf",
+      "bytes": 66690,
+      "sha256": "f375782dbd5ed62ac8dad4537762dd437151531aed3bb96cda2b0f71f9bcde55"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/00-sprint-planning.pdf",
+      "bytes": 66223,
+      "sha256": "372f7822d9e07a52242eda3ba23f8fc178dcf21e88b4ad5fc9035d83ea46b64c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/01-sprint-backlog.pdf",
+      "bytes": 66291,
+      "sha256": "0f3fde423b5ed63e9e8803560b5e51a8f9d910602d95e147e5e1469160f6b5dd"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/02-scrumboard.pdf",
+      "bytes": 65622,
+      "sha256": "f8ae7d7c7a157ebc774c284ce739276d3bead2e3792c06f59927489f8f986c6e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/03-burndown.pdf",
+      "bytes": 66167,
+      "sha256": "5ede7549138da1e169fc32ea4bb3d9a4cfb3bfdb6e65eb82ccefcc101a800e39"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/04-sprint-review.pdf",
+      "bytes": 66731,
+      "sha256": "de90f8875232303c23000fbd6f0465fc9075dbb1d424031c9b701956eba8e428"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/05-retrospectiva.pdf",
+      "bytes": 66478,
+      "sha256": "9299e4381e656cdc66eccf77d75b441f00edaf8e5292958e2b3760bf16f77cce"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/06-daily.pdf",
+      "bytes": 66226,
+      "sha256": "8c06dda312be7fc7d04da47d981b81e07fbf3a779afe0728dcb90d3ecb7b873a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/07-impediment-log.pdf",
+      "bytes": 66231,
+      "sha256": "a5e409d3ec7b452dfb280114507f7fba33ae3ec102b1a1e02447ca5369a89f7a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 2/08-release.pdf",
+      "bytes": 66991,
+      "sha256": "35509b3a359f216e547517a31502919feadb7e90479e647ebd477c1309799eb0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/00-sprint-planning.pdf",
+      "bytes": 66278,
+      "sha256": "791a23004c43df37ecad91159ff954b20c79eeabdc2be0772695a809c9a9006c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/01-sprint-backlog-y-jira.pdf",
+      "bytes": 66637,
+      "sha256": "c8beb988104ffc5adace02c33558235fa32fd2a973dbfcd80dd592970b11eff0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/02-guia-review-retro.pdf",
+      "bytes": 65707,
+      "sha256": "e809d778d5a2f77498d726a6d76261d0c07db44d7a392942e631a17d0fe3083a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/03-scrumboard-jira.pdf",
+      "bytes": 65893,
+      "sha256": "1e2ad2247a3bb9b679135843b4d75177ee23341191022cf5b7f317e8fc9d2689"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/04-burndown.pdf",
+      "bytes": 66153,
+      "sha256": "153271bd305e081b5870f8f51ee9d996763827fa682ef1bfd4f4fa124fd71fde"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/05-daily.pdf",
+      "bytes": 66261,
+      "sha256": "cacc2af1b50c61ed1e17a93af7f1d9e97a985a99bc7baf05bbfb4b37a857f721"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/06-impediment-log.pdf",
+      "bytes": 66287,
+      "sha256": "fee384af6c5ac09700d0e18253d48f418b38cd7a92dff86829aba9e6d425ae8a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/07-release.pdf",
+      "bytes": 66963,
+      "sha256": "3ca42dfe5ca9ff32c58b3b97c3c7f2eaa83a24ad41d775a58e5ddbc1fb3e1cda"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/08-sprint-review.pdf",
+      "bytes": 67032,
+      "sha256": "9c239d3158a03e30c05f63415b20e076d42b46876ebe68059637186520dfb932"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/09-retrospective.pdf",
+      "bytes": 66548,
+      "sha256": "652f188c112569b6bdfe648dd96e39932b71b090b7d3326783aee6fe9b5a83ae"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/10 Implementación real y verificación.pdf",
+      "bytes": 204748,
+      "sha256": "db952de55e3f89fd445fe07f581d7d489fc618d8e971d39a3df54314b7a684a1"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/11 Base de datos en servidor.pdf",
+      "bytes": 4028,
+      "sha256": "d7c87f96988bfaa9d6b11b57aa49d1512e0fa8bc18305b5d1fa8ba44c4f70d70"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 3/12 Despliegue HTTPS y cuentas de demostración.pdf",
+      "bytes": 164414,
+      "sha256": "ce3e609ad9bf2478f2a6fbf9d19c52356dc05fbb0a81834dd69c12170272777d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/03 Implementación/Asistencia notas y anotaciones persistentes.pdf",
+      "bytes": 178688,
+      "sha256": "a1322f90ddc714faa07c3665a6b5bee413606232a4efb289d074e1f0c85c5d64"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/03 Implementación/Diseño de cristal - Navegación e interacción.pdf",
+      "bytes": 67719,
+      "sha256": "14ae20fd3f490f9b0c7caef896655f35d1970cacd8289e7283617979e9328323"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.pdf",
+      "bytes": 77106,
+      "sha256": "b5e6d81106ebbf11fc470c4b05f4b6b2dd68927ace2802247b79b4e2bda61aed"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/03 Jira/Guía de Jira SIGAA.pdf",
+      "bytes": 107096,
+      "sha256": "96d61483e32048cb2648b693da6cb6d19647fa1aab90c566fe6f7e4637e6e941"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/04 Evidencias/Backlogs Daily y retrospectivas en Jira.pdf",
+      "bytes": 65136,
+      "sha256": "4cff3eaa8a815d3121171ef4bff2d82d54d8a9938f98eaf8a004cdd7b502b0b3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/04 Evidencias/Registro de creación del expediente.pdf",
+      "bytes": 65775,
+      "sha256": "560689665500472ab525e6a97cb7b521423279ada735d2ca348b62e6c3e5573a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/README.pdf",
+      "bytes": 69744,
+      "sha256": "eba50a222a418aae46b0c5e43b16d03d08e6d441d2e0d2d90f2fa3613b051e10"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/README.md",
+      "bytes": 7618,
+      "sha256": "b92b42e441b92ac91f3f301478e478bd7f361662d1cfda599a228e1bcd5a552c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/.dockerignore",
+      "bytes": 78,
+      "sha256": "f5e9038e2c24b1815c85dbc35560889a471ccdefca7123a400c602acf0fe4bee"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/.env.example",
+      "bytes": 314,
+      "sha256": "67fd0468e1a144893ebad2fe0a3d55fb6499375a72cd372cbec79fb83dbb3a68"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/.env.server.example",
+      "bytes": 258,
+      "sha256": "e0060d1691b0664caa85c94cf01710e9996ac85e4a8a0c015bbd5e4c5fb1a30f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/.gitignore",
+      "bytes": 104,
+      "sha256": "a0d5a3ba720c662d49df0dcaeea101e60eae5c0f6b287f05624bda012ceb1fe5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/Gestión Scrum SIGAA/02 Sprints/Sprint 4/README.md",
+      "bytes": 514,
+      "sha256": "a6f3032a06774d882aca23d63b0f264b0ab3df7bd9827be1a9f3b9d9e3f02c91"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
+      "bytes": 9705,
+      "sha256": "313275d23dd39d011c7d4442546bd26f3a5f9a95e9e565e5a1bea1b8ac9ff128"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
+      "bytes": 37,
+      "sha256": "b6622dd2caecb92bb65c62b850574e04e5f2cd2398aa2a3e3c5b6160075c9dcb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/Dockerfile",
+      "bytes": 466,
+      "sha256": "01d329b8d0e4b4efd1fc416d011780924c0a619f98155d9e585eb16d9a8dc65a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/package-lock.json",
+      "bytes": 37400,
+      "sha256": "942cd77a618b85c028fa49186ef3213285d957997912160d64afbf23ad9aeed8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/package.json",
+      "bytes": 559,
+      "sha256": "63987ee10af25e3a860db77e573e01ca755f9abbc497efc8a6a85e9ead9f8e24"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/academic-routes.js",
+      "bytes": 12341,
+      "sha256": "e8435e32660c743fe505ad2b3c76a3006740c85912391193773a7ec41060fdf6"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/app.js",
+      "bytes": 123,
+      "sha256": "5eee5c4730cea1bfffb8b801ad8c51f71d409b6098c7a3d0f2ea03bd6c675436"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/manage-user.js",
+      "bytes": 2327,
+      "sha256": "4ffd7b29c7f43d42874c92207b2de3cd139b5d4b3ee11b043d5bed5880347e84"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/migrate.js",
+      "bytes": 1123,
+      "sha256": "a3606fc4613f6f11cdf408ec48512f6c5121a9aa36acfe7882d256b641356076"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/origins.js",
+      "bytes": 829,
+      "sha256": "e5133355f072c0385fc5532a4e53f38fa2d7048e533c350526c17965cd0c9a35"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/populate-demo.js",
+      "bytes": 17884,
+      "sha256": "dbad26789e98521c6287305f8ea31d9d6bff03ea1fb8fcc781c3f8dbcf3d0786"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/prototype-data.js",
+      "bytes": 11824,
+      "sha256": "29d9f4b9ebf849b9062619c9ee4a5ccc5b8438d67738ce4a52f2baa1839c6c61"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/provision-hosted-demo.js",
+      "bytes": 2963,
+      "sha256": "97fb5d93504f0f4dbbaff8587ebac4873dee2687e069a7fb05e6791ef3bd2d8b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/repository.js",
+      "bytes": 3755,
+      "sha256": "133fc9c7b24247bb97732fa699c8f6606fae59bd16ede3e174a87be2275c85fe"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/risk-engine.js",
+      "bytes": 6055,
+      "sha256": "c3f68e3230e7c5618e5d5bc7443979e34e9222231b347d0518806aeeed19059d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/sample-data.js",
+      "bytes": 3596,
+      "sha256": "8911005e7274f06cbde7055e82701f6a72fe130c0c2444c6e93314aec9b1bd63"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/school-app.js",
+      "bytes": 18622,
+      "sha256": "a3cb3e05cf80b39b20b6136e825e2e22fd76041a96e8ae64415ecc8f03f579ea"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/security.js",
+      "bytes": 2423,
+      "sha256": "c804126e395befc7e8134c2febbb28d1cf4067d8b0eca2bb6b6ad7dbb16031a0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/seed-local.js",
+      "bytes": 1087,
+      "sha256": "5c898a618761ccee760bf50f24e00655870fc145aafe8c56e8c7f99d7d5cd768"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/server.js",
+      "bytes": 1318,
+      "sha256": "f2d84268fa3bb21cb89e2cbbee330e5a944fa7f38449d36209922d269175a74c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/structure-routes.js",
+      "bytes": 8954,
+      "sha256": "22105141cb74eade1308fbcc142847ae525296a8c7ec8bf81917d3733effc9ef"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/support-routes.js",
+      "bytes": 11633,
+      "sha256": "1c4fa91eb3e36f33a54a141611d9fff09454060246c6a813f30dba1cd3fb3c53"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/teacher-routes.js",
+      "bytes": 6817,
+      "sha256": "3a4ada878da561f230bdfcd00865b64a9aba2a88d717576e797c459e9068cac6"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/integration.test.js",
+      "bytes": 36777,
+      "sha256": "b9c659149012783f595fa88abe98d24e351283e76346196c077ba9b2d7d6ef3e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/operations.test.js",
+      "bytes": 15227,
+      "sha256": "a1d986b9518a064852124d4007a5b962265283dc72c7caa1577c32d8838c36fe"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/security.test.js",
+      "bytes": 3034,
+      "sha256": "d608df46dc8fb26ba7d374fb4ea409be1e54fdf169e653749e2245da57b4bc84"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/.dockerignore",
+      "bytes": 33,
+      "sha256": "e05c131f79ae672e1e5c3e60afe426c9b382236aa50d706898c7f23e69fcd540"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/Dockerfile",
+      "bytes": 469,
+      "sha256": "1c3898313cbf2ba318383d28af5a36e60f38f2d426bb131085ea1438a46405ae"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/index.html",
+      "bytes": 383,
+      "sha256": "8d8bd42c00154f4f1e42860394f7b96dddc5e14e557447e58878433a25fa9f36"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/nginx.conf",
+      "bytes": 1084,
+      "sha256": "489058f1aad47da9cdcc77cd30bb2c24a24be73d60b52dba10688c7f0e372dbc"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/package-lock.json",
+      "bytes": 28554,
+      "sha256": "5cb32dc6c4aaf907e0ddf99a18f6c7eef214c8f529cc0d8c5ccbac7cb7b91278"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/package.json",
+      "bytes": 450,
+      "sha256": "eef85650457171012c24e678df32835aecce9f4ecc39d4d325aab8fa4aec193e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/AcademicPanel.jsx",
+      "bytes": 17585,
+      "sha256": "10eb97ca0bab8c6f1697624fdc9d12472731ace44b285b5fbb7d43082ba8f6c3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/App.jsx",
+      "bytes": 51467,
+      "sha256": "3e41ba14fece08a68cc4058fec37b8190eb3bfcf0b7b198e4f0b3d0edfb31947"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/GlassNavigation.jsx",
+      "bytes": 5903,
+      "sha256": "3a5bc72450bc793aa9135bf48bd5d1aea2266af0e2190d5493c601133017947e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/OperationsPanel.jsx",
+      "bytes": 18283,
+      "sha256": "6dd0db75bd4bbca1831471a3a38a7c954ab67b0eb2e016e7364cc3d6bb262e1a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/SecureApp.jsx",
+      "bytes": 26672,
+      "sha256": "28522a9cb861ab1bf5463c6ac7c93eb6ed141c755ee4dac25c9f9f85a9691849"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/assets/sigaa-logo.png",
+      "bytes": 1242397,
+      "sha256": "412dfa23f29dc23ca9d03e3fc30a026a26eda603995eddb5a128bb3af9a5116e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/glass.css",
+      "bytes": 11346,
+      "sha256": "ceacad8e187c5c6efb0bca9405836fdb701e53dc1804f655315348b9bb39e10d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/main.jsx",
+      "bytes": 241,
+      "sha256": "8342fe8772f85a2501d33889b21bb6491e64b7cfff6a8f97731173f13036520c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/secure.css",
+      "bytes": 7227,
+      "sha256": "81a438012c0d794256022e36842722aa31f8ae7efb11f68d1ce0c6e0eff6975d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/styles.css",
+      "bytes": 60736,
+      "sha256": "0052526a479535192864f8af94ab0b9b46d2d752c0abb34064e43dc87f2f3c5a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/vite.config.js",
+      "bytes": 343,
+      "sha256": "85464ec08c2d855b0203571891d7e5d9de0ae7e277abeadd45421205f3a0e74a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/ci/sigaa-ci.yml.example",
+      "bytes": 1691,
+      "sha256": "96bd62603f5628e795a83e434ee3503a9f5351f0034959589cd2a7eded827ff8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.hosted.yaml",
+      "bytes": 1102,
+      "sha256": "512fef606503835d5a3be5d860dbdb279011a99e885be75e588283d4f630a063"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.server.yaml",
+      "bytes": 2827,
+      "sha256": "aa26164670331b5526e3b20339a18e56a5f1f97fc750bef4c60aff2f5a8611cd"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.test.yaml",
+      "bytes": 843,
+      "sha256": "e1566c2af1f0864dc751140e43f0f5dd417433b3fbc422d0f998c23fcd5d3b25"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.tunnel.yaml",
+      "bytes": 819,
+      "sha256": "352c09de0721b971bf8d241e0d08681c4d840fae68d77b79ad2ed5d520bb3ffd"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.yaml",
+      "bytes": 2109,
+      "sha256": "5a13227b2aacf466c7211ca59198f92026038cbd6a63cbe76df4abcf14d44d71"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/01-product-vision.md",
+      "bytes": 4807,
+      "sha256": "c919f214df6b350a0ee34cfdb541d3228bbd9a2d25e50ccf2889af8cdc89a5a2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/02-actores-impact-mapping.md",
+      "bytes": 3522,
+      "sha256": "8e311f7e0a2e60e6e4ff1f2df1dbaa83a794c196d6a0d33521d166b61b95320d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/03-product-backlog.md",
+      "bytes": 310,
+      "sha256": "3d24885d53a17dc957018e1568571385cfaa3ff0de463d6f1ff2b147502a5bc3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/04-riesgos.md",
+      "bytes": 2267,
+      "sha256": "96bcd5fbae840fa03d7fe3387b3f13a671dc63ffc54f5fbfc5c77724468fe3b8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/05-git-y-evidencias.md",
+      "bytes": 1858,
+      "sha256": "f5d66e75eb8aa49d057c99f47d07bb54f70a5c68ce47030d69ad6df6641bca99"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/06-docker-entorno.md",
+      "bytes": 2088,
+      "sha256": "695e842885aa9a5cd87ae931f9ecc752a694cbbd8b537f61089db5d19c7d0e37"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/07-manual-equipo-y-servidor-seguro.md",
+      "bytes": 7178,
+      "sha256": "fe1e7fdb86b33015794711abfaf0ee754b93391142803ab533cb30e38d0b1910"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/08-matriz-cumplimiento-capstone.md",
+      "bytes": 3676,
+      "sha256": "649ff20f2fb00d5ff7dc49e568d4da18a44ed80a3246564c9cd1fc3bc778b006"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/README.md",
+      "bytes": 7918,
+      "sha256": "6073492c9701510b5b0267213a534d162c0e1344d55fad65414738f3a0ee1545"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/adr/ADR-001-stack-tecnologico.md",
+      "bytes": 3265,
+      "sha256": "9b25987dd4b62fe425a693f6f9aca50b0ebde8006220bbf1793dd73af824303a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/adr/ADR-002-entorno-docker.md",
+      "bytes": 1648,
+      "sha256": "0b0bcda10b7068e834ec2ec02628b454898c16873a0e5a7e8ef5a935a3351fc9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-avance-inicial.md",
+      "bytes": 2423,
+      "sha256": "6395e2f93518e7115a7921f9533a1acc21eb70ffde8d7e19331dfc796d2d8ce2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-base-datos-nucleo.md",
+      "bytes": 2725,
+      "sha256": "ba16757afbf49863b6c0d58c68ea63a7e54fa72064d6a2a6980531ebdad48350"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-correccion-dominio-escolar.md",
+      "bytes": 3909,
+      "sha256": "906e2cfa922d9daee506db9c800a9a94205642867ebbff2429d6d2ae031d14d6"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-despliegue-servidor-macos.md",
+      "bytes": 1521,
+      "sha256": "e9ab337edba491d5faabdecf878a4dff86cc5b9af02c951cae5f4e17902c3024"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-entorno-docker.md",
+      "bytes": 2069,
+      "sha256": "5290838fd88af07c79abedd4b452321882dcdcfa69144388df40d1ea6af128d3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-exposicion-cloudflare.md",
+      "bytes": 1174,
+      "sha256": "86abc6e8e6d507c8f4aacfd60b436f6da67d99aede4694322e1c5592278c3939"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-informe-cierre-sprint-0-pdf.md",
+      "bytes": 1623,
+      "sha256": "09d05445c5fe922adbd86f091d99af6c1164835fc017eb58301747266bf73211"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-modelo-estudiante.md",
+      "bytes": 1623,
+      "sha256": "13c09f37d259bb1c7dfe3832a4bad988e916ea156b2aaec0bfd34484e977b725"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-21-modelo-profesor.md",
+      "bytes": 2003,
+      "sha256": "5b5fd90b9775aad662769c75d68367c51d17c65fbe4c0fca21ddd552c79082f4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-24-manual-docker-y-aislamiento-servidor.md",
+      "bytes": 1332,
+      "sha256": "3bb8cf9f0496dcf18756537f770e89bd9c669f486e493572ad8b756cae8c5437"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-24-manual-pdf-equipo.md",
+      "bytes": 1228,
+      "sha256": "f593e319a34da2152b80dc1b03f70ff314de9e78478c6015bf3a53f1a99bf3ca"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-25-plan-trabajo-pdf.md",
+      "bytes": 850,
+      "sha256": "4514b6bc6cfbfc46cd20ca458c2c7c659d2726d4ff59a44d789414511db0a928"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-alineacion-carta-gantt-cronograma-oficial.md",
+      "bytes": 1826,
+      "sha256": "91b61926b5d88bce477fcf2b83149e64e0458d9dbdf88d43821d16ab1671596e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-autoevaluacion-competencias-joel-sigaa.md",
+      "bytes": 1663,
+      "sha256": "c673e2ac6afd6e74d045649a3f7f190cdf75d3f48bb4b03e05c7d0ffafa5def4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-carta-gantt-completa-pdf.md",
+      "bytes": 1065,
+      "sha256": "7145bf8489f661489bfc6a5f8f99d9d65c029b64804b276933d1a4af5f886dd2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-carta-gantt-distribucion-equitativa.md",
+      "bytes": 797,
+      "sha256": "422002b6e65c9e515f1908a0f266dd09399c49225e566160afec37a6be037020"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-informe-tecnologias-proyecto.md",
+      "bytes": 1793,
+      "sha256": "4d4b3bba6b4573b1f43242ee5284de87e27fd89303acacd6b6294f634a273969"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-26-manual-actividades-carta-gantt.md",
+      "bytes": 1360,
+      "sha256": "fd9815bd8271e22f52005cc7d9f6fb0a3251b56c8ec3ab8064f48e356ba37690"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-27-correccion-competencias-confirmadas-joel.md",
+      "bytes": 1739,
+      "sha256": "2037cdb4769b61cfc8fc1d677d794c762f1c45396ab7964d6fb90ff2ade96f28"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-avance-sprint-1-semana-3.md",
+      "bytes": 1916,
+      "sha256": "e82bc9e80f9ec9a6c4b5a1981fbe3dfbb935ba1648974b03d723d9108d8afe02"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-integracion-logo-oficial.md",
+      "bytes": 1211,
+      "sha256": "e7a15b18276d995ca2cac522c11e8bb321572886139b9b24c00d98c347d08f82"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-login-demo-por-roles.md",
+      "bytes": 1465,
+      "sha256": "da48303d611c2343c5fd9ac93ec341c9ae8af2e2110032c4d1f5c8da84e9cf7a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-menu-movil-desplegable.md",
+      "bytes": 1377,
+      "sha256": "18f97204bea8448b307450731e9569dfb23480921de9f6ed4deeafb45f6385a0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-portal-estudiante.md",
+      "bytes": 1385,
+      "sha256": "ec6d7b6475444346c35bfb0cc09704534000496ee5331cf9f7783ab69f8d91d6"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-rediseño-navegacion-movil.md",
+      "bytes": 1308,
+      "sha256": "a0be81583980bdf82c5dc131fff566d6d2c76be772fb8d15e923bf5810a320fa"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-08-28-rediseño-premium-prototipo.md",
+      "bytes": 1323,
+      "sha256": "f169a71983c18dab8daec9116039ecd1c4b5f338fe332e93a71d020afb025882"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-09-09-renombrado-documentos.md",
+      "bytes": 429,
+      "sha256": "beb92c791023a85df371f9fcb370fc438fd8a9e77e8ead585eaa4fac0b99c289"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-09-24-defensa-arquitectura-metodologia-sprints.md",
+      "bytes": 1463,
+      "sha256": "c3cc4aaaa43bc31a3814eaff2f0a63a16ec4fbaef8fc2cecffe0a01a04c84fe5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/bitacora/2026-09-24-documentos-defensa-separados.md",
+      "bytes": 1031,
+      "sha256": "a61d29ad5a3b610dac0a618b2460da5214af4f8e0c15644929358f437b056dfe"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/defensa/01-arquitectura-metodologia-y-sprints.md",
+      "bytes": 11586,
+      "sha256": "abf331d2ec8321ce4a6e572a82dbea02b0c09c7a787493656b688e6887c0f67d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/defensa/02-arquitectura-vigente.md",
+      "bytes": 3831,
+      "sha256": "efadb9145295541f3437a501f824685812780fd654b0f15c9d9b08ad510d0aea"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/defensa/03-datos-vigentes.md",
+      "bytes": 3780,
+      "sha256": "f55150d7edd48b347e287467c3a81bdd1f2b648eb40f7280ffe75a56f4c27383"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/00-arquitectura-preliminar.md",
+      "bytes": 3552,
+      "sha256": "bf75af22a9d5b656d238e668d4aa1065516b53ca11d18a603b4cd68f82aee274"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/01-arquitectura-contenedores.md",
+      "bytes": 4522,
+      "sha256": "a055d53595a73d80801dc51b35fda11ea4bb1ce0d4aa4be25e044e3f7d1b5414"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/02-modelo-er-diccionario.md",
+      "bytes": 6730,
+      "sha256": "2483bb113597713aa999d319d08e3b01e61f28f1f72f126c17aec581c156eba5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/03-uml-casos-de-uso.md",
+      "bytes": 4178,
+      "sha256": "6546390d07740c4847cb3991a2d84c03a8dcd1a1a0dc4fb015bdbdb9592fb10a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/04-prototipo-navegable.md",
+      "bytes": 8278,
+      "sha256": "6df4f431a065ef53ff753b068d7906d03be7741595d8706531ce418b38cd8e49"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/05-modelo-er-objetivo-escolar.md",
+      "bytes": 6983,
+      "sha256": "fb772363d9de26d6a7337143b86474d0f024c2a6934e04b0a00e9736730476d4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/06-modelo-profesor.md",
+      "bytes": 4246,
+      "sha256": "0ea583de70ca9f21d8ef13faa5402a361f2695e10234372fb72984f4ea896714"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/07-modelo-estudiante.md",
+      "bytes": 2698,
+      "sha256": "3fb5aa3b727002bc98740e66839aa8b3394dd30980a0b0c8ce4abeb2ec62a74b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/fase-1/01-formativa-fase-1.md",
+      "bytes": 4224,
+      "sha256": "b57c9f6e8def107efb53c9b1de51388453eda77c9040f5b608ce9b5c37a68d26"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/fuentes/2026.02_Cronograma_Capstone_PTY4614.xlsx",
+      "bytes": 17185,
+      "sha256": "eefbb26f7bd06c91b092e4363c885dbb21aad1e0430f98defe7ce82398d3e9e8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/definition-of-done.md",
+      "bytes": 1514,
+      "sha256": "ba345a41c1024ff6e7b0c4a893f31c77e768cb3bc88c87989dabf85dd9a6688b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/00-sprint-planning.md",
+      "bytes": 2296,
+      "sha256": "eb84c0a8c045f29e55e6a3e8cb24408dd3b16b3811ea644d37090300772a3d85"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/01-sprint-backlog.md",
+      "bytes": 2053,
+      "sha256": "9097f6d62dedc222451be68573cf172cb7f9b0fb790084091ca9b5524024c9d8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/02-scrumboard.md",
+      "bytes": 1465,
+      "sha256": "9b2cebda400f3f9b5639b61cc1007830e1f228002cde348e2b1dfd4a4e0790c7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/03-daily-e-impedimentos.md",
+      "bytes": 2238,
+      "sha256": "618ffa783b71e897f28b3dbb3b47ce1891a22fe85eeab8a76c79e530e68f93b2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/04-sprint-review.md",
+      "bytes": 2822,
+      "sha256": "af79f0b77bb0e81312aea0d9101fe26f59d278fda144595c7e8aabb96885755c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/05-retrospectiva.md",
+      "bytes": 2627,
+      "sha256": "1c730405e6c7dc1f0feae5d3a9ea2629eb27839cca0f8a6a57c570ecc0c3178f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/06-release-candidate.md",
+      "bytes": 1379,
+      "sha256": "479265406413e462958d9905235fc1423cb969ea3e3c2b5c195a771c1fe14361"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/07-informe-cierre.md",
+      "bytes": 5112,
+      "sha256": "11acaef04079ae048e2dfdff0d20cd86b3a4ef0574ff061492d3cc8ea8f5ee05"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-0/08-acta-aprobacion-po.md",
+      "bytes": 1286,
+      "sha256": "4b81200673122c3d92ed0f663a25b64c82f50c5241a6e7315843cc574299932a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/00-sprint-planning.md",
+      "bytes": 3221,
+      "sha256": "37ea7a121c346d70592b7b94e57f5315ca76a2f5f184887ada89cc4bd9ad1a81"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/01-sprint-backlog.md",
+      "bytes": 2706,
+      "sha256": "043c8756b4700ddfe2c286707f637870646991f393dd84d11de979387a725319"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/02-scrumboard.md",
+      "bytes": 2362,
+      "sha256": "84788455caec939adb4d7670fe1da3cd72a8bd30fba1e9f9c5f4505440f9bb09"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/03-daily-semana-3.md",
+      "bytes": 1561,
+      "sha256": "fe143e22d228cd10629307d00d1ab3289be7d72a19e5c2d3628c5fb0c40a2053"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/04-burndown.md",
+      "bytes": 1151,
+      "sha256": "f26958925923a4c08a5eb2e006fc43bc210264e56d09ddf3a54c1570c5a5ff57"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-1/05-evidencias-semana-3.md",
+      "bytes": 1800,
+      "sha256": "d1f290aae8bb88e2e507b38f19b8d51b954dad97f4a2eb346b4259fa459b7b75"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-2/04-sprint-review.md",
+      "bytes": 325,
+      "sha256": "541060d5b28f182bf8c59251a77b0dba79e10e653e7111de57fbcc4551fe36c4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-2/05-retrospectiva.md",
+      "bytes": 325,
+      "sha256": "5b60bc6d6f0fd1ee991ed4067e72383dd6d413918d21744a7faefe6414fe2e24"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-3/00-sprint-planning.md",
+      "bytes": 329,
+      "sha256": "f0a4635e574c846064a5c92b591978d54f66c2bb6548647f85646b78a7a7fc4a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-3/01-sprint-backlog-y-jira.md",
+      "bytes": 341,
+      "sha256": "7eb9c979103c3e08bd51febc6ac7e4c4406f056d5674b73cbbcce5037bd92675"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/scrum/sprint-3/02-guia-review-retro.md",
+      "bytes": 333,
+      "sha256": "c4a6e72b7689593493e3fbfa8ba7609a2033556b8b7c487127e226f311fde889"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/validacion/01-guion-validacion.md",
+      "bytes": 2173,
+      "sha256": "143a1e9e11a72afa06415b06059ef6bec514905934a2e5320fa52181ea9a9900"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/fase-1/1.5_Definicion_Proyecto_APT_SIGAA.docx",
+      "bytes": 156056,
+      "sha256": "b4b3a4fcf4acb64119120bcd00feb35a150c54265c8370b2de6ec23ee1fccc29"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/fase-1/Presentacion_SIGAA_Fase_1_Sprint1.pptx",
+      "bytes": 115069,
+      "sha256": "238938e27208991974b5c15d3792aa533eeb10f8d0f1b8c9e9a04723ffa0830f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/fase-1/evidencias/prototipo-dashboard-mobile.png",
+      "bytes": 29791,
+      "sha256": "808778e0716c0a76a6d9d3500edb9f4eaab9b759dfec3ac0b8b74537961b45d7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/fase-1/evidencias/prototipo-dashboard.png",
+      "bytes": 82910,
+      "sha256": "9f2622879795425bb3f9e1f0e2b0e0a587a06e69f1bc531f203c337cddf33144"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/gestion/Cronograma_Sprints_SIGAA_2026.png",
+      "bytes": 1336105,
+      "sha256": "d340009749501efdede7085e0a078874d4c07f6dd4d9795565d3c6487f6cf018"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/gestion/Plan_Maestro_Scrum_SIGAA.xlsx",
+      "bytes": 36762,
+      "sha256": "4f45ac143533a0d6bade8b8014be0e02cd1e5844719325e718af0f61ecced3c9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/manual-equipo/assets/arquitectura-segura.png",
+      "bytes": 1465681,
+      "sha256": "5371390a561c9b6c783130f44510a2a78d20cbe0b8f5985e901f7b847925f1f9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/manual-equipo/assets/flujo-git-docker.png",
+      "bytes": 1149928,
+      "sha256": "0e02158343427bcd68be101c15b88cb54f43238211c7ff0552a25a590d78cd03"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/entregables/manual-equipo/assets/portada-entorno-sigaa.png",
+      "bytes": 1359222,
+      "sha256": "c8a634dc470b65c12aa666f37f9ac6287d9737a178f20e1ac514264b2148f347"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/macos/com.sigaa.docker-server.plist",
+      "bytes": 609,
+      "sha256": "df2e62af1d640ddfc93d0dfa301f98d646989e3ea3620ce09ddd68791bbd9c95"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/001_schema.sql",
+      "bytes": 330,
+      "sha256": "bcb700c5d0dbec51d9b541d2b67cde949b21648a2c6d97c42a4211879cb45e21"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/002_core_academic.sql",
+      "bytes": 12967,
+      "sha256": "f86af9800e7fc3a54701c72ae94c69485d6db8cff9b35f3587acbf30e2c80411"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/003_school_domain.sql",
+      "bytes": 15071,
+      "sha256": "cc943901f78c85335f1cf45a8d73eafb857571fc89775d400135999a1ef9e09e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/004_teacher_model.sql",
+      "bytes": 5986,
+      "sha256": "c4437512e73654d95ca0f23a4227bbb667889d93e9616a016d09167fe74f22bc"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/005_student_portal.sql",
+      "bytes": 2700,
+      "sha256": "3905dafbcd4b3c61efeeb285221a8f9f12b7db695db110735a6b3ad8f74e71df"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/006_sprint4_alertas_justificaciones.sql",
+      "bytes": 1665,
+      "sha256": "ae454a95b48beb911e83562f1157c00d34c11f2d69476649bff6652fbc4e411b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/007_sprint3_security.sql",
+      "bytes": 1213,
+      "sha256": "9b0ad940bf25de47b740be446398696d2df0b98cc946beeab4ee76179c955df7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/008_school_operations.sql",
+      "bytes": 931,
+      "sha256": "a3d5569b935bdd9f9311e65ccc2dd66679200796f140445680dc69a587b755bb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/docx/1.1 APT122 Autoevaluación Competencias Fase 1 Joel_Lopez.docx",
+      "bytes": 887553,
+      "sha256": "7d477aba4e59a9a9224c740780af401de3d2bd0114c895911ee3eab01b7bd101"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/docx/Lopez_Joel_1.1_AutoevaluacionCompetencias_Fase1_SIGAA.docx",
+      "bytes": 887687,
+      "sha256": "5cfe61b113acbcb3818cb45e9759593c8142dc744b671ea15aec176b5f057e8a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/docx/Lopez_Joel_1.1_AutoevaluacionCompetencias_Fase1_SIGAA_Corregida.docx",
+      "bytes": 887553,
+      "sha256": "7d477aba4e59a9a9224c740780af401de3d2bd0114c895911ee3eab01b7bd101"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/academic-browser-tests.json",
+      "bytes": 1668,
+      "sha256": "fc2b235e7da8a610be01b5b5b277c05a3646c903e64bc66bdec6ff9d65c3ec8d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/academic-docker-tests.json",
+      "bytes": 2769,
+      "sha256": "544998c5821f5c2f6eafdf89b051b7135664aa9a2e12893f0d3382bce8a7f741"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/academic-hosted-tests.json",
+      "bytes": 1245,
+      "sha256": "8338063f2b5d138292a845d2a60b12ff67db40ebcf9aa67c5260b35eefdf96cb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-dns-verification.json",
+      "bytes": 816,
+      "sha256": "7092bd5fb4da5875dbf9908701d0202250201713f2b91e77ab9c59a5d354428f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-docker-tests.json",
+      "bytes": 373,
+      "sha256": "2636887b780e37bb57369f83ca0efa21d32b7969551c5ec8244fb3389eaca3a5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-origins-tests.json",
+      "bytes": 1866,
+      "sha256": "cece81c2072dcc6f08350179e1eca3665b5bd45bfb45b8ec94061514dbfdc05b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/glass-academic-regression.json",
+      "bytes": 1668,
+      "sha256": "3daa85b09a69df359fb6a4e51f0e2e379cc4c319b132583c8ed15583fb874c18"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/glass-desktop.png",
+      "bytes": 750580,
+      "sha256": "87b5afe0beb66b528fec0e51441279137d6491cc22d6ecebc17e3955715e4bdb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/glass-mobile-menu.png",
+      "bytes": 174793,
+      "sha256": "01048dd18273783ad818812a7b6a6535f2ff0b7c7163aed67369ae337f1c8438"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/glass-navigation-tests.json",
+      "bytes": 2977,
+      "sha256": "42a33bbe7ccb64fc2a3e1a8fb673ba3430987e541d0ab359a4f0edb25416afc2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/glass-operations-regression.json",
+      "bytes": 1426,
+      "sha256": "dee67bbb50b76f2dbcc18f83e39048cfb043f17b05a74c965e5eb89374dbfd7d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/hosted-results.json",
+      "bytes": 1121,
+      "sha256": "bea5f4f12f00c86756d8f96dc9b27af1c043a00d5bc420b3206285e22e33327d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-academic-hosted-tests.json",
+      "bytes": 1245,
+      "sha256": "33eca7db5b226742340b18bd48023961325c726d6fc253f4c2a6e62924f2c001"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-browser-tests.json",
+      "bytes": 1426,
+      "sha256": "9bba32cc90b8c01cdc8c2da5eff2f4fab235ae96fa90d602822f55445aae5753"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-deployment.json",
+      "bytes": 636,
+      "sha256": "96afdf1aca53da31dc0eefe82644a51932f8fbd07ca92447521b59245d12a009"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-docker-tests.json",
+      "bytes": 759,
+      "sha256": "1493f0c38dd9acca24cb3ae1c21d2b8c33fe96335adbb1285ef91e2dc77157c9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-hosted-tests.json",
+      "bytes": 603,
+      "sha256": "4433fa70172eadd876ef4a5b3219e17473e0742a4032a861b1487de206c03c9f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-jira-update.json",
+      "bytes": 6823,
+      "sha256": "20f8117822d377521a90b9fe87438e2cc934fbe8b3b07755de3d0129b62e9ca3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-pdf-verification.json",
+      "bytes": 2310,
+      "sha256": "e66e87a1b7f8674d046fc6bd5f2360c6f2d184105ebc6d7ffb245afa90501545"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-regression-browser-tests.json",
+      "bytes": 1668,
+      "sha256": "c469692ab29d58bb633bd4fa65f672f52b9cf72adb312a9a21e6a6ac33f2d634"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-3/test-results.json",
+      "bytes": 4412,
+      "sha256": "4007f5a903d7f1574376d240c87d320ed4ccde777024273fec665234bf92e569"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/synthetic-demo-api-tests.json",
+      "bytes": 771,
+      "sha256": "61fcad13cf12491f2e6dafcfd2e280141e1d87932d052fbb26d17d0defb02678"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/synthetic-demo-load.json",
+      "bytes": 1901,
+      "sha256": "98a378ebae3ccb2dc2ee57933b1d0d5cfc9b8955dae883a6222fd1fa6e82475b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf",
+      "bytes": 70782,
+      "sha256": "e8a9d8467fd2391d9e72f63a313c5c13d6c4d9e26dba8b3575d91560c484dfeb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Arquitectura de Software - SIGAA.pdf",
+      "bytes": 70269,
+      "sha256": "6283a3a9b88270198328aad99ee270e8e070309cd5f9d5dae611ae263961054c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carga de datos de demostración SIGAA.pdf",
+      "bytes": 4897,
+      "sha256": "588743c533e5d853bebb12b0750950a33ab84c7f2efb2b8acb77ea3a0aa9d76f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta Gantt SIGAA - Cronograma Oficial 2026.pdf",
+      "bytes": 30390,
+      "sha256": "c17213b3124374c498f936ff583694b973ff22588a7c0e182d02eb8728b5599f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta_Gantt_Completa_SIGAA_2026.pdf",
+      "bytes": 26555,
+      "sha256": "76f85642b7ef1f35e9be62565914b909eb13ec90e2ddd667288acf8f998d202d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Control documental Capstone - SIGAA.pdf",
+      "bytes": 69021,
+      "sha256": "b87c74ab15811ea77f36b5cb9a213f55daa7ff663071d404c2045ba167a6dbea"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Cronograma de actividades para finalizar SIGAA.pdf",
+      "bytes": 77132,
+      "sha256": "9b5778c2dbec2d01ed334bb4f8f638b83baa16459e7b02f8fbeaccab0e9f75f0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Defensa de Arquitectura Metodología y Sprints - SIGAA.pdf",
+      "bytes": 100867,
+      "sha256": "a997c217aebbbc0e50ca59345fa3df3cef0be948b395c510b6e75838ea525a95"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Estado de Fases y Sprints - SIGAA.pdf",
+      "bytes": 70260,
+      "sha256": "a287a7bc1ce8064332a6329f99541b3ea0a504cec076e9c3d881a8a51f0da70f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de Tecnologías a Utilizar - SIGAA.pdf",
+      "bytes": 100592,
+      "sha256": "16af816aadb57285a6a523b438e72cb5c982ddb8604fb7a4f8eeddc72b161803"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de avances para Matías y Agustín - 15 octubre 2026.pdf",
+      "bytes": 75072,
+      "sha256": "526a7b9aa5f975eaa52e1cb82bbbb59b40f9c1a1e1d4ae495d0c781dc6188f3a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe general de status.pdf",
+      "bytes": 108378,
+      "sha256": "55aec8a38c0365715664d18fb771d28f872ce2495e3296bf2cc665461d00b74e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe_Cierre_Sprint_0_SIGAA.pdf",
+      "bytes": 1900520,
+      "sha256": "b3e1d327cef953da6b84d4d0867aa1c7c62ba52e8624da176fcf24bc7445e160"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Jira e Historias de Usuario - SIGAA.pdf",
+      "bytes": 69816,
+      "sha256": "f17b73052f015976487315aac3af393bbdb3daf0a981d7e6c87970970f7aca3b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_Actividades_Gantt_Alineado_Cronograma_Oficial_2026.pdf",
+      "bytes": 70195,
+      "sha256": "4930eed89f806d5dfa20ad1dd6af684e5d641a698f9159bc571af888f789f5bc"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_Instalacion_Desarrollo_y_Colaboracion_SIGAA.pdf",
+      "bytes": 6627414,
+      "sha256": "2846cbe7f1a1f6aca3281e0c136325c9d77dd2595522d8706b491239c18c7560"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_de_Actividades_Carta_Gantt_SIGAA_2026.pdf",
+      "bytes": 70209,
+      "sha256": "c259b751726a96c736f7009b77cf2d7d865c6158731417d46a118d48596b5545"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Metodología Scrum y su Defensa - SIGAA.pdf",
+      "bytes": 70164,
+      "sha256": "ffd24e769a622cc497b15444a2928de997992500be767f36475b095d74107f08"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Plan_de_Trabajo_Calendario_y_Responsabilidades_SIGAA.pdf",
+      "bytes": 48779,
+      "sha256": "f6808376e4bd0f4adffde3fadc8f3b114b56fad84bf5a7241dd4774852c1bcd5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación DNS de SIGAA - Revisión antes de activar.pdf",
+      "bytes": 73117,
+      "sha256": "2cf0ca01f28c82be4276a176381e1a2dc19b010e02a0f4cc1998e0fc355e4c71"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 3 - Implementación real y verificación.pdf",
+      "bytes": 204748,
+      "sha256": "cf2ffdffc801c0b9683fad0a889bec3d8396a995b1b7343a035d709bc9fad877"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/01 Planificación Sprint 4.pdf",
+      "bytes": 66329,
+      "sha256": "00d93b0489d903d59ce219f98abf6391aff864177d40cf27ccf7fbf103e4e08a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/02 Sprint Backlog 4.pdf",
+      "bytes": 66554,
+      "sha256": "8baf283e5103001490864b66d70516045db6961b822564d7d6a638fad496dafb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/03 Scrumboard Sprint 4.pdf",
+      "bytes": 65963,
+      "sha256": "43108a1df70ed948c8a73a3f48d0187ef287e2d510bc2e8898403991a7824524"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/04 Burndown Sprint 4.pdf",
+      "bytes": 66116,
+      "sha256": "a4d80259269b4f48ddb8498743dd5160a4f7c2469693dc07c23cdfc6059f8e67"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/05 Daily e Impedimentos Sprint 4.pdf",
+      "bytes": 68367,
+      "sha256": "50fd8321d84d1f108342825adaaecae33e599c92f231fbe020d9d5138213c544"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/06 Release Sprint 4.pdf",
+      "bytes": 66988,
+      "sha256": "af23c9a5214f5ca0f1f0f150c24f7a758d391a2ba1214d321449f0157001b50d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/07 Review Sprint 4.pdf",
+      "bytes": 67122,
+      "sha256": "b5cf278c3b389f21bc84da32cfee252cc102c42ea5ed51c4efab4fb7ff54f26c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/08 Retrospectiva Sprint 4.pdf",
+      "bytes": 66458,
+      "sha256": "bec282be940eba857b0404017381803c8c06e617dabc167cbf33dbb9bc360d84"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/09 Informe de Avance Fase 2.pdf",
+      "bytes": 101849,
+      "sha256": "0328a53b1d244fc0d06f6134c4a3576361a09edeb14c8adae9dd53e6a319f069"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 4/10 Registro Jira Sprint Backlog 4.pdf",
+      "bytes": 66075,
+      "sha256": "f122161e450f043b2019af816a7623dbfce068a3f0d0efdae88d690ddb7ade3f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint Retrospective - SIGAA.pdf",
+      "bytes": 69684,
+      "sha256": "38d18ab33e7c9d5b583cf3c6255a7318843ac50bc8b5b8ec81fa5d7116005397"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint Review - SIGAA.pdf",
+      "bytes": 69498,
+      "sha256": "20b02458fcc1258d225647960a66455673b36ab0ec8ca52ed5bd194d6fcd6af5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint3-report.py",
+      "bytes": 15215,
+      "sha256": "492aebe6ea1c0b7beacd61b2c01c0b703bf7cb9e0e0c1d941c99ce276b2ec4c1"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint4-jira-register.py",
+      "bytes": 372,
+      "sha256": "0297b8531571db5a610d69b45d86fe3b142f74599e73523c83d4c7219ed958d4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint4-pdfs.py",
+      "bytes": 372,
+      "sha256": "0297b8531571db5a610d69b45d86fe3b142f74599e73523c83d4c7219ed958d4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/populate-hosted-demo.py",
+      "bytes": 3869,
+      "sha256": "82d6c58e36a549418189723b0450b99f268ecc79d46c5633a4193284b72e243c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/prepare-domain-origin.py",
+      "bytes": 1516,
+      "sha256": "2479587c2b2735d2f7edbe28b92f597f888573d930c71e86e78c5302686e96ef"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/prepare-hosted.py",
+      "bytes": 1716,
+      "sha256": "a39ca07ca265287f822afdec43dbacf7f6d43cdf5e12764716c1a1c33acff1cf"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/prepare-operations-accounts.py",
+      "bytes": 1162,
+      "sha256": "738aec70bae24827a4707b3bc62060861e1091cd1a8ce7fc1d19de6c0749bdef"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/refresh-hosted-origin.py",
+      "bytes": 903,
+      "sha256": "c90ae595cd8c44d1f89be72ba9530c5a333bf5b18f8e7f048ae9afa9c918158a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/report-academic.py",
+      "bytes": 9552,
+      "sha256": "1ca8160659a55b6435e06e955c5a384a5ad6c0b3708f0a04b37237672ce73fe5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/report-hosted.py",
+      "bytes": 5422,
+      "sha256": "b7e8e8cb948d33de8f8924662cd790ea8209915a3e9568db5ced1d123f94ee65"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/report-populated-demo.py",
+      "bytes": 5300,
+      "sha256": "839978d59e0422c487f2237ac2e6b27639b8cb88f58a0dcb7acee87a5db8bfd2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/report-server-database.py",
+      "bytes": 3982,
+      "sha256": "31f11241e0f21fbd0468c286a0e32eb68757aced0e4f2e8b4ea5af508e1db190"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/upgrade-school-operations.py",
+      "bytes": 1698,
+      "sha256": "0b5cd4ee9a2d90abb8d1da9a741f8ffda4752e8ee2facfc28a55a2b418d66f2e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-docker.ps1",
+      "bytes": 969,
+      "sha256": "40f0ca068a21eece3d0c9d8da932e7c021f3262879add396482707ced9c7d88e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-docker.sh",
+      "bytes": 460,
+      "sha256": "cd68fb0e52c0fc7a67b8987b1b178e5874c00248d72f7ddac5270ea7e03fcd0e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-domain-origins.mjs",
+      "bytes": 2585,
+      "sha256": "805ec7157bcd4a9fa88b271f66955e96823455879ad3b55c8a8355051ea7358b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-glass-navigation.mjs",
+      "bytes": 5473,
+      "sha256": "8a0f19e1b329160f522a987daa4ea185f3e14dac4b97c4472a339aa2de9c67ed"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-hosted.mjs",
+      "bytes": 4737,
+      "sha256": "828ba6b1c68b7b2a7ffc7a20a03b50a8cc9d43672256901fda9f76d6c0254091"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-operations-browser.mjs",
+      "bytes": 12385,
+      "sha256": "ffaa91acd391908f3a727040075cdfd830ad917f6bb090e378057bf1ea4a4402"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-operations-hosted.mjs",
+      "bytes": 2894,
+      "sha256": "42d075355be9319425db0f40b32077e4fe34864c6e5b03c3dd1f5537a042b1e8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-populated-demo.mjs",
+      "bytes": 3146,
+      "sha256": "f7c31bfb6c8e856af469659bec2db19126878c70ebf62f91c82eae9f56d88003"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-server-isolation.sh",
+      "bytes": 889,
+      "sha256": "ddc0f2e7e06ce16a811d507825bded9a783cf4fb81631e7e5b6c24e23bbe689c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-sprint3-browser.mjs",
+      "bytes": 19470,
+      "sha256": "7668ce84dd867f2f432d090f222bdb85de989aa8db3e27d9b11aacbcf4d1715b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-sprint3.mjs",
+      "bytes": 2680,
+      "sha256": "2e0bf6cddcf1c6459643bc7a73dbfa30b5b136b520e27fa003db6c0e3701d6a4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/document-regularization.json",
+      "bytes": 6417,
+      "sha256": "99b1319e535568a81b4e85f7e1e596af8a561c1a609a0adf15504f3db6127ceb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/generate-dns-preparation-report.py",
+      "bytes": 12639,
+      "sha256": "4291f6f16c26fb8e51108cba0990f1b089b648a46f5122848618b49c76bfa43f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/generate-scrum-pdfs.py",
+      "bytes": 14112,
+      "sha256": "b7b140b2af160eb82b6c723dbf8213d99ccb0fed5c652182050d06752b31f73f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/operations-documentation.json",
+      "bytes": 2426,
+      "sha256": "06e9f5b19adcbbf50dd77c61b8752fe9a910481cfcc38e783fe0ba4ef9872e7a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/sigaa_diagrams.py",
+      "bytes": 7191,
+      "sha256": "d9535055d76bb1480f34dd9c49d4f8acf99cb09a5d89be713dd11a77722955f3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/scripts/verify-document-regularization.py",
+      "bytes": 2245,
+      "sha256": "6cfef012b51595cfac7964032ff2e17b5da3702d4a1fdba3c166c76779d1b1da"
+    },
+    {
+      "archivo": "Fase 3/Evidencias Grupales/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "archivo": "Fase 3/Evidencias Grupales/README.md",
+      "bytes": 156,
+      "sha256": "623175de6bfc9bbff2d73eb0297517fe7571e532ddd3064e128eda20596fdfff"
+    },
+    {
+      "archivo": "Fase 3/Evidencias Individuales/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "archivo": "Fase 3/Evidencias Individuales/README.md",
+      "bytes": 215,
+      "sha256": "feaebfec284c89292ff6e23dbfad7fd20c671e6e86bf4c8574dab9feffd249ec"
+    },
+    {
+      "archivo": "Informe de publicación.pdf",
+      "bytes": 5394,
+      "sha256": "5cd6e6658b28f41f6dde029beb282f036590b3b2094ed82a0498905dfd9a580f"
+    },
+    {
+      "archivo": "README.md",
+      "bytes": 3635,
+      "sha256": "f1c1ad22e925ff5c3e98767adec00363ffe4287e7e8ff83360667059d2a15d76"
+    }
+  ]
+}

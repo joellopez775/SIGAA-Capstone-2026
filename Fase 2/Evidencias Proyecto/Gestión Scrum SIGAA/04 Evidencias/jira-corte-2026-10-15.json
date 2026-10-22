@@ -1,0 +1,1421 @@
+{
+  "cutoff": "2026-10-15",
+  "baseCommit": "899aab613e131960bdd2ed676c7fbdd65bfc5264",
+  "site": "https://sigaa-duoc-2026.atlassian.net",
+  "boardId": 1,
+  "issues": [
+    {
+      "key": "SCRUM-1",
+      "summary": "Tarea 1",
+      "status": "Pendiente",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-2",
+      "summary": "Tarea 2",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-3",
+      "summary": "Tarea 3",
+      "status": "Pendiente",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-4",
+      "summary": "Subtarea 2.1",
+      "status": "Pendiente",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-5",
+      "summary": "Descubrimiento y producto",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-6",
+      "summary": "Diseño y arquitectura",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-7",
+      "summary": "Seguridad y plataforma",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-8",
+      "summary": "Gestión escolar",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-9",
+      "summary": "Asistencia y alertas",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-10",
+      "summary": "Seguimiento",
+      "status": "Pendiente",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-11",
+      "summary": "Analítica y auditoría",
+      "status": "Pendiente",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-12",
+      "summary": "Calidad y cierre",
+      "status": "Pendiente",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-13",
+      "summary": "PB-001 Validar problema usuarios y restricciones",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-14",
+      "summary": "PB-002 Product Vision y cuatro pilares",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-15",
+      "summary": "PB-003 Backlog priorizado y estimado",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-16",
+      "summary": "PB-004 Definition of Done",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-17",
+      "summary": "PB-005 Repositorio README y trazabilidad",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-18",
+      "summary": "PB-006 Arquitectura y decisiones técnicas",
+      "status": "Terminada",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-19",
+      "summary": "PB-007 Modelo ER y diccionario de datos",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-20",
+      "summary": "PB-008 Prototipo navegable validado",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-21",
+      "summary": "PB-009 UML de flujos principales",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-22",
+      "summary": "PB-010 Entrega y presentación Fase 1",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-23",
+      "summary": "PB-011 Autenticación segura",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-24",
+      "summary": "PB-012 Roles y permisos",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-25",
+      "summary": "PB-013 Estructura escolar",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-26",
+      "summary": "PB-014 Entorno Docker reproducible",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-27",
+      "summary": "PB-015 Gestión de estudiantes",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-28",
+      "summary": "PB-016 Matrículas",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-29",
+      "summary": "PB-017 Evaluaciones y calificaciones",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-30",
+      "summary": "PB-018 Importación validada",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-31",
+      "summary": "PB-019 Registro de asistencia",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-32",
+      "summary": "PB-020 Tres reglas explicables de alerta",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-33",
+      "summary": "PB-021 Bandeja y dashboard inicial de alertas",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-34",
+      "summary": "PB-022 Entrega de avance Fase 2",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-35",
+      "summary": "PB-023 Casos de seguimiento",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-36",
+      "summary": "PB-024 Ficha integral del estudiante",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-37",
+      "summary": "PB-025 Notificaciones",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-38",
+      "summary": "PB-026 Indicadores agregados",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-39",
+      "summary": "PB-027 Exportación de reportes",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-40",
+      "summary": "PB-028 Auditoría de cambios sensibles",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-41",
+      "summary": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-42",
+      "summary": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-43",
+      "summary": "PB-031 Manual de usuario",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-44",
+      "summary": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-45",
+      "summary": "PB-033 Entrega final Fase 2",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-46",
+      "summary": "PB-034 Defensa y retrospectiva del proyecto",
+      "status": "Pendiente",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-47",
+      "summary": "PB-035 Corregir dominio universitario a escolar",
+      "status": "Terminada",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-48",
+      "summary": "PB-036 Gestión de apoderados",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-49",
+      "summary": "PB-037 Justificaciones por Inspectoría",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-50",
+      "summary": "PB-038 Modelo docente",
+      "status": "En revisión",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-51",
+      "summary": "PB-039 Modelo estudiante",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-52",
+      "summary": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "type": "Historia",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-53",
+      "summary": "SIGAA-011A Almacenar contraseñas con hash",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-54",
+      "summary": "SIGAA-011B Implementar sesión revocable y expirable",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-55",
+      "summary": "SIGAA-011C Probar errores de autenticación",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-56",
+      "summary": "SIGAA-012A Definir matriz de permisos",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-57",
+      "summary": "SIGAA-012B Aplicar permisos en API",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-58",
+      "summary": "SIGAA-012C Probar accesos permitidos y denegados",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-59",
+      "summary": "SIGAA-015A Implementar repositorio PostgreSQL de estudiantes",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-60",
+      "summary": "SIGAA-015B Validar identificador y duplicados",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-61",
+      "summary": "SIGAA-015C Probar persistencia después de reinicio",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-62",
+      "summary": "SIGAA-016A Implementar reglas de matrícula",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-63",
+      "summary": "SIGAA-016B Integrar matrícula en API e interfaz",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-64",
+      "summary": "SIGAA-016C Probar y documentar matrícula",
+      "status": "Terminada",
+      "type": "Subtask",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-65",
+      "summary": "Gestión ágil y entregables Capstone",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-66",
+      "summary": "Análisis del caso",
+      "status": "Terminada",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-67",
+      "summary": "Squad y responsabilidades",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-68",
+      "summary": "Mapa mental",
+      "status": "Terminada",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-69",
+      "summary": "Mapa de actores",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-70",
+      "summary": "Visión del proyecto y cuatro pilares",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-71",
+      "summary": "Épicas",
+      "status": "Terminada",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-72",
+      "summary": "Historias de usuario con criterios y estimación",
+      "status": "Terminada",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-73",
+      "summary": "Impact Mapping",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-74",
+      "summary": "Product Backlog priorizado",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-75",
+      "summary": "User Story Mapping",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-76",
+      "summary": "Retrospectiva del proyecto",
+      "status": "En curso",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-77",
+      "summary": "Sprint Planning",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-78",
+      "summary": "Sprint Backlog",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-79",
+      "summary": "Scrumboard",
+      "status": "En curso",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-80",
+      "summary": "Burndown Chart",
+      "status": "En curso",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-81",
+      "summary": "Daily Meeting",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-82",
+      "summary": "Registro de impedimentos",
+      "status": "En curso",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-83",
+      "summary": "Release",
+      "status": "Pendiente",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-84",
+      "summary": "Sprint Review",
+      "status": "Pendiente",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-85",
+      "summary": "Sprint Retrospective",
+      "status": "Pendiente",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-86",
+      "summary": "Seguimiento Scrum y ceremonias",
+      "status": "En curso",
+      "type": "Epic",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-87",
+      "summary": "Product Backlog priorizado",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-88",
+      "summary": "Sprint Backlog 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-89",
+      "summary": "Sprint Backlog 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-90",
+      "summary": "Sprint Backlog 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-91",
+      "summary": "Sprint Backlog 3",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-92",
+      "summary": "DAILY-01 10-08 Sprint 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-93",
+      "summary": "DAILY-02 12-08 Sprint 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-94",
+      "summary": "DAILY-03 14-08 Sprint 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-95",
+      "summary": "DAILY-04 18-08 Sprint 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-96",
+      "summary": "DAILY-05 21-08 Sprint 0",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-97",
+      "summary": "DAILY-06 24-08 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-98",
+      "summary": "DAILY-07 25-08 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-99",
+      "summary": "DAILY-08 26-08 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-100",
+      "summary": "DAILY-09 27-08 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-101",
+      "summary": "DAILY-10 28-08 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-102",
+      "summary": "DAILY-11 01-09 Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-103",
+      "summary": "DAILY-12 07-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-104",
+      "summary": "DAILY-13 09-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-105",
+      "summary": "DAILY-14 11-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-106",
+      "summary": "DAILY-15 14-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-107",
+      "summary": "DAILY-16 16-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-108",
+      "summary": "DAILY-17 18-09 Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-109",
+      "summary": "DAILY-18 21-09 Sprint 3",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-110",
+      "summary": "DAILY-19 22-09 Sprint 3",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-111",
+      "summary": "DAILY-20 23-09 Sprint 3",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-112",
+      "summary": "DAILY-21 24-09 Sprint 3",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-113",
+      "summary": "Retrospective Sprint 1",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    },
+    {
+      "key": "SCRUM-114",
+      "summary": "Retrospective Sprint 2",
+      "status": "En revisión",
+      "type": "Tarea",
+      "assignee": null
+    }
+  ],
+  "sprints": [
+    {
+      "id": 2,
+      "state": "active",
+      "name": "Sprint 3 - Actual",
+      "startDate": "2026-09-24T22:42:35.000Z",
+      "endDate": "2026-10-08T22:42:35.000Z",
+      "originBoardId": 1,
+      "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas."
+    },
+    {
+      "id": 37,
+      "state": "active",
+      "name": "Sprint 4 - Asistencia/Alertas",
+      "startDate": "2026-10-05T12:00:00.000Z",
+      "endDate": "2026-10-17T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2."
+    },
+    {
+      "id": 1,
+      "state": "future",
+      "name": "Sprint 1 - Histórico",
+      "originBoardId": 1,
+      "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+    },
+    {
+      "id": 3,
+      "state": "future",
+      "name": "Sprint 2 - Histórico",
+      "originBoardId": 1,
+      "goal": "Preparar la base técnica e iniciar la estructura escolar y el entorno reproducible."
+    },
+    {
+      "id": 4,
+      "state": "future",
+      "name": "Sprint 0 - Histórico",
+      "originBoardId": 1,
+      "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+    }
+  ],
+  "sprintIssues": {
+    "2": [
+      {
+        "key": "SCRUM-23",
+        "summary": "PB-011 Autenticación segura",
+        "status": "En revisión",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-24",
+        "summary": "PB-012 Roles y permisos",
+        "status": "En revisión",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-27",
+        "summary": "PB-015 Gestión de estudiantes",
+        "status": "En revisión",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-28",
+        "summary": "PB-016 Matrículas",
+        "status": "En revisión",
+        "points": 5
+      }
+    ],
+    "3": [
+      {
+        "key": "SCRUM-25",
+        "summary": "PB-013 Estructura escolar",
+        "status": "En curso",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-26",
+        "summary": "PB-014 Entorno Docker reproducible",
+        "status": "En revisión",
+        "points": 5
+      }
+    ],
+    "37": [
+      {
+        "key": "SCRUM-31",
+        "summary": "PB-019 Registro de asistencia",
+        "status": "En revisión",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-32",
+        "summary": "PB-020 Tres reglas explicables de alerta",
+        "status": "En curso",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-33",
+        "summary": "PB-021 Bandeja y dashboard inicial de alertas",
+        "status": "En curso",
+        "points": 8
+      },
+      {
+        "key": "SCRUM-34",
+        "summary": "PB-022 Entrega de avance Fase 2",
+        "status": "En revisión",
+        "points": 5
+      },
+      {
+        "key": "SCRUM-49",
+        "summary": "PB-037 Justificaciones por Inspectoría",
+        "status": "En curso",
+        "points": 5
+      }
+    ]
+  },
+  "stories": [
+    {
+      "key": "SCRUM-13",
+      "summary": "PB-001 Validar problema usuarios y restricciones",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-14",
+      "summary": "PB-002 Product Vision y cuatro pilares",
+      "status": "En revisión",
+      "points": 3,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-15",
+      "summary": "PB-003 Backlog priorizado y estimado",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-16",
+      "summary": "PB-004 Definition of Done",
+      "status": "En revisión",
+      "points": 2,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-17",
+      "summary": "PB-005 Repositorio README y trazabilidad",
+      "status": "En revisión",
+      "points": 3,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir el problema, la visión del producto, el backlog inicial y la forma de trabajo del equipo."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-18",
+      "summary": "PB-006 Arquitectura y decisiones técnicas",
+      "status": "Terminada",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-19",
+      "summary": "PB-007 Modelo ER y diccionario de datos",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-20",
+      "summary": "PB-008 Prototipo navegable validado",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-21",
+      "summary": "PB-009 UML de flujos principales",
+      "status": "En curso",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-22",
+      "summary": "PB-010 Entrega y presentación Fase 1",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-23",
+      "summary": "PB-011 Autenticación segura",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas.",
+          "startDate": "2026-09-24T22:42:35.000Z",
+          "endDate": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-24",
+      "summary": "PB-012 Roles y permisos",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas.",
+          "startDate": "2026-09-24T22:42:35.000Z",
+          "endDate": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-25",
+      "summary": "PB-013 Estructura escolar",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 3,
+          "name": "Sprint 2 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Preparar la base técnica e iniciar la estructura escolar y el entorno reproducible."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-26",
+      "summary": "PB-014 Entorno Docker reproducible",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 3,
+          "name": "Sprint 2 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Preparar la base técnica e iniciar la estructura escolar y el entorno reproducible."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-27",
+      "summary": "PB-015 Gestión de estudiantes",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas.",
+          "startDate": "2026-09-24T22:42:35.000Z",
+          "endDate": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-28",
+      "summary": "PB-016 Matrículas",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Implementar autenticación segura, roles y permisos, persistencia de estudiantes y matrículas.",
+          "startDate": "2026-09-24T22:42:35.000Z",
+          "endDate": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-29",
+      "summary": "PB-017 Evaluaciones y calificaciones",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-30",
+      "summary": "PB-018 Importación validada",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-31",
+      "summary": "PB-019 Registro de asistencia",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2.",
+          "startDate": "2026-10-05T12:00:00.000Z",
+          "endDate": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-32",
+      "summary": "PB-020 Tres reglas explicables de alerta",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2.",
+          "startDate": "2026-10-05T12:00:00.000Z",
+          "endDate": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-33",
+      "summary": "PB-021 Bandeja y dashboard inicial de alertas",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2.",
+          "startDate": "2026-10-05T12:00:00.000Z",
+          "endDate": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-34",
+      "summary": "PB-022 Entrega de avance Fase 2",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2.",
+          "startDate": "2026-10-05T12:00:00.000Z",
+          "endDate": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-35",
+      "summary": "PB-023 Casos de seguimiento",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-36",
+      "summary": "PB-024 Ficha integral del estudiante",
+      "status": "En curso",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-37",
+      "summary": "PB-025 Notificaciones",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-38",
+      "summary": "PB-026 Indicadores agregados",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-39",
+      "summary": "PB-027 Exportación de reportes",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-40",
+      "summary": "PB-028 Auditoría de cambios sensibles",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-41",
+      "summary": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-42",
+      "summary": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-43",
+      "summary": "PB-031 Manual de usuario",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-44",
+      "summary": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente",
+      "points": 3,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-45",
+      "summary": "PB-033 Entrega final Fase 2",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-46",
+      "summary": "PB-034 Defensa y retrospectiva del proyecto",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-47",
+      "summary": "PB-035 Corregir dominio universitario a escolar",
+      "status": "Terminada",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-48",
+      "summary": "PB-036 Gestión de apoderados",
+      "status": "En curso",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-49",
+      "summary": "PB-037 Justificaciones por Inspectoría",
+      "status": "En curso",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "boardId": 1,
+          "goal": "Registrar asistencia, gestionar justificaciones y generar alertas explicables, junto con el avance de Fase 2.",
+          "startDate": "2026-10-05T12:00:00.000Z",
+          "endDate": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-50",
+      "summary": "PB-038 Modelo docente",
+      "status": "En revisión",
+      "points": 13,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-51",
+      "summary": "PB-039 Modelo estudiante",
+      "status": "En curso",
+      "points": 13,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-52",
+      "summary": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "future",
+          "boardId": 1,
+          "goal": "Definir arquitectura, modelo de datos, prototipo y documentación de la Fase 1."
+        }
+      ]
+    }
+  ]
+}
