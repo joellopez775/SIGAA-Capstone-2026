@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Inventario actualizado del incremento Sprint 5; excluye este archivo, dependencias y archivos privados ignorados. El informe de publicación inicial conserva su corte del 22-10-2026.",
+  "nota": "Inventario del incremento Sprint 5 y su informe general de actualización y presentación. Excluye este archivo, dependencias y archivos privados ignorados. Los documentos anteriores conservan sus fechas de corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 2878,
-      "sha256": "da18af2e3e90bcb677eb11a4294fecbe498b7572b5883b3330564ba869da4690"
+      "bytes": 3420,
+      "sha256": "85db46ccdfc92c937b51dea5c1dd29f9e405ec8794d8d833aafecc9f2c2d8ef0"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -1598,6 +1598,11 @@
       "sha256": "8338063f2b5d138292a845d2a60b12ff67db40ebcf9aa67c5260b35eefdf96cb"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/actualizacion-2026-10-28.json",
+      "bytes": 13941,
+      "sha256": "ccb0dae8b36d5f597cd7b99bb198e8f0d667ca5c314c305a8b65326ca817eaf2"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-dns-verification.json",
       "bytes": 816,
       "sha256": "7092bd5fb4da5875dbf9908701d0202250201713f2b91e77ab9c59a5d354428f"
@@ -1798,6 +1803,11 @@
       "sha256": "16af816aadb57285a6a523b438e72cb5c982ddb8604fb7a4f8eeddc72b161803"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf",
+      "bytes": 790793,
+      "sha256": "32f49f53371a4e3c71039c0dff0b23f15fbb3059d0ee90b37c170ffd634e9449"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de avances para Matías y Agustín - 15 octubre 2026.pdf",
       "bytes": 75072,
       "sha256": "526a7b9aa5f975eaa52e1cb82bbbb59b40f9c1a1e1d4ae495d0c781dc6188f3a"
@@ -1846,6 +1856,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación DNS de SIGAA - Revisión antes de activar.pdf",
       "bytes": 73117,
       "sha256": "2cf0ca01f28c82be4276a176381e1a2dc19b010e02a0f4cc1998e0fc355e4c71"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf",
+      "bytes": 673274,
+      "sha256": "689cf859da53bacb07c2e0323391b3c6b1170210bbef0cd669993e6a97ddfe8e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 3 - Implementación real y verificación.pdf",
@@ -1911,6 +1926,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint Review - SIGAA.pdf",
       "bytes": 69498,
       "sha256": "20b02458fcc1258d225647960a66455673b36ab0ec8ca52ed5bd194d6fcd6af5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx",
+      "bytes": 2762069,
+      "sha256": "51bc443bb13e734307ac8c33d9e64383be0e0900989544d5fb0a95bb96d1f5f9"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint3-report.py",
@@ -2099,8 +2119,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 4007,
-      "sha256": "78bea8ea005572782df80d8cca04c465031060b964f7c3bc4c52606e42735c40"
+      "bytes": 4360,
+      "sha256": "48ae4b22e1ccb65ec725df6599e7af41ae2c127d67c5348e6c6d4e890b9d25bf"
     }
   ]
 }

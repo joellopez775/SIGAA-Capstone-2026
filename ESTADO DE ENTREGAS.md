@@ -10,6 +10,14 @@ SCRUM-37 sigue pendiente. No se acredita aceptación, reuniones, integración ni
 despliegue en el servidor. La documentación académica personal pendiente abajo
 no se considera completada por este incremento.
 
+Informe general de actualización y presentación de avance al 28-10-2026:
+disponibles en `SIGAA/output/pdf/`, con presentación editable en
+`SIGAA/output/presentaciones/`, dentro de Evidencias Proyecto. Comparan las 40
+historias PB de Jira con el incremento 0.9.0, distinguen revisión de aceptación
+y proponen pasos, ventanas y responsabilidades para el cierre. El corte de
+Jira queda en `SIGAA/output/evidence/actualizacion-2026-10-28.json`. Son documentos
+de seguimiento; no acreditan nuevas reuniones, despliegue ni entrega en Campus.
+
 ## Fase 1
 
 Se incluye la definición de SIGAA existente, su presentación y la autoevaluación de competencias de Joel corregida previamente. Se conservan los formularios y evaluaciones disponibles sin atribuirles aprobación del docente.

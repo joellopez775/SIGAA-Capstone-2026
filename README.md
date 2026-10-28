@@ -30,6 +30,8 @@ Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acom
 - [Aplicación y manual técnico](<Fase 2/Evidencias Proyecto/SIGAA/README.md>).
 - [Expediente Scrum](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/README.md>).
 - [Informes PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/>).
+- [Informe de actualización al 28 de octubre](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf>).
+- [Presentación de avance editable](<Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx>) y [copia PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf>).
 - [Sprints y registros PDF](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/>).
 - [Carta Gantt por sprints](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/05 Planificación/Carta Gantt SIGAA por sprints.xlsx>).
 - [Estado de entregas](<ESTADO DE ENTREGAS.md>).
