@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28T23:43:39.973Z",
+  "browser": "Chromium",
+  "environment": "Local isolated PostgreSQL 14; synthetic data",
+  "checks": [
+    {
+      "label": "Registro de apoderado, vínculo principal y recarga persistente",
+      "result": "pass"
+    },
+    {
+      "label": "Duplicado muestra error sin perder formulario; edición conserva historial",
+      "result": "pass"
+    },
+    {
+      "label": "Apertura de caso desde alerta con responsable y próxima acción",
+      "result": "pass"
+    },
+    {
+      "label": "Inspectoría registra intervención, cierra y reabre conservando historial",
+      "result": "pass"
+    },
+    {
+      "label": "Ficha de Inspectoría integra notas, asistencia, casos y contactos",
+      "result": "pass"
+    },
+    {
+      "label": "Móvil 390 y 320 píxeles: tres módulos sin desborde, navegación y teclado",
+      "result": "pass"
+    },
+    {
+      "label": "Docente consulta su ficha sin contactos y no edita caso de otro responsable",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante consulta ficha publicada propia sin seguimiento interno ni apoderados",
+      "result": "pass"
+    }
+  ],
+  "result": "passed"
+}

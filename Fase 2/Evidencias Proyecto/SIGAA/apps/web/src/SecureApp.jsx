@@ -4,9 +4,25 @@ import "./secure.css";
 import { AcademicPanel, StudentAcademic } from "./AcademicPanel.jsx";
 import { StructurePanel, RiskPanel, JustificationPanel } from "./OperationsPanel.jsx";
 import GlassNavigation from "./GlassNavigation.jsx";
+import { GuardiansPanel, CasesPanel, DossierPanel } from "./FollowupPanel.jsx";
 
 let csrfToken = "";
 const messages = {
+  followup_reason_required: "Explica el motivo, intervención o resultado con al menos 8 caracteres.",
+  invalid_followup_plan: "Indica la próxima acción y una fecha de seguimiento válida.",
+  invalid_guardian: "Completa nombres, apellidos y un código de 3 a 40 caracteres en mayúsculas.",
+  invalid_guardian_phone: "Revisa el teléfono: usa entre 7 y 30 caracteres, números, espacios, guiones o prefijo +.",
+  guardian_code_immutable: "El código identifica a esta persona y no puede cambiarse.",
+  guardian_active_links: "Desactiva sus vínculos antes de desactivar al apoderado.",
+  guardian_primary_required: "Cada estudiante con vínculos activos necesita un apoderado principal. Selecciona primero el nuevo principal.",
+  guardian_inactive: "Activa al apoderado antes de vincularlo.",
+  invalid_guardian_link: "Revisa el vínculo; un apoderado principal también debe estar activo.",
+  invalid_case: "Revisa el estado y la prioridad del caso.",
+  case_owner_required: "Solo el docente responsable o el equipo de gestión pueden modificar este caso.",
+  case_closed: "El caso está cerrado. Reábrelo antes de registrar otra intervención.",
+  alert_already_closed: "Esta alerta está resuelta o descartada y no admite nuevos casos.",
+  case_not_found: "El caso no existe o no está dentro de tus cursos autorizados.",
+  guardian_not_found: "El apoderado ya no está disponible. Actualiza la lista.",
   invalid_structure: "Revisa los campos, fechas, estados y valores del registro escolar.",
   invalid_structure_parent: "La relación no existe o su establecimiento, año, curso o asignatura no está activo.",
   structure_parent_immutable: "No cambies el año ni las relaciones de un registro existente. Crea uno nuevo para conservar el historial.",
@@ -610,6 +626,9 @@ export default function SecureApp() {
     ["enrollments", "Matrículas"],
     ...(admin ? [["structure", "Estructura escolar"]] : []),
     ...(!student ? [["risk", "Alertas y seguimiento"]] : []),
+    ...(!student ? [["cases", "Casos de seguimiento"]] : []),
+    ...(["admin", "inspector", "leadership"].includes(user.role) ? [["guardians", "Apoderados"]] : []),
+    ["dossier", "Ficha integral"],
     ...(["admin", "inspector", "student"].includes(user.role) ? [["justifications", student ? "Mis justificaciones" : "Justificaciones"]] : []),
     ...(["teacher", "student"].includes(user.role)
       ? [
@@ -640,6 +659,9 @@ export default function SecureApp() {
         <Notice text={error} error />
         {view === "structure" && admin && <StructurePanel api={api} revision={revision} />}
         {view === "risk" && !student && <RiskPanel api={api} user={user} courses={data.courses} revision={revision} />}
+        {view === "cases" && !student && <CasesPanel api={api} user={user} courses={data.courses} students={data.students} revision={revision} />}
+        {view === "guardians" && <GuardiansPanel api={api} user={user} students={data.students} revision={revision} />}
+        {view === "dossier" && <DossierPanel api={api} user={user} students={data.students} revision={revision} />}
         {view === "justifications" && <JustificationPanel api={api} student={student} revision={revision} />}
         {view === "summary" && (
           <>

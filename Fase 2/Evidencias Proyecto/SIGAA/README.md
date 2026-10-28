@@ -57,7 +57,35 @@ docker compose -f compose.test.yaml down
 
 La plantilla de integración continua está en `ci/sigaa-ci.yml.example`. Para activarla se debe copiar a `.github/workflows/sigaa-ci.yml` usando una credencial de GitHub con permiso `workflow`.
 
-## Estado vigente: API 0.8.0
+## Estado vigente del código: API 0.9.0 · Sprint 5
+
+Corte: 28-10-2026. Casos de seguimiento, gestión de apoderados y ficha integral
+implementados con persistencia, permisos por rol/curso e historial auditable.
+Las historias SCRUM-35, SCRUM-48 y SCRUM-36 se presentan para revisión del PO.
+SCRUM-37 (notificaciones) sigue pendiente. Esta entrega no actualiza el servidor público.
+
+- [Implementación y verificación](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/01 Implementación y verificación Sprint 5.pdf>).
+- [Manual de uso](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/02 Manual de uso Sprint 5.pdf>).
+- [Seguimiento y backlog](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/03 Seguimiento y backlog Sprint 5.pdf>).
+- Evidencia reproducible: `output/evidence/sprint-5/`.
+
+Validación local: 6 pruebas unitarias, 57 de integración, 8 recorridos nuevos
+y 11 recorridos de regresión en Chromium; compilación de producción correcta.
+PostgreSQL 14 aislado, datos ficticios. Docker/PostgreSQL 16 y despliegue
+de esta versión quedan pendientes de verificación.
+
+Para una base escolar existente: respaldar y verificar restauración, revisar
+apoderados principales duplicados, ejecutar `docker compose build api`,
+`docker compose stop api`, `docker compose run --rm --no-deps api npm run migrate`
+y luego `docker compose up -d --build`. El migrador aplica 007, 008 y 009.
+Si usas un rol SQL restringido, aplica los permisos de nuevas tablas indicados en el PDF.
+Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
+aplica 001-009 automáticamente y no crea cuentas por defecto.
+
+La migración 009 conserva registros anteriores. Ante varios apoderados principales
+históricos, se detiene para revisión, sin elegir ni borrar vínculos arbitrariamente.
+
+## Antecedente desplegado: API 0.8.0
 
 Código a9b6f65, desplegado el 15-10-2026 con PostgreSQL 16 y HTTPS. Incluye
 administración escolar, tres reglas configurables, bandeja con historial y
@@ -65,13 +93,7 @@ justificaciones de Inspectoría, además de los flujos académicos y acceso segu
 Guía, migración, límites y pruebas en
 [Implementación 0.8.0](<../Gestión Scrum SIGAA/PDF/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.pdf>).
 
-Para una base escolar existente: respaldar, ejecutar `docker compose build api`,
-`docker compose stop api`, `docker compose run --rm --no-deps api npm run migrate`
-y luego `docker compose up -d --build`. El migrador aplica 007 y 008; no borra datos.
-Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
-aplica 001-008 automáticamente y no crea cuentas por defecto.
-
-Pruebas actuales: 4 unitarias + 44 integración en Docker, 25 recorridos locales y
+Pruebas del corte histórico 0.8.0: 4 unitarias + 44 integración en Docker, 25 recorridos locales y
 8 HTTPS. Evidencia en `output/evidence/operations-*.json`. Las historias quedan
 en revisión del PO; no se han cerrado los sprints ni simulado ceremonias.
 

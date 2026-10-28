@@ -38,6 +38,12 @@ Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acom
 
 ## Ejecutar una copia local
 
+Actualización del 28-10-2026: incremento 0.9.0 con casos, apoderados y ficha
+integral, preparado para revisión. Documentación en
+[Sprint 5](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/>).
+El servidor público no fue actualizado con esta entrega; las notificaciones
+siguen pendientes. Los informes anteriores conservan sus fechas de corte.
+
 Requisitos: Git y Docker Desktop, o Docker Engine con Compose. No se requiere acceso al servidor del equipo.
 
 ```sh
