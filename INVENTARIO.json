@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Incremento 0.9.1, avisos, calendario, UML y evidencia Docker/PostgreSQL 16. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
+  "nota": "Incremento 0.9.1, evidencia de desarrollo y diagrama físico completo de base de datos. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 11746,
-      "sha256": "49e95dc9641efac085798555921157a865c156e78e513ac5119149472b6bcd73"
+      "bytes": 11955,
+      "sha256": "6a764d0e61696f4172240ff1b08234adfefce9d1c95f0fb123d291c912d7499d"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -1383,6 +1383,51 @@
       "sha256": "3fb5aa3b727002bc98740e66839aa8b3394dd30980a0b0c8ce4abeb2ec62a74b"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/00-general.dot",
+      "bytes": 22497,
+      "sha256": "3aaa305d09f94ea9da149f666c8bbb446c8a8d26b62c85bb9fbead75d2a5c82b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/01-modulo.dot",
+      "bytes": 7644,
+      "sha256": "c264c512193312eec0ad754b051739d261fd8596cbbdbb0fc39286cebba33584"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/02-modulo.dot",
+      "bytes": 9967,
+      "sha256": "e47b6d7524db23dc884591b54c46292385f21156dfe269fad41d9f1d3e832f57"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/03-modulo.dot",
+      "bytes": 7088,
+      "sha256": "f98d91869749d9fb0f909e821135e9b27fd5a3914949d5a8da80cbcdf6f1741a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/04-modulo.dot",
+      "bytes": 7685,
+      "sha256": "da898aedf8ebefa42e86012b2e7bcc202aca7b883c341a7adc847af1e3886bf8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/05-modulo.dot",
+      "bytes": 8689,
+      "sha256": "3f72d2423c33ea0402018fc620688114f973c5f191d2fe964c39733f45824c84"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/06-modulo.dot",
+      "bytes": 10397,
+      "sha256": "891749091a480a63eadbe798a9d414a3eda50782b5e33a3bb21d593770357a15"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/README.md",
+      "bytes": 2887,
+      "sha256": "d4bc189fd681eebde982cea945b12fae269a0333b3d24454acf078b3510a9747"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/catalog.sql",
+      "bytes": 2496,
+      "sha256": "8b13a47dbdc5c3cf701e7db9d6e57b9f990d8d323a93f4acb152552c46841c93"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/fase-1/01-formativa-fase-1.md",
       "bytes": 4224,
       "sha256": "b57c9f6e8def107efb53c9b1de51388453eda77c9040f5b608ce9b5c37a68d26"
@@ -1636,6 +1681,16 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/actualizacion-2026-10-28.json",
       "bytes": 13941,
       "sha256": "ccb0dae8b36d5f597cd7b99bb198e8f0d667ca5c314c305a8b65326ca817eaf2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/database-diagram-validation.json",
+      "bytes": 5735,
+      "sha256": "e139d9d4a741a7fa8bd79710d112b23c176ba87c5e37d1164ece6546ca8c0dc0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/database-schema-0.9.1.json",
+      "bytes": 146005,
+      "sha256": "8975d07c1cdbceeef40bdd1111ef9eb986f56367cb439fc03df9ed6274c2a9aa"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-dns-verification.json",
@@ -1893,6 +1948,11 @@
       "sha256": "a997c217aebbbc0e50ca59345fa3df3cef0be948b395c510b6e75838ea525a95"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf",
+      "bytes": 117482,
+      "sha256": "a70fe6e8b65f6a114108428762ac78179b36fa28922828f1e371d488d924e175"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Estado de Fases y Sprints - SIGAA.pdf",
       "bytes": 70260,
       "sha256": "a287a7bc1ce8064332a6329f99541b3ea0a504cec076e9c3d881a8a51f0da70f"
@@ -2073,6 +2133,11 @@
       "sha256": "b44aedddbb688c127cd88f4e6c15d1e794d8275fabb3e6872a6266a54af25615"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-database-diagram.py",
+      "bytes": 14114,
+      "sha256": "ec44af266550950101b7d139605fbee3288b2824953e3b19c315b1edf69132de"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-development-091-pdfs.py",
       "bytes": 23170,
       "sha256": "6f7c122a4d85701ebbd5b2d60dce20e56ab4c698557b101d01848ceeec6e3ba7"
@@ -2096,6 +2161,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint5-pdfs.py",
       "bytes": 24391,
       "sha256": "e86f8cf9290976dedf9255645f04c0989a1a6cd2601b8fbb9043151b8194c680"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/layout-database.mjs",
+      "bytes": 693,
+      "sha256": "6f574a244ff781a44eb04995a2f814af346cfc4ab685196ac36a47d62ad1fda5"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/populate-hosted-demo.py",
@@ -2269,8 +2339,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 5653,
-      "sha256": "761a9ea46a5c937def02ab09e2954958f55600e4d8baf4c9e0e124478c37f555"
+      "bytes": 5876,
+      "sha256": "095e769e6c51178b701b43aa571f4e2556553846056f1c4dadb20414f42b273c"
     }
   ]
 }
