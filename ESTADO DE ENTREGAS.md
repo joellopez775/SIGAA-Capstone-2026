@@ -27,6 +27,10 @@ Incluyen conceptos, ejemplos, preguntas y transiciones; el guion también figura
 en las notas del PowerPoint. No atribuyen autoría individual de desarrollos ni
 sustituyen reflexiones académicas personales o registros de reuniones.
 
+También está disponible la edición unificada `SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf`,
+con 25 páginas, índice, marcadores y numeración continua: Joel 2–9, Agustín 10–17
+y Matías 18–25. Conserva el contenido de los seis documentos individuales.
+
 ## Fase 1
 
 Se incluye la definición de SIGAA existente, su presentación y la autoevaluación de competencias de Joel corregida previamente. Se conservan los formularios y evaluaciones disponibles sin atribuirles aprobación del docente.

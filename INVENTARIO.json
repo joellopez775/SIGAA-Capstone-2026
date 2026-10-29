@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Inventario del incremento Sprint 5, informe y presentación actualizados y seis PDF de preparación de exposición por integrante. Excluye este archivo, dependencias y archivos privados ignorados. Los documentos anteriores conservan sus fechas de corte.",
+  "nota": "Inventario del incremento Sprint 5, informe y presentación actualizados y preparación de exposición individual y unificada. Excluye este archivo, dependencias y archivos privados ignorados. Los documentos anteriores conservan sus fechas de corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 4085,
-      "sha256": "13afee7b9732202f546181e29ed0bbd3e5232eb102f729aa2a2a06cc0f302350"
+      "bytes": 4371,
+      "sha256": "bb4a357bc23e3281fbc67f1fc5caf8a8d89629e245658bd121a12e5f3382095d"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -1798,6 +1798,11 @@
       "sha256": "a287a7bc1ce8064332a6329f99541b3ea0a504cec076e9c3d881a8a51f0da70f"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf",
+      "bytes": 906987,
+      "sha256": "2ed024057669ab73f48736a9c5fe9844d09d620eeb42890b06e302a74c89ca7b"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de Tecnologías a Utilizar - SIGAA.pdf",
       "bytes": 100592,
       "sha256": "16af816aadb57285a6a523b438e72cb5c982ddb8604fb7a4f8eeddc72b161803"
@@ -2149,8 +2154,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 5095,
-      "sha256": "93533712c13abbfbe2a156f4d0871118304824fee19adaa5fcbc6c0085ae7388"
+      "bytes": 5334,
+      "sha256": "d15389726d2d2dbfe41dbbe02fe8df992acca183bc5aa9b8027bcd39f1435d79"
     }
   ]
 }

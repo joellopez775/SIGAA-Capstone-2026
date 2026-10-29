@@ -33,6 +33,7 @@ Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acom
 - [Informe de actualización al 28 de octubre](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf>).
 - [Presentación de avance editable](<Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx>) y [copia PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf>).
 - [Guiones y material de estudio por integrante](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/>): dos PDF para Joel, dos para Agustín y dos para Matías.
+- [Guion y material de estudio en un solo PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf>): 25 páginas con índice y secciones para Joel (2–9), Agustín (10–17) y Matías (18–25).
 - [Sprints y registros PDF](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/>).
 - [Carta Gantt por sprints](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/05 Planificación/Carta Gantt SIGAA por sprints.xlsx>).
 - [Estado de entregas](<ESTADO DE ENTREGAS.md>).
