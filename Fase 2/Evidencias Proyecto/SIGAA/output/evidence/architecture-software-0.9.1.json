@@ -1,0 +1,159 @@
+{
+  "version": "0.9.1",
+  "cutoff": "2026-10-28 America/Santiago",
+  "sourceCommit": "d24d60e8c14fad9a105dc4ad30b029fce0e5b2f4",
+  "scope": "Code architecture, validated local Docker and configured server profiles; not a live production audit",
+  "sources": [
+    {
+      "path": "apps/web/src/main.jsx",
+      "sha256": "8342fe8772f85a2501d33889b21bb6491e64b7cfff6a8f97731173f13036520c"
+    },
+    {
+      "path": "apps/web/src/SecureApp.jsx",
+      "sha256": "a462bae061faeeeb87477d0434dab7bba6324cc0cb7346fb06b0290c562d751c"
+    },
+    {
+      "path": "apps/web/src/AcademicPanel.jsx",
+      "sha256": "df502877e8f4c9b06f0683301d4762763cab970bb44ed0e830104d72fd02f756"
+    },
+    {
+      "path": "apps/web/src/OperationsPanel.jsx",
+      "sha256": "6dd0db75bd4bbca1831471a3a38a7c954ab67b0eb2e016e7364cc3d6bb262e1a"
+    },
+    {
+      "path": "apps/web/src/FollowupPanel.jsx",
+      "sha256": "d7126a493b8f4b922ad0d71f91de36107c4fb17fcdfed25ec9162679db76c54f"
+    },
+    {
+      "path": "apps/web/src/StudentPortal.jsx",
+      "sha256": "32eb787a1fea80c66bc50636d9faa8167f602671e21b1c8559a76b16b25346b4"
+    },
+    {
+      "path": "apps/web/src/NotificationsPanel.jsx",
+      "sha256": "2ee029fa4b7dcb16aec04a163ec514ad473cdd174b9218c9902ee711727f8c4e"
+    },
+    {
+      "path": "apps/web/nginx.conf",
+      "sha256": "c7aff2de8e05013134f00adbd08f7bf59ebce2475cabb423d37e643ec5fc6beb"
+    },
+    {
+      "path": "apps/web/Dockerfile",
+      "sha256": "1c3898313cbf2ba318383d28af5a36e60f38f2d426bb131085ea1438a46405ae"
+    },
+    {
+      "path": "apps/web/vite.config.js",
+      "sha256": "85464ec08c2d855b0203571891d7e5d9de0ae7e277abeadd45421205f3a0e74a"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "eef85650457171012c24e678df32835aecce9f4ecc39d4d325aab8fa4aec193e"
+    },
+    {
+      "path": "apps/api/package.json",
+      "sha256": "78f258f96968eda139130a712f4f5ad617c8987d47bd5d2ed35f50c7994c9614"
+    },
+    {
+      "path": "apps/api/Dockerfile",
+      "sha256": "01d329b8d0e4b4efd1fc416d011780924c0a619f98155d9e585eb16d9a8dc65a"
+    },
+    {
+      "path": "apps/api/src/app.js",
+      "sha256": "5eee5c4730cea1bfffb8b801ad8c51f71d409b6098c7a3d0f2ea03bd6c675436"
+    },
+    {
+      "path": "apps/api/src/server.js",
+      "sha256": "8d61992073bf16334c3430b60d7d94e0b5df8e4125a017422bf03b616129b487"
+    },
+    {
+      "path": "apps/api/src/school-app.js",
+      "sha256": "eea3ade083328ea77e81cde72500dd96782d945e7d7efe8a0be64bbb2c6a2084"
+    },
+    {
+      "path": "apps/api/src/security.js",
+      "sha256": "c804126e395befc7e8134c2febbb28d1cf4067d8b0eca2bb6b6ad7dbb16031a0"
+    },
+    {
+      "path": "apps/api/src/origins.js",
+      "sha256": "e5133355f072c0385fc5532a4e53f38fa2d7048e533c350526c17965cd0c9a35"
+    },
+    {
+      "path": "apps/api/src/repository.js",
+      "sha256": "133fc9c7b24247bb97732fa699c8f6606fae59bd16ede3e174a87be2275c85fe"
+    },
+    {
+      "path": "apps/api/src/teacher-routes.js",
+      "sha256": "5edf988643abcb59c5c74e2bd57532efbd696bb35000344e5db8b5953aea9516"
+    },
+    {
+      "path": "apps/api/src/academic-routes.js",
+      "sha256": "11ff0fddeaaac3d0c26c4ffb0e53df26608246a842c53f736cb20b4f2602164b"
+    },
+    {
+      "path": "apps/api/src/structure-routes.js",
+      "sha256": "22105141cb74eade1308fbcc142847ae525296a8c7ec8bf81917d3733effc9ef"
+    },
+    {
+      "path": "apps/api/src/support-routes.js",
+      "sha256": "1c4fa91eb3e36f33a54a141611d9fff09454060246c6a813f30dba1cd3fb3c53"
+    },
+    {
+      "path": "apps/api/src/risk-engine.js",
+      "sha256": "c3f68e3230e7c5618e5d5bc7443979e34e9222231b347d0518806aeeed19059d"
+    },
+    {
+      "path": "apps/api/src/followup-routes.js",
+      "sha256": "4599ad383d164b361b0993ac7199195c9b89287d10d2f16c35d8225b5223019b"
+    },
+    {
+      "path": "apps/api/src/student-portal.js",
+      "sha256": "2cb18aa5a8fda2fc8866054651528730cf3944afaf1ea82e01d417efb603616e"
+    },
+    {
+      "path": "apps/api/src/notification-routes.js",
+      "sha256": "7df96212adb682c91332b69560c73fe5b0264cff5a5ecc233b4a6fa351bf16a5"
+    },
+    {
+      "path": "apps/api/src/migrate.js",
+      "sha256": "600036ad475cdb91f2ef34052258c1f3de9a7f7f76b10174bfa6971cf10b5a1d"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "c2ca7a4f501178e33af00c73396413fca2d9c18ce9646eec4c9d7307fa2f0bcc"
+    },
+    {
+      "path": "compose.server.yaml",
+      "sha256": "e9007c490497f2065f96e52fb755846d4a242eb4d8ed1a257fac794ba37f38b3"
+    },
+    {
+      "path": "compose.hosted.yaml",
+      "sha256": "512fef606503835d5a3be5d860dbdb279011a99e885be75e588283d4f630a063"
+    },
+    {
+      "path": "compose.test.yaml",
+      "sha256": "e1566c2af1f0864dc751140e43f0f5dd417433b3fbc422d0f998c23fcd5d3b25"
+    },
+    {
+      "path": "infra/postgres/init/010_internal_notifications.sql",
+      "sha256": "e4db718971f3795ad650145e6c8a5df25423c5b61d5c23dab9276e2b99aa5de9"
+    },
+    {
+      "path": "output/evidence/sprint-5-completion/validation.json",
+      "sha256": "25eb8a04e3f34438295cdcc0d3d4eebe83176d2a491711ade4e2e2c8ca928c78"
+    },
+    {
+      "path": "output/evidence/database-schema-0.9.1.json",
+      "sha256": "8975d07c1cdbceeef40bdd1111ef9eb986f56367cb439fc03df9ed6274c2a9aa"
+    }
+  ],
+  "pdfPages": 7,
+  "diagramViews": [
+    "context and containers",
+    "components",
+    "security flow",
+    "configured server deployment",
+    "build and Docker profiles",
+    "case transaction and notifications",
+    "verification and sources"
+  ],
+  "productionDeploymentVerified": false
+}

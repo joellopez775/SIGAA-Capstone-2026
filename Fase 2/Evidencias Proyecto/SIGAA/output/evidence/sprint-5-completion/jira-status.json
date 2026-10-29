@@ -1,0 +1,54 @@
+{
+  "cutoff": "2026-10-28 America/Santiago",
+  "source": "Jira: existing issues; description edits and three confirmed transitions",
+  "implementationCommit": "c7dc656",
+  "pullRequest": "https://github.com/joellopez775/SIGAA-Capstone-2026/pull/1",
+  "createdIssues": 0,
+  "createdSprints": 0,
+  "meetingsCreated": 0,
+  "productionDeployment": false,
+  "issues": [
+    {
+      "key": "SCRUM-21",
+      "summary": "PB-009 UML de flujos principales",
+      "status": "En revisión",
+      "change": "UML actualizado con actores reales, autenticación/sesiones, datos académicos y calendario, alertas/casos/avisos transaccionales, apoderados/ficha, estructura/justificaciones y componentes. Apoderado figura como entidad administrada, sin login implementado. PDF de 7 páginas, contrastado con código y pruebas."
+    },
+    {
+      "key": "SCRUM-35",
+      "summary": "PB-023 Casos de seguimiento",
+      "status": "En revisión",
+      "change": "Casos de seguimiento: apertura, responsable, acciones, cierre y reapertura persistentes. La regresión de casos pasó en PostgreSQL 16. Los nuevos eventos generan avisos atómicos al creador y responsable activos, excluyendo al actor; no se resuelve automáticamente la alerta al cerrar el caso."
+    },
+    {
+      "key": "SCRUM-36",
+      "summary": "PB-024 Ficha integral del estudiante",
+      "status": "En revisión",
+      "change": "Ficha integral persistente: regresión aprobada en PostgreSQL 16, con privacidad por rol/curso y ocultación del seguimiento interno al estudiante. El portal se complementa con asignaturas vigentes y calendario académico propio."
+    },
+    {
+      "key": "SCRUM-37",
+      "summary": "PB-025 Notificaciones",
+      "status": "En revisión",
+      "change": "Avisos internos implementados: apertura, intervención, cambio, cierre y reapertura de casos; destinatarios creador/responsable activos, excluyendo al actor. Bandeja con Todos/Sin leer, paginación, lectura persistente y acceso al caso. Permisos comprobados al consultar y marcar leído; sin datos sensibles copiados, duplicados ni eventos de transacciones revertidas. No incluye correo, push, avisos a apoderados ni reconstrucción histórica."
+    },
+    {
+      "key": "SCRUM-48",
+      "summary": "PB-036 Gestión de apoderados",
+      "status": "En revisión",
+      "change": "Gestión persistente de apoderados y vínculos: regresión aprobada en PostgreSQL 16. Administración/Inspectoría gestionan; Dirección/UTP consulta; docente solo recibe nombres y parentesco en su ficha autorizada. Sin login de apoderados ni entrega de mensajes externos."
+    },
+    {
+      "key": "SCRUM-51",
+      "summary": "PB-039 Modelo estudiante",
+      "status": "En revisión",
+      "change": "Modelo estudiante completado con asignaturas vigentes, docente/curso/periodo y calendario mensual propio. Se mantienen notas, asistencia y anotaciones publicadas. El docente publica o retira clases programadas sin marcar asistencia. API filtra identidad, matrícula y asignación vigentes; los borradores y clases canceladas no aparecen. Pruebas de alcance, concurrencia, retirada y móvil aprobadas."
+    },
+    {
+      "key": "SCRUM-52",
+      "summary": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "change": "Instalación Docker desde cero aprobada con PostgreSQL 16, API y web. Se verificaron login de administración/docente/estudiante y persistencia de cuentas/sesiones tras reiniciar base y API. La base no publica puerto al host; API/web solo loopback. Se corrigió 502 tras cambio de IP haciendo que Nginx resuelva nuevamente api por DNS de Docker. Continúa EN CURSO: falta ensayo del equipo y OPS-01 HTTPS normal desde varios dispositivos. No se acredita restauración de respaldo ni despliegue 0.9.1."
+    }
+  ]
+}

@@ -1,6 +1,26 @@
 # Expediente documental SIGAA
 
-Corte vigente: 15 de octubre de 2026. Proyecto escolar para colegios y liceos. Esta edición regulariza evidencia; no acredita reuniones ni aprobaciones no registradas.
+Corte vigente del incremento Sprint 5: 28 de octubre de 2026. Proyecto escolar para colegios y liceos. No se acreditan reuniones ni aprobaciones no registradas.
+
+## Sprint 5 · actualización 0.9.1 del 28 de octubre
+
+[Informe técnico y manual vigente](<../SIGAA/output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>)
+y [UML actualizado](<../SIGAA/output/pdf/UML de flujos persistentes - SIGAA.pdf>).
+Los [tres PDF iniciales](<PDF/02 Sprints/Sprint 5/>) conservan el corte 0.9.0.
+El informe 0.9.1 actualiza los pendientes de ese corte: avisos internos,
+asignaturas/calendario y verificación con PostgreSQL 16 en Docker.
+
+Se conserva Sprint 5 id 38 y la ventana planificada 19–31 de octubre, sin
+retrofechar ejecución. SCRUM-35, 48, 36 y 37: 26 puntos implementados para
+revisión; no son puntos aceptados. Recuperación histórica: SCRUM-51 y 21 se
+presentan también para revisión sin mover sus sprints. SCRUM-52 sigue en curso
+por ensayo del equipo y HTTPS. No se cierran sprints ni se inventan ceremonias.
+
+Validación: 6 unitarias, 66 integración, 27 recorridos de navegador, build e
+instalación/reinicio Docker. Evidencia en `../SIGAA/output/evidence/sprint-5-completion/`.
+Pendientes: aceptación del PO, integración y despliegue 0.9.1.
+
+Los apartados siguientes describen los cortes anteriores, no el estado de hoy.
 
 ## Documentos vigentes y ubicaciones únicas
 

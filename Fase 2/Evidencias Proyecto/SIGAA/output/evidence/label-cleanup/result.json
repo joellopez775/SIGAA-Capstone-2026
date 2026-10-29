@@ -1,0 +1,103 @@
+{
+  "operation": "Remove bracketed demo display labels",
+  "date": "2026-10-29T02:09:40.629487+00:00",
+  "beforeInspection": [
+    {
+      "table": "alerta",
+      "column": "titulo",
+      "matches": 80
+    },
+    {
+      "table": "anotacion_estudiante",
+      "column": "categoria",
+      "matches": 160
+    },
+    {
+      "table": "anotacion_estudiante",
+      "column": "detalle",
+      "matches": 160
+    },
+    {
+      "table": "asignatura",
+      "column": "nombre",
+      "matches": 3
+    },
+    {
+      "table": "asistencia",
+      "column": "observacion",
+      "matches": 1280
+    },
+    {
+      "table": "comunicacion_estudiante",
+      "column": "titulo",
+      "matches": 80
+    },
+    {
+      "table": "estudiante_apoderado",
+      "column": "parentesco",
+      "matches": 80
+    },
+    {
+      "table": "evaluacion",
+      "column": "nombre",
+      "matches": 48
+    },
+    {
+      "table": "funcionario",
+      "column": "apellidos",
+      "matches": 3
+    },
+    {
+      "table": "intervencion",
+      "column": "nota",
+      "matches": 48
+    },
+    {
+      "table": "justificacion_ausencia",
+      "column": "motivo",
+      "matches": 12
+    },
+    {
+      "table": "justificacion_ausencia",
+      "column": "observacion_revision",
+      "matches": 8
+    },
+    {
+      "table": "nivel_educativo",
+      "column": "nombre",
+      "matches": 4
+    },
+    {
+      "table": "sesion_clase",
+      "column": "titulo",
+      "matches": 96
+    },
+    {
+      "table": "usuario",
+      "column": "nombre",
+      "matches": 3
+    },
+    {
+      "table": "alerta",
+      "column": "evidencia.explanation",
+      "matches": 80
+    }
+  ],
+  "valuesDetectedBefore": 2145,
+  "remainingAfter": 0,
+  "transactionCommitted": true,
+  "rowCountsPreserved": true,
+  "identifiersAndCredentialsChanged": false,
+  "auditHistoryAndSyntheticFlagsPreserved": true,
+  "backup": {
+    "file": "Services/sigaa-backups/labels-20261029T020901Z/before-label-cleanup.dump",
+    "bytes": 236239,
+    "sha256": "581d3ca1a7a27e77fdb5631c6e78bc6f36ca74923a0334bb6a62e4b5e640a06c",
+    "inventoryVerified": true
+  },
+  "httpsHealth": {
+    "status": "ok",
+    "version": "0.9.1"
+  },
+  "result": "passed"
+}

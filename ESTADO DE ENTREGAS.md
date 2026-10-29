@@ -2,6 +2,41 @@
 
 Corte documental de publicación: 22 de octubre de 2026.
 
+Actualización de desarrollo: 28 de octubre de 2026. Sprint 5, incremento 0.9.1:
+casos, apoderados y ficha integral; avisos internos y asignaturas/calendario del
+estudiante. PDF actual de desarrollo y UML en `SIGAA/output/pdf/`, dentro de
+Evidencias Proyecto. Validación: 6 unitarias + 66 integración en Docker/PostgreSQL
+16; 27 recorridos Chromium; instalación nueva y reinicio con sesiones persistentes.
+Evidencia: `SIGAA/output/evidence/sprint-5-completion/`.
+
+Se presentan para revisión SCRUM-35, 36, 48, 37, 51 y 21. SCRUM-52 permanece
+en curso por las pruebas del equipo y HTTPS en varios dispositivos. Continúan
+pendientes aceptación del PO e integración a main. El despliegue se completó
+posteriormente según el registro siguiente. No se inventan
+reuniones, cierres ni entregas académicas. Los tres PDF iniciales del Sprint 5
+conservan su corte 0.9.0 y se complementan con el informe 0.9.1.
+
+Informe general de actualización y presentación de avance al 28-10-2026:
+disponibles en `SIGAA/output/pdf/`, con presentación editable en
+`SIGAA/output/presentaciones/`, dentro de Evidencias Proyecto. Comparan las 40
+historias PB de Jira con el incremento 0.9.0, distinguen revisión de aceptación
+y proponen pasos, ventanas y responsabilidades para el cierre. El corte de
+Jira queda en `SIGAA/output/evidence/actualizacion-2026-10-28.json`. Son documentos
+de seguimiento; no acreditan nuevas reuniones, despliegue ni entrega en Campus.
+
+Corrección de presentación al mismo corte: informe de nueve páginas con contexto
+inicial y presentación de 18 diapositivas, con Georgia y Helvetica Neue como en
+la plataforma. Reparto de exposición: Joel 1–6, Agustín 7–12 y Matías 13–18,
+con seis minutos sugeridos por integrante. En `SIGAA/output/pdf/Preparación de presentación/`
+hay un guion y un material de estudio de cuatro páginas por integrante (seis PDF).
+Incluyen conceptos, ejemplos, preguntas y transiciones; el guion también figura
+en las notas del PowerPoint. No atribuyen autoría individual de desarrollos ni
+sustituyen reflexiones académicas personales o registros de reuniones.
+
+También está disponible la edición unificada `SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf`,
+con 25 páginas, índice, marcadores y numeración continua: Joel 2–9, Agustín 10–17
+y Matías 18–25. Conserva el contenido de los seis documentos individuales.
+
 ## Fase 1
 
 Se incluye la definición de SIGAA existente, su presentación y la autoevaluación de competencias de Joel corregida previamente. Se conservan los formularios y evaluaciones disponibles sin atribuirles aprobación del docente.
@@ -10,7 +45,7 @@ Los tres diarios de reflexión disponibles describían otro proyecto y no se pub
 
 ## Fase 2
 
-Se publica la aplicación hasta el incremento 0.8.0, migraciones 001 a 008, pruebas, datos ficticios reproducibles, arquitecturas, manuales, carta Gantt y expedientes de sprints 0 a 4. Los registros de Jira conservan el corte de su extracción; esta publicación no crea ni modifica incidencias.
+La publicación inicial contenía el incremento 0.8.0, migraciones 001 a 008 y expedientes de sprints 0 a 4. La actualización inicial de Sprint 5 añade 0.9.0 y migración 009; el incremento 0.9.1 añade la 010, avisos, calendario y evidencia Docker/PostgreSQL 16. Los registros históricos de Jira conservan el corte de su extracción; la nueva evidencia está en `SIGAA/output/evidence/sprint-5/` dentro de Evidencias Proyecto y actualiza tarjetas existentes sin duplicarlas.
 
 El informe de avance y la propuesta de reflexión existentes están en las carpetas de evidencias grupales e individuales. El informe de avance no equivale a una guía 2.4 firmada ni el texto de reflexión a un diario individual ratificado. Faltan las versiones oficiales completas y revisadas por cada integrante, las planillas evaluadas de avance y cierre y el informe final 2.6 cuando corresponda.
 
@@ -23,3 +58,19 @@ Se mantiene la estructura requerida, sin presentar como realizadas las entregas 
 Los registros diarios y retrospectivas conservan sus advertencias originales: un seguimiento técnico o una reconstrucción no demuestra que se haya realizado una ceremonia. Las aprobaciones pendientes del Product Owner siguen pendientes.
 
 La existencia de archivos en GitHub no acredita su entrega o recepción en el campus. El equipo debe comunicar al docente el enlace nuevo y comprobar los nombres exactos requeridos en el listado de su sección. Los materiales institucionales de consulta y el video se mantienen fuera de la publicación pública.
+
+## Despliegue público 0.9.1 - 28 octubre 2026
+
+Disponible en https://sigaa.ignisert.com con HTTPS validado, redirección HTTP
+308 y HSTS limitado al subdominio. API 08913fb; web bff4a55. Base existente
+actualizada con 009 y 010 después de respaldar y restaurar en aislamiento;
+conteos y huellas de los registros previos conservados. Sin cambios de DNS,
+web principal ni correo. El volumen y el túnel existentes siguen operativos.
+
+Informe PDF: `SIGAA/output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf`.
+Evidencia: `SIGAA/output/evidence/deployment-0.9.1/`. Ocho recorridos HTTPS
+por cuatro roles, escritorio/móvil emulados en un Mac; escrituras ensayadas
+sobre copia restaurada, sin alterar datos académicos públicos. Respaldo privado,
+no incluido en Git. Aceptación del PO, fusión de PR #1 y pruebas del equipo en
+varios dispositivos permanecen pendientes. Se actualizan las mismas tarjetas
+Jira; no se crean reuniones, sprints ni tareas duplicadas.

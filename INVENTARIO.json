@@ -1,7 +1,12 @@
 {
-  "fecha": "2026-10-22",
-  "nota": "Inventario de la publicación inicial; excluye este archivo y dependencias locales.",
+  "fecha": "2026-10-28",
+  "nota": "Despliegue 0.9.1, normalización de ejemplos y catálogo de doce docentes con nombres ficticios completos. Excluye archivos privados ignorados; documentos históricos conservan su corte.",
   "archivos": [
+    {
+      "archivo": ".gitattributes",
+      "bytes": 13,
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
     {
       "archivo": ".gitignore",
       "bytes": 235,
@@ -9,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 2217,
-      "sha256": "447196accea7b52f0d3615e9b19e9f330def0ccb3a3fb490bd752a04aab9be33"
+      "bytes": 5775,
+      "sha256": "928683efb1537928cf70ddb1f24a0020311766b260520421656a28e062b8a847"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -748,6 +753,21 @@
       "sha256": "ce3e609ad9bf2478f2a6fbf9d19c52356dc05fbb0a81834dd69c12170272777d"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/01 Implementación y verificación Sprint 5.pdf",
+      "bytes": 13334,
+      "sha256": "b1dbd5fc52ee0a0eef22849737495a4883fa912fc91a2de853dafad811782fe9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/02 Manual de uso Sprint 5.pdf",
+      "bytes": 1601808,
+      "sha256": "9935971055ea0ab25b6f04f29dc4d3a7773da0abd7faa887ba102b1ae29e5b26"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/03 Seguimiento y backlog Sprint 5.pdf",
+      "bytes": 7704,
+      "sha256": "d1cfb2b3b3203c630313e50c571d47119fdf8c101c5bc9065f6806b6140fae89"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/03 Implementación/Asistencia notas y anotaciones persistentes.pdf",
       "bytes": 178688,
       "sha256": "a1322f90ddc714faa07c3665a6b5bee413606232a4efb289d074e1f0c85c5d64"
@@ -784,8 +804,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/README.md",
-      "bytes": 7618,
-      "sha256": "b92b42e441b92ac91f3f301478e478bd7f361662d1cfda599a228e1bcd5a552c"
+      "bytes": 8780,
+      "sha256": "51d09815c456d135b47a686cdcc63a72d2cb50a23fa1743f9564e73bfbe86bec"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/.dockerignore",
@@ -814,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 9705,
-      "sha256": "313275d23dd39d011c7d4442546bd26f3a5f9a95e9e565e5a1bea1b8ac9ff128"
+      "bytes": 13622,
+      "sha256": "99ac0c2de64ffd5d008d263e3c6f2300ce5773c86d92f1fc845a8a29b96247b9"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -834,18 +854,23 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/package.json",
-      "bytes": 559,
-      "sha256": "63987ee10af25e3a860db77e573e01ca755f9abbc497efc8a6a85e9ead9f8e24"
+      "bytes": 615,
+      "sha256": "78f258f96968eda139130a712f4f5ad617c8987d47bd5d2ed35f50c7994c9614"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/academic-routes.js",
-      "bytes": 12341,
-      "sha256": "e8435e32660c743fe505ad2b3c76a3006740c85912391193773a7ec41060fdf6"
+      "bytes": 12364,
+      "sha256": "11ff0fddeaaac3d0c26c4ffb0e53df26608246a842c53f736cb20b4f2602164b"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/app.js",
       "bytes": 123,
       "sha256": "5eee5c4730cea1bfffb8b801ad8c51f71d409b6098c7a3d0f2ea03bd6c675436"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/followup-routes.js",
+      "bytes": 20304,
+      "sha256": "4599ad383d164b361b0993ac7199195c9b89287d10d2f16c35d8225b5223019b"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/manage-user.js",
@@ -854,8 +879,13 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/migrate.js",
-      "bytes": 1123,
-      "sha256": "a3606fc4613f6f11cdf408ec48512f6c5121a9aa36acfe7882d256b641356076"
+      "bytes": 1175,
+      "sha256": "600036ad475cdb91f2ef34052258c1f3de9a7f7f76b10174bfa6971cf10b5a1d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/notification-routes.js",
+      "bytes": 2652,
+      "sha256": "7df96212adb682c91332b69560c73fe5b0264cff5a5ecc233b4a6fa351bf16a5"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/origins.js",
@@ -864,8 +894,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/populate-demo.js",
-      "bytes": 17884,
-      "sha256": "dbad26789e98521c6287305f8ea31d9d6bff03ea1fb8fcc781c3f8dbcf3d0786"
+      "bytes": 17946,
+      "sha256": "1cd48c4a7eda1eea2b6b5407c9a2a70059ec1e961dab3f5b22e60420b50bcae9"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/prototype-data.js",
@@ -874,8 +904,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/provision-hosted-demo.js",
-      "bytes": 2963,
-      "sha256": "97fb5d93504f0f4dbbaff8587ebac4873dee2687e069a7fb05e6791ef3bd2d8b"
+      "bytes": 2928,
+      "sha256": "1e2a6e9bf35e2e5fb7e1a130ec2a8155431db186cf0f102b07d3629281e23550"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/repository.js",
@@ -894,8 +924,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/school-app.js",
-      "bytes": 18622,
-      "sha256": "a3cb3e05cf80b39b20b6136e825e2e22fd76041a96e8ae64415ecc8f03f579ea"
+      "bytes": 18951,
+      "sha256": "eea3ade083328ea77e81cde72500dd96782d945e7d7efe8a0be64bbb2c6a2084"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/security.js",
@@ -909,13 +939,18 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/server.js",
-      "bytes": 1318,
-      "sha256": "f2d84268fa3bb21cb89e2cbbee330e5a944fa7f38449d36209922d269175a74c"
+      "bytes": 1849,
+      "sha256": "8d61992073bf16334c3430b60d7d94e0b5df8e4125a017422bf03b616129b487"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/structure-routes.js",
       "bytes": 8954,
       "sha256": "22105141cb74eade1308fbcc142847ae525296a8c7ec8bf81917d3733effc9ef"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/student-portal.js",
+      "bytes": 2280,
+      "sha256": "2cb18aa5a8fda2fc8866054651528730cf3944afaf1ea82e01d417efb603616e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/support-routes.js",
@@ -924,8 +959,18 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/teacher-routes.js",
-      "bytes": 6817,
-      "sha256": "3a4ada878da561f230bdfcd00865b64a9aba2a88d717576e797c459e9068cac6"
+      "bytes": 7881,
+      "sha256": "5edf988643abcb59c5c74e2bd57532efbd696bb35000344e5db8b5953aea9516"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/compose-smoke.mjs",
+      "bytes": 2140,
+      "sha256": "ddb416397754b35fe4417b12cabb8d094f1bbd3c1bf213f6935f65201dacd267"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/followup.test.js",
+      "bytes": 15504,
+      "sha256": "4401adacadf1498ae8d2f538858ff401c246d57761cac6b2fea2de9d755c2bd6"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/integration.test.js",
@@ -936,6 +981,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/operations.test.js",
       "bytes": 15227,
       "sha256": "a1d986b9518a064852124d4007a5b962265283dc72c7caa1577c32d8838c36fe"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/portal-notifications.test.js",
+      "bytes": 11721,
+      "sha256": "f1dbd1c88b126ef855b005f93e5b01e0768c2acf215641a4b2efab1247bc16b4"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/security.test.js",
@@ -959,8 +1009,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/nginx.conf",
-      "bytes": 1084,
-      "sha256": "489058f1aad47da9cdcc77cd30bb2c24a24be73d60b52dba10688c7f0e372dbc"
+      "bytes": 1831,
+      "sha256": "c57f5528251bcc01d9c295b4e8a169a9386cd79af71e7b2f2fdc88be12ef0aa6"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/package-lock.json",
@@ -974,8 +1024,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/AcademicPanel.jsx",
-      "bytes": 17585,
-      "sha256": "10eb97ca0bab8c6f1697624fdc9d12472731ace44b285b5fbb7d43082ba8f6c3"
+      "bytes": 18043,
+      "sha256": "df502877e8f4c9b06f0683301d4762763cab970bb44ed0e830104d72fd02f756"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/App.jsx",
@@ -983,9 +1033,19 @@
       "sha256": "3e41ba14fece08a68cc4058fec37b8190eb3bfcf0b7b198e4f0b3d0edfb31947"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/FollowupPanel.jsx",
+      "bytes": 21352,
+      "sha256": "d7126a493b8f4b922ad0d71f91de36107c4fb17fcdfed25ec9162679db76c54f"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/GlassNavigation.jsx",
-      "bytes": 5903,
-      "sha256": "3a5bc72450bc793aa9135bf48bd5d1aea2266af0e2190d5493c601133017947e"
+      "bytes": 6331,
+      "sha256": "05bcab11fd65d040254402a57457067c4e72403a5168f52e493cf2aa65d30a9c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/NotificationsPanel.jsx",
+      "bytes": 2735,
+      "sha256": "2ee029fa4b7dcb16aec04a163ec514ad473cdd174b9218c9902ee711727f8c4e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/OperationsPanel.jsx",
@@ -994,13 +1054,23 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/SecureApp.jsx",
-      "bytes": 26672,
-      "sha256": "28522a9cb861ab1bf5463c6ac7c93eb6ed141c755ee4dac25c9f9f85a9691849"
+      "bytes": 30069,
+      "sha256": "a462bae061faeeeb87477d0434dab7bba6324cc0cb7346fb06b0290c562d751c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/StudentPortal.jsx",
+      "bytes": 2497,
+      "sha256": "32eb787a1fea80c66bc50636d9faa8167f602671e21b1c8559a76b16b25346b4"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/assets/sigaa-logo.png",
       "bytes": 1242397,
       "sha256": "412dfa23f29dc23ca9d03e3fc30a026a26eda603995eddb5a128bb3af9a5116e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/followup.css",
+      "bytes": 2331,
+      "sha256": "0660ad391e3452552527b3451849051931bbb8bb8ae99e5217d54ce51bb88eb0"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/glass.css",
@@ -1039,8 +1109,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.server.yaml",
-      "bytes": 2827,
-      "sha256": "aa26164670331b5526e3b20339a18e56a5f1f97fc750bef4c60aff2f5a8611cd"
+      "bytes": 2907,
+      "sha256": "e9007c490497f2065f96e52fb755846d4a242eb4d8ed1a257fac794ba37f38b3"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.test.yaml",
@@ -1054,8 +1124,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/compose.yaml",
-      "bytes": 2109,
-      "sha256": "5a13227b2aacf466c7211ca59198f92026038cbd6a63cbe76df4abcf14d44d71"
+      "bytes": 2189,
+      "sha256": "c2ca7a4f501178e33af00c73396413fca2d9c18ce9646eec4c9d7307fa2f0bcc"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/01-product-vision.md",
@@ -1289,8 +1359,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/03-uml-casos-de-uso.md",
-      "bytes": 4178,
-      "sha256": "6546390d07740c4847cb3991a2d84c03a8dcd1a1a0dc4fb015bdbdb9592fb10a"
+      "bytes": 5658,
+      "sha256": "e3df32a44d2b938c7119f6d73c8438d4a3f4638de1bb4a38c6a0181b1f8b072d"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/04-prototipo-navegable.md",
@@ -1311,6 +1381,51 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/07-modelo-estudiante.md",
       "bytes": 2698,
       "sha256": "3fb5aa3b727002bc98740e66839aa8b3394dd30980a0b0c8ce4abeb2ec62a74b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/00-general.dot",
+      "bytes": 22497,
+      "sha256": "3aaa305d09f94ea9da149f666c8bbb446c8a8d26b62c85bb9fbead75d2a5c82b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/01-modulo.dot",
+      "bytes": 7644,
+      "sha256": "c264c512193312eec0ad754b051739d261fd8596cbbdbb0fc39286cebba33584"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/02-modulo.dot",
+      "bytes": 9967,
+      "sha256": "e47b6d7524db23dc884591b54c46292385f21156dfe269fad41d9f1d3e832f57"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/03-modulo.dot",
+      "bytes": 7088,
+      "sha256": "f98d91869749d9fb0f909e821135e9b27fd5a3914949d5a8da80cbcdf6f1741a"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/04-modulo.dot",
+      "bytes": 7685,
+      "sha256": "da898aedf8ebefa42e86012b2e7bcc202aca7b883c341a7adc847af1e3886bf8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/05-modulo.dot",
+      "bytes": 8689,
+      "sha256": "3f72d2423c33ea0402018fc620688114f973c5f191d2fe964c39733f45824c84"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/06-modulo.dot",
+      "bytes": 10397,
+      "sha256": "891749091a480a63eadbe798a9d414a3eda50782b5e33a3bb21d593770357a15"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/README.md",
+      "bytes": 2887,
+      "sha256": "d4bc189fd681eebde982cea945b12fae269a0333b3d24454acf078b3510a9747"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/design/database/catalog.sql",
+      "bytes": 2496,
+      "sha256": "8b13a47dbdc5c3cf701e7db9d6e57b9f990d8d323a93f4acb152552c46841c93"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/docs/fase-1/01-formativa-fase-1.md",
@@ -1523,6 +1638,16 @@
       "sha256": "a3d5569b935bdd9f9311e65ccc2dd66679200796f140445680dc69a587b755bb"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/009_followup.sql",
+      "bytes": 3125,
+      "sha256": "252a4dc57c0d7ebca589a078bdcd739589843f86b560f5ca03344a396b957573"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/infra/postgres/init/010_internal_notifications.sql",
+      "bytes": 838,
+      "sha256": "e4db718971f3795ad650145e6c8a5df25423c5b61d5c23dab9276e2b99aa5de9"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/docx/1.1 APT122 Autoevaluación Competencias Fase 1 Joel_Lopez.docx",
       "bytes": 887553,
       "sha256": "7d477aba4e59a9a9224c740780af401de3d2bd0114c895911ee3eab01b7bd101"
@@ -1551,6 +1676,61 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/academic-hosted-tests.json",
       "bytes": 1245,
       "sha256": "8338063f2b5d138292a845d2a60b12ff67db40ebcf9aa67c5260b35eefdf96cb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/actualizacion-2026-10-28.json",
+      "bytes": 13941,
+      "sha256": "ccb0dae8b36d5f597cd7b99bb198e8f0d667ca5c314c305a8b65326ca817eaf2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/architecture-software-0.9.1.json",
+      "bytes": 5494,
+      "sha256": "fa5dfd493c11098f9b2da2cc9b54fdf2e0f00678560a31acfa5ed3fc30028c40"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/database-diagram-validation.json",
+      "bytes": 5735,
+      "sha256": "e139d9d4a741a7fa8bd79710d112b23c176ba87c5e37d1164ece6546ca8c0dc0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/database-schema-0.9.1.json",
+      "bytes": 146005,
+      "sha256": "8975d07c1cdbceeef40bdd1111ef9eb986f56367cb439fc03df9ed6274c2a9aa"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/deployment.json",
+      "bytes": 1012,
+      "sha256": "a0fa72ade4368552e26f7f109ea3e578fba1917395c13c43aca7e994d803bc0e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-policy.json",
+      "bytes": 273,
+      "sha256": "59f305d38173f44ad4864e4d99ceea9e92d904087a79d5d6c2b208976c97a5b1"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-scope.json",
+      "bytes": 647,
+      "sha256": "f7bdef57a7002841254dd564892a997ceadcdde14ab9a84f448cb09bc79a0df8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-verification.json",
+      "bytes": 4634,
+      "sha256": "647179be5ab6c33592b25f83c74facee063e5b8a9ec4b189ae3d6e5564b2f4a7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/jira-sync.json",
+      "bytes": 1176,
+      "sha256": "87dbfb56ac122736c91a0a1174adaa53494f4f493a583611ba710185cc659580"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/restored-workflows.json",
+      "bytes": 796,
+      "sha256": "33a6c18c2d40f678275171faa706183809436d14a1e9c48c61b03ed3738f206d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/runtime.json",
+      "bytes": 2102,
+      "sha256": "313fa630adef12556075586e161946deadb9e91e996cd3860766a282bfdbcc1e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-dns-verification.json",
@@ -1598,6 +1778,21 @@
       "sha256": "bea5f4f12f00c86756d8f96dc9b27af1c043a00d5bc420b3206285e22e33327d"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/names-https.json",
+      "bytes": 552,
+      "sha256": "08a54dd8fdcd64376408b8dc351819e9bde565e48eba7ba4b9978f04f5a37db0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/names-result.json",
+      "bytes": 1425,
+      "sha256": "2d72a8f82c44b8c77edb54c900919cb26f2a1572d431c7b86d47346eb44c44b0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/result.json",
+      "bytes": 2188,
+      "sha256": "52b683abbcc47d2027c1a2b781d64d5133574ea2d1230b8b9f21816e90d2ec9f"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-academic-hosted-tests.json",
       "bytes": 1245,
       "sha256": "33eca7db5b226742340b18bd48023961325c726d6fc253f4c2a6e62924f2c001"
@@ -1643,6 +1838,116 @@
       "sha256": "4007f5a903d7f1574376d240c87d320ed4ccde777024273fec665234bf92e569"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/01-publicacion-clase.png",
+      "bytes": 822079,
+      "sha256": "79249316e98af9d5b6f3ac835dab2b91047405c40b5924c94fff315cc7b31ca4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/02-asignaturas.png",
+      "bytes": 812709,
+      "sha256": "9b7acb0f10d3da4f84f806fc183101a3ba177943a14e1b04c61fe23fc82bcebe"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/03-calendario.png",
+      "bytes": 861579,
+      "sha256": "77c8efee9b6c4b1851e336fcccc1351a38b8f830d1d3b3b989db7a8d7de15347"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/04-avisos.png",
+      "bytes": 845176,
+      "sha256": "62188032fa0d0590e6368168b2f2efa519a8f0eae916dc3b11aefc8af891840b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/05-avisos-movil.png",
+      "bytes": 249180,
+      "sha256": "751635185aea6eaad6d3409c61e69c0eee21d8506707c42c801612a19131983e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/06-calendario-movil.png",
+      "bytes": 244653,
+      "sha256": "0d6ec1d57785bac1e5dbc8a679fd309e47b51b55c1cbbaa70b9f33f6f6142b49"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/docker-installation.json",
+      "bytes": 1814,
+      "sha256": "8dd770db767be6aa2b65197a79016f935945b55789cd3b98bfd33d2bfdd9da67"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/followup-browser-results.json",
+      "bytes": 1179,
+      "sha256": "508b2f53eb6e28aefe1a347c2a460c96de3443384b677379e5cfda5242ec2f34"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/jira-status.json",
+      "bytes": 3806,
+      "sha256": "21795df3e583579581106ae1ba48b52f9a58f673dba457c2f518b7977f2f2748"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/operations-browser-results.json",
+      "bytes": 1423,
+      "sha256": "57d6a97e7cef260bcc34cb7fbc33f658963c20c05b6bea9ecb3838f8f910a827"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/portal-browser-results.json",
+      "bytes": 1122,
+      "sha256": "1e1dc747b7f2efc97252894c3bcc0802ab19562bd4f30c3a2f2ab59b0bbb2063"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/validation.json",
+      "bytes": 727,
+      "sha256": "25eb8a04e3f34438295cdcc0d3d4eebe83176d2a491711ade4e2e2c8ca928c78"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/01-apoderados.png",
+      "bytes": 373669,
+      "sha256": "ea9a14d0a82d04d26a88a66ef0ab55839a26077cac8f2db8e31f94f86af3f9e4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/02-casos.png",
+      "bytes": 364638,
+      "sha256": "7f348ea54f94891da0e10a9ab31994ab581e0f33bf0f57e13ca8f710b00a28c9"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/03-historial.png",
+      "bytes": 840511,
+      "sha256": "edf648020487a35b3a39b9150f620365564f9d0427d4db24815b3ec1075e4647"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/04-ficha.png",
+      "bytes": 1341424,
+      "sha256": "a212da34538baf8b4bc78cdbd96a3a010f4111059c33e30dac08921d4141f1bf"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/05-ficha-movil.png",
+      "bytes": 238694,
+      "sha256": "107daacee4651f3370800531ea2d70f59726a89bac302cda312aa39cd505c53b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/06-estudiante-movil.png",
+      "bytes": 327386,
+      "sha256": "624115acdc5c3b893457e54f442e0e73ed510b078a787ed196aeed49666effa8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/browser-regression.json",
+      "bytes": 1426,
+      "sha256": "af4263256f4ca33686d6b0b7b1c8b3f8214af5b36f3259d2f3464dab69e30175"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/browser-results.json",
+      "bytes": 1182,
+      "sha256": "e31bb53a2c81c43adb7f7043660781fc8e2e9b447961430a05239c4354a2a652"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/jira-status.json",
+      "bytes": 1416,
+      "sha256": "ad2f4a2b7b689e2d71c8a31875b44fe86f72e4eeb69f826f9c949917f2c21e51"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5/validation.json",
+      "bytes": 7282,
+      "sha256": "0ec7227d74b2417d71416f9840049c00729b22a0dc886437fd05544ea8ea36f5"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/synthetic-demo-api-tests.json",
       "bytes": 771,
       "sha256": "61fcad13cf12491f2e6dafcfd2e280141e1d87932d052fbb26d17d0defb02678"
@@ -1653,6 +1958,21 @@
       "sha256": "98a378ebae3ccb2dc2ee57933b1d0d5cfc9b8955dae883a6222fd1fa6e82475b"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/teacher-expansion/https.json",
+      "bytes": 393,
+      "sha256": "0ed9f750da08d9ca45c143535088c27f07362602a2caf447ca30f7d92512237f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/teacher-expansion/result.json",
+      "bytes": 2294,
+      "sha256": "8fe3a3a8086ee168e6aafc2a28cca8f2237777dcde0f7fa7270dcb38cc2ac75e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Ampliación de docentes ficticios - SIGAA.pdf",
+      "bytes": 45937,
+      "sha256": "a6453bbafa8de587f0c77bc78f98089a021e0070ce3d23656ee473d20c30e38e"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf",
       "bytes": 70782,
       "sha256": "e8a9d8467fd2391d9e72f63a313c5c13d6c4d9e26dba8b3575d91560c484dfeb"
@@ -1661,6 +1981,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Arquitectura de Software - SIGAA.pdf",
       "bytes": 70269,
       "sha256": "6283a3a9b88270198328aad99ee270e8e070309cd5f9d5dae611ae263961054c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf",
+      "bytes": 1135237,
+      "sha256": "385cb3dfc90df3062f16f466322eb762026a3f111eeea927c171b99e1857695e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carga de datos de demostración SIGAA.pdf",
@@ -1693,14 +2018,39 @@
       "sha256": "a997c217aebbbc0e50ca59345fa3df3cef0be948b395c510b6e75838ea525a95"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf",
+      "bytes": 68995,
+      "sha256": "ac0a7e45cdd5a54dd5b4c3d40b69efb095fbb04d67f876646d47b69f985406ed"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf",
+      "bytes": 81302,
+      "sha256": "0b977b021f753c1626c7dfb142a597be86e2ac1339d3abde0dd76d67659a7005"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf",
+      "bytes": 117482,
+      "sha256": "a70fe6e8b65f6a114108428762ac78179b36fa28922828f1e371d488d924e175"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Estado de Fases y Sprints - SIGAA.pdf",
       "bytes": 70260,
       "sha256": "a287a7bc1ce8064332a6329f99541b3ea0a504cec076e9c3d881a8a51f0da70f"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf",
+      "bytes": 906987,
+      "sha256": "2ed024057669ab73f48736a9c5fe9844d09d620eeb42890b06e302a74c89ca7b"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de Tecnologías a Utilizar - SIGAA.pdf",
       "bytes": 100592,
       "sha256": "16af816aadb57285a6a523b438e72cb5c982ddb8604fb7a4f8eeddc72b161803"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf",
+      "bytes": 808246,
+      "sha256": "ad416e43cd25db46dc5f6b590898e25a4ee39be60aac8fcd9dcd61475fb429fe"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de avances para Matías y Agustín - 15 octubre 2026.pdf",
@@ -1721,6 +2071,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Jira e Historias de Usuario - SIGAA.pdf",
       "bytes": 69816,
       "sha256": "f17b73052f015976487315aac3af393bbdb3daf0a981d7e6c87970970f7aca3b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Limpieza de etiquetas de ejemplos - SIGAA.pdf",
+      "bytes": 45824,
+      "sha256": "d34229d1b1c8a1b80ff18dbd627700d8668f6aafea6534d9b1d0f8c83bf4a485"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_Actividades_Gantt_Alineado_Cronograma_Oficial_2026.pdf",
@@ -1751,6 +2106,41 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación DNS de SIGAA - Revisión antes de activar.pdf",
       "bytes": 73117,
       "sha256": "2cf0ca01f28c82be4276a176381e1a2dc19b010e02a0f4cc1998e0fc355e4c71"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Agustín SIGAA.pdf",
+      "bytes": 67662,
+      "sha256": "b231de12e6f2ecd2ce9ba92cf32b400aa6e5ac66c0c471a27e740daa6a568cd5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Joel SIGAA.pdf",
+      "bytes": 67337,
+      "sha256": "1c59b44b27d86c85a4000eb5a1adcc4d0461cb433f031496714a0a2fa28eeaad"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Matías SIGAA.pdf",
+      "bytes": 67498,
+      "sha256": "23190e7b4b78dabeb755cfdcc8f23ea817884a04b7e436cb05f9e45153b95f5b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Agustín SIGAA.pdf",
+      "bytes": 68196,
+      "sha256": "857d076db0215fd8f9ef95ae0698b32c29d227f8d36e5e2f7506fb6dfc0c4cc3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Joel SIGAA.pdf",
+      "bytes": 68271,
+      "sha256": "8f3ae6642112115b9e989f63f783022e92a61867e30c43e4c0c84307fd72303d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Matías SIGAA.pdf",
+      "bytes": 68285,
+      "sha256": "d151e6a48e278de55260295ea837eb187767c9840996ead352a0a2ebb6a42bdb"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf",
+      "bytes": 727522,
+      "sha256": "764b5a9e7f4aeda985941475614e0112a8c4d689b844176d243cf10bfc80ab1c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 3 - Implementación real y verificación.pdf",
@@ -1818,6 +2208,51 @@
       "sha256": "20b02458fcc1258d225647960a66455673b36ab0ec8ca52ed5bd194d6fcd6af5"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/UML de flujos persistentes - SIGAA.pdf",
+      "bytes": 75252,
+      "sha256": "c58511b39ce1f3f9089e6a22b216e4b63b265b999c1f09b99e1789a6197bcf47"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx",
+      "bytes": 2785185,
+      "sha256": "b44aedddbb688c127cd88f4e6c15d1e794d8275fabb3e6872a6266a54af25615"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/clean-demo-labels.sql",
+      "bytes": 2283,
+      "sha256": "c0dbdecca4fc2f48329021c300802ef17f238f2a67295a8a57d11bd13f40b7b0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/clean-example-names.sql",
+      "bytes": 3642,
+      "sha256": "eec0f1ebca9d43fa72724b74c0bf5744030400daff44b5c6ce291fd3d2a2f29c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/expand-example-teachers.sql",
+      "bytes": 3847,
+      "sha256": "4d880d2ea09170a9b979165228348964ad1b231c96660030e98f700b34606948"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-database-diagram.py",
+      "bytes": 14114,
+      "sha256": "ec44af266550950101b7d139605fbee3288b2824953e3b19c315b1edf69132de"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-deployment-091-pdf.py",
+      "bytes": 11408,
+      "sha256": "b7d3cf0cee1d1c16ad7bb65170dbf02e2d4456bd28d405a9d6fc8d598fcb02ac"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-development-091-pdfs.py",
+      "bytes": 23170,
+      "sha256": "6f7c122a4d85701ebbd5b2d60dce20e56ab4c698557b101d01848ceeec6e3ba7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-software-architecture.py",
+      "bytes": 19664,
+      "sha256": "63bd3e0271908613d38df5ce401444c78dc54ec8f26c44177cd56655e4003599"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint3-report.py",
       "bytes": 15215,
       "sha256": "492aebe6ea1c0b7beacd61b2c01c0b703bf7cb9e0e0c1d941c99ce276b2ec4c1"
@@ -1831,6 +2266,16 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint4-pdfs.py",
       "bytes": 372,
       "sha256": "0297b8531571db5a610d69b45d86fe3b142f74599e73523c83d4c7219ed958d4"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint5-pdfs.py",
+      "bytes": 24391,
+      "sha256": "e86f8cf9290976dedf9255645f04c0989a1a6cd2601b8fbb9043151b8194c680"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/layout-database.mjs",
+      "bytes": 693,
+      "sha256": "6f574a244ff781a44eb04995a2f814af346cfc4ab685196ac36a47d62ad1fda5"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/populate-hosted-demo.py",
@@ -1898,6 +2343,11 @@
       "sha256": "805ec7157bcd4a9fa88b271f66955e96823455879ad3b55c8a8355051ea7358b"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-followup-browser.mjs",
+      "bytes": 14576,
+      "sha256": "cf2e49650d0e53672fe5c7a58309c30e591a9c5b36f57dff2fb8334ab8e32b61"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-glass-navigation.mjs",
       "bytes": 5473,
       "sha256": "8a0f19e1b329160f522a987daa4ea185f3e14dac4b97c4472a339aa2de9c67ed"
@@ -1909,8 +2359,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-operations-browser.mjs",
-      "bytes": 12385,
-      "sha256": "ffaa91acd391908f3a727040075cdfd830ad917f6bb090e378057bf1ea4a4402"
+      "bytes": 12505,
+      "sha256": "d49697be9c7dec782682b9e6f07764f7eecfa643911c59ab83a0c4769b7c1f7c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-operations-hosted.mjs",
@@ -1921,6 +2371,16 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-populated-demo.mjs",
       "bytes": 3146,
       "sha256": "f7c31bfb6c8e856af469659bec2db19126878c70ebf62f91c82eae9f56d88003"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-portal-notifications-browser.mjs",
+      "bytes": 12057,
+      "sha256": "94e2fbefa838bfec2c5f1ce7a2e0c86ff159b477a06cc026a3f1dafc07a65932"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-release-https.mjs",
+      "bytes": 5599,
+      "sha256": "eb121a663adc45619ccdf1b5c2749e48abc2ff46f970b6e82c713a9a34d3a15d"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-server-isolation.sh",
@@ -1994,8 +2454,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 3635,
-      "sha256": "f1c1ad22e925ff5c3e98767adec00363ffe4287e7e8ff83360667059d2a15d76"
+      "bytes": 6422,
+      "sha256": "98b6857970dc165bca36f8569485ec21205d2f6de7a4e0ee3b1b128dc1dedfbc"
     }
   ]
 }

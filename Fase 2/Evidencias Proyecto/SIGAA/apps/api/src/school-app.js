@@ -3,6 +3,9 @@ import { allowedOrigins } from "./origins.js";
 import { teacherRoutes } from "./teacher-routes.js";
 import { structureRoutes } from "./structure-routes.js";
 import { supportRoutes } from "./support-routes.js";
+import { followupRoutes } from "./followup-routes.js";
+import { studentSubjects, studentPortalRoutes } from "./student-portal.js";
+import { notificationRoutes } from "./notification-routes.js";
 import { academicRoutes, studentRecords } from "./academic-routes.js";
 import {
   newToken,
@@ -121,7 +124,7 @@ export function createApp({
     if (rows[0].intentos > max) fail(429, "try_again_later");
   }
   app.get("/health", (_req, res) =>
-    res.json({ status: "ok", service: "api", version: "0.8.0" }),
+    res.json({ status: "ok", service: "api", version: "0.9.1" }),
   );
   app.get("/db-health", async (_req, res) => {
     await pool.query("SELECT 1");
@@ -241,6 +244,7 @@ export function createApp({
   app.use(authenticate);
   structureRoutes(app, pool);
   supportRoutes(app, pool);
+  followupRoutes(app, pool);
   teacherRoutes(app, pool);
   academicRoutes(app, pool);
   app.get("/courses", role("admin", "teacher", "student", "inspector", "leadership"), async (req, res) => {
@@ -466,8 +470,10 @@ export function createApp({
       AND ev.estado IN ('publicada','cerrada') ORDER BY ev.fecha DESC`,
       [id],
     );
-    res.json({ grades, ...(await studentRecords(pool, id)) });
+    res.json({ grades, subjects:await studentSubjects(pool,id), ...(await studentRecords(pool, id)) });
   });
+  studentPortalRoutes(app,pool);
+  notificationRoutes(app,pool);
   app.use((_req, _res) => fail(404, "not_found"));
   app.use((error, _req, res, _next) => {
     if (error instanceof HttpError) {

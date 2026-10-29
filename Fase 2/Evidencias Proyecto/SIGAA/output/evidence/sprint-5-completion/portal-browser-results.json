@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-29T00:40:14.600Z",
+  "browser": "Chromium",
+  "environment": "Isolated PostgreSQL 16.15; synthetic data",
+  "checks": [
+    {
+      "label": "Docente programa y publica una clase futura desde asistencia",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante ve asignatura, docente y calendario propio persistente",
+      "result": "pass"
+    },
+    {
+      "label": "Calendario permite cambiar de mes y explica el estado vacío",
+      "result": "pass"
+    },
+    {
+      "label": "Retirar una clase del calendario conserva la clase del docente",
+      "result": "pass"
+    },
+    {
+      "label": "Administración abre un caso y genera un aviso al docente responsable",
+      "result": "pass"
+    },
+    {
+      "label": "Docente filtra, lee y abre su aviso; una intervención avisa al creador",
+      "result": "pass"
+    },
+    {
+      "label": "Aviso de actividad persiste al recargar y funciona en teléfono",
+      "result": "pass"
+    },
+    {
+      "label": "Estudiante en teléfono no ve avisos internos ni clases retiradas",
+      "result": "pass"
+    }
+  ],
+  "result": "passed"
+}

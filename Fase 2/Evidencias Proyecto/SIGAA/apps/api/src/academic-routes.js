@@ -37,7 +37,7 @@ export function academicRoutes(app, pool) {
         [ca.curso_id],
       );
       const { rows: classes } = await db.query(
-        `SELECT id,fecha::text AS date,bloque AS block,titulo AS title,objetivo AS objective,estado AS status,actualizado_en::text AS revision
+        `SELECT id,fecha::text AS date,bloque AS block,titulo AS title,objetivo AS objective,estado AS status,publicada AS published,actualizado_en::text AS revision
         FROM sesion_clase WHERE curso_asignatura_id=$1 ORDER BY fecha DESC,bloque`,
         [ca.id],
       );

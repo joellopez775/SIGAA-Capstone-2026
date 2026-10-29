@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test test/security.test.js",
-    "test:integration": "node --test --test-concurrency=1 test/integration.test.js test/operations.test.js",
+    "test:integration": "node --test --test-concurrency=1 test/integration.test.js test/operations.test.js test/followup.test.js test/portal-notifications.test.js",
     "migrate": "node src/migrate.js",
     "user:create": "node src/manage-user.js",
     "seed:local": "node src/seed-local.js"
