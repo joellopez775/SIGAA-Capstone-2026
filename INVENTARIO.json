@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Despliegue público 0.9.1 y limpieza de etiquetas visibles de ejemplos. Excluye este inventario y archivos privados ignorados; documentos históricos conservan su corte.",
+  "nota": "Despliegue 0.9.1 y limpieza completa de nombres y códigos visibles de ejemplos, verificada por HTTPS. Excluye archivos privados ignorados; documentación histórica conserva su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -894,8 +894,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/populate-demo.js",
-      "bytes": 17717,
-      "sha256": "6f41d7617bd732fe5af0c2e6cedfccb4f45bb61a399465fca1d8f3515c835eb4"
+      "bytes": 17835,
+      "sha256": "85dedf30041afa13d69586b1080df7de4117a2184b88020e8cba9807e72ff64a"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/prototype-data.js",
@@ -904,8 +904,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/provision-hosted-demo.js",
-      "bytes": 2963,
-      "sha256": "97fb5d93504f0f4dbbaff8587ebac4873dee2687e069a7fb05e6791ef3bd2d8b"
+      "bytes": 2909,
+      "sha256": "b238ad7801f18a37f25bf51f3f00a20e154c908101f9773ba33c94ded3615549"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/repository.js",
@@ -1778,6 +1778,16 @@
       "sha256": "bea5f4f12f00c86756d8f96dc9b27af1c043a00d5bc420b3206285e22e33327d"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/names-https.json",
+      "bytes": 552,
+      "sha256": "08a54dd8fdcd64376408b8dc351819e9bde565e48eba7ba4b9978f04f5a37db0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/names-result.json",
+      "bytes": 1425,
+      "sha256": "2d72a8f82c44b8c77edb54c900919cb26f2a1572d431c7b86d47346eb44c44b0"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/label-cleanup/result.json",
       "bytes": 2188,
       "sha256": "52b683abbcc47d2027c1a2b781d64d5133574ea2d1230b8b9f21816e90d2ec9f"
@@ -2049,8 +2059,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Limpieza de etiquetas de ejemplos - SIGAA.pdf",
-      "bytes": 45730,
-      "sha256": "9e3681f23eaf508bb9d2ceb221b9e4626fd77b9a7247bb9d49db222aeca17ce7"
+      "bytes": 45824,
+      "sha256": "d34229d1b1c8a1b80ff18dbd627700d8668f6aafea6534d9b1d0f8c83bf4a485"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_Actividades_Gantt_Alineado_Cronograma_Oficial_2026.pdf",
@@ -2196,6 +2206,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/clean-demo-labels.sql",
       "bytes": 2283,
       "sha256": "c0dbdecca4fc2f48329021c300802ef17f238f2a67295a8a57d11bd13f40b7b0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/clean-example-names.sql",
+      "bytes": 3642,
+      "sha256": "eec0f1ebca9d43fa72724b74c0bf5744030400daff44b5c6ce291fd3d2a2f29c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-database-diagram.py",

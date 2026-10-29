@@ -50,13 +50,13 @@ try {
       const teacher=await one("SELECT id FROM usuario WHERE email='docente@sigaa.demo' AND estado='activo'");
       const inspector=await one("SELECT id FROM usuario WHERE email='inspectoria@sigaa.demo' AND estado='activo'");
       const admin=await one("SELECT id FROM usuario WHERE email='administracion@sigaa.demo' AND estado='activo'");
-      const student=await one("SELECT e.* FROM estudiante e JOIN usuario u ON u.id=e.usuario_id WHERE u.email='estudiante@sigaa.demo' AND e.identificador_interno='DEMO-SERVER-001'");
+      const student=await one("SELECT e.* FROM estudiante e JOIN usuario u ON u.id=e.usuario_id WHERE u.email='estudiante@sigaa.demo' AND e.identificador_interno IN ('SIGAA-SERVER-001','DEMO-SERVER-001')");
       if(!teacher||!inspector||!admin||!student)throw new Error('Expected existing demo accounts not found');
       const context=await one(`SELECT c.*,p.fecha_inicio::text AS period_start,p.fecha_fin::text AS period_end,p.anio,
         p.establecimiento_id,est.nombre AS school FROM matricula m JOIN curso c ON c.id=m.curso_id
         JOIN periodo_escolar p ON p.id=c.periodo_id JOIN establecimiento est ON est.id=p.establecimiento_id
         WHERE m.estudiante_id=$1 AND m.estado='activa' AND c.estado='activo' AND p.estado='activo'`,[student.id]);
-      if(context?.school!=='Liceo Demostración SIGAA'||context.anio!==2026||context.capacidad<20)
+      if(!['Liceo SIGAA','Liceo Demostración SIGAA'].includes(context?.school)||context.anio!==2026||context.capacidad<20)
         throw new Error('Not the expected synthetic demo school');
       if(Number((await one("SELECT count(*) AS n FROM matricula WHERE curso_id=$1 AND estado='activa'",[context.id])).n)!==1)
         throw new Error('Demo course changed: review capacity/data before loading');
@@ -69,15 +69,15 @@ try {
         staff.push(u);
       }
       const employees=[];
-      for(const [i,u] of staff.entries()) employees.push(await one('SELECT * FROM funcionario WHERE usuario_id=$1',[u.id])||await insert('funcionario','employee-'+i,{usuario_id:u.id,nombres:['Docente Demo','Valentina','Sebastián','Catalina'][i],apellidos:['SIGAA','Torres','Ríos','Fuentes'][i],email_institucional:`docente${i+1}@sigaa.invalid`}));
+      for(const [i,u] of staff.entries()) employees.push(await one('SELECT * FROM funcionario WHERE usuario_id=$1',[u.id])||await insert('funcionario','employee-'+i,{usuario_id:u.id,nombres:['Docente','Valentina','Sebastián','Catalina'][i],apellidos:['SIGAA','Torres','Ríos','Fuentes'][i],email_institucional:`docente${i+1}@sigaa.invalid`}));
       const courses=[context];
       for(const n of [1,3,4]){
-        const level=await insert('nivel_educativo','level-'+n,{codigo:`DEMO-COMP-M${n}`,nombre:`${n}° Medio`,ciclo:'media',orden:n+8});
+        const level=await insert('nivel_educativo','level-'+n,{codigo:`SIGAA-COMP-M${n}`,nombre:`${n}° Medio`,ciclo:'media',orden:n+8});
         courses.push(await insert('curso','course-'+n,{periodo_id:context.periodo_id,nivel_id:level.id,letra:'A',jornada:'completa',sala:'D-'+n,profesor_jefe_id:teacher.id,capacidad:30,estado:'activo'}));
       }
       const subjects=[];
-      for(const [s,[code,name]] of [['DEMO-MAT','Matemática'],['DEMO-COMP-LEN','Lengua y Literatura'],['DEMO-COMP-HIS','Historia'],['DEMO-COMP-CIE','Ciencias Naturales']].entries())
-        subjects.push(await one('SELECT * FROM asignatura WHERE codigo=$1',[code])||await insert('asignatura','subject-'+s,{codigo:code,nombre:name}));
+      for(const [s,[code,name]] of [['SIGAA-MAT','Matemática'],['SIGAA-COMP-LEN','Lengua y Literatura'],['SIGAA-COMP-HIS','Historia'],['SIGAA-COMP-CIE','Ciencias Naturales']].entries())
+        subjects.push(await one('SELECT * FROM asignatura WHERE codigo=ANY($1::text[]) ORDER BY (codigo=$2) DESC LIMIT 1',[[code,code.replace(/^SIGAA-/,"DEMO-")],code])||await insert('asignatura','subject-'+s,{codigo:code,nombre:name}));
       const firstNames=['Martina','Benjamín','Sofía','Vicente','Isidora','Joaquín','Emilia','Agustín','Florencia','Lucas','Antonia','Tomás','Catalina','Mateo','Valentina','Gabriel','Trinidad','Nicolás','Amanda','Diego'];
       const surnames=['Rojas','Soto','Vega','Torres','Muñoz','Silva','Morales','Castro','Fuentes','Herrera','Navarro','Pérez','Díaz','Reyes','Contreras','González','Sepúlveda','Araya','Pinto','Vargas'];
       const rosters=[], assignments=[];
@@ -87,12 +87,12 @@ try {
         if(!head)await insert('profesor_jefatura','head-'+ci,{curso_id:course.id,funcionario_id:employees[0].id,vigente_desde:context.period_start});
         const roster=[];
         for(let si=0;si<20;si++){
-          const e=ci===0&&si===0?student:await insert('estudiante',`student-${ci}-${si}`,{identificador_interno:`DEMO-COMP-${ci+1}-${String(si+1).padStart(3,'0')}`,nombres:firstNames[si],apellidos:surnames[(si+ci*3)%20]+' Demo',fecha_nacimiento:`${2011-ci}-06-${String(si+1).padStart(2,'0')}`,email_institucional:`alumno${ci+1}.${si+1}@sigaa.invalid`,creado_por:admin.id});
+          const e=ci===0&&si===0?student:await insert('estudiante',`student-${ci}-${si}`,{identificador_interno:`SIGAA-COMP-${ci+1}-${String(si+1).padStart(3,'0')}`,nombres:firstNames[si],apellidos:surnames[(si+ci*3)%20],fecha_nacimiento:`${2011-ci}-06-${String(si+1).padStart(2,'0')}`,email_institucional:`alumno${ci+1}.${si+1}@sigaa.invalid`,creado_por:admin.id});
           roster.push(e);
-          if(!(ci===0&&si===0))await insert('matricula',`enroll-${ci}-${si}`,{estudiante_id:e.id,curso_id:course.id,numero_matricula:`DEMO-2026-${ci+1}-${si+1}`,creado_por:admin.id});
-          const guardian=await insert('apoderado',`guardian-${ci}-${si}`,{nombres:'Apoderado ficticio '+(si+1),apellidos:surnames[(si+ci*3)%20]+' Demo',email:`apoderado${ci+1}.${si+1}@sigaa.invalid`});
+          if(!(ci===0&&si===0))await insert('matricula',`enroll-${ci}-${si}`,{estudiante_id:e.id,curso_id:course.id,numero_matricula:`SIGAA-2026-${ci+1}-${si+1}`,creado_por:admin.id});
+          const guardian=await insert('apoderado',`guardian-${ci}-${si}`,{nombres:'Apoderado ficticio '+(si+1),apellidos:surnames[(si+ci*3)%20],email:`apoderado${ci+1}.${si+1}@sigaa.invalid`});
           await insert('estudiante_apoderado',`guardian-link-${ci}-${si}`,{estudiante_id:e.id,apoderado_id:guardian.id,parentesco:'Tutor',es_principal:true,recibe_notificaciones:false});
-          await insert('comunicacion_estudiante',`message-${ci}-${si}`,{estudiante_id:e.id,curso_id:course.id,tipo:'recordatorio',titulo:'Próximas actividades',detalle:'Información ficticia para demostrar el portal. Revisa tus clases y evaluaciones; no corresponde a un estudiante real.',estado:'publicada',visible_desde:now,creada_por:teacher.id});
+          await insert('comunicacion_estudiante',`message-${ci}-${si}`,{estudiante_id:e.id,curso_id:course.id,tipo:'recordatorio',titulo:'Próximas actividades',detalle:'Información ficticia para recorrer el portal. Revisa tus clases y evaluaciones; no corresponde a un estudiante real.',estado:'publicada',visible_desde:now,creada_por:teacher.id});
         }
         rosters.push(roster);
         for(let s=0;s<subjects.length;s++){
@@ -103,7 +103,7 @@ try {
           const dates=['2026-09-14','2026-09-21','2026-09-28','2026-10-05','2026-10-19','2026-10-26'].map(d=>day(d,ci));
           for(const [wi,date] of dates.entries()){
             const past=wi<4;
-            const lesson=await insert('sesion_clase',`class-${ci}-${s}-${wi}`,{curso_asignatura_id:ca.id,fecha:date,bloque:`DEMO-${s+1}`,estado:past?'realizada':'programada',titulo:`${past?'Taller':'Próxima clase'} ${wi+1}: ${subjects[s].nombre}`,objetivo:'Ejercitar contenidos y colaboración en un escenario escolar ficticio.',contenido:'Material sintético de demostración. Sin datos de personas reales.',hora_inicio:`${String(8+s*2).padStart(2,'0')}:00`,hora_fin:`${String(9+s*2).padStart(2,'0')}:30`,sala:'D-'+(ci+1),creada_por:staff[s].id,publicada:true,publicada_en:now});
+            const lesson=await insert('sesion_clase',`class-${ci}-${s}-${wi}`,{curso_asignatura_id:ca.id,fecha:date,bloque:`BLOQUE-${s+1}`,estado:past?'realizada':'programada',titulo:`${past?'Taller':'Próxima clase'} ${wi+1}: ${subjects[s].nombre}`,objetivo:'Ejercitar contenidos y colaboración en un escenario escolar ficticio.',contenido:'Material sintético de práctica. Sin datos de personas reales.',hora_inicio:`${String(8+s*2).padStart(2,'0')}:00`,hora_fin:`${String(9+s*2).padStart(2,'0')}:30`,sala:'D-'+(ci+1),creada_por:staff[s].id,publicada:true,publicada_en:now});
             if(past)for(const [si,e] of roster.entries()){
               let status=si%5===1?(wi===3?'presente':'ausente'):si%5===3?(wi<2?'ausente':'presente'):(si===0&&wi===2?'ausente':(si+wi)%11===0?'atraso':'presente');
               // Three inspector cases per course, scoped to one subject and one lesson.
