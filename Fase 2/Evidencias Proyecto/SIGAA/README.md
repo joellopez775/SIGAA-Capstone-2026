@@ -65,6 +65,7 @@ El docente puede publicar o retirar clases programadas sin registrar asistencia.
 El acceso se verifica en la API por identidad, rol y curso vigente.
 
 - [Avance, manual, migración y pruebas 0.9.1](<output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>).
+- [Diagrama actualizado de arquitectura de software](<output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf>): componentes, seguridad, despliegue y flujos persistentes de 0.9.1, con separación entre configuración y evidencia validada.
 - [Diagrama completo de base de datos](<output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf>): 33 tablas, 324 columnas y 70 claves foráneas, verificados en PostgreSQL 16 con las migraciones 001-010.
 - [UML de los flujos persistentes](<output/pdf/UML de flujos persistentes - SIGAA.pdf>).
 - Evidencia actual: `output/evidence/sprint-5-completion/`.

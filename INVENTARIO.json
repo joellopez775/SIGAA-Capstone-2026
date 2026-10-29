@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Incremento 0.9.1, evidencia de desarrollo y diagrama físico completo de base de datos. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
+  "nota": "Incremento 0.9.1, evidencia de desarrollo y diagramas actualizados de base de datos y arquitectura de software. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 11955,
-      "sha256": "6a764d0e61696f4172240ff1b08234adfefce9d1c95f0fb123d291c912d7499d"
+      "bytes": 12210,
+      "sha256": "907e8ac7c6cb150bbb4f3aebb966481367aa4f4a818ddf54eed3857a6c73ec60"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -1683,6 +1683,11 @@
       "sha256": "ccb0dae8b36d5f597cd7b99bb198e8f0d667ca5c314c305a8b65326ca817eaf2"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/architecture-software-0.9.1.json",
+      "bytes": 5494,
+      "sha256": "fa5dfd493c11098f9b2da2cc9b54fdf2e0f00678560a31acfa5ed3fc30028c40"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/database-diagram-validation.json",
       "bytes": 5735,
       "sha256": "e139d9d4a741a7fa8bd79710d112b23c176ba87c5e37d1164ece6546ca8c0dc0"
@@ -1948,6 +1953,11 @@
       "sha256": "a997c217aebbbc0e50ca59345fa3df3cef0be948b395c510b6e75838ea525a95"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf",
+      "bytes": 81302,
+      "sha256": "0b977b021f753c1626c7dfb142a597be86e2ac1339d3abde0dd76d67659a7005"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf",
       "bytes": 117482,
       "sha256": "a70fe6e8b65f6a114108428762ac78179b36fa28922828f1e371d488d924e175"
@@ -2141,6 +2151,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-development-091-pdfs.py",
       "bytes": 23170,
       "sha256": "6f7c122a4d85701ebbd5b2d60dce20e56ab4c698557b101d01848ceeec6e3ba7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-software-architecture.py",
+      "bytes": 19664,
+      "sha256": "63bd3e0271908613d38df5ce401444c78dc54ec8f26c44177cd56655e4003599"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint3-report.py",
@@ -2339,8 +2354,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 5876,
-      "sha256": "095e769e6c51178b701b43aa571f4e2556553846056f1c4dadb20414f42b273c"
+      "bytes": 6105,
+      "sha256": "8c4b5bceb6a62ed6dd8e9714399558eb4cabe6e98d107f2055cedbf74e56012b"
     }
   ]
 }
