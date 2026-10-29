@@ -1768,6 +1768,11 @@
       "sha256": "508b2f53eb6e28aefe1a347c2a460c96de3443384b677379e5cfda5242ec2f34"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/jira-status.json",
+      "bytes": 3806,
+      "sha256": "21795df3e583579581106ae1ba48b52f9a58f673dba457c2f518b7977f2f2748"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/sprint-5-completion/operations-browser-results.json",
       "bytes": 1423,
       "sha256": "57d6a97e7cef260bcc34cb7fbc33f658963c20c05b6bea9ecb3838f8f910a827"
