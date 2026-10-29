@@ -62,14 +62,14 @@ try {
         throw new Error('Demo course changed: review capacity/data before loading');
       const now=new Date().toISOString();
       const staff=[teacher];
-      for(const [i,name] of ['Valentina Torres','Sebastián Ríos','Catalina Fuentes'].entries()) {
+      for(const [i,name] of ['Valentina Isabel Torres Medina','Sebastián Ignacio Ríos Carrasco','Catalina Fernanda Fuentes Lagos'].entries()) {
         // Active staff records without a password cannot log in. Existing demo logins are untouched.
         const u=await insert('usuario','teacher-'+i,{email:`docente${i+2}@sigaa.invalid`,nombre:name,password_hash:null});
         await insert('usuario_rol','teacher-role-'+i,{usuario_id:u.id,rol_id:(await one("SELECT id FROM rol WHERE codigo='PROFESOR_ASIGNATURA'")).id});
         staff.push(u);
       }
       const employees=[];
-      for(const [i,u] of staff.entries()) employees.push(await one('SELECT * FROM funcionario WHERE usuario_id=$1',[u.id])||await insert('funcionario','employee-'+i,{usuario_id:u.id,nombres:['Docente','Valentina','Sebastián','Catalina'][i],apellidos:['SIGAA','Torres','Ríos','Fuentes'][i],email_institucional:`docente${i+1}@sigaa.invalid`}));
+      for(const [i,u] of staff.entries()) employees.push(await one('SELECT * FROM funcionario WHERE usuario_id=$1',[u.id])||await insert('funcionario','employee-'+i,{usuario_id:u.id,nombres:['Matías Andrés','Valentina Isabel','Sebastián Ignacio','Catalina Fernanda'][i],apellidos:['Valdés Riquelme','Torres Medina','Ríos Carrasco','Fuentes Lagos'][i],email_institucional:`docente${i+1}@sigaa.invalid`}));
       const courses=[context];
       for(const n of [1,3,4]){
         const level=await insert('nivel_educativo','level-'+n,{codigo:`SIGAA-COMP-M${n}`,nombre:`${n}° Medio`,ciclo:'media',orden:n+8});

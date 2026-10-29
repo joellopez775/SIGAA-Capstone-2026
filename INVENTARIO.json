@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Despliegue 0.9.1 y limpieza completa de nombres y códigos visibles de ejemplos, verificada por HTTPS. Excluye archivos privados ignorados; documentación histórica conserva su corte.",
+  "nota": "Despliegue 0.9.1, normalización de ejemplos y catálogo de doce docentes con nombres ficticios completos. Excluye archivos privados ignorados; documentos históricos conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -894,8 +894,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/populate-demo.js",
-      "bytes": 17835,
-      "sha256": "85dedf30041afa13d69586b1080df7de4117a2184b88020e8cba9807e72ff64a"
+      "bytes": 17946,
+      "sha256": "1cd48c4a7eda1eea2b6b5407c9a2a70059ec1e961dab3f5b22e60420b50bcae9"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/prototype-data.js",
@@ -904,8 +904,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/provision-hosted-demo.js",
-      "bytes": 2909,
-      "sha256": "b238ad7801f18a37f25bf51f3f00a20e154c908101f9773ba33c94ded3615549"
+      "bytes": 2928,
+      "sha256": "1e2a6e9bf35e2e5fb7e1a130ec2a8155431db186cf0f102b07d3629281e23550"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/repository.js",
@@ -1958,6 +1958,21 @@
       "sha256": "98a378ebae3ccb2dc2ee57933b1d0d5cfc9b8955dae883a6222fd1fa6e82475b"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/teacher-expansion/https.json",
+      "bytes": 393,
+      "sha256": "0ed9f750da08d9ca45c143535088c27f07362602a2caf447ca30f7d92512237f"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/teacher-expansion/result.json",
+      "bytes": 2294,
+      "sha256": "8fe3a3a8086ee168e6aafc2a28cca8f2237777dcde0f7fa7270dcb38cc2ac75e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Ampliación de docentes ficticios - SIGAA.pdf",
+      "bytes": 45937,
+      "sha256": "a6453bbafa8de587f0c77bc78f98089a021e0070ce3d23656ee473d20c30e38e"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Arquitectura de Base de Datos - SIGAA.pdf",
       "bytes": 70782,
       "sha256": "e8a9d8467fd2391d9e72f63a313c5c13d6c4d9e26dba8b3575d91560c484dfeb"
@@ -2211,6 +2226,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/clean-example-names.sql",
       "bytes": 3642,
       "sha256": "eec0f1ebca9d43fa72724b74c0bf5744030400daff44b5c6ce291fd3d2a2f29c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/expand-example-teachers.sql",
+      "bytes": 3847,
+      "sha256": "4d880d2ea09170a9b979165228348964ad1b231c96660030e98f700b34606948"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-database-diagram.py",

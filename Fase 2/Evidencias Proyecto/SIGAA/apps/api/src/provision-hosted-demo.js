@@ -18,7 +18,7 @@ try {
     const level = await one("INSERT INTO nivel_educativo(codigo,nombre,ciclo,orden) VALUES('SIGAA-M2','2° Medio','media',10) ON CONFLICT(codigo) DO UPDATE SET nombre=EXCLUDED.nombre RETURNING id");
     const course = await one("INSERT INTO curso(periodo_id,nivel_id,letra,estado,capacidad) VALUES($1,$2,'A','activo',35) RETURNING id",[period.id,level.id]);
     const users = {};
-    for (const [key,name,role] of [['teacher','Docente SIGAA','PROFESOR_ASIGNATURA'],['student','Estudiante SIGAA','ESTUDIANTE']]) {
+    for (const [key,name,role] of [['teacher','Matías Andrés Valdés Riquelme','PROFESOR_ASIGNATURA'],['student','Estudiante SIGAA','ESTUDIANTE']]) {
       users[key] = await one('INSERT INTO usuario(email,nombre,password_hash) VALUES($1,$2,$3) RETURNING id',[accounts[key].email,name,hashes[key]]);
       await db.query('INSERT INTO usuario_rol(usuario_id,rol_id) SELECT $1,id FROM rol WHERE codigo=$2',[users[key].id,role]);
       await audit(db,null,'provision_demo','usuario',users[key].id,null,{email:accounts[key].email,role,synthetic:true});
