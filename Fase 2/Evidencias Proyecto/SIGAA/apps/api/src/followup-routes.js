@@ -1,5 +1,6 @@
 import { fail, requireId, transaction, audit, teacherCourse } from './repository.js';
 import { text } from './teacher-routes.js';
+import { notifyCase } from './notification-routes.js';
 
 const staff = ['admin','inspector','leadership','teacher'];
 const roles = (...allowed) => (req,_res,next) => { if (!allowed.includes(req.user.role)) fail(403,'access_denied'); next(); };
@@ -56,6 +57,7 @@ async function event(db,user,row,type,note,before) {
   await db.query('INSERT INTO caso_actividad(caso_id,usuario_id,tipo,nota,detalle) VALUES($1,$2,$3,$4,$5)',
     [row.id,user.id,type,note,{status:row.estado,ownerId:row.responsable_id,nextAction:row.siguiente_accion,followupDate:row.fecha_seguimiento,outcome:row.resultado,revision:row.revision}]);
   await audit(db,user.id,type,'caso_seguimiento',row.id,before,row);
+  await notifyCase(db,user,row,type);
 }
 export function followupRoutes(app,pool) {
   const support=roles(...staff), registry=roles('admin','inspector'), registryRead=roles('admin','inspector','leadership');

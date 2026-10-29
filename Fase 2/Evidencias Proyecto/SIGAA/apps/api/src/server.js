@@ -34,6 +34,11 @@ if (followup.rows[0]?.value !== "1") {
   await pool.end();
   throw new Error("Apply additive migration 009_followup.sql before starting this version");
 }
+const notifications = await pool.query("SELECT value FROM app_metadata WHERE key='notifications_schema'");
+if (notifications.rows[0]?.value !== "1") {
+  await pool.end();
+  throw new Error("Apply additive migration 010_internal_notifications.sql before starting this version");
+}
 const app = createApp({ pool });
 const server = app.listen(port, "0.0.0.0", () => {
   console.log(`SIGAA API listening on port ${server.address().port}`);

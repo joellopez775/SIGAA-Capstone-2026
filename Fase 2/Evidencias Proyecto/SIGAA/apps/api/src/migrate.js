@@ -11,7 +11,7 @@ try {
     throw new Error("Existing school schema 001-006 required");
   const sources = process.env.MIGRATION_FILES?.split(",") ??
     (process.env.MIGRATION_FILE ? [process.env.MIGRATION_FILE] :
-      ["007_sprint3_security.sql","008_school_operations.sql","009_followup.sql"].map(file =>
+      ["007_sprint3_security.sql","008_school_operations.sql","009_followup.sql","010_internal_notifications.sql"].map(file =>
         new URL("../../../infra/postgres/init/"+file,import.meta.url)));
   for (const source of sources) await db.query(await readFile(source,"utf8"));
   console.log("Requested additive migrations applied. Existing data preserved.");

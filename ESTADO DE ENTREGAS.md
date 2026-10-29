@@ -2,13 +2,18 @@
 
 Corte documental de publicación: 22 de octubre de 2026.
 
-Actualización de desarrollo: 28 de octubre de 2026. Sprint 5, incremento 0.9.0:
-casos, apoderados y ficha integral implementados y verificados localmente.
-Tres PDF canónicos en `Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/`.
-Historias existentes SCRUM-35, SCRUM-48 y SCRUM-36 preparadas para revisión del PO;
-SCRUM-37 sigue pendiente. No se acredita aceptación, reuniones, integración ni
-despliegue en el servidor. La documentación académica personal pendiente abajo
-no se considera completada por este incremento.
+Actualización de desarrollo: 28 de octubre de 2026. Sprint 5, incremento 0.9.1:
+casos, apoderados y ficha integral; avisos internos y asignaturas/calendario del
+estudiante. PDF actual de desarrollo y UML en `SIGAA/output/pdf/`, dentro de
+Evidencias Proyecto. Validación: 6 unitarias + 66 integración en Docker/PostgreSQL
+16; 27 recorridos Chromium; instalación nueva y reinicio con sesiones persistentes.
+Evidencia: `SIGAA/output/evidence/sprint-5-completion/`.
+
+Se presentan para revisión SCRUM-35, 36, 48, 37, 51 y 21. SCRUM-52 permanece
+en curso por las pruebas del equipo y HTTPS en varios dispositivos. Continúan
+pendientes aceptación del PO, integración a main y despliegue. No se inventan
+reuniones, cierres ni entregas académicas. Los tres PDF iniciales del Sprint 5
+conservan su corte 0.9.0 y se complementan con el informe 0.9.1.
 
 Informe general de actualización y presentación de avance al 28-10-2026:
 disponibles en `SIGAA/output/pdf/`, con presentación editable en
@@ -39,7 +44,7 @@ Los tres diarios de reflexión disponibles describían otro proyecto y no se pub
 
 ## Fase 2
 
-La publicación inicial contenía el incremento 0.8.0, migraciones 001 a 008 y expedientes de sprints 0 a 4. La actualización de Sprint 5 añade 0.9.0, migración 009, pruebas y sus tres PDF. Los registros históricos de Jira conservan el corte de su extracción; la nueva evidencia está en `SIGAA/output/evidence/sprint-5/` dentro de Evidencias Proyecto y actualiza tarjetas existentes sin duplicarlas.
+La publicación inicial contenía el incremento 0.8.0, migraciones 001 a 008 y expedientes de sprints 0 a 4. La actualización inicial de Sprint 5 añade 0.9.0 y migración 009; el incremento 0.9.1 añade la 010, avisos, calendario y evidencia Docker/PostgreSQL 16. Los registros históricos de Jira conservan el corte de su extracción; la nueva evidencia está en `SIGAA/output/evidence/sprint-5/` dentro de Evidencias Proyecto y actualiza tarjetas existentes sin duplicarlas.
 
 El informe de avance y la propuesta de reflexión existentes están en las carpetas de evidencias grupales e individuales. El informe de avance no equivale a una guía 2.4 firmada ni el texto de reflexión a un diario individual ratificado. Faltan las versiones oficiales completas y revisadas por cada integrante, las planillas evaluadas de avance y cierre y el informe final 2.6 cuando corresponda.
 

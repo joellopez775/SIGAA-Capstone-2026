@@ -5,9 +5,14 @@ import { AcademicPanel, StudentAcademic } from "./AcademicPanel.jsx";
 import { StructurePanel, RiskPanel, JustificationPanel } from "./OperationsPanel.jsx";
 import GlassNavigation from "./GlassNavigation.jsx";
 import { GuardiansPanel, CasesPanel, DossierPanel } from "./FollowupPanel.jsx";
+import { Subjects, StudentCalendar } from "./StudentPortal.jsx";
+import NotificationsPanel from "./NotificationsPanel.jsx";
 
 let csrfToken = "";
 const messages = {
+  invalid_calendar_range: "Selecciona un intervalo válido de hasta tres meses.",
+  class_publication_locked: "Solo puedes cambiar la publicación de una clase programada.",
+  notification_not_found: "Este aviso ya no está disponible para tu cuenta. Actualiza la bandeja.",
   followup_reason_required: "Explica el motivo, intervención o resultado con al menos 8 caracteres.",
   invalid_followup_plan: "Indica la próxima acción y una fecha de seguimiento válida.",
   invalid_guardian: "Completa nombres, apellidos y un código de 3 a 40 caracteres en mayúsculas.",
@@ -532,6 +537,7 @@ export default function SecureApp() {
     [view, setView] = useState("summary"),
     [revision, setRevision] = useState(0),
     [menu, setMenu] = useState(false);
+  const [unread,setUnread]=useState(0),[initialCaseId,setInitialCaseId]=useState(null);
   const [data, setData] = useState({
       students: [],
       courses: [],
@@ -548,6 +554,7 @@ export default function SecureApp() {
     setNotice(message);
     setError("");
     setMenu(false);
+    setUnread(0);setInitialCaseId(null);
   }
   async function refresh(user = session?.user) {
     if (!user) return;
@@ -563,6 +570,7 @@ export default function SecureApp() {
       ]);
       setData({ ...s, ...c, ...e, ...g });
       setRevision(r => r + 1);
+      if(user.role!=='student')setUnread((await api('/notifications')).unread);
     } finally {
       setLoading(false);
     }
@@ -623,6 +631,7 @@ export default function SecureApp() {
     ["summary", "Mi inicio"],
     ["students", student ? "Mis datos" : "Estudiantes"],
     ["courses", student ? "Mis cursos" : "Cursos"],
+    ...(student ? [["subjects","Mis asignaturas"],["calendar","Mi calendario"]] : [["notifications","Avisos"]]),
     ["enrollments", "Matrículas"],
     ...(admin ? [["structure", "Estructura escolar"]] : []),
     ...(!student ? [["risk", "Alertas y seguimiento"]] : []),
@@ -641,7 +650,7 @@ export default function SecureApp() {
   ];
   return (
     <div className="secure-shell">
-      <GlassNavigation items={navigation} view={view} user={user} role={roleNames[user.role]} open={menu} setOpen={setMenu} onLogout={logout} onNavigate={id => { setView(id); setError(""); }} />
+      <GlassNavigation items={navigation} view={view} user={user} role={roleNames[user.role]} open={menu} setOpen={setMenu} onLogout={logout} onNavigate={id => { setInitialCaseId(null);setView(id); setError(""); }} />
       <main className="secure-main" inert={menu ? true : undefined}>
         <header className="secure-header">
           <div>
@@ -657,9 +666,12 @@ export default function SecureApp() {
         </header>
         <div className="glass-view" key={view}>
         <Notice text={error} error />
+        {student&&view==='subjects'&&<Subjects subjects={data.subjects}/>}
+        {student&&view==='calendar'&&<StudentCalendar api={api} studentId={user.studentId} revision={revision}/>}
+        {!student&&view==='notifications'&&<NotificationsPanel api={api} revision={revision} onUnread={setUnread} onOpenCase={id=>{setInitialCaseId(id);setView('cases');}}/>}
         {view === "structure" && admin && <StructurePanel api={api} revision={revision} />}
         {view === "risk" && !student && <RiskPanel api={api} user={user} courses={data.courses} revision={revision} />}
-        {view === "cases" && !student && <CasesPanel api={api} user={user} courses={data.courses} students={data.students} revision={revision} />}
+        {view === "cases" && !student && <CasesPanel api={api} user={user} courses={data.courses} students={data.students} revision={revision} initialCaseId={initialCaseId} />}
         {view === "guardians" && <GuardiansPanel api={api} user={user} students={data.students} revision={revision} />}
         {view === "dossier" && <DossierPanel api={api} user={user} students={data.students} revision={revision} />}
         {view === "justifications" && <JustificationPanel api={api} student={student} revision={revision} />}
@@ -674,6 +686,7 @@ export default function SecureApp() {
               </p>
             </section>
             <div className="secure-metrics">
+              {!student&&<article className="panel"><span>Avisos sin leer</span><strong>{unread}</strong><button onClick={()=>setView('notifications')}>Ver avisos</button></article>}
               {[
                 ["Cursos", data.courses.length],
                 ["Estudiantes", data.students.length],

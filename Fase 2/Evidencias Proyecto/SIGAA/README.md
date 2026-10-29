@@ -57,33 +57,43 @@ docker compose -f compose.test.yaml down
 
 La plantilla de integración continua está en `ci/sigaa-ci.yml.example`. Para activarla se debe copiar a `.github/workflows/sigaa-ci.yml` usando una credencial de GitHub con permiso `workflow`.
 
-## Estado vigente del código: API 0.9.0 · Sprint 5
+## Estado vigente del código: API 0.9.1 · Sprint 5
 
-Corte: 28-10-2026. Casos de seguimiento, gestión de apoderados y ficha integral
-implementados con persistencia, permisos por rol/curso e historial auditable.
-Las historias SCRUM-35, SCRUM-48 y SCRUM-36 se presentan para revisión del PO.
-SCRUM-37 (notificaciones) sigue pendiente. Esta entrega no actualiza el servidor público.
+Corte: 28-10-2026. Casos, apoderados y ficha integral se complementan con avisos
+internos persistentes, asignaturas vigentes y calendario propio del estudiante.
+El docente puede publicar o retirar clases programadas sin registrar asistencia.
+El acceso se verifica en la API por identidad, rol y curso vigente.
 
-- [Implementación y verificación](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/01 Implementación y verificación Sprint 5.pdf>).
-- [Manual de uso](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/02 Manual de uso Sprint 5.pdf>).
-- [Seguimiento y backlog](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/03 Seguimiento y backlog Sprint 5.pdf>).
-- Evidencia reproducible: `output/evidence/sprint-5/`.
+- [Avance, manual, migración y pruebas 0.9.1](<output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>).
+- [UML de los flujos persistentes](<output/pdf/UML de flujos persistentes - SIGAA.pdf>).
+- Evidencia actual: `output/evidence/sprint-5-completion/`.
+- [Antecedentes 0.9.0 del Sprint 5](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/>).
 
-Validación local: 6 pruebas unitarias, 57 de integración, 8 recorridos nuevos
-y 11 recorridos de regresión en Chromium; compilación de producción correcta.
-PostgreSQL 14 aislado, datos ficticios. Docker/PostgreSQL 16 y despliegue
-de esta versión quedan pendientes de verificación.
+Validación: 6 unitarias y 66 de integración en Docker con PostgreSQL 16;
+27 recorridos Chromium (8 portal/avisos, 8 seguimiento, 11 operación escolar),
+compilación web, instalación Docker nueva y persistencia de cuentas/sesiones
+tras reiniciar base y API. Nginx renueva la resolución del servicio `api` para
+recuperarse de cambios de IP. Pruebas aisladas con datos ficticios.
+
+SCRUM-35, SCRUM-36, SCRUM-48, SCRUM-37, SCRUM-51 y SCRUM-21 se presentan para
+revisión. SCRUM-52 mantiene pendiente el ensayo del equipo y HTTPS desde varios
+dispositivos. No se acredita aceptación, integración a main ni despliegue 0.9.1.
+Los informes y la presentación anteriores conservan su corte; este incremento
+actualiza sus pendientes técnicos sin atribuir reuniones o cierres nuevos.
 
 Para una base escolar existente: respaldar y verificar restauración, revisar
 apoderados principales duplicados, ejecutar `docker compose build api`,
 `docker compose stop api`, `docker compose run --rm --no-deps api npm run migrate`
-y luego `docker compose up -d --build`. El migrador aplica 007, 008 y 009.
-Si usas un rol SQL restringido, aplica los permisos de nuevas tablas indicados en el PDF.
-Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
-aplica 001-009 automáticamente y no crea cuentas por defecto.
+y luego `docker compose up -d --build`. El migrador aplica 007, 008, 009 y 010.
+Esto corresponde a `compose.yaml`; un servidor con base externa requiere
+adaptar la configuración y usar su rol migrador. Un rol SQL restringido necesita
+SELECT, INSERT y UPDATE sobre `notificacion_interna`, además de sus permisos
+previos. No subir credenciales ni respaldos al repositorio.
 
-La migración 009 conserva registros anteriores. Ante varios apoderados principales
-históricos, se detiene para revisión, sin elegir ni borrar vínculos arbitrariamente.
+Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
+aplica 001-010 automáticamente y no crea cuentas por defecto. La migración 009
+se detiene ante varios apoderados principales históricos para revisión, sin
+eliminar vínculos arbitrariamente. La 010 no genera avisos históricos.
 
 ## Antecedente desplegado: API 0.8.0
 
