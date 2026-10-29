@@ -18,6 +18,15 @@ y proponen pasos, ventanas y responsabilidades para el cierre. El corte de
 Jira queda en `SIGAA/output/evidence/actualizacion-2026-10-28.json`. Son documentos
 de seguimiento; no acreditan nuevas reuniones, despliegue ni entrega en Campus.
 
+Corrección de presentación al mismo corte: informe de nueve páginas con contexto
+inicial y presentación de 18 diapositivas, con Georgia y Helvetica Neue como en
+la plataforma. Reparto de exposición: Joel 1–6, Agustín 7–12 y Matías 13–18,
+con seis minutos sugeridos por integrante. En `SIGAA/output/pdf/Preparación de presentación/`
+hay un guion y un material de estudio de cuatro páginas por integrante (seis PDF).
+Incluyen conceptos, ejemplos, preguntas y transiciones; el guion también figura
+en las notas del PowerPoint. No atribuyen autoría individual de desarrollos ni
+sustituyen reflexiones académicas personales o registros de reuniones.
+
 ## Fase 1
 
 Se incluye la definición de SIGAA existente, su presentación y la autoevaluación de competencias de Joel corregida previamente. Se conservan los formularios y evaluaciones disponibles sin atribuirles aprobación del docente.

@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Inventario del incremento Sprint 5 y su informe general de actualización y presentación. Excluye este archivo, dependencias y archivos privados ignorados. Los documentos anteriores conservan sus fechas de corte.",
+  "nota": "Inventario del incremento Sprint 5, informe y presentación actualizados y seis PDF de preparación de exposición por integrante. Excluye este archivo, dependencias y archivos privados ignorados. Los documentos anteriores conservan sus fechas de corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 3420,
-      "sha256": "85db46ccdfc92c937b51dea5c1dd29f9e405ec8794d8d833aafecc9f2c2d8ef0"
+      "bytes": 4085,
+      "sha256": "13afee7b9732202f546181e29ed0bbd3e5232eb102f729aa2a2a06cc0f302350"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -1804,8 +1804,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf",
-      "bytes": 790793,
-      "sha256": "32f49f53371a4e3c71039c0dff0b23f15fbb3059d0ee90b37c170ffd634e9449"
+      "bytes": 808246,
+      "sha256": "ad416e43cd25db46dc5f6b590898e25a4ee39be60aac8fcd9dcd61475fb429fe"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de avances para Matías y Agustín - 15 octubre 2026.pdf",
@@ -1858,9 +1858,39 @@
       "sha256": "2cf0ca01f28c82be4276a176381e1a2dc19b010e02a0f4cc1998e0fc355e4c71"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Agustín SIGAA.pdf",
+      "bytes": 67662,
+      "sha256": "b231de12e6f2ecd2ce9ba92cf32b400aa6e5ac66c0c471a27e740daa6a568cd5"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Joel SIGAA.pdf",
+      "bytes": 67337,
+      "sha256": "1c59b44b27d86c85a4000eb5a1adcc4d0461cb433f031496714a0a2fa28eeaad"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Matías SIGAA.pdf",
+      "bytes": 67498,
+      "sha256": "23190e7b4b78dabeb755cfdcc8f23ea817884a04b7e436cb05f9e45153b95f5b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Agustín SIGAA.pdf",
+      "bytes": 68196,
+      "sha256": "857d076db0215fd8f9ef95ae0698b32c29d227f8d36e5e2f7506fb6dfc0c4cc3"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Joel SIGAA.pdf",
+      "bytes": 68271,
+      "sha256": "8f3ae6642112115b9e989f63f783022e92a61867e30c43e4c0c84307fd72303d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Material de estudio Matías SIGAA.pdf",
+      "bytes": 68285,
+      "sha256": "d151e6a48e278de55260295ea837eb187767c9840996ead352a0a2ebb6a42bdb"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf",
-      "bytes": 673274,
-      "sha256": "689cf859da53bacb07c2e0323391b3c6b1170210bbef0cd669993e6a97ddfe8e"
+      "bytes": 727522,
+      "sha256": "764b5a9e7f4aeda985941475614e0112a8c4d689b844176d243cf10bfc80ab1c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 3 - Implementación real y verificación.pdf",
@@ -1929,8 +1959,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx",
-      "bytes": 2762069,
-      "sha256": "51bc443bb13e734307ac8c33d9e64383be0e0900989544d5fb0a95bb96d1f5f9"
+      "bytes": 2785185,
+      "sha256": "b44aedddbb688c127cd88f4e6c15d1e794d8275fabb3e6872a6266a54af25615"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-sprint3-report.py",
@@ -2119,8 +2149,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 4360,
-      "sha256": "48ae4b22e1ccb65ec725df6599e7af41ae2c127d67c5348e6c6d4e890b9d25bf"
+      "bytes": 5095,
+      "sha256": "93533712c13abbfbe2a156f4d0871118304824fee19adaa5fcbc6c0085ae7388"
     }
   ]
 }

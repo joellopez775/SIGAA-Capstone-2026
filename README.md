@@ -32,6 +32,7 @@ Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acom
 - [Informes PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/>).
 - [Informe de actualización al 28 de octubre](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de actualización SIGAA.pdf>).
 - [Presentación de avance editable](<Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance del proyecto SIGAA.pptx>) y [copia PDF](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf>).
+- [Guiones y material de estudio por integrante](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/>): dos PDF para Joel, dos para Agustín y dos para Matías.
 - [Sprints y registros PDF](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/PDF/02 Sprints/>).
 - [Carta Gantt por sprints](<Fase 2/Evidencias Proyecto/Gestión Scrum SIGAA/05 Planificación/Carta Gantt SIGAA por sprints.xlsx>).
 - [Estado de entregas](<ESTADO DE ENTREGAS.md>).
@@ -39,6 +40,14 @@ Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acom
 - [Inventario de publicación](INVENTARIO.json).
 
 ## Ejecutar una copia local
+
+La presentación de avance contiene 18 diapositivas con contexto inicial: Joel
+expone de la 1 a la 6, Agustín de la 7 a la 12 y Matías de la 13 a la 18.
+Se proponen seis minutos por persona. Cada guion incluye qué mostrar y las
+transiciones; cada material de estudio incluye conceptos, ejemplos, preguntas
+y práctica. El PowerPoint incorpora el guion en sus notas. El informe y la
+presentación usan Georgia y Helvetica Neue, según la tipografía de la plataforma.
+Estos materiales preparan la exposición y no acreditan una defensa realizada.
 
 Actualización del 28-10-2026: incremento 0.9.0 con casos, apoderados y ficha
 integral, preparado para revisión. Documentación en
