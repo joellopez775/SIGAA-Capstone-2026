@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "host": "localhost:8088",
+      "forwardedProto": "",
+      "status": 200,
+      "hsts": null,
+      "location": null
+    },
+    {
+      "host": "ignisert.com",
+      "forwardedProto": "http",
+      "status": 200,
+      "hsts": null,
+      "location": null
+    },
+    {
+      "host": "sigaa.ignisert.com",
+      "forwardedProto": "http",
+      "status": 308,
+      "hsts": null,
+      "location": "https://sigaa.ignisert.com/"
+    },
+    {
+      "host": "sigaa.ignisert.com",
+      "forwardedProto": "https",
+      "status": 200,
+      "hsts": "max-age=31536000",
+      "location": null
+    }
+  ],
+  "result": "passed"
+}

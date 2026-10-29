@@ -1,6 +1,6 @@
 {
   "fecha": "2026-10-28",
-  "nota": "Incremento 0.9.1, evidencia de desarrollo y diagramas actualizados de base de datos y arquitectura de software. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
+  "nota": "Despliegue público 0.9.1, respaldo restaurado, HTTPS y Jira verificados. Excluye este archivo, dependencias y archivos privados ignorados; documentos históricos conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 4743,
-      "sha256": "874e620696d838e10dbccb96da154997661bfa6065e01bc8a924908bf1aec02f"
+      "bytes": 5775,
+      "sha256": "928683efb1537928cf70ddb1f24a0020311766b260520421656a28e062b8a847"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 12210,
-      "sha256": "907e8ac7c6cb150bbb4f3aebb966481367aa4f4a818ddf54eed3857a6c73ec60"
+      "bytes": 13622,
+      "sha256": "99ac0c2de64ffd5d008d263e3c6f2300ce5773c86d92f1fc845a8a29b96247b9"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -1009,8 +1009,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/nginx.conf",
-      "bytes": 1281,
-      "sha256": "c7aff2de8e05013134f00adbd08f7bf59ebce2475cabb423d37e643ec5fc6beb"
+      "bytes": 1831,
+      "sha256": "c57f5528251bcc01d9c295b4e8a169a9386cd79af71e7b2f2fdc88be12ef0aa6"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/package-lock.json",
@@ -1698,6 +1698,41 @@
       "sha256": "8975d07c1cdbceeef40bdd1111ef9eb986f56367cb439fc03df9ed6274c2a9aa"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/deployment.json",
+      "bytes": 1012,
+      "sha256": "a0fa72ade4368552e26f7f109ea3e578fba1917395c13c43aca7e994d803bc0e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-policy.json",
+      "bytes": 273,
+      "sha256": "59f305d38173f44ad4864e4d99ceea9e92d904087a79d5d6c2b208976c97a5b1"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-scope.json",
+      "bytes": 647,
+      "sha256": "f7bdef57a7002841254dd564892a997ceadcdde14ab9a84f448cb09bc79a0df8"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/https-verification.json",
+      "bytes": 4634,
+      "sha256": "647179be5ab6c33592b25f83c74facee063e5b8a9ec4b189ae3d6e5564b2f4a7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/jira-sync.json",
+      "bytes": 1176,
+      "sha256": "87dbfb56ac122736c91a0a1174adaa53494f4f493a583611ba710185cc659580"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/restored-workflows.json",
+      "bytes": 796,
+      "sha256": "33a6c18c2d40f678275171faa706183809436d14a1e9c48c61b03ed3738f206d"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/deployment-0.9.1/runtime.json",
+      "bytes": 2102,
+      "sha256": "313fa630adef12556075586e161946deadb9e91e996cd3860766a282bfdbcc1e"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/domain-dns-verification.json",
       "bytes": 816,
       "sha256": "7092bd5fb4da5875dbf9908701d0202250201713f2b91e77ab9c59a5d354428f"
@@ -1953,6 +1988,11 @@
       "sha256": "a997c217aebbbc0e50ca59345fa3df3cef0be948b395c510b6e75838ea525a95"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf",
+      "bytes": 68995,
+      "sha256": "ac0a7e45cdd5a54dd5b4c3d40b69efb095fbb04d67f876646d47b69f985406ed"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf",
       "bytes": 81302,
       "sha256": "0b977b021f753c1626c7dfb142a597be86e2ac1339d3abde0dd76d67659a7005"
@@ -2148,6 +2188,11 @@
       "sha256": "ec44af266550950101b7d139605fbee3288b2824953e3b19c315b1edf69132de"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-deployment-091-pdf.py",
+      "bytes": 11408,
+      "sha256": "b7d3cf0cee1d1c16ad7bb65170dbf02e2d4456bd28d405a9d6fc8d598fcb02ac"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-development-091-pdfs.py",
       "bytes": 23170,
       "sha256": "6f7c122a4d85701ebbd5b2d60dce20e56ab4c698557b101d01848ceeec6e3ba7"
@@ -2283,6 +2328,11 @@
       "sha256": "94e2fbefa838bfec2c5f1ce7a2e0c86ff159b477a06cc026a3f1dafc07a65932"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-release-https.mjs",
+      "bytes": 5599,
+      "sha256": "eb121a663adc45619ccdf1b5c2749e48abc2ff46f970b6e82c713a9a34d3a15d"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-server-isolation.sh",
       "bytes": 889,
       "sha256": "ddc0f2e7e06ce16a811d507825bded9a783cf4fb81631e7e5b6c24e23bbe689c"
@@ -2354,8 +2404,8 @@
     },
     {
       "archivo": "README.md",
-      "bytes": 6105,
-      "sha256": "8c4b5bceb6a62ed6dd8e9714399558eb4cabe6e98d107f2055cedbf74e56012b"
+      "bytes": 6422,
+      "sha256": "98b6857970dc165bca36f8569485ec21205d2f6de7a4e0ee3b1b128dc1dedfbc"
     }
   ]
 }

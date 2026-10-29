@@ -79,7 +79,8 @@ recuperarse de cambios de IP. Pruebas aisladas con datos ficticios.
 
 SCRUM-35, SCRUM-36, SCRUM-48, SCRUM-37, SCRUM-51 y SCRUM-21 se presentan para
 revisión. SCRUM-52 mantiene pendiente el ensayo del equipo y HTTPS desde varios
-dispositivos. No se acredita aceptación, integración a main ni despliegue 0.9.1.
+dispositivos. No se acredita aceptación ni integración a main. El despliegue
+0.9.1 se verificó posteriormente el 28-10-2026 y se registra a continuación.
 Los informes y la presentación anteriores conservan su corte; este incremento
 actualiza sus pendientes técnicos sin atribuir reuniones o cierres nuevos.
 
@@ -96,6 +97,28 @@ Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
 aplica 001-010 automáticamente y no crea cuentas por defecto. La migración 009
 se detiene ante varios apoderados principales históricos para revisión, sin
 eliminar vínculos arbitrariamente. La 010 no genera avisos históricos.
+
+## Despliegue público vigente: 0.9.1
+
+Actualizado el 28-10-2026 (Chile): [sigaa.ignisert.com](https://sigaa.ignisert.com)
+publica API/esquema 0.9.1. Respaldo definitivo restaurado y comparado antes de
+migrar 009/010. Se conservaron los registros previos, el volumen y el túnel.
+HTTPS validado sin excepciones; HTTP redirige con 308 y HSTS se limita a SIGAA.
+No se cambiaron DNS, web principal ni correo de Ignisert.
+
+- [Informe de despliegue, respaldo, pruebas y recuperación](<output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf>).
+- Evidencia: `output/evidence/deployment-0.9.1/`.
+- Código de API: `08913fb`; web con ajuste de HTTPS: `bff4a55`.
+- Verificador: `scripts/verify-release-https.mjs`; recibe `SIGAA_ORIGIN` y
+  `SIGAA_ACCOUNTS_FILE` (ruta privada; nunca guardar sus valores en Git).
+- Pruebas: flujos de escritura sobre una copia aislada; ocho recorridos HTTPS
+  de consulta por cuatro roles y dos tamaños de pantalla en un mismo Mac.
+- Los respaldos, entornos y cuentas se conservan únicamente en el servidor.
+  No se generaron nuevas contraseñas de demostración.
+
+Quedan pendientes aceptación del PO, revisión/fusión de la solicitud #1 y
+ensayo del equipo desde otros dispositivos. Jira conserva sus tarjetas y estados
+reales: funcionalidades En revisión; SCRUM-52 En curso. No se cerraron sprints.
 
 ## Antecedente desplegado: API 0.8.0
 

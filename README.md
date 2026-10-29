@@ -27,7 +27,8 @@ Fase 3/
 
 Los documentos individuales conservan el prefijo `Apellido_Nombre`. Los PDF acompañan a los formatos editables disponibles; no los reemplazan.
 
-- [Avance de desarrollo 0.9.1](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>) y [UML vigente](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/UML de flujos persistentes - SIGAA.pdf>): calendario, avisos y verificación Docker/PostgreSQL 16; pendiente de aceptación y despliegue.
+- [Despliegue público 0.9.1, respaldo y verificación HTTPS](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf>): disponible en [sigaa.ignisert.com](https://sigaa.ignisert.com); aprobación del PO y revisión de la solicitud #1 pendientes.
+- [Avance de desarrollo 0.9.1](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>) y [UML vigente](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/UML de flujos persistentes - SIGAA.pdf>): calendario, avisos y verificación Docker/PostgreSQL 16; pendiente de aceptación; despliegue 0.9.1 verificado el 28-10-2026.
 - [Diagrama actualizado de arquitectura de software](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf>): siete vistas de la aplicación 0.9.1 y sus configuraciones Docker.
 - [Diagrama actualizado de base de datos](<Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf>): vista general y seis módulos con todas las tablas y relaciones del esquema 0.9.1.
 - [Aplicación y manual técnico](<Fase 2/Evidencias Proyecto/SIGAA/README.md>).

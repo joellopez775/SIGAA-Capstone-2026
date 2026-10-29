@@ -11,7 +11,8 @@ Evidencia: `SIGAA/output/evidence/sprint-5-completion/`.
 
 Se presentan para revisión SCRUM-35, 36, 48, 37, 51 y 21. SCRUM-52 permanece
 en curso por las pruebas del equipo y HTTPS en varios dispositivos. Continúan
-pendientes aceptación del PO, integración a main y despliegue. No se inventan
+pendientes aceptación del PO e integración a main. El despliegue se completó
+posteriormente según el registro siguiente. No se inventan
 reuniones, cierres ni entregas académicas. Los tres PDF iniciales del Sprint 5
 conservan su corte 0.9.0 y se complementan con el informe 0.9.1.
 
@@ -57,3 +58,19 @@ Se mantiene la estructura requerida, sin presentar como realizadas las entregas 
 Los registros diarios y retrospectivas conservan sus advertencias originales: un seguimiento técnico o una reconstrucción no demuestra que se haya realizado una ceremonia. Las aprobaciones pendientes del Product Owner siguen pendientes.
 
 La existencia de archivos en GitHub no acredita su entrega o recepción en el campus. El equipo debe comunicar al docente el enlace nuevo y comprobar los nombres exactos requeridos en el listado de su sección. Los materiales institucionales de consulta y el video se mantienen fuera de la publicación pública.
+
+## Despliegue público 0.9.1 - 28 octubre 2026
+
+Disponible en https://sigaa.ignisert.com con HTTPS validado, redirección HTTP
+308 y HSTS limitado al subdominio. API 08913fb; web bff4a55. Base existente
+actualizada con 009 y 010 después de respaldar y restaurar en aislamiento;
+conteos y huellas de los registros previos conservados. Sin cambios de DNS,
+web principal ni correo. El volumen y el túnel existentes siguen operativos.
+
+Informe PDF: `SIGAA/output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf`.
+Evidencia: `SIGAA/output/evidence/deployment-0.9.1/`. Ocho recorridos HTTPS
+por cuatro roles, escritorio/móvil emulados en un Mac; escrituras ensayadas
+sobre copia restaurada, sin alterar datos académicos públicos. Respaldo privado,
+no incluido en Git. Aceptación del PO, fusión de PR #1 y pruebas del equipo en
+varios dispositivos permanecen pendientes. Se actualizan las mismas tarjetas
+Jira; no se crean reuniones, sprints ni tareas duplicadas.
