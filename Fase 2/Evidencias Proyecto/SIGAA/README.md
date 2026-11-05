@@ -234,3 +234,9 @@ Sprint 6 existente ID 40 activado el 5/11, ventana planificada 2–14/11. SCRUM-
 y 40 En revisión; 41 En curso; revisión de manuales y validación externa pendientes.
 Continúan pendientes aceptación del PO, fusión de PR #1 y ensayo humano en otros
 equipos. No se registran los guiones simulados como reuniones realizadas.
+
+Edición visual de los cinco PDF del 5/11: nueva jerarquía editorial, tablas,
+capturas reales, tablero por estados y Gantt semanal. Los enlaces conservan
+sus nombres. Generador: `scripts/redesign-november-pdfs.py`; revisión de páginas
+en `output/evidence/nov5/pdf-visual-review.json`. La presentación PDF mantiene
+el reparto de cuatro diapositivas por integrante.

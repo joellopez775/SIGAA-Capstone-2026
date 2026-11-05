@@ -1,6 +1,6 @@
 {
   "fecha": "2026-11-05",
-  "nota": "Incremento público 0.10.0; indicadores, auditoría, pruebas y entregables Sprint 6. Excluye este inventario y archivos privados ignorados. Documentos anteriores conservan su corte.",
+  "nota": "Incremento 0.10.0 y rediseño visual de los cinco PDF del corte 5 noviembre. Excluye archivos privados ignorados; documentos anteriores conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 15142,
-      "sha256": "522fec2473502d50c8631f653a33e54daa28f3dfbd780a6f6d2b892a2547aedd"
+      "bytes": 15511,
+      "sha256": "e094fd6cad69ca4a253418476b2307b814d5f935a93a6a776307bac3e6e2e233"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -1828,6 +1828,11 @@
       "sha256": "cc970423c8df31566dad3dd773da05c93a038e750b7ab7dd0621ca5612b8c003"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/pdf-visual-review.json",
+      "bytes": 1357,
+      "sha256": "4f52c584619ad80f4cade3619013666ca2354539a467d8eab16ac77452fddc17"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/plan.csv",
       "bytes": 1297,
       "sha256": "e7c64e127a3389f908f6cd19c1dc148666b8df3bcd730e831b4fba17b288ab8a"
@@ -1836,6 +1841,16 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/validation.json",
       "bytes": 502,
       "sha256": "71bde61094e731edf9311a5a54b419e3c9dfba66a0b8db742ce7040d8a2c7e6b"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/visuals/auditoria.png",
+      "bytes": 676244,
+      "sha256": "57611616d8475a79dd487bd24ae00bab48033d8de2fe417046d1e989e4f5ba7c"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/visuals/indicadores.png",
+      "bytes": 711830,
+      "sha256": "eb345656e8b1b29ada7209bd4ad8a7c714b5b30a748d7376f90c02f713ad4abe"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/operations-academic-hosted-tests.json",
@@ -2044,8 +2059,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta Gantt actualizada por sprints - 5 noviembre 2026.pdf",
-      "bytes": 48804,
-      "sha256": "fdaeaf70893bc2e4e88fbd26ac09be505cb82ff5c18804706c25292da3b55b90"
+      "bytes": 64766,
+      "sha256": "6701344e1ddc1fb3ab7396eac184504053dc6e2a4f7ed701409a55d0865bdfb6"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta_Gantt_Completa_SIGAA_2026.pdf",
@@ -2094,8 +2109,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guía de usuario del incremento 0.10.0 - SIGAA.pdf",
-      "bytes": 45664,
-      "sha256": "977fa4c2ed0506520dcb60e6c117d7ae1368a15b49a3038c49988a4fa066b943"
+      "bytes": 1233327,
+      "sha256": "e078758d2b31946b8182337b00c3a5e70263f18d74d079acca13df77790dee0d"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe de Tecnologías a Utilizar - SIGAA.pdf",
@@ -2114,8 +2129,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe general de avance - 5 noviembre 2026.pdf",
-      "bytes": 48894,
-      "sha256": "437b68c90d31cb5c9a0f3e396bb438db61e9ab800834b2bf8eac291509e1f518"
+      "bytes": 684375,
+      "sha256": "d3f88a4406bdf7620011480fb76dc98490b53324cd2c06db4c7cd01cff30d8fa"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe general de status.pdf",
@@ -2199,8 +2214,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance - 5 noviembre 2026.pdf",
-      "bytes": 54351,
-      "sha256": "69bbd392fda255f29246ab2577e2e170e70d4348b0bf84189519bfc8f183ae6c"
+      "bytes": 1246277,
+      "sha256": "a51c1b52c8a80ccbd31df27f3b0f0514cc2723ede5847c660cd156ded9b0b58c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance SIGAA.pdf",
@@ -2264,8 +2279,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 6 - Backlog y seguimiento - 5 noviembre 2026.pdf",
-      "bytes": 47074,
-      "sha256": "994181bd7767304a6dc21de97455961503444681dc4764de012b3ba87f30738a"
+      "bytes": 62739,
+      "sha256": "f63afb5f78fb25867171d1685c37a4339036784b7ed8d0bded3752abfa8a2f0c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint Retrospective - SIGAA.pdf",
@@ -2376,6 +2391,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/prepare-operations-accounts.py",
       "bytes": 1162,
       "sha256": "738aec70bae24827a4707b3bc62060861e1091cd1a8ce7fc1d19de6c0749bdef"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/redesign-november-pdfs.py",
+      "bytes": 19789,
+      "sha256": "ced902dc924ab8c2c5bdbb074d72f9909a47b52ca9093de2c8993042fd820172"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/refresh-hosted-origin.py",
