@@ -1,0 +1,69 @@
+{
+  "containers": [
+    {
+      "name": "sigaa-current-api-1",
+      "state": "running",
+      "health": "healthy",
+      "imageId": "sha256:d11c87a4c08fa0f50ec968c4b77e848b744b5d3661366ae9b49415802ac4ce26",
+      "imageTag": "sigaa-api:0.9.1-08913fb",
+      "startedAt": "2026-10-29T01:59:32.833347158Z",
+      "networks": [
+        "sigaa-current_frontend",
+        "sigaa_database_private"
+      ],
+      "publishedPorts": {}
+    },
+    {
+      "name": "sigaa-current-web-1",
+      "state": "running",
+      "health": "healthy",
+      "imageId": "sha256:c49d3e426363f445b03dfdf38198c389cc00722c82c106aaa54a3e458dcb5c1c",
+      "imageTag": "sigaa-web:0.9.1-bff4a55",
+      "startedAt": "2026-10-29T02:01:30.792080639Z",
+      "networks": [
+        "sigaa-current_frontend"
+      ],
+      "publishedPorts": {}
+    },
+    {
+      "name": "sigaa-db-1",
+      "state": "running",
+      "health": "healthy",
+      "imageId": "sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685",
+      "imageTag": "postgres:16-alpine",
+      "startedAt": "2026-10-15T19:25:05.371427661Z",
+      "networks": [
+        "sigaa_database_private"
+      ],
+      "publishedPorts": {}
+    },
+    {
+      "name": "sigaa-permanent-connector-1",
+      "state": "running",
+      "health": null,
+      "imageId": "sha256:4f6655284ab3d252b7f28fedb19fe6c8fc82ee5b1295c20ac74d475e5398a52d",
+      "imageTag": "cloudflare/cloudflared:2026.7.2",
+      "startedAt": "2026-10-15T21:26:02.901326945Z",
+      "networks": [
+        "sigaa-current_frontend"
+      ],
+      "publishedPorts": {}
+    },
+    {
+      "name": "sigaa-current-tunnel-1",
+      "state": "running",
+      "health": null,
+      "imageId": "sha256:4f6655284ab3d252b7f28fedb19fe6c8fc82ee5b1295c20ac74d475e5398a52d",
+      "imageTag": "cloudflare/cloudflared:2026.7.2",
+      "startedAt": "2026-10-15T19:28:19.213292943Z",
+      "networks": [
+        "sigaa-current_frontend"
+      ],
+      "publishedPorts": {}
+    }
+  ],
+  "privateBackupDirectoryMode": "0700",
+  "backupAndSecretsMode": "0600",
+  "databasePortPublished": false,
+  "result": "passed"
+}

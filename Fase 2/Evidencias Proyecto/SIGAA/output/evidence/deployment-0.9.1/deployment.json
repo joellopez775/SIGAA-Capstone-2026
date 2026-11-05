@@ -1,0 +1,30 @@
+{
+  "version": "0.9.1",
+  "previousVersion": "0.8.0",
+  "codeCommit": "08913fb2b6b1c4d9bd24aab1795ec1320860f624",
+  "startedAt": "2026-10-29T01:59:19.779936+00:00",
+  "verifiedAt": "2026-10-29T01:59:50.101203+00:00",
+  "backup": {
+    "file": "before-0.9.1.dump",
+    "bytes": 221562,
+    "sha256": "0c77260296f050e1601a139eadaac74cb30d97b4020aca1a7c2b4bc31b13a00d",
+    "restore": "passed",
+    "allFingerprintsMatch": true,
+    "storage": "Private server backup directory; not in Git",
+    "relationsCompared": 31,
+    "comparisonNote": "30 public tables plus one view, compared by row count and canonical row fingerprints; metadata excluded only from the post-migration comparison."
+  },
+  "migration": {
+    "files": [
+      "009_followup.sql",
+      "010_internal_notifications.sql"
+    ],
+    "schema": "0.9.1",
+    "runtimePrivilegesVerified": true,
+    "oldRelationsUnchanged": 30
+  },
+  "httpsHealth": "passed",
+  "databaseContainerRecreated": false,
+  "dnsOrMailModified": false,
+  "result": "passed"
+}

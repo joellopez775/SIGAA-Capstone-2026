@@ -3,12 +3,18 @@ import logo from "./assets/sigaa-logo.png";
 import "./glass.css";
 
 const paths = {
+  notifications: "M5 17h14l-2-3V9a5 5 0 0 0-10 0v5ZM10 21h4",
+  calendar: "M4 5h16v16H4ZM8 2v6M16 2v6M4 10h16M8 14h2M14 14h2",
+  subjects: "M3 4h6a4 4 0 0 1 3 2 4 4 0 0 1 3-2h6v15h-6a4 4 0 0 0-3 2 4 4 0 0 0-3-2H3ZM12 6v15",
   summary: "M3 10 12 3l9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z",
   students: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 4a4 4 0 0 1 0 8M22 21v-2a4 4 0 0 0-3-3.87M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z",
   courses: "M3 4h6a4 4 0 0 1 3 2 4 4 0 0 1 3-2h6v15h-6a4 4 0 0 0-3 2 4 4 0 0 0-3-2H3ZM12 6v15",
   enrollments: "M8 3H5v18h14V3h-3M8 2h8v4H8ZM8 11h8M8 16h5",
   structure: "M9 3h6v5H9ZM3 16h6v5H3ZM15 16h6v5h-6ZM12 8v4M6 16v-4h12v4",
   risk: "M12 3 2 20h20ZM12 9v5M12 17v.5",
+  cases: "M3 7h6l2-3h10v17H3ZM7 12h10M7 16h6",
+  guardians: "M9 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3 21v-4a6 6 0 0 1 12 0v4M17 8a3 3 0 0 1 0 6M18 17h3v4",
+  dossier: "M5 2h10l4 4v16H5ZM9 8h4M9 12h6M9 16h6",
   justifications: "M14 2H5v20h14V7ZM14 2v6h5M8 15l3 3 5-6",
   attendance: "M4 5h16v16H4ZM8 2v6M16 2v6M4 10h16M8 15l3 3 5-5",
   grades: "M4 20V10h4v10M10 20V4h4v16M16 20v-9h4v9",

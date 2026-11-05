@@ -95,6 +95,21 @@ export function teacherRoutes(app, pool) {
     });
     res.status(201).json({ classSession: session });
   });
+  app.patch('/teacher/classes/:id/publication',teacher,async(req,res)=>{
+    const id=requireId(req.params.id),b=req.body;
+    if(typeof b?.published!=='boolean'||typeof b?.expectedRevision!=='string')fail(400,'invalid_class_data');
+    const classSession=await transaction(pool,async db=>{
+      const old=(await db.query('SELECT *,actualizado_en::text AS revision FROM sesion_clase WHERE id=$1 FOR UPDATE',[id])).rows[0];
+      if(!old)fail(404,'class_not_found');
+      await assignment(db,req.user,old.curso_asignatura_id,'plan');
+      if(old.revision!==b.expectedRevision)fail(409,'stale_record');
+      if(old.estado!=='programada')fail(409,'class_publication_locked');
+      const row=(await db.query(`UPDATE sesion_clase SET publicada=$2,publicada_en=CASE WHEN $2 THEN NOW() ELSE NULL END,
+        actualizado_en=NOW() WHERE id=$1 RETURNING *,actualizado_en::text AS revision`,[id,b.published])).rows[0];
+      await audit(db,req.user.id,b.published?'publish':'unpublish','sesion_clase',id,old,row);return row;
+    });
+    res.json({classSession});
+  });
   app.put("/teacher/classes/:id/attendance", teacher, async (req, res) => {
     const id = requireId(req.params.id),
       records = req.body?.records;

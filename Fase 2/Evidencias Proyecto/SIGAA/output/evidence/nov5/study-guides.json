@@ -1,0 +1,31 @@
+{
+  "cutoff": "2026-11-05",
+  "presentation": "Presentación de avance - 5 noviembre 2026.pdf",
+  "timing": "4-5 minutes per presenter, 12-15 minutes total (suggested)",
+  "guides": [
+    {
+      "member": "Joel",
+      "slides": "1-4",
+      "file": "Preparación de presentación/5 noviembre 2026/Joel - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "pages": 7,
+      "sha256": "99a4ca7ca75a3c63275b0d5c5fe77ad8776db044157545231707bbe9f59f4ba2",
+      "visualReview": "passed"
+    },
+    {
+      "member": "Agustín",
+      "slides": "5-8",
+      "file": "Preparación de presentación/5 noviembre 2026/Agustín - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "pages": 7,
+      "sha256": "5b1f254b9cdb2e05e699670b0dd808c5789719d3e31df9d8d96f8cebd162b4bc",
+      "visualReview": "passed"
+    },
+    {
+      "member": "Matías",
+      "slides": "9-12",
+      "file": "Preparación de presentación/5 noviembre 2026/Matías - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "pages": 7,
+      "sha256": "00c1de76cab9f546474dbed8a2ec1c939196f4dd7bd835d2b84b55f08a0ae260",
+      "visualReview": "passed"
+    }
+  ]
+}

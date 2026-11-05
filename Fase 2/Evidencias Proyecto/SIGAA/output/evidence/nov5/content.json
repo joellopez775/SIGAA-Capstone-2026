@@ -1,0 +1,25 @@
+{"slides":[
+["SIGAA: avance y próximos pasos","5 noviembre 2026 · Sprint 6 · Fase 2","Joel · diapositivas 1–4"],
+["Gestión escolar y acompañamiento","Para colegios y liceos: conecta estudiantes, docentes, inspectoría y administración. Centraliza asistencia, notas, anotaciones y seguimiento de alertas.","Problema: información dispersa y seguimiento difícil de reconstruir."],
+["Base que ya funciona","Acceso por roles, estructura escolar, matrículas, clases, asistencia, notas y anotaciones persistentes. Casos, apoderados, ficha integral, avisos y calendario estudiantil.","Versión publicada anterior: 0.9.1. Datos ficticios: 80 estudiantes y 12 docentes."],
+["En qué punto estamos","Semana 13: 2–7 noviembre. Sprint 6: 2–14 noviembre. Entrega de Fase 2: ventana 16–21 noviembre. Presentación final: 30 noviembre–12 diciembre.","Las ventanas vienen del cronograma docente; confirmar día y hora en Campus."],
+["Nuevo: indicadores del establecimiento","Seis conteos consultados en PostgreSQL: estudiantes regulares, cursos activos, matrículas activas, casos abiertos, justificaciones pendientes y evaluaciones publicadas.","Agustín · diapositivas 5–8. Acceso: administración, inspectoría y dirección/UTP."],
+["Nuevo: consulta de auditoría","Administración puede consultar quién hizo una operación, cuándo y sobre qué entidad. Filtro por acción exacta y páginas de 25 eventos.","No se devuelven contraseñas ni los valores privados anteriores/nuevos del evento."],
+["Cómo se sostiene el sistema","React + Vite en la interfaz; Node.js + Express en la API; PostgreSQL en los datos. Docker organiza servicios; Nginx y Cloudflare dan acceso web mediante HTTPS.","Incremento 0.10.0; no requiere cambiar el esquema 0.9.1."],
+["Qué comprobamos","6 pruebas unitarias y 69 de integración aprobadas sobre PostgreSQL 16 aislado. Nuevas pruebas: permisos, exactitud de conteos, filtro/paginación y privacidad de auditoría.","La verificación técnica permite revisar el incremento; la aceptación corresponde al Product Owner."],
+["Qué falta para cerrar","Revisión funcional del PO; prueba del equipo en otros dispositivos; carga y accesibilidad; manuales consolidados; evidencia de valor escolar; revisión e integración del código.","Matías · diapositivas 9–12. No existe una aceptación escolar externa documentada."],
+["Plan hasta la entrega","5–7 noviembre: revisar indicadores y auditoría. 9–14: manuales, pruebas de cierre y correcciones. 16–21: consolidación y entrega de Fase 2. 23–28: responder observaciones.","Fechas de trabajo propuestas; no son actividades ya realizadas."],
+["Responsabilidades compartidas","Joel coordina prioridades y aprobación. Los tres desarrollan, prueban y documentan. Plan propuesto: Joel integración; Agustín manual y accesibilidad; Matías pruebas y evidencia. Revisión cruzada.","Agustín como Scrum Master y los focos técnicos siguen pendientes de ratificación."],
+["Próxima decisión del equipo","Revisar el incremento y registrar observaciones concretas. Acordar el reparto final, ejecutar pruebas desde otros equipos y confirmar la entrega en Campus.","Incluimos dos ejemplos simulados de seguimiento; no acreditan reuniones realizadas."]
+],"tasks":[
+["SCRUM-38","Sprint 6","Revisar seis indicadores y definiciones","Agustín / Joel","2026-11-05","2026-11-07","Implementado; revisión pendiente"],
+["SCRUM-40","Sprint 6","Revisar bitácora y alcance de auditoría","Joel / Matías","2026-11-05","2026-11-07","Implementado; revisión pendiente"],
+["SCRUM-41","Sprint 6","Carga, accesibilidad y otros dispositivos","Matías / Agustín","2026-11-06","2026-11-14","Parcial; pendiente"],
+["SCRUM-43","Sprint 6","Consolidar manual por roles y validar ejemplos","Agustín / Matías","2026-11-09","2026-11-12","Guía de este corte preparada"],
+["SCRUM-42","Sprint 6","Revisar operación, respaldo y recuperación","Joel / Agustín","2026-11-09","2026-11-13","Documentado; revisión pendiente"],
+["SCRUM-44","Sprint 6","Contrastar valor con necesidad escolar","Matías / Joel","2026-11-09","2026-11-14","Pendiente validación externa"],
+["SCRUM-52","Sprint 6","Ensayo Docker y HTTPS en varios equipos","Equipo","2026-11-09","2026-11-14","Pendiente ensayo humano"],
+["SCRUM-45","Sprint 7","Consolidar informe, anexos y entregar Fase 2","Equipo","2026-11-16","2026-11-21","Pendiente"],
+["SCRUM-46","Sprint 7","Responder observaciones y ensayar defensa","Equipo","2026-11-23","2026-11-28","Pendiente"],
+["DEFENSA","Fase 3","Presentar y registrar cierre real","Equipo","2026-11-30","2026-12-12","Ventana oficial; horario por confirmar"]
+]}

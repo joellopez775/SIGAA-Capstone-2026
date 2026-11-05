@@ -57,7 +57,70 @@ docker compose -f compose.test.yaml down
 
 La plantilla de integración continua está en `ci/sigaa-ci.yml.example`. Para activarla se debe copiar a `.github/workflows/sigaa-ci.yml` usando una credencial de GitHub con permiso `workflow`.
 
-## Estado vigente: API 0.8.0
+## Estado vigente del código: API 0.9.1 · Sprint 5
+
+Corte: 28-10-2026. Casos, apoderados y ficha integral se complementan con avisos
+internos persistentes, asignaturas vigentes y calendario propio del estudiante.
+El docente puede publicar o retirar clases programadas sin registrar asistencia.
+El acceso se verifica en la API por identidad, rol y curso vigente.
+
+- [Avance, manual, migración y pruebas 0.9.1](<output/pdf/Avance de desarrollo Sprint 5 - SIGAA.pdf>).
+- [Diagrama actualizado de arquitectura de software](<output/pdf/Diagrama de arquitectura de software actualizado - SIGAA.pdf>): componentes, seguridad, despliegue y flujos persistentes de 0.9.1, con separación entre configuración y evidencia validada.
+- [Diagrama completo de base de datos](<output/pdf/Diagrama de base de datos actualizado - SIGAA.pdf>): 33 tablas, 324 columnas y 70 claves foráneas, verificados en PostgreSQL 16 con las migraciones 001-010.
+- [UML de los flujos persistentes](<output/pdf/UML de flujos persistentes - SIGAA.pdf>).
+- Evidencia actual: `output/evidence/sprint-5-completion/`.
+- [Antecedentes 0.9.0 del Sprint 5](<../Gestión Scrum SIGAA/PDF/02 Sprints/Sprint 5/>).
+
+Validación: 6 unitarias y 66 de integración en Docker con PostgreSQL 16;
+27 recorridos Chromium (8 portal/avisos, 8 seguimiento, 11 operación escolar),
+compilación web, instalación Docker nueva y persistencia de cuentas/sesiones
+tras reiniciar base y API. Nginx renueva la resolución del servicio `api` para
+recuperarse de cambios de IP. Pruebas aisladas con datos ficticios.
+
+SCRUM-35, SCRUM-36, SCRUM-48, SCRUM-37, SCRUM-51 y SCRUM-21 se presentan para
+revisión. SCRUM-52 mantiene pendiente el ensayo del equipo y HTTPS desde varios
+dispositivos. No se acredita aceptación ni integración a main. El despliegue
+0.9.1 se verificó posteriormente el 28-10-2026 y se registra a continuación.
+Los informes y la presentación anteriores conservan su corte; este incremento
+actualiza sus pendientes técnicos sin atribuir reuniones o cierres nuevos.
+
+Para una base escolar existente: respaldar y verificar restauración, revisar
+apoderados principales duplicados, ejecutar `docker compose build api`,
+`docker compose stop api`, `docker compose run --rm --no-deps api npm run migrate`
+y luego `docker compose up -d --build`. El migrador aplica 007, 008, 009 y 010.
+Esto corresponde a `compose.yaml`; un servidor con base externa requiere
+adaptar la configuración y usar su rol migrador. Un rol SQL restringido necesita
+SELECT, INSERT y UPDATE sobre `notificacion_interna`, además de sus permisos
+previos. No subir credenciales ni respaldos al repositorio.
+
+Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
+aplica 001-010 automáticamente y no crea cuentas por defecto. La migración 009
+se detiene ante varios apoderados principales históricos para revisión, sin
+eliminar vínculos arbitrariamente. La 010 no genera avisos históricos.
+
+## Despliegue público vigente: 0.9.1
+
+Actualizado el 28-10-2026 (Chile): [sigaa.ignisert.com](https://sigaa.ignisert.com)
+publica API/esquema 0.9.1. Respaldo definitivo restaurado y comparado antes de
+migrar 009/010. Se conservaron los registros previos, el volumen y el túnel.
+HTTPS validado sin excepciones; HTTP redirige con 308 y HSTS se limita a SIGAA.
+No se cambiaron DNS, web principal ni correo de Ignisert.
+
+- [Informe de despliegue, respaldo, pruebas y recuperación](<output/pdf/Despliegue 0.9.1 y verificación HTTPS - SIGAA.pdf>).
+- Evidencia: `output/evidence/deployment-0.9.1/`.
+- Código de API: `08913fb`; web con ajuste de HTTPS: `bff4a55`.
+- Verificador: `scripts/verify-release-https.mjs`; recibe `SIGAA_ORIGIN` y
+  `SIGAA_ACCOUNTS_FILE` (ruta privada; nunca guardar sus valores en Git).
+- Pruebas: flujos de escritura sobre una copia aislada; ocho recorridos HTTPS
+  de consulta por cuatro roles y dos tamaños de pantalla en un mismo Mac.
+- Los respaldos, entornos y cuentas se conservan únicamente en el servidor.
+  No se generaron nuevas contraseñas de demostración.
+
+Quedan pendientes aceptación del PO, revisión/fusión de la solicitud #1 y
+ensayo del equipo desde otros dispositivos. Jira conserva sus tarjetas y estados
+reales: funcionalidades En revisión; SCRUM-52 En curso. No se cerraron sprints.
+
+## Antecedente desplegado: API 0.8.0
 
 Código a9b6f65, desplegado el 15-10-2026 con PostgreSQL 16 y HTTPS. Incluye
 administración escolar, tres reglas configurables, bandeja con historial y
@@ -65,13 +128,7 @@ justificaciones de Inspectoría, además de los flujos académicos y acceso segu
 Guía, migración, límites y pruebas en
 [Implementación 0.8.0](<../Gestión Scrum SIGAA/PDF/03 Implementación/Implementación 0.8.0 - Estructura alertas e Inspectoría.pdf>).
 
-Para una base escolar existente: respaldar, ejecutar `docker compose build api`,
-`docker compose stop api`, `docker compose run --rm --no-deps api npm run migrate`
-y luego `docker compose up -d --build`. El migrador aplica 007 y 008; no borra datos.
-Nunca ejecutar 003 ni eliminar volúmenes para actualizar. La instalación nueva
-aplica 001-008 automáticamente y no crea cuentas por defecto.
-
-Pruebas actuales: 4 unitarias + 44 integración en Docker, 25 recorridos locales y
+Pruebas del corte histórico 0.8.0: 4 unitarias + 44 integración en Docker, 25 recorridos locales y
 8 HTTPS. Evidencia en `output/evidence/operations-*.json`. Las historias quedan
 en revisión del PO; no se han cerrado los sprints ni simulado ceremonias.
 
@@ -155,3 +212,39 @@ Todo cambio material debe actualizar una entrada de bitácora y enlazar la evide
 4. Sprint 0 y Sprint 1: Planning, Sprint Backlog, tablero y evidencias.
 5. Documento de diseño: arquitectura, ER, UML y requisitos no funcionales.
 6. Plan de pruebas, manual técnico/de despliegue y manual de usuario.
+
+## Incremento publicado 0.10.0 - 5 noviembre 2026
+
+Indicadores institucionales para administración/inspectoría/dirección y consulta
+administrativa de auditoría, con filtro exacto y páginas de 25. Esquema 0.9.1
+conservado; no hay migración. API 0.10.0 publicada en https://sigaa.ignisert.com.
+Se corrigió la propiedad de archivos en la imagen para ejecutar con usuario node.
+Validación: 6 unitarias, 69 de integración en PostgreSQL 16 aislado, 8 recorridos
+HTTPS por cuatro roles/dos tamaños de pantalla en un Mac; web compilada.
+
+- [Informe general](<output/pdf/Informe general de avance - 5 noviembre 2026.pdf>).
+- [Gantt y responsabilidades](<output/pdf/Carta Gantt actualizada por sprints - 5 noviembre 2026.pdf>).
+- [Backlog Sprint 6 y dos guiones simulados](<output/pdf/Sprint 6 - Backlog y seguimiento - 5 noviembre 2026.pdf>).
+- [Guía del incremento](<output/pdf/Guía de usuario del incremento 0.10.0 - SIGAA.pdf>).
+- [Presentación PDF](<output/pdf/Presentación de avance - 5 noviembre 2026.pdf>).
+- Presentación editable: `output/presentaciones/Avance SIGAA - 5 noviembre 2026.pptx`.
+- Evidencia actual: `output/evidence/nov5/`. La Gantt anterior conserva su corte.
+
+Sprint 6 existente ID 40 activado el 5/11, ventana planificada 2–14/11. SCRUM-38
+y 40 En revisión; 41 En curso; revisión de manuales y validación externa pendientes.
+Continúan pendientes aceptación del PO, fusión de PR #1 y ensayo humano en otros
+equipos. No se registran los guiones simulados como reuniones realizadas.
+
+Edición visual de los cinco PDF del 5/11: nueva jerarquía editorial, tablas,
+capturas reales, tablero por estados y Gantt semanal. Los enlaces conservan
+sus nombres. Generador: `scripts/redesign-november-pdfs.py`; revisión de páginas
+en `output/evidence/nov5/pdf-visual-review.json`. La presentación PDF mantiene
+el reparto de cuatro diapositivas por integrante.
+
+Guion y material de estudio del avance del 5/11: tres PDF individuales de siete
+páginas en `output/pdf/Preparación de presentación/5 noviembre 2026/`. Joel expone
+1-4, Agustín 5-8 y Matías 9-12. Cada documento incluye discurso, apoyo por
+diapositiva, conceptos, ejemplo, preguntas, pronunciación y referencia técnica
+común. Duración sugerida: 4-5 minutos por integrante.
+
+Versión unificada: `output/pdf/Preparación de presentación/5 noviembre 2026/Guion y material de estudio del equipo SIGAA - 5 noviembre 2026.pdf`. Incluye índice, marcadores por integrante y 22 páginas con numeración continua: Joel 2-8, Agustín 9-15 y Matías 16-22.

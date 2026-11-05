@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-28",
+  "timezone": "America/Santiago",
+  "sprintId": 38,
+  "sprintName": "Sprint 5 - Seguimiento",
+  "state": "active",
+  "originalPlannedStart": "2026-10-19",
+  "actualActivation": "2026-10-28T20:37:37-03:00",
+  "plannedEnd": "2026-10-31",
+  "issues": [
+    {
+      "key": "SCRUM-35",
+      "summary": "PB-023 Casos de seguimiento",
+      "status": "En revisión",
+      "points": 8,
+      "sprintIds": [
+        38
+      ],
+      "labels": [
+        "sprint-5"
+      ]
+    },
+    {
+      "key": "SCRUM-48",
+      "summary": "PB-036 Gestión de apoderados",
+      "status": "En revisión",
+      "points": 5,
+      "sprintIds": [
+        38
+      ],
+      "labels": [
+        "sprint-5"
+      ]
+    },
+    {
+      "key": "SCRUM-36",
+      "summary": "PB-024 Ficha integral del estudiante",
+      "status": "En revisión",
+      "points": 8,
+      "sprintIds": [
+        38
+      ],
+      "labels": [
+        "sprint-5"
+      ]
+    },
+    {
+      "key": "SCRUM-37",
+      "summary": "PB-025 Notificaciones",
+      "status": "Pendiente",
+      "points": 5,
+      "sprintIds": [
+        38
+      ],
+      "labels": [
+        "sprint-5"
+      ]
+    }
+  ],
+  "managementIssues": [
+    "SCRUM-77",
+    "SCRUM-78",
+    "SCRUM-81",
+    "SCRUM-84",
+    "SCRUM-85"
+  ],
+  "newIssuesCreated": 0,
+  "newSprintsCreated": 0,
+  "meetingsCreated": 0,
+  "poAcceptance": false,
+  "productionDeployment": false
+}
