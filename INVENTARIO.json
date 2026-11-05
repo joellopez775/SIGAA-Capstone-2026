@@ -1,6 +1,6 @@
 {
   "fecha": "2026-11-05",
-  "nota": "Incremento 0.10.0 y rediseño visual de los cinco PDF del corte 5 noviembre. Excluye archivos privados ignorados; documentos anteriores conservan su corte.",
+  "nota": "Entrega 0.10.0 y preparación individual de exposición del corte 5 noviembre. Excluye archivos privados ignorados; documentos anteriores conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 15511,
-      "sha256": "e094fd6cad69ca4a253418476b2307b814d5f935a93a6a776307bac3e6e2e233"
+      "bytes": 15892,
+      "sha256": "6c5465154b3c6db294684ebb47dd635d52358da3d5ec735bd08c32379650dafd"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -1838,6 +1838,11 @@
       "sha256": "e7c64e127a3389f908f6cd19c1dc148666b8df3bcd730e831b4fba17b288ab8a"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/study-guides.json",
+      "bytes": 1148,
+      "sha256": "7959a9175fd5e3e9c6d2a5d03831a24d75fd32e9acb86580a7911ef08e6301bb"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/validation.json",
       "bytes": 502,
       "sha256": "71bde61094e731edf9311a5a54b419e3c9dfba66a0b8db742ce7040d8a2c7e6b"
@@ -2183,6 +2188,21 @@
       "sha256": "2cf0ca01f28c82be4276a176381e1a2dc19b010e02a0f4cc1998e0fc355e4c71"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/5 noviembre 2026/Agustín - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "bytes": 74695,
+      "sha256": "5b1f254b9cdb2e05e699670b0dd808c5789719d3e31df9d8d96f8cebd162b4bc"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/5 noviembre 2026/Joel - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "bytes": 74516,
+      "sha256": "99a4ca7ca75a3c63275b0d5c5fe77ad8776db044157545231707bbe9f59f4ba2"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/5 noviembre 2026/Matías - Guion y material de estudio - 5 noviembre 2026.pdf",
+      "bytes": 74565,
+      "sha256": "00c1de76cab9f546474dbed8a2ec1c939196f4dd7bd835d2b84b55f08a0ae260"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Preparación de presentación/Guion Agustín SIGAA.pdf",
       "bytes": 67662,
       "sha256": "b231de12e6f2ecd2ce9ba92cf32b400aa6e5ac66c0c471a27e740daa6a568cd5"
@@ -2341,6 +2361,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-november-delivery.py",
       "bytes": 13124,
       "sha256": "9e454451faf4e6111478e8d758ce4516c6406734d5e2ccb70e55e0cda18c4017"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-november-study.py",
+      "bytes": 23446,
+      "sha256": "43afb560999336e8d0b90ee024a0954cce9762c5f46df7f5bc5d07eb4d7694d5"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-software-architecture.py",

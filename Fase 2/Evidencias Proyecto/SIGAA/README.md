@@ -240,3 +240,9 @@ capturas reales, tablero por estados y Gantt semanal. Los enlaces conservan
 sus nombres. Generador: `scripts/redesign-november-pdfs.py`; revisión de páginas
 en `output/evidence/nov5/pdf-visual-review.json`. La presentación PDF mantiene
 el reparto de cuatro diapositivas por integrante.
+
+Guion y material de estudio del avance del 5/11: tres PDF individuales de siete
+páginas en `output/pdf/Preparación de presentación/5 noviembre 2026/`. Joel expone
+1-4, Agustín 5-8 y Matías 9-12. Cada documento incluye discurso, apoyo por
+diapositiva, conceptos, ejemplo, preguntas, pronunciación y referencia técnica
+común. Duración sugerida: 4-5 minutos por integrante.
