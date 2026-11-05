@@ -246,3 +246,5 @@ páginas en `output/pdf/Preparación de presentación/5 noviembre 2026/`. Joel e
 1-4, Agustín 5-8 y Matías 9-12. Cada documento incluye discurso, apoyo por
 diapositiva, conceptos, ejemplo, preguntas, pronunciación y referencia técnica
 común. Duración sugerida: 4-5 minutos por integrante.
+
+Versión unificada: `output/pdf/Preparación de presentación/5 noviembre 2026/Guion y material de estudio del equipo SIGAA - 5 noviembre 2026.pdf`. Incluye índice, marcadores por integrante y 22 páginas con numeración continua: Joel 2-8, Agustín 9-15 y Matías 16-22.
