@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-05",
+  "version": "0.10.0",
+  "unitTests": 6,
+  "integrationTests": 69,
+  "newIntegrationTests": 3,
+  "result": "passed",
+  "environment": "Disposable Docker project sigaa-nov5-tests, PostgreSQL 16, Node 22; no production writes",
+  "webBuild": "passed",
+  "publicDeployment": "passed",
+  "publicHealth": {
+    "status": "ok",
+    "service": "api",
+    "version": "0.10.0"
+  },
+  "httpsJourneys": 8,
+  "codeCommit": "40ca047",
+  "packagingFix": "COPY --chown=node:node src ./src"
+}

@@ -74,3 +74,16 @@ sobre copia restaurada, sin alterar datos académicos públicos. Respaldo privad
 no incluido en Git. Aceptación del PO, fusión de PR #1 y pruebas del equipo en
 varios dispositivos permanecen pendientes. Se actualizan las mismas tarjetas
 Jira; no se crean reuniones, sprints ni tareas duplicadas.
+
+## Corte 5 noviembre 2026 - Sprint 6
+
+Semana 13, Fase 2. Incremento público 0.10.0 con indicadores y consulta de
+auditoría; esquema 0.9.1 conservado. 6 unitarias, 69 integración y ocho recorridos
+HTTPS aprobados. Sprint 6 existente ID 40 activado; historias 38/40 para revisión.
+Informe, Gantt, guía, backlog y presentación PDF/editable disponibles en SIGAA/output.
+La planificación vigente de cierre está en la Gantt del 5/11: 9–14/11 pruebas y
+manuales; 16–21/11 entrega Fase 2; 23–28/11 feedback; 30/11–12/12 presentación final.
+Las ventanas vienen del cronograma oficial; horario exacto por confirmar en Campus.
+Dos guiones simulados de seguimiento no equivalen a ceremonias realizadas. Faltan
+aceptación del PO, revisión del PR, pruebas humanas, carga, accesibilidad, consolidar
+manuales y validar valor con contraparte escolar.

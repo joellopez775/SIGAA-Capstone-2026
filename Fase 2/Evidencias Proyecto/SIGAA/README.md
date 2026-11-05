@@ -212,3 +212,25 @@ Todo cambio material debe actualizar una entrada de bitácora y enlazar la evide
 4. Sprint 0 y Sprint 1: Planning, Sprint Backlog, tablero y evidencias.
 5. Documento de diseño: arquitectura, ER, UML y requisitos no funcionales.
 6. Plan de pruebas, manual técnico/de despliegue y manual de usuario.
+
+## Incremento publicado 0.10.0 - 5 noviembre 2026
+
+Indicadores institucionales para administración/inspectoría/dirección y consulta
+administrativa de auditoría, con filtro exacto y páginas de 25. Esquema 0.9.1
+conservado; no hay migración. API 0.10.0 publicada en https://sigaa.ignisert.com.
+Se corrigió la propiedad de archivos en la imagen para ejecutar con usuario node.
+Validación: 6 unitarias, 69 de integración en PostgreSQL 16 aislado, 8 recorridos
+HTTPS por cuatro roles/dos tamaños de pantalla en un Mac; web compilada.
+
+- [Informe general](<output/pdf/Informe general de avance - 5 noviembre 2026.pdf>).
+- [Gantt y responsabilidades](<output/pdf/Carta Gantt actualizada por sprints - 5 noviembre 2026.pdf>).
+- [Backlog Sprint 6 y dos guiones simulados](<output/pdf/Sprint 6 - Backlog y seguimiento - 5 noviembre 2026.pdf>).
+- [Guía del incremento](<output/pdf/Guía de usuario del incremento 0.10.0 - SIGAA.pdf>).
+- [Presentación PDF](<output/pdf/Presentación de avance - 5 noviembre 2026.pdf>).
+- Presentación editable: `output/presentaciones/Avance SIGAA - 5 noviembre 2026.pptx`.
+- Evidencia actual: `output/evidence/nov5/`. La Gantt anterior conserva su corte.
+
+Sprint 6 existente ID 40 activado el 5/11, ventana planificada 2–14/11. SCRUM-38
+y 40 En revisión; 41 En curso; revisión de manuales y validación externa pendientes.
+Continúan pendientes aceptación del PO, fusión de PR #1 y ensayo humano en otros
+equipos. No se registran los guiones simulados como reuniones realizadas.
