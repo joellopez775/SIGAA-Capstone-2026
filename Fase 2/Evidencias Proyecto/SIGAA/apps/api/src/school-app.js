@@ -1,3 +1,4 @@
+import {oversightRoutes} from './oversight-routes.js';
 import express from "express";
 import { allowedOrigins } from "./origins.js";
 import { teacherRoutes } from "./teacher-routes.js";
@@ -124,7 +125,7 @@ export function createApp({
     if (rows[0].intentos > max) fail(429, "try_again_later");
   }
   app.get("/health", (_req, res) =>
-    res.json({ status: "ok", service: "api", version: "0.9.1" }),
+    res.json({ status: "ok", service: "api", version: "0.10.0" }),
   );
   app.get("/db-health", async (_req, res) => {
     await pool.query("SELECT 1");
@@ -474,6 +475,7 @@ export function createApp({
   });
   studentPortalRoutes(app,pool);
   notificationRoutes(app,pool);
+  oversightRoutes(app,pool);
   app.use((_req, _res) => fail(404, "not_found"));
   app.use((error, _req, res, _next) => {
     if (error instanceof HttpError) {

@@ -1,3 +1,4 @@
+import {OversightPanel} from './OversightPanel.jsx';
 import { useEffect, useState } from "react";
 import logo from "./assets/sigaa-logo.png";
 import "./secure.css";
@@ -629,6 +630,8 @@ export default function SecureApp() {
     student = user.role === "student";
   const navigation = [
     ["summary", "Mi inicio"],
+    ...(["admin","inspector","leadership"].includes(user.role)?[["indicators","Indicadores"]]:[]),
+    ...(admin?[["audit","Auditoría"]]:[]),
     ["students", student ? "Mis datos" : "Estudiantes"],
     ["courses", student ? "Mis cursos" : "Cursos"],
     ...(student ? [["subjects","Mis asignaturas"],["calendar","Mi calendario"]] : [["notifications","Avisos"]]),
@@ -714,7 +717,8 @@ export default function SecureApp() {
             </section>
           </>
         )}
-        {view === "students" && (
+        {(view === "indicators" || view === "audit") && <OversightPanel api={api} audit={view === "audit"} revision={revision} />}
+          {view === "students" && (
           <Students
             rows={data.students}
             admin={admin}
