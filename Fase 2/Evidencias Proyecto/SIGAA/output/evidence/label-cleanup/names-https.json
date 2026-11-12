@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29T02:14:28.161Z",
+  "origin": "https://sigaa.ignisert.com",
+  "checks": [
+    {
+      "role": "teacher",
+      "studentsReturned": 80,
+      "panels": [
+        "Estudiantes",
+        "Cursos",
+        "Notas"
+      ],
+      "visibleDemoMatches": 0,
+      "result": "passed"
+    },
+    {
+      "role": "student",
+      "studentsReturned": 1,
+      "panels": [
+        "Mis datos",
+        "Mis asignaturas",
+        "Mi calendario"
+      ],
+      "visibleDemoMatches": 0,
+      "result": "passed"
+    }
+  ],
+  "result": "passed"
+}

@@ -225,6 +225,9 @@ function Attendance({ data, id, run }) {
           registrar clases futuras o canceladas.
         </p>
         {session && (
+          <div className="follow-actions"><p>{session.published?'Clase publicada para estudiantes.':'Clase aún no publicada para estudiantes.'}</p>{session.status==='programada'&&<button type="button" onClick={()=>run(`/teacher/classes/${session.id}/publication`,'PATCH',{published:!session.published,expectedRevision:session.revision})}>{session.published?'Retirar del calendario':'Publicar en calendario'}</button>}</div>
+        )}
+        {session && (
           <AttendanceForm
             key={session.id + session.revision}
             session={session}

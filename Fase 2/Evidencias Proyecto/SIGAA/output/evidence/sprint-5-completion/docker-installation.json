@@ -1,0 +1,78 @@
+{
+  "cutoff": "2026-10-28 America/Santiago",
+  "environment": "Disposable project on Docker Engine 29.7.2; PostgreSQL 16; Node 22.23.2; synthetic data",
+  "checks": [
+    {
+      "mode": "verify",
+      "result": "passed",
+      "health": "0.9.1",
+      "database": "healthy",
+      "roles": [
+        "admin",
+        "teacher",
+        "student"
+      ],
+      "anonymousCourses": 401,
+      "users": 5,
+      "notificationsSchema": 1
+    },
+    {
+      "mode": "verify",
+      "result": "passed",
+      "health": "0.9.1",
+      "database": "healthy",
+      "roles": [
+        "admin",
+        "teacher",
+        "student"
+      ],
+      "anonymousCourses": 401,
+      "users": 5,
+      "notificationsSchema": 1
+    },
+    {
+      "containers": [
+        {
+          "Service": "api",
+          "Health": "healthy",
+          "Publishers": [
+            {
+              "URL": "127.0.0.1",
+              "TargetPort": 3000,
+              "PublishedPort": 55005,
+              "Protocol": "tcp"
+            }
+          ]
+        },
+        {
+          "Service": "db",
+          "Health": "healthy",
+          "Publishers": [
+            {
+              "URL": "",
+              "TargetPort": 5432,
+              "PublishedPort": 0,
+              "Protocol": "tcp"
+            }
+          ]
+        },
+        {
+          "Service": "web",
+          "Health": "healthy",
+          "Publishers": [
+            {
+              "URL": "127.0.0.1",
+              "TargetPort": 8080,
+              "PublishedPort": 55004,
+              "Protocol": "tcp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recovery": "Nginx resolves api through Docker DNS; verification repeated after database and API restart",
+  "productionChanged": false,
+  "publicHttpsVerified": false,
+  "restoreFromBackupVerified": false
+}

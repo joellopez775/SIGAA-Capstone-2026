@@ -1,0 +1,28 @@
+{
+  "environment": "Isolated restored backup; not production",
+  "version": "0.9.1",
+  "checks": [
+    {
+      "label": "Existing accounts authenticate after backup restoration and migration",
+      "result": "passed"
+    },
+    {
+      "label": "Future class publication and withdrawal persist in student calendar",
+      "result": "passed"
+    },
+    {
+      "label": "Guardian link and integrated record persist with role-based privacy",
+      "result": "passed"
+    },
+    {
+      "label": "Cases, interventions, closure/reopen and persistent notifications work on restored data",
+      "result": "passed"
+    },
+    {
+      "label": "Student and Inspector\u00eda restrictions remain enforced",
+      "result": "passed"
+    }
+  ],
+  "result": "passed",
+  "academicWritesInProduction": false
+}

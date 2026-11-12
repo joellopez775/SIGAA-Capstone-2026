@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-29T02:03:23.819Z",
+  "origin": "https://sigaa.ignisert.com",
+  "version": "0.9.1",
+  "tls": {
+    "authorized": true,
+    "status": 200,
+    "protocol": "TLSv1.3",
+    "issuer": "Let's Encrypt",
+    "validFrom": "Oct 15 21:29:28 2026 GMT",
+    "validTo": "Jan 13 21:29:27 2027 GMT",
+    "subjectAltName": "DNS:*.ignisert.com, DNS:ignisert.com"
+  },
+  "checks": [
+    {
+      "role": "admin",
+      "width": 1440,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Apoderados",
+        "Alertas y seguimiento",
+        "Justificaciones",
+        "Estructura escolar"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "admin",
+      "width": 390,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Apoderados",
+        "Alertas y seguimiento",
+        "Justificaciones",
+        "Estructura escolar"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "inspector",
+      "width": 1440,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Apoderados",
+        "Alertas y seguimiento",
+        "Justificaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "inspector",
+      "width": 390,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Apoderados",
+        "Alertas y seguimiento",
+        "Justificaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "teacher",
+      "width": 1440,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Asistencia",
+        "Notas",
+        "Anotaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "teacher",
+      "width": 390,
+      "version": "0.9.1",
+      "panels": [
+        "Avisos",
+        "Casos de seguimiento",
+        "Ficha integral",
+        "Asistencia",
+        "Notas",
+        "Anotaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "student",
+      "width": 1440,
+      "version": "0.9.1",
+      "panels": [
+        "Mis asignaturas",
+        "Mi calendario",
+        "Ficha integral",
+        "Mi asistencia",
+        "Mis notas",
+        "Mis anotaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    },
+    {
+      "role": "student",
+      "width": 390,
+      "version": "0.9.1",
+      "panels": [
+        "Mis asignaturas",
+        "Mi calendario",
+        "Ficha integral",
+        "Mi asistencia",
+        "Mis notas",
+        "Mis anotaciones"
+      ],
+      "result": "passed",
+      "sessionCookie": "Secure; HttpOnly; SameSite=Strict",
+      "sessionReload": true,
+      "logoutRevoked": true,
+      "invalidCsrfRejected": true,
+      "roleRestrictions": true,
+      "academicWrites": false
+    }
+  ],
+  "result": "passed",
+  "scope": "Four roles, two emulated viewports, one physical Mac. Read-only academic checks; login/logout update session and audit records."
+}

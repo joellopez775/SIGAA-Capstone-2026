@@ -8,7 +8,7 @@ ENV NODE_ENV=production
 WORKDIR /app
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY package.json ./
-COPY src ./src
+COPY --chown=node:node src ./src
 USER node
 EXPOSE 3000
 CMD ["node", "src/server.js"]

@@ -31,7 +31,7 @@ services:
       NODE_ENV: production
       LOG_LEVEL: ${LOG_LEVEL:-info}
       APP_ORIGIN: ${APP_ORIGIN:?Defina el origen HTTPS público en .env.server}
-      MIGRATION_FILES: /app/migrations/007_sprint3_security.sql,/app/migrations/008_school_operations.sql
+      MIGRATION_FILES: /app/migrations/007_sprint3_security.sql,/app/migrations/008_school_operations.sql,/app/migrations/009_followup.sql,/app/migrations/010_internal_notifications.sql
       PORT: 3000
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
     depends_on:

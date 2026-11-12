@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-12",
+  "unit": 6,
+  "integration": 71,
+  "load": {
+    "profile": "isolated-synthetic-read-smoke",
+    "concurrency": 8,
+    "requests": 160,
+    "p95Ms": 35,
+    "failures": 0
+  },
+  "database": "PostgreSQL 16 isolated Docker",
+  "webBuild": "passed",
+  "result": "passed"
+}

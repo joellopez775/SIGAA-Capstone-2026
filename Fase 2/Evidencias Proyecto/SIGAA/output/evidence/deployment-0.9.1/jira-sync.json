@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-29T02:04:12.900Z",
+  "project": "SCRUM",
+  "issues": [
+    {
+      "key": "SCRUM-52",
+      "status": "En curso",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-51",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-48",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-42",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-37",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-36",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    },
+    {
+      "key": "SCRUM-35",
+      "status": "En revisión",
+      "updatedExisting": true,
+      "descriptionVerified": true
+    }
+  ],
+  "createdIssues": 0,
+  "createdSprints": 0,
+  "recordedMeetings": 0,
+  "acceptance": "Pending PO",
+  "mainMerge": "Pending review",
+  "result": "passed"
+}

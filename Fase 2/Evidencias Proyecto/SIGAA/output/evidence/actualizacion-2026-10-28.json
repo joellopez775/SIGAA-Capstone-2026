@@ -1,0 +1,578 @@
+{
+  "cutoff": "2026-10-28",
+  "timezone": "America/Santiago",
+  "scope": "40 historias PB, excluye tareas y subtareas para evitar doble conteo",
+  "repository": "https://github.com/joellopez775/SIGAA-Capstone-2026",
+  "commit": "9f45b125499358629fb83acfcef0f089c7acc9b3",
+  "pullRequest": 1,
+  "counts": {
+    "review": 25,
+    "done": 2,
+    "inProgress": 4,
+    "pending": 9
+  },
+  "issues": [
+    {
+      "key": "SCRUM-13",
+      "title": "PB-001 Validar problema usuarios y restricciones",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-14",
+      "title": "PB-002 Product Vision y cuatro pilares",
+      "status": "En revisión",
+      "points": 3,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-15",
+      "title": "PB-003 Backlog priorizado y estimado",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-16",
+      "title": "PB-004 Definition of Done",
+      "status": "En revisión",
+      "points": 2,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-17",
+      "title": "PB-005 Repositorio README y trazabilidad",
+      "status": "En revisión",
+      "points": 3,
+      "sprints": [
+        {
+          "id": 4,
+          "name": "Sprint 0 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-18",
+      "title": "PB-006 Arquitectura y decisiones técnicas",
+      "status": "Terminada",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-19",
+      "title": "PB-007 Modelo ER y diccionario de datos",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-20",
+      "title": "PB-008 Prototipo navegable validado",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-21",
+      "title": "PB-009 UML de flujos principales",
+      "status": "En curso",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-22",
+      "title": "PB-010 Entrega y presentación Fase 1",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-23",
+      "title": "PB-011 Autenticación segura",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "start": "2026-09-24T22:42:35.000Z",
+          "end": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-24",
+      "title": "PB-012 Roles y permisos",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "start": "2026-09-24T22:42:35.000Z",
+          "end": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-25",
+      "title": "PB-013 Estructura escolar",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 3,
+          "name": "Sprint 2 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-26",
+      "title": "PB-014 Entorno Docker reproducible",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 3,
+          "name": "Sprint 2 - Histórico",
+          "state": "future"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-27",
+      "title": "PB-015 Gestión de estudiantes",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "start": "2026-09-24T22:42:35.000Z",
+          "end": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-28",
+      "title": "PB-016 Matrículas",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 2,
+          "name": "Sprint 3 - Actual",
+          "state": "active",
+          "start": "2026-09-24T22:42:35.000Z",
+          "end": "2026-10-08T22:42:35.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-29",
+      "title": "PB-017 Evaluaciones y calificaciones",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-30",
+      "title": "PB-018 Importación validada",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-31",
+      "title": "PB-019 Registro de asistencia",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-32",
+      "title": "PB-020 Tres reglas explicables de alerta",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-33",
+      "title": "PB-021 Bandeja y dashboard inicial de alertas",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-34",
+      "title": "PB-022 Entrega de avance Fase 2",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-35",
+      "title": "PB-023 Casos de seguimiento",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 38,
+          "name": "Sprint 5 - Seguimiento",
+          "state": "active",
+          "start": "2026-10-28T23:37:37.000Z",
+          "end": "2026-10-31T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-36",
+      "title": "PB-024 Ficha integral del estudiante",
+      "status": "En revisión",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 38,
+          "name": "Sprint 5 - Seguimiento",
+          "state": "active",
+          "start": "2026-10-28T23:37:37.000Z",
+          "end": "2026-10-31T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-37",
+      "title": "PB-025 Notificaciones",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 38,
+          "name": "Sprint 5 - Seguimiento",
+          "state": "active",
+          "start": "2026-10-28T23:37:37.000Z",
+          "end": "2026-10-31T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-38",
+      "title": "PB-026 Indicadores agregados",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-39",
+      "title": "PB-027 Exportación de reportes",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-40",
+      "title": "PB-028 Auditoría de cambios sensibles",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-41",
+      "title": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-42",
+      "title": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-43",
+      "title": "PB-031 Manual de usuario",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-44",
+      "title": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente",
+      "points": 3,
+      "sprints": [
+        {
+          "id": 40,
+          "name": "Sprint 6 - Calidad",
+          "state": "future",
+          "start": "2026-11-02T12:00:00.000Z",
+          "end": "2026-11-14T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-45",
+      "title": "PB-033 Entrega final Fase 2",
+      "status": "Pendiente",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 39,
+          "name": "Sprint 7 - Entrega",
+          "state": "future",
+          "start": "2026-11-16T12:00:00.000Z",
+          "end": "2026-11-28T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-46",
+      "title": "PB-034 Defensa y retrospectiva del proyecto",
+      "status": "Pendiente",
+      "points": 5,
+      "sprints": []
+    },
+    {
+      "key": "SCRUM-47",
+      "title": "PB-035 Corregir dominio universitario a escolar",
+      "status": "Terminada",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-48",
+      "title": "PB-036 Gestión de apoderados",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 38,
+          "name": "Sprint 5 - Seguimiento",
+          "state": "active",
+          "start": "2026-10-28T23:37:37.000Z",
+          "end": "2026-10-31T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-49",
+      "title": "PB-037 Justificaciones por Inspectoría",
+      "status": "En revisión",
+      "points": 5,
+      "sprints": [
+        {
+          "id": 37,
+          "name": "Sprint 4 - Asistencia/Alertas",
+          "state": "active",
+          "start": "2026-10-05T12:00:00.000Z",
+          "end": "2026-10-17T21:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-50",
+      "title": "PB-038 Modelo docente",
+      "status": "En revisión",
+      "points": 13,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-51",
+      "title": "PB-039 Modelo estudiante",
+      "status": "En curso",
+      "points": 13,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "SCRUM-52",
+      "title": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "points": 8,
+      "sprints": [
+        {
+          "id": 1,
+          "name": "Sprint 1 - Histórico",
+          "state": "active",
+          "start": "2026-10-14T23:02:14.245Z",
+          "end": "2026-10-28T23:02:00.000Z"
+        }
+      ]
+    }
+  ]
+}

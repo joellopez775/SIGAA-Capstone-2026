@@ -14,7 +14,7 @@ const dbName="sigaa_ops_browser_"+randomBytes(6).toString("hex"),dbUrl=new URL(p
 const manager=new pg.Pool({connectionString:process.env.TEST_DATABASE_URL}),origin="http://127.0.0.1:8101";
 const passwords=Object.fromEntries(["admin","teacher","teacher2","student","student2","inspector"].map(k=>[k,randomBytes(20).toString("hex")]));
 let pool,browser,api,web,page,fixture;
-const report={date:new Date().toISOString(),browser:"Chromium",environment:"Local isolated PostgreSQL 14; synthetic data",checks:[]};
+const report={date:new Date().toISOString(),browser:"Chromium",environment:"Isolated PostgreSQL; synthetic data",checks:[]};
 const errors=[];
 async function check(label,fn){await fn();report.checks.push({label,result:"pass"});console.log("PASS",label);}
 async function login(role,email){await page.getByLabel("Correo institucional",{exact:true}).fill(email+"@sigaa.local");await page.getByLabel("Contraseña",{exact:true}).fill(passwords[role]);await page.getByRole("button",{name:"Ingresar al portal"}).click();await page.getByRole("heading",{name:"Mi inicio",exact:true}).waitFor();}
@@ -23,7 +23,7 @@ async function logout(){const menu=page.getByRole("button",{name:"Abrir menú",e
 async function saved(text){await page.getByRole("status").filter({hasText:text}).waitFor();}
 async function screenshot(name){await page.screenshot({path:fileURLToPath(new URL(name+".png",output)),fullPage:true});}
 try {
-  await mkdir(output,{recursive:true});await manager.query('CREATE DATABASE "'+dbName+'"');pool=new pg.Pool({connectionString:dbUrl.href});
+  report.environment='Isolated PostgreSQL '+(await manager.query('SHOW server_version')).rows[0].server_version+'; synthetic data';await mkdir(output,{recursive:true});await manager.query('CREATE DATABASE "'+dbName+'"');pool=new pg.Pool({connectionString:dbUrl.href});
   const dir=new URL("infra/postgres/init/",root);
   for(const f of (await readdir(dir)).filter(f=>f.endsWith(".sql")).sort())await pool.query(await readFile(new URL(f,dir),"utf8"));
   fixture=await sampleData(pool,passwords);

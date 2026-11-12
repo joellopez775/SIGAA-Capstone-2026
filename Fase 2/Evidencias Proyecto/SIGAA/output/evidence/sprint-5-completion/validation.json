@@ -1,0 +1,32 @@
+{
+  "cutoff": "2026-10-28 America/Santiago",
+  "version": "0.9.1",
+  "result": "passed",
+  "api": {
+    "unit": 6,
+    "integration": 66,
+    "failed": 0,
+    "runtime": "Node 22 in Docker / PostgreSQL 16"
+  },
+  "browser": {
+    "newPortalNotifications": 8,
+    "followupRegression": 8,
+    "operationsRegression": 11,
+    "failed": 0,
+    "runtime": "Chromium local, isolated PostgreSQL 16 in Docker through SSH"
+  },
+  "webBuild": "passed",
+  "freshDockerInstallation": "passed",
+  "restartPersistence": "passed",
+  "productionDeployment": false,
+  "acceptance": "pending Product Owner review",
+  "scope": [
+    "SCRUM-37",
+    "SCRUM-51",
+    "SCRUM-21",
+    "SCRUM-52",
+    "SCRUM-35",
+    "SCRUM-36",
+    "SCRUM-48"
+  ]
+}

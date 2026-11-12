@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-05",
+  "sprint": 40,
+  "issues": [
+    {
+      "key": "SCRUM-38",
+      "summary": "PB-026 Indicadores agregados",
+      "status": "En revisión"
+    },
+    {
+      "key": "SCRUM-40",
+      "summary": "PB-028 Auditoría de cambios sensibles",
+      "status": "En revisión"
+    },
+    {
+      "key": "SCRUM-41",
+      "summary": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso"
+    },
+    {
+      "key": "SCRUM-42",
+      "summary": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión"
+    },
+    {
+      "key": "SCRUM-43",
+      "summary": "PB-031 Manual de usuario",
+      "status": "Pendiente"
+    },
+    {
+      "key": "SCRUM-44",
+      "summary": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente"
+    }
+  ],
+  "createdSprints": 0,
+  "createdIssues": 0,
+  "simulatedCeremonies": 2
+}

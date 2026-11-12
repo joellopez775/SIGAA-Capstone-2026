@@ -1,0 +1,38 @@
+{
+  "cutoff": "2026-11-05",
+  "scope": "Visual redesign of five PDFs; source facts and planned dates preserved",
+  "style": "Georgia + Helvetica Neue; emerald, gold and ivory; editorial grids and real interface screenshots",
+  "files": [
+    {
+      "file": "Informe general de avance - 5 noviembre 2026.pdf",
+      "pages": 3,
+      "sha256": "d3f88a4406bdf7620011480fb76dc98490b53324cd2c06db4c7cd01cff30d8fa",
+      "renderedAndReviewed": true
+    },
+    {
+      "file": "Carta Gantt actualizada por sprints - 5 noviembre 2026.pdf",
+      "pages": 2,
+      "sha256": "6701344e1ddc1fb3ab7396eac184504053dc6e2a4f7ed701409a55d0865bdfb6",
+      "renderedAndReviewed": true
+    },
+    {
+      "file": "Sprint 6 - Backlog y seguimiento - 5 noviembre 2026.pdf",
+      "pages": 2,
+      "sha256": "f63afb5f78fb25867171d1685c37a4339036784b7ed8d0bded3752abfa8a2f0c",
+      "renderedAndReviewed": true
+    },
+    {
+      "file": "Guía de usuario del incremento 0.10.0 - SIGAA.pdf",
+      "pages": 2,
+      "sha256": "e078758d2b31946b8182337b00c3a5e70263f18d74d079acca13df77790dee0d",
+      "renderedAndReviewed": true
+    },
+    {
+      "file": "Presentación de avance - 5 noviembre 2026.pdf",
+      "pages": 12,
+      "sha256": "a51c1b52c8a80ccbd31df27f3b0f0514cc2723ede5847c660cd156ded9b0b58c",
+      "renderedAndReviewed": true
+    }
+  ],
+  "result": "passed"
+}

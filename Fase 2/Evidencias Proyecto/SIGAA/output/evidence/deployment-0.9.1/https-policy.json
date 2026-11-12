@@ -1,0 +1,9 @@
+{
+  "httpRedirect": 308,
+  "httpsStatus": 200,
+  "hsts": "max-age=31536000; host only, no includeSubDomains",
+  "webCommit": "bff4a559f562bd0d499b95fde06b5f49c5075a7a",
+  "apiCommit": "08913fb2b6b1c4d9bd24aab1795ec1320860f624",
+  "dnsChanges": false,
+  "result": "passed"
+}

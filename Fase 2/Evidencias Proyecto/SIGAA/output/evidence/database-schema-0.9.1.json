@@ -1,0 +1,5453 @@
+{
+  "postgres_version": "16.15",
+  "tables": [
+    {
+      "name": "alerta",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "regla_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "responsable_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "severidad",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "estado",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": "'abierta'::character varying",
+          "position": 8
+        },
+        {
+          "name": "titulo",
+          "type": "character varying(180)",
+          "nullable": false,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "evidencia",
+          "type": "jsonb",
+          "nullable": false,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "vence_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "resuelta_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 13
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 14
+        },
+        {
+          "name": "engine_key",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 15
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 16
+        }
+      ],
+      "constraints": [
+        {
+          "name": "alerta_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['abierta'::character varying, 'asignada'::character varying, 'en_seguimiento'::character varying, 'resuelta'::character varying, 'descartada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "alerta_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "alerta_severidad_check",
+          "type": "c",
+          "definition": "CHECK (((severidad)::text = ANY ((ARRAY['informativa'::character varying, 'media'::character varying, 'alta'::character varying, 'critica'::character varying])::text[])))",
+          "columns": [
+            "severidad"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "alerta_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX alerta_pkey ON public.alerta USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_alerta_bandeja",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_alerta_bandeja ON public.alerta USING btree (estado, severidad, creado_en DESC)",
+          "columns": [
+            "estado",
+            "severidad",
+            "creado_en"
+          ]
+        },
+        {
+          "name": "idx_alerta_estudiante",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_alerta_estudiante ON public.alerta USING btree (estudiante_id, curso_id, creado_en DESC)",
+          "columns": [
+            "estudiante_id",
+            "curso_id",
+            "creado_en"
+          ]
+        },
+        {
+          "name": "uq_alerta_engine_key",
+          "unique": true,
+          "primary": false,
+          "predicate": "(engine_key IS NOT NULL)",
+          "definition": "CREATE UNIQUE INDEX uq_alerta_engine_key ON public.alerta USING btree (engine_key) WHERE (engine_key IS NOT NULL)",
+          "columns": [
+            "engine_key"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "anotacion_estudiante",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "categoria",
+          "type": "character varying(80)",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "detalle",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "visibilidad",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": "'equipo_docente'::character varying",
+          "position": 8
+        },
+        {
+          "name": "registrada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'vigente'::character varying",
+          "position": 10
+        },
+        {
+          "name": "anulada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "motivo_anulacion",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        },
+        {
+          "name": "anulada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 13
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 14
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 15
+        },
+        {
+          "name": "publicada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 16
+        },
+        {
+          "name": "publicada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 17
+        }
+      ],
+      "constraints": [
+        {
+          "name": "anotacion_estudiante_check",
+          "type": "c",
+          "definition": "CHECK (((((estado)::text = 'vigente'::text) AND (anulada_por IS NULL) AND (anulada_en IS NULL)) OR (((estado)::text = 'anulada'::text) AND (anulada_por IS NOT NULL) AND (anulada_en IS NOT NULL) AND (motivo_anulacion IS NOT NULL))))",
+          "columns": [
+            "estado",
+            "anulada_por",
+            "anulada_en",
+            "motivo_anulacion"
+          ]
+        },
+        {
+          "name": "anotacion_estudiante_detalle_check",
+          "type": "c",
+          "definition": "CHECK ((length(TRIM(BOTH FROM detalle)) >= 8))",
+          "columns": [
+            "detalle"
+          ]
+        },
+        {
+          "name": "anotacion_estudiante_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['vigente'::character varying, 'anulada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "anotacion_estudiante_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "anotacion_estudiante_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['positiva'::character varying, 'negativa'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        },
+        {
+          "name": "anotacion_estudiante_visibilidad_check",
+          "type": "c",
+          "definition": "CHECK (((visibilidad)::text = ANY ((ARRAY['privada'::character varying, 'equipo_docente'::character varying, 'apoderado'::character varying, 'estudiante'::character varying, 'estudiante_apoderado'::character varying])::text[])))",
+          "columns": [
+            "visibilidad"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "anotacion_estudiante_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX anotacion_estudiante_pkey ON public.anotacion_estudiante USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_anotacion_curso_tipo",
+          "unique": false,
+          "primary": false,
+          "predicate": "((estado)::text = 'vigente'::text)",
+          "definition": "CREATE INDEX idx_anotacion_curso_tipo ON public.anotacion_estudiante USING btree (curso_id, tipo, creado_en DESC) WHERE ((estado)::text = 'vigente'::text)",
+          "columns": [
+            "curso_id",
+            "tipo",
+            "creado_en"
+          ]
+        },
+        {
+          "name": "idx_anotacion_estudiante_historial",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_anotacion_estudiante_historial ON public.anotacion_estudiante USING btree (estudiante_id, creado_en DESC)",
+          "columns": [
+            "estudiante_id",
+            "creado_en"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "apoderado",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "run",
+          "type": "character varying(20)",
+          "nullable": true,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "nombres",
+          "type": "character varying(100)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "apellidos",
+          "type": "character varying(120)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "email",
+          "type": "citext",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "telefono",
+          "type": "character varying(30)",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activo'::character varying",
+          "position": 8
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        },
+        {
+          "name": "codigo",
+          "type": "character varying(40)",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 12
+        }
+      ],
+      "constraints": [
+        {
+          "name": "apoderado_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activo'::character varying, 'inactivo'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "apoderado_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "apoderado_run_key",
+          "type": "u",
+          "definition": "UNIQUE (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "apoderado_usuario_id_key",
+          "type": "u",
+          "definition": "UNIQUE (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "apoderado_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX apoderado_pkey ON public.apoderado USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "apoderado_run_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX apoderado_run_key ON public.apoderado USING btree (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "apoderado_usuario_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX apoderado_usuario_id_key ON public.apoderado USING btree (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        },
+        {
+          "name": "uq_apoderado_codigo",
+          "unique": true,
+          "primary": false,
+          "predicate": "(codigo IS NOT NULL)",
+          "definition": "CREATE UNIQUE INDEX uq_apoderado_codigo ON public.apoderado USING btree (codigo) WHERE (codigo IS NOT NULL)",
+          "columns": [
+            "codigo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app_metadata",
+      "columns": [
+        {
+          "name": "key",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 1
+        },
+        {
+          "name": "value",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 3
+        }
+      ],
+      "constraints": [
+        {
+          "name": "app_metadata_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (key)",
+          "columns": [
+            "key"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "app_metadata_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX app_metadata_pkey ON public.app_metadata USING btree (key)",
+          "columns": [
+            "key"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "asignacion_docente",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "funcionario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "funcion",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'titular'::character varying",
+          "position": 4
+        },
+        {
+          "name": "vigente_desde",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "vigente_hasta",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "puede_planificar",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 7
+        },
+        {
+          "name": "puede_registrar_asistencia",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 8
+        },
+        {
+          "name": "puede_calificar",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 9
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        }
+      ],
+      "constraints": [
+        {
+          "name": "asignacion_docente_check",
+          "type": "c",
+          "definition": "CHECK (((vigente_hasta IS NULL) OR (vigente_hasta >= vigente_desde)))",
+          "columns": [
+            "vigente_hasta",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "asignacion_docente_curso_asignatura_id_funcionario_id_vigen_key",
+          "type": "u",
+          "definition": "UNIQUE (curso_asignatura_id, funcionario_id, vigente_desde)",
+          "columns": [
+            "curso_asignatura_id",
+            "funcionario_id",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "asignacion_docente_funcion_check",
+          "type": "c",
+          "definition": "CHECK (((funcion)::text = ANY ((ARRAY['titular'::character varying, 'reemplazo'::character varying, 'apoyo'::character varying, 'codocencia'::character varying])::text[])))",
+          "columns": [
+            "funcion"
+          ]
+        },
+        {
+          "name": "asignacion_docente_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "asignacion_docente_curso_asignatura_id_funcionario_id_vigen_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asignacion_docente_curso_asignatura_id_funcionario_id_vigen_key ON public.asignacion_docente USING btree (curso_asignatura_id, funcionario_id, vigente_desde)",
+          "columns": [
+            "curso_asignatura_id",
+            "funcionario_id",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "asignacion_docente_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asignacion_docente_pkey ON public.asignacion_docente USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_asignacion_docente_funcionario",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_asignacion_docente_funcionario ON public.asignacion_docente USING btree (funcionario_id, vigente_hasta)",
+          "columns": [
+            "funcionario_id",
+            "vigente_hasta"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "asignatura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "codigo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(160)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activa'::character varying",
+          "position": 4
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 5
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 6
+        }
+      ],
+      "constraints": [
+        {
+          "name": "asignatura_codigo_key",
+          "type": "u",
+          "definition": "UNIQUE (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "asignatura_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activa'::character varying, 'inactiva'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "asignatura_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "asignatura_codigo_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asignatura_codigo_key ON public.asignatura USING btree (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "asignatura_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asignatura_pkey ON public.asignatura USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "asistencia",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "sesion_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "observacion",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "registrada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "asistencia_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['presente'::character varying, 'ausente'::character varying, 'atraso'::character varying, 'justificada'::character varying, 'pendiente'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "asistencia_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asistencia_sesion_id_estudiante_id_key",
+          "type": "u",
+          "definition": "UNIQUE (sesion_id, estudiante_id)",
+          "columns": [
+            "sesion_id",
+            "estudiante_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "asistencia_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asistencia_pkey ON public.asistencia USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "asistencia_sesion_id_estudiante_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX asistencia_sesion_id_estudiante_id_key ON public.asistencia USING btree (sesion_id, estudiante_id)",
+          "columns": [
+            "sesion_id",
+            "estudiante_id"
+          ]
+        },
+        {
+          "name": "idx_asistencia_estudiante",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_asistencia_estudiante ON public.asistencia USING btree (estudiante_id, sesion_id)",
+          "columns": [
+            "estudiante_id",
+            "sesion_id"
+          ]
+        },
+        {
+          "name": "idx_asistencia_estudiante_estado",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_asistencia_estudiante_estado ON public.asistencia USING btree (estudiante_id, estado, actualizado_en DESC)",
+          "columns": [
+            "estudiante_id",
+            "estado",
+            "actualizado_en"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "calificacion",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "evaluacion_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "valor",
+          "type": "numeric(3,1)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "registrada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "motivo_correccion",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        },
+        {
+          "name": "visible_estudiante",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "position": 10
+        },
+        {
+          "name": "publicada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "publicada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        }
+      ],
+      "constraints": [
+        {
+          "name": "calificacion_evaluacion_id_estudiante_id_key",
+          "type": "u",
+          "definition": "UNIQUE (evaluacion_id, estudiante_id)",
+          "columns": [
+            "evaluacion_id",
+            "estudiante_id"
+          ]
+        },
+        {
+          "name": "calificacion_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "calificacion_valor_check",
+          "type": "c",
+          "definition": "CHECK (((valor >= 1.0) AND (valor <= 7.0)))",
+          "columns": [
+            "valor"
+          ]
+        },
+        {
+          "name": "calificacion_version_check",
+          "type": "c",
+          "definition": "CHECK ((version > 0))",
+          "columns": [
+            "version"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "calificacion_evaluacion_id_estudiante_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX calificacion_evaluacion_id_estudiante_id_key ON public.calificacion USING btree (evaluacion_id, estudiante_id)",
+          "columns": [
+            "evaluacion_id",
+            "estudiante_id"
+          ]
+        },
+        {
+          "name": "calificacion_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX calificacion_pkey ON public.calificacion USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_calificacion_estudiante",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_calificacion_estudiante ON public.calificacion USING btree (estudiante_id, evaluacion_id)",
+          "columns": [
+            "estudiante_id",
+            "evaluacion_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "caso_actividad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "caso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "nota",
+          "type": "character varying(2000)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "detalle",
+          "type": "jsonb",
+          "nullable": false,
+          "default": "'{}'::jsonb",
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        }
+      ],
+      "constraints": [
+        {
+          "name": "caso_actividad_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "caso_actividad_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['apertura'::character varying, 'actividad'::character varying, 'cambio'::character varying, 'cierre'::character varying, 'reapertura'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "caso_actividad_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX caso_actividad_pkey ON public.caso_actividad USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_caso_actividad",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_caso_actividad ON public.caso_actividad USING btree (caso_id, creado_en, id)",
+          "columns": [
+            "caso_id",
+            "creado_en",
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "caso_seguimiento",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "alerta_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "motivo",
+          "type": "character varying(2000)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "prioridad",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'abierto'::character varying",
+          "position": 5
+        },
+        {
+          "name": "responsable_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "siguiente_accion",
+          "type": "character varying(1000)",
+          "nullable": false,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "fecha_seguimiento",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "resultado",
+          "type": "character varying(2000)",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "creado_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "actualizado_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 12
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 13
+        },
+        {
+          "name": "cerrado_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 14
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 15
+        }
+      ],
+      "constraints": [
+        {
+          "name": "caso_seguimiento_check",
+          "type": "c",
+          "definition": "CHECK ((((estado)::text = 'cerrado'::text) = (cerrado_en IS NOT NULL)))",
+          "columns": [
+            "estado",
+            "cerrado_en"
+          ]
+        },
+        {
+          "name": "caso_seguimiento_check1",
+          "type": "c",
+          "definition": "CHECK ((((estado)::text <> 'cerrado'::text) OR ((resultado IS NOT NULL) AND (length(TRIM(BOTH FROM resultado)) >= 8))))",
+          "columns": [
+            "estado",
+            "resultado"
+          ]
+        },
+        {
+          "name": "caso_seguimiento_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['abierto'::character varying, 'en_curso'::character varying, 'cerrado'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "caso_seguimiento_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "caso_seguimiento_prioridad_check",
+          "type": "c",
+          "definition": "CHECK (((prioridad)::text = ANY ((ARRAY['media'::character varying, 'alta'::character varying, 'critica'::character varying])::text[])))",
+          "columns": [
+            "prioridad"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "caso_seguimiento_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX caso_seguimiento_pkey ON public.caso_seguimiento USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_caso_responsable",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_caso_responsable ON public.caso_seguimiento USING btree (responsable_id, estado, fecha_seguimiento)",
+          "columns": [
+            "responsable_id",
+            "estado",
+            "fecha_seguimiento"
+          ]
+        },
+        {
+          "name": "uq_caso_alerta_activo",
+          "unique": true,
+          "primary": false,
+          "predicate": "((estado)::text <> 'cerrado'::text)",
+          "definition": "CREATE UNIQUE INDEX uq_caso_alerta_activo ON public.caso_seguimiento USING btree (alerta_id) WHERE ((estado)::text <> 'cerrado'::text)",
+          "columns": [
+            "alerta_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "comunicacion_estudiante",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "titulo",
+          "type": "character varying(180)",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "detalle",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'borrador'::character varying",
+          "position": 8
+        },
+        {
+          "name": "visible_desde",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "visible_hasta",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "creada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 12
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 13
+        }
+      ],
+      "constraints": [
+        {
+          "name": "comunicacion_estudiante_check",
+          "type": "c",
+          "definition": "CHECK (((visible_hasta IS NULL) OR (visible_desde IS NULL) OR (visible_hasta >= visible_desde)))",
+          "columns": [
+            "visible_hasta",
+            "visible_desde"
+          ]
+        },
+        {
+          "name": "comunicacion_estudiante_detalle_check",
+          "type": "c",
+          "definition": "CHECK ((length(TRIM(BOTH FROM detalle)) >= 8))",
+          "columns": [
+            "detalle"
+          ]
+        },
+        {
+          "name": "comunicacion_estudiante_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['borrador'::character varying, 'publicada'::character varying, 'retirada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "comunicacion_estudiante_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "comunicacion_estudiante_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['informativa'::character varying, 'acompanamiento'::character varying, 'reconocimiento'::character varying, 'recordatorio'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "comunicacion_estudiante_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX comunicacion_estudiante_pkey ON public.comunicacion_estudiante USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_comunicacion_estudiante_publicada",
+          "unique": false,
+          "primary": false,
+          "predicate": "((estado)::text = 'publicada'::text)",
+          "definition": "CREATE INDEX idx_comunicacion_estudiante_publicada ON public.comunicacion_estudiante USING btree (estudiante_id, visible_desde DESC) WHERE ((estado)::text = 'publicada'::text)",
+          "columns": [
+            "estudiante_id",
+            "visible_desde"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "curso",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "periodo_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nivel_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "letra",
+          "type": "character varying(5)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "jornada",
+          "type": "character varying(20)",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "sala",
+          "type": "character varying(30)",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "profesor_jefe_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "capacidad",
+          "type": "smallint",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'planificado'::character varying",
+          "position": 9
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 11
+        }
+      ],
+      "constraints": [
+        {
+          "name": "curso_capacidad_check",
+          "type": "c",
+          "definition": "CHECK (((capacidad IS NULL) OR (capacidad > 0)))",
+          "columns": [
+            "capacidad"
+          ]
+        },
+        {
+          "name": "curso_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['planificado'::character varying, 'activo'::character varying, 'cerrado'::character varying, 'cancelado'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "curso_jornada_check",
+          "type": "c",
+          "definition": "CHECK (((jornada IS NULL) OR ((jornada)::text = ANY ((ARRAY['manana'::character varying, 'tarde'::character varying, 'vespertina'::character varying, 'completa'::character varying])::text[]))))",
+          "columns": [
+            "jornada"
+          ]
+        },
+        {
+          "name": "curso_periodo_id_nivel_id_letra_key",
+          "type": "u",
+          "definition": "UNIQUE (periodo_id, nivel_id, letra)",
+          "columns": [
+            "periodo_id",
+            "nivel_id",
+            "letra"
+          ]
+        },
+        {
+          "name": "curso_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "curso_periodo_id_nivel_id_letra_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX curso_periodo_id_nivel_id_letra_key ON public.curso USING btree (periodo_id, nivel_id, letra)",
+          "columns": [
+            "periodo_id",
+            "nivel_id",
+            "letra"
+          ]
+        },
+        {
+          "name": "curso_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX curso_pkey ON public.curso USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_curso_periodo",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_curso_periodo ON public.curso USING btree (periodo_id, estado)",
+          "columns": [
+            "periodo_id",
+            "estado"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "curso_asignatura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "asignatura_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "profesor_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "horas_semanales",
+          "type": "numeric(3,1)",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'planificada'::character varying",
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "curso_asignatura_curso_id_asignatura_id_key",
+          "type": "u",
+          "definition": "UNIQUE (curso_id, asignatura_id)",
+          "columns": [
+            "curso_id",
+            "asignatura_id"
+          ]
+        },
+        {
+          "name": "curso_asignatura_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['planificada'::character varying, 'activa'::character varying, 'cerrada'::character varying, 'cancelada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "curso_asignatura_horas_semanales_check",
+          "type": "c",
+          "definition": "CHECK (((horas_semanales IS NULL) OR (horas_semanales > (0)::numeric)))",
+          "columns": [
+            "horas_semanales"
+          ]
+        },
+        {
+          "name": "curso_asignatura_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "curso_asignatura_curso_id_asignatura_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX curso_asignatura_curso_id_asignatura_id_key ON public.curso_asignatura USING btree (curso_id, asignatura_id)",
+          "columns": [
+            "curso_id",
+            "asignatura_id"
+          ]
+        },
+        {
+          "name": "curso_asignatura_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX curso_asignatura_pkey ON public.curso_asignatura USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_curso_asignatura_profesor",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_curso_asignatura_profesor ON public.curso_asignatura USING btree (profesor_id, estado)",
+          "columns": [
+            "profesor_id",
+            "estado"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "establecimiento",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "rbd",
+          "type": "character varying(20)",
+          "nullable": true,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(180)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "dependencia",
+          "type": "character varying(30)",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activo'::character varying",
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "establecimiento_dependencia_check",
+          "type": "c",
+          "definition": "CHECK (((dependencia IS NULL) OR ((dependencia)::text = ANY ((ARRAY['municipal'::character varying, 'sle'::character varying, 'particular_subvencionado'::character varying, 'particular_pagado'::character varying, 'administracion_delegada'::character varying])::text[]))))",
+          "columns": [
+            "dependencia"
+          ]
+        },
+        {
+          "name": "establecimiento_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activo'::character varying, 'inactivo'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "establecimiento_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "establecimiento_rbd_key",
+          "type": "u",
+          "definition": "UNIQUE (rbd)",
+          "columns": [
+            "rbd"
+          ]
+        },
+        {
+          "name": "establecimiento_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['colegio'::character varying, 'liceo'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "establecimiento_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX establecimiento_pkey ON public.establecimiento USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "establecimiento_rbd_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX establecimiento_rbd_key ON public.establecimiento USING btree (rbd)",
+          "columns": [
+            "rbd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "estudiante",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "run",
+          "type": "character varying(20)",
+          "nullable": true,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "identificador_interno",
+          "type": "character varying(40)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "nombres",
+          "type": "character varying(100)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "apellidos",
+          "type": "character varying(120)",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "fecha_nacimiento",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "email_institucional",
+          "type": "citext",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'regular'::character varying",
+          "position": 9
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 11
+        },
+        {
+          "name": "creado_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        },
+        {
+          "name": "actualizado_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 13
+        }
+      ],
+      "constraints": [
+        {
+          "name": "estudiante_email_institucional_key",
+          "type": "u",
+          "definition": "UNIQUE (email_institucional)",
+          "columns": [
+            "email_institucional"
+          ]
+        },
+        {
+          "name": "estudiante_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['regular'::character varying, 'suspendido'::character varying, 'retirado'::character varying, 'egresado'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "estudiante_identificador_interno_key",
+          "type": "u",
+          "definition": "UNIQUE (identificador_interno)",
+          "columns": [
+            "identificador_interno"
+          ]
+        },
+        {
+          "name": "estudiante_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "estudiante_run_key",
+          "type": "u",
+          "definition": "UNIQUE (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "estudiante_usuario_id_key",
+          "type": "u",
+          "definition": "UNIQUE (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "estudiante_email_institucional_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_email_institucional_key ON public.estudiante USING btree (email_institucional)",
+          "columns": [
+            "email_institucional"
+          ]
+        },
+        {
+          "name": "estudiante_identificador_interno_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_identificador_interno_key ON public.estudiante USING btree (identificador_interno)",
+          "columns": [
+            "identificador_interno"
+          ]
+        },
+        {
+          "name": "estudiante_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_pkey ON public.estudiante USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "estudiante_run_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_run_key ON public.estudiante USING btree (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "estudiante_usuario_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_usuario_id_key ON public.estudiante USING btree (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "estudiante_apoderado",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "apoderado_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "parentesco",
+          "type": "character varying(40)",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "es_principal",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "position": 5
+        },
+        {
+          "name": "recibe_notificaciones",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "activo",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 8
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 9
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        }
+      ],
+      "constraints": [
+        {
+          "name": "estudiante_apoderado_estudiante_id_apoderado_id_key",
+          "type": "u",
+          "definition": "UNIQUE (estudiante_id, apoderado_id)",
+          "columns": [
+            "estudiante_id",
+            "apoderado_id"
+          ]
+        },
+        {
+          "name": "estudiante_apoderado_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "estudiante_apoderado_estudiante_id_apoderado_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_apoderado_estudiante_id_apoderado_id_key ON public.estudiante_apoderado USING btree (estudiante_id, apoderado_id)",
+          "columns": [
+            "estudiante_id",
+            "apoderado_id"
+          ]
+        },
+        {
+          "name": "estudiante_apoderado_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX estudiante_apoderado_pkey ON public.estudiante_apoderado USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "uq_apoderado_principal",
+          "unique": true,
+          "primary": false,
+          "predicate": "(activo AND es_principal)",
+          "definition": "CREATE UNIQUE INDEX uq_apoderado_principal ON public.estudiante_apoderado USING btree (estudiante_id) WHERE (activo AND es_principal)",
+          "columns": [
+            "estudiante_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "evaluacion",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(160)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "descripcion",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "fecha",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "ponderacion",
+          "type": "numeric(5,2)",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'borrador'::character varying",
+          "position": 7
+        },
+        {
+          "name": "creada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "cerrada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 11
+        },
+        {
+          "name": "visible_estudiante",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "position": 12
+        },
+        {
+          "name": "publicada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 13
+        },
+        {
+          "name": "publicada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 14
+        }
+      ],
+      "constraints": [
+        {
+          "name": "evaluacion_curso_asignatura_id_nombre_key",
+          "type": "u",
+          "definition": "UNIQUE (curso_asignatura_id, nombre)",
+          "columns": [
+            "curso_asignatura_id",
+            "nombre"
+          ]
+        },
+        {
+          "name": "evaluacion_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['borrador'::character varying, 'publicada'::character varying, 'cerrada'::character varying, 'anulada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "evaluacion_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "evaluacion_ponderacion_check",
+          "type": "c",
+          "definition": "CHECK (((ponderacion > (0)::numeric) AND (ponderacion <= (100)::numeric)))",
+          "columns": [
+            "ponderacion"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "evaluacion_curso_asignatura_id_nombre_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX evaluacion_curso_asignatura_id_nombre_key ON public.evaluacion USING btree (curso_asignatura_id, nombre)",
+          "columns": [
+            "curso_asignatura_id",
+            "nombre"
+          ]
+        },
+        {
+          "name": "evaluacion_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX evaluacion_pkey ON public.evaluacion USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "evento_auditoria",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "accion",
+          "type": "character varying(80)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "entidad",
+          "type": "character varying(80)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "entidad_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "valor_anterior",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "valor_nuevo",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "motivo",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "correlacion_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "origen",
+          "type": "character varying(40)",
+          "nullable": false,
+          "default": "'aplicacion'::character varying",
+          "position": 10
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 11
+        }
+      ],
+      "constraints": [
+        {
+          "name": "evento_auditoria_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "evento_auditoria_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX evento_auditoria_pkey ON public.evento_auditoria USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "idx_auditoria_entidad",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_auditoria_entidad ON public.evento_auditoria USING btree (entidad, entidad_id, creado_en DESC)",
+          "columns": [
+            "entidad",
+            "entidad_id",
+            "creado_en"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "funcionario",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "run",
+          "type": "character varying(20)",
+          "nullable": true,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "nombres",
+          "type": "character varying(100)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "apellidos",
+          "type": "character varying(120)",
+          "nullable": false,
+          "default": "''::character varying",
+          "position": 5
+        },
+        {
+          "name": "email_institucional",
+          "type": "citext",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activo'::character varying",
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        }
+      ],
+      "constraints": [
+        {
+          "name": "funcionario_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activo'::character varying, 'licencia'::character varying, 'inactivo'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "funcionario_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "funcionario_run_key",
+          "type": "u",
+          "definition": "UNIQUE (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "funcionario_usuario_id_key",
+          "type": "u",
+          "definition": "UNIQUE (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "funcionario_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX funcionario_pkey ON public.funcionario USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "funcionario_run_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX funcionario_run_key ON public.funcionario USING btree (run)",
+          "columns": [
+            "run"
+          ]
+        },
+        {
+          "name": "funcionario_usuario_id_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX funcionario_usuario_id_key ON public.funcionario USING btree (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "intervencion",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "alerta_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(40)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "nota",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "fecha_seguimiento",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "resultado",
+          "type": "character varying(30)",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "intervencion_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "intervencion_resultado_check",
+          "type": "c",
+          "definition": "CHECK (((resultado IS NULL) OR ((resultado)::text = ANY ((ARRAY['pendiente'::character varying, 'mejora'::character varying, 'sin_cambio'::character varying, 'escalada'::character varying, 'cerrada'::character varying])::text[]))))",
+          "columns": [
+            "resultado"
+          ]
+        },
+        {
+          "name": "intervencion_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['entrevista_estudiante'::character varying, 'contacto_apoderado'::character varying, 'reforzamiento'::character varying, 'derivacion'::character varying, 'inspectoria'::character varying, 'observacion'::character varying, 'otro'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_intervencion_alerta",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_intervencion_alerta ON public.intervencion USING btree (alerta_id, creado_en DESC)",
+          "columns": [
+            "alerta_id",
+            "creado_en"
+          ]
+        },
+        {
+          "name": "intervencion_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX intervencion_pkey ON public.intervencion USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "justificacion_ausencia",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "fecha_desde",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "fecha_hasta",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "motivo",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "documento_url",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'pendiente'::character varying",
+          "position": 7
+        },
+        {
+          "name": "registrada_por",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "revisada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "revisada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 11
+        },
+        {
+          "name": "sesion_id",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        },
+        {
+          "name": "observacion_revision",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 13
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "nullable": false,
+          "default": "1",
+          "position": 14
+        }
+      ],
+      "constraints": [
+        {
+          "name": "justificacion_ausencia_check",
+          "type": "c",
+          "definition": "CHECK ((fecha_hasta >= fecha_desde))",
+          "columns": [
+            "fecha_hasta",
+            "fecha_desde"
+          ]
+        },
+        {
+          "name": "justificacion_ausencia_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['pendiente'::character varying, 'aceptada'::character varying, 'rechazada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "justificacion_ausencia_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_justificacion_estudiante",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_justificacion_estudiante ON public.justificacion_ausencia USING btree (estudiante_id, fecha_desde DESC)",
+          "columns": [
+            "estudiante_id",
+            "fecha_desde"
+          ]
+        },
+        {
+          "name": "justificacion_ausencia_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX justificacion_ausencia_pkey ON public.justificacion_ausencia USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "uq_justificacion_sesion_estudiante",
+          "unique": true,
+          "primary": false,
+          "predicate": "(sesion_id IS NOT NULL)",
+          "definition": "CREATE UNIQUE INDEX uq_justificacion_sesion_estudiante ON public.justificacion_ausencia USING btree (sesion_id, estudiante_id) WHERE (sesion_id IS NOT NULL)",
+          "columns": [
+            "sesion_id",
+            "estudiante_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "limite_login",
+      "columns": [
+        {
+          "name": "clave",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 1
+        },
+        {
+          "name": "intentos",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "ventana",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        }
+      ],
+      "constraints": [
+        {
+          "name": "limite_login_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (clave)",
+          "columns": [
+            "clave"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_limite_login_ventana",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_limite_login_ventana ON public.limite_login USING btree (ventana)",
+          "columns": [
+            "ventana"
+          ]
+        },
+        {
+          "name": "limite_login_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX limite_login_pkey ON public.limite_login USING btree (clave)",
+          "columns": [
+            "clave"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "matricula",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "estudiante_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "numero_matricula",
+          "type": "character varying(40)",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activa'::character varying",
+          "position": 5
+        },
+        {
+          "name": "matriculado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 6
+        },
+        {
+          "name": "finalizado_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        },
+        {
+          "name": "creado_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "actualizado_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        }
+      ],
+      "constraints": [
+        {
+          "name": "matricula_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activa'::character varying, 'retirada'::character varying, 'finalizada'::character varying, 'anulada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "matricula_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_matricula_curso",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_matricula_curso ON public.matricula USING btree (curso_id, estado)",
+          "columns": [
+            "curso_id",
+            "estado"
+          ]
+        },
+        {
+          "name": "matricula_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX matricula_pkey ON public.matricula USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "uq_matricula_curso_activa",
+          "unique": true,
+          "primary": false,
+          "predicate": "((estado)::text = 'activa'::text)",
+          "definition": "CREATE UNIQUE INDEX uq_matricula_curso_activa ON public.matricula USING btree (estudiante_id, curso_id) WHERE ((estado)::text = 'activa'::text)",
+          "columns": [
+            "estudiante_id",
+            "curso_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nivel_educativo",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "codigo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(100)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "ciclo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "orden",
+          "type": "smallint",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 6
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        }
+      ],
+      "constraints": [
+        {
+          "name": "nivel_educativo_ciclo_check",
+          "type": "c",
+          "definition": "CHECK (((ciclo)::text = ANY ((ARRAY['parvularia'::character varying, 'basica'::character varying, 'media'::character varying, 'especial'::character varying, 'adultos'::character varying])::text[])))",
+          "columns": [
+            "ciclo"
+          ]
+        },
+        {
+          "name": "nivel_educativo_codigo_key",
+          "type": "u",
+          "definition": "UNIQUE (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "nivel_educativo_orden_check",
+          "type": "c",
+          "definition": "CHECK ((orden > 0))",
+          "columns": [
+            "orden"
+          ]
+        },
+        {
+          "name": "nivel_educativo_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "nivel_educativo_codigo_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX nivel_educativo_codigo_key ON public.nivel_educativo USING btree (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "nivel_educativo_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX nivel_educativo_pkey ON public.nivel_educativo USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notificacion_interna",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "destinatario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "caso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "revision_caso",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "actor_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "leida_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "notificacion_interna_destinatario_id_caso_id_revision_caso_key",
+          "type": "u",
+          "definition": "UNIQUE (destinatario_id, caso_id, revision_caso)",
+          "columns": [
+            "destinatario_id",
+            "caso_id",
+            "revision_caso"
+          ]
+        },
+        {
+          "name": "notificacion_interna_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "notificacion_interna_revision_caso_check",
+          "type": "c",
+          "definition": "CHECK ((revision_caso > 0))",
+          "columns": [
+            "revision_caso"
+          ]
+        },
+        {
+          "name": "notificacion_interna_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['apertura'::character varying, 'actividad'::character varying, 'cambio'::character varying, 'cierre'::character varying, 'reapertura'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_notificacion_destino",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_notificacion_destino ON public.notificacion_interna USING btree (destinatario_id, creado_en DESC, id)",
+          "columns": [
+            "destinatario_id",
+            "creado_en",
+            "id"
+          ]
+        },
+        {
+          "name": "notificacion_interna_destinatario_id_caso_id_revision_caso_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX notificacion_interna_destinatario_id_caso_id_revision_caso_key ON public.notificacion_interna USING btree (destinatario_id, caso_id, revision_caso)",
+          "columns": [
+            "destinatario_id",
+            "caso_id",
+            "revision_caso"
+          ]
+        },
+        {
+          "name": "notificacion_interna_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX notificacion_interna_pkey ON public.notificacion_interna USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "periodo_escolar",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "establecimiento_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "anio",
+          "type": "smallint",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(120)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "fecha_inicio",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "fecha_fin",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'planificado'::character varying",
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        }
+      ],
+      "constraints": [
+        {
+          "name": "periodo_escolar_anio_check",
+          "type": "c",
+          "definition": "CHECK (((anio >= 2000) AND (anio <= 2200)))",
+          "columns": [
+            "anio"
+          ]
+        },
+        {
+          "name": "periodo_escolar_check",
+          "type": "c",
+          "definition": "CHECK ((fecha_inicio < fecha_fin))",
+          "columns": [
+            "fecha_inicio",
+            "fecha_fin"
+          ]
+        },
+        {
+          "name": "periodo_escolar_establecimiento_id_anio_key",
+          "type": "u",
+          "definition": "UNIQUE (establecimiento_id, anio)",
+          "columns": [
+            "establecimiento_id",
+            "anio"
+          ]
+        },
+        {
+          "name": "periodo_escolar_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['planificado'::character varying, 'activo'::character varying, 'cerrado'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "periodo_escolar_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "periodo_escolar_establecimiento_id_anio_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX periodo_escolar_establecimiento_id_anio_key ON public.periodo_escolar USING btree (establecimiento_id, anio)",
+          "columns": [
+            "establecimiento_id",
+            "anio"
+          ]
+        },
+        {
+          "name": "periodo_escolar_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX periodo_escolar_pkey ON public.periodo_escolar USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "profesor_jefatura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "curso_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "funcionario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "vigente_desde",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "vigente_hasta",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "es_titular",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 6
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        }
+      ],
+      "constraints": [
+        {
+          "name": "profesor_jefatura_check",
+          "type": "c",
+          "definition": "CHECK (((vigente_hasta IS NULL) OR (vigente_hasta >= vigente_desde)))",
+          "columns": [
+            "vigente_hasta",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "profesor_jefatura_curso_id_funcionario_id_vigente_desde_key",
+          "type": "u",
+          "definition": "UNIQUE (curso_id, funcionario_id, vigente_desde)",
+          "columns": [
+            "curso_id",
+            "funcionario_id",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "profesor_jefatura_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "profesor_jefatura_curso_id_funcionario_id_vigente_desde_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX profesor_jefatura_curso_id_funcionario_id_vigente_desde_key ON public.profesor_jefatura USING btree (curso_id, funcionario_id, vigente_desde)",
+          "columns": [
+            "curso_id",
+            "funcionario_id",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "profesor_jefatura_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX profesor_jefatura_pkey ON public.profesor_jefatura USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "uq_profesor_jefatura_titular_vigente",
+          "unique": true,
+          "primary": false,
+          "predicate": "((es_titular = true) AND (vigente_hasta IS NULL))",
+          "definition": "CREATE UNIQUE INDEX uq_profesor_jefatura_titular_vigente ON public.profesor_jefatura USING btree (curso_id) WHERE ((es_titular = true) AND (vigente_hasta IS NULL))",
+          "columns": [
+            "curso_id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "regla_alerta",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "codigo",
+          "type": "character varying(60)",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(160)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "tipo",
+          "type": "character varying(30)",
+          "nullable": false,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "parametros",
+          "type": "jsonb",
+          "nullable": false,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "activa",
+          "type": "boolean",
+          "nullable": false,
+          "default": "true",
+          "position": 7
+        },
+        {
+          "name": "creada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        }
+      ],
+      "constraints": [
+        {
+          "name": "regla_alerta_codigo_version_key",
+          "type": "u",
+          "definition": "UNIQUE (codigo, version)",
+          "columns": [
+            "codigo",
+            "version"
+          ]
+        },
+        {
+          "name": "regla_alerta_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "regla_alerta_tipo_check",
+          "type": "c",
+          "definition": "CHECK (((tipo)::text = ANY ((ARRAY['calificacion'::character varying, 'asistencia'::character varying, 'convivencia'::character varying, 'tendencia'::character varying, 'combinada'::character varying])::text[])))",
+          "columns": [
+            "tipo"
+          ]
+        },
+        {
+          "name": "regla_alerta_version_check",
+          "type": "c",
+          "definition": "CHECK ((version > 0))",
+          "columns": [
+            "version"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "regla_alerta_codigo_version_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX regla_alerta_codigo_version_key ON public.regla_alerta USING btree (codigo, version)",
+          "columns": [
+            "codigo",
+            "version"
+          ]
+        },
+        {
+          "name": "regla_alerta_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX regla_alerta_pkey ON public.regla_alerta USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rol",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "codigo",
+          "type": "character varying(50)",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(120)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "descripcion",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 5
+        }
+      ],
+      "constraints": [
+        {
+          "name": "rol_codigo_key",
+          "type": "u",
+          "definition": "UNIQUE (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "rol_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "rol_codigo_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX rol_codigo_key ON public.rol USING btree (codigo)",
+          "columns": [
+            "codigo"
+          ]
+        },
+        {
+          "name": "rol_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX rol_pkey ON public.rol USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sesion_clase",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "curso_asignatura_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "fecha",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "bloque",
+          "type": "character varying(40)",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'programada'::character varying",
+          "position": 5
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 6
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 7
+        },
+        {
+          "name": "titulo",
+          "type": "character varying(180)",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "objetivo",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 9
+        },
+        {
+          "name": "contenido",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 10
+        },
+        {
+          "name": "hora_inicio",
+          "type": "time without time zone",
+          "nullable": true,
+          "default": null,
+          "position": 11
+        },
+        {
+          "name": "hora_fin",
+          "type": "time without time zone",
+          "nullable": true,
+          "default": null,
+          "position": 12
+        },
+        {
+          "name": "sala",
+          "type": "character varying(30)",
+          "nullable": true,
+          "default": null,
+          "position": 13
+        },
+        {
+          "name": "creada_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 14
+        },
+        {
+          "name": "publicada",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "position": 15
+        },
+        {
+          "name": "publicada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 16
+        }
+      ],
+      "constraints": [
+        {
+          "name": "sesion_clase_curso_asignatura_id_fecha_bloque_key",
+          "type": "u",
+          "definition": "UNIQUE (curso_asignatura_id, fecha, bloque)",
+          "columns": [
+            "curso_asignatura_id",
+            "fecha",
+            "bloque"
+          ]
+        },
+        {
+          "name": "sesion_clase_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['programada'::character varying, 'realizada'::character varying, 'cancelada'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "sesion_clase_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "sesion_clase_curso_asignatura_id_fecha_bloque_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX sesion_clase_curso_asignatura_id_fecha_bloque_key ON public.sesion_clase USING btree (curso_asignatura_id, fecha, bloque)",
+          "columns": [
+            "curso_asignatura_id",
+            "fecha",
+            "bloque"
+          ]
+        },
+        {
+          "name": "sesion_clase_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX sesion_clase_pkey ON public.sesion_clase USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sesion_usuario",
+      "columns": [
+        {
+          "name": "token_hash",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "creada_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 3
+        },
+        {
+          "name": "expira_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "ultimo_uso_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 5
+        },
+        {
+          "name": "revocada_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        }
+      ],
+      "constraints": [
+        {
+          "name": "sesion_usuario_check",
+          "type": "c",
+          "definition": "CHECK ((expira_en > creada_en))",
+          "columns": [
+            "expira_en",
+            "creada_en"
+          ]
+        },
+        {
+          "name": "sesion_usuario_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (token_hash)",
+          "columns": [
+            "token_hash"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "idx_sesion_usuario",
+          "unique": false,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE INDEX idx_sesion_usuario ON public.sesion_usuario USING btree (usuario_id)",
+          "columns": [
+            "usuario_id"
+          ]
+        },
+        {
+          "name": "sesion_usuario_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX sesion_usuario_pkey ON public.sesion_usuario USING btree (token_hash)",
+          "columns": [
+            "token_hash"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "usuario",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "email",
+          "type": "citext",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "nombre",
+          "type": "character varying(160)",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "password_hash",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 4
+        },
+        {
+          "name": "proveedor_identidad",
+          "type": "character varying(60)",
+          "nullable": true,
+          "default": null,
+          "position": 5
+        },
+        {
+          "name": "identidad_externa",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "estado",
+          "type": "character varying(20)",
+          "nullable": false,
+          "default": "'activo'::character varying",
+          "position": 7
+        },
+        {
+          "name": "ultimo_acceso_en",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 8
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 9
+        },
+        {
+          "name": "actualizado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 10
+        }
+      ],
+      "constraints": [
+        {
+          "name": "usuario_email_key",
+          "type": "u",
+          "definition": "UNIQUE (email)",
+          "columns": [
+            "email"
+          ]
+        },
+        {
+          "name": "usuario_estado_check",
+          "type": "c",
+          "definition": "CHECK (((estado)::text = ANY ((ARRAY['activo'::character varying, 'bloqueado'::character varying, 'inactivo'::character varying])::text[])))",
+          "columns": [
+            "estado"
+          ]
+        },
+        {
+          "name": "usuario_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "usuario_proveedor_identidad_identidad_externa_key",
+          "type": "u",
+          "definition": "UNIQUE (proveedor_identidad, identidad_externa)",
+          "columns": [
+            "proveedor_identidad",
+            "identidad_externa"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "usuario_email_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX usuario_email_key ON public.usuario USING btree (email)",
+          "columns": [
+            "email"
+          ]
+        },
+        {
+          "name": "usuario_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX usuario_pkey ON public.usuario USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        },
+        {
+          "name": "usuario_proveedor_identidad_identidad_externa_key",
+          "unique": true,
+          "primary": false,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX usuario_proveedor_identidad_identidad_externa_key ON public.usuario USING btree (proveedor_identidad, identidad_externa)",
+          "columns": [
+            "proveedor_identidad",
+            "identidad_externa"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "usuario_rol",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "nullable": false,
+          "default": "gen_random_uuid()",
+          "position": 1
+        },
+        {
+          "name": "usuario_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 2
+        },
+        {
+          "name": "rol_id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "position": 3
+        },
+        {
+          "name": "alcance",
+          "type": "jsonb",
+          "nullable": false,
+          "default": "'{}'::jsonb",
+          "position": 4
+        },
+        {
+          "name": "vigente_desde",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 5
+        },
+        {
+          "name": "vigente_hasta",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "position": 6
+        },
+        {
+          "name": "asignado_por",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "position": 7
+        },
+        {
+          "name": "creado_en",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": "now()",
+          "position": 8
+        }
+      ],
+      "constraints": [
+        {
+          "name": "usuario_rol_check",
+          "type": "c",
+          "definition": "CHECK (((vigente_hasta IS NULL) OR (vigente_hasta > vigente_desde)))",
+          "columns": [
+            "vigente_hasta",
+            "vigente_desde"
+          ]
+        },
+        {
+          "name": "usuario_rol_pkey",
+          "type": "p",
+          "definition": "PRIMARY KEY (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ],
+      "indexes": [
+        {
+          "name": "uq_usuario_rol_vigente",
+          "unique": true,
+          "primary": false,
+          "predicate": "(vigente_hasta IS NULL)",
+          "definition": "CREATE UNIQUE INDEX uq_usuario_rol_vigente ON public.usuario_rol USING btree (usuario_id, rol_id, alcance) WHERE (vigente_hasta IS NULL)",
+          "columns": [
+            "usuario_id",
+            "rol_id",
+            "alcance"
+          ]
+        },
+        {
+          "name": "usuario_rol_pkey",
+          "unique": true,
+          "primary": true,
+          "predicate": null,
+          "definition": "CREATE UNIQUE INDEX usuario_rol_pkey ON public.usuario_rol USING btree (id)",
+          "columns": [
+            "id"
+          ]
+        }
+      ]
+    }
+  ],
+  "foreign_keys": [
+    {
+      "name": "alerta_curso_asignatura_id_fkey",
+      "source": "alerta",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "alerta_curso_id_fkey",
+      "source": "alerta",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "alerta_estudiante_id_fkey",
+      "source": "alerta",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "alerta_regla_id_fkey",
+      "source": "alerta",
+      "target": "regla_alerta",
+      "definition": "FOREIGN KEY (regla_id) REFERENCES regla_alerta(id)",
+      "source_columns": [
+        "regla_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "alerta_responsable_id_fkey",
+      "source": "alerta",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (responsable_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "responsable_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_anulada_por_fkey",
+      "source": "anotacion_estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (anulada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "anulada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_curso_asignatura_id_fkey",
+      "source": "anotacion_estudiante",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_curso_id_fkey",
+      "source": "anotacion_estudiante",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_estudiante_id_fkey",
+      "source": "anotacion_estudiante",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_publicada_por_fkey",
+      "source": "anotacion_estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (publicada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "publicada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "anotacion_estudiante_registrada_por_fkey",
+      "source": "anotacion_estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (registrada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "registrada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "apoderado_usuario_id_fkey",
+      "source": "apoderado",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "asignacion_docente_curso_asignatura_id_fkey",
+      "source": "asignacion_docente",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "asignacion_docente_funcionario_id_fkey",
+      "source": "asignacion_docente",
+      "target": "funcionario",
+      "definition": "FOREIGN KEY (funcionario_id) REFERENCES funcionario(id)",
+      "source_columns": [
+        "funcionario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "asistencia_estudiante_id_fkey",
+      "source": "asistencia",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "asistencia_registrada_por_fkey",
+      "source": "asistencia",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (registrada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "registrada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "asistencia_sesion_id_fkey",
+      "source": "asistencia",
+      "target": "sesion_clase",
+      "definition": "FOREIGN KEY (sesion_id) REFERENCES sesion_clase(id)",
+      "source_columns": [
+        "sesion_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "calificacion_estudiante_id_fkey",
+      "source": "calificacion",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "calificacion_evaluacion_id_fkey",
+      "source": "calificacion",
+      "target": "evaluacion",
+      "definition": "FOREIGN KEY (evaluacion_id) REFERENCES evaluacion(id)",
+      "source_columns": [
+        "evaluacion_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "calificacion_publicada_por_fkey",
+      "source": "calificacion",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (publicada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "publicada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "calificacion_registrada_por_fkey",
+      "source": "calificacion",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (registrada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "registrada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_actividad_caso_id_fkey",
+      "source": "caso_actividad",
+      "target": "caso_seguimiento",
+      "definition": "FOREIGN KEY (caso_id) REFERENCES caso_seguimiento(id)",
+      "source_columns": [
+        "caso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_actividad_usuario_id_fkey",
+      "source": "caso_actividad",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_seguimiento_actualizado_por_fkey",
+      "source": "caso_seguimiento",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (actualizado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "actualizado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_seguimiento_alerta_id_fkey",
+      "source": "caso_seguimiento",
+      "target": "alerta",
+      "definition": "FOREIGN KEY (alerta_id) REFERENCES alerta(id)",
+      "source_columns": [
+        "alerta_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_seguimiento_creado_por_fkey",
+      "source": "caso_seguimiento",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "caso_seguimiento_responsable_id_fkey",
+      "source": "caso_seguimiento",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (responsable_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "responsable_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "comunicacion_estudiante_creada_por_fkey",
+      "source": "comunicacion_estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "comunicacion_estudiante_curso_asignatura_id_fkey",
+      "source": "comunicacion_estudiante",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "comunicacion_estudiante_curso_id_fkey",
+      "source": "comunicacion_estudiante",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "comunicacion_estudiante_estudiante_id_fkey",
+      "source": "comunicacion_estudiante",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_nivel_id_fkey",
+      "source": "curso",
+      "target": "nivel_educativo",
+      "definition": "FOREIGN KEY (nivel_id) REFERENCES nivel_educativo(id)",
+      "source_columns": [
+        "nivel_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_periodo_id_fkey",
+      "source": "curso",
+      "target": "periodo_escolar",
+      "definition": "FOREIGN KEY (periodo_id) REFERENCES periodo_escolar(id)",
+      "source_columns": [
+        "periodo_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_profesor_jefe_id_fkey",
+      "source": "curso",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (profesor_jefe_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "profesor_jefe_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_asignatura_asignatura_id_fkey",
+      "source": "curso_asignatura",
+      "target": "asignatura",
+      "definition": "FOREIGN KEY (asignatura_id) REFERENCES asignatura(id)",
+      "source_columns": [
+        "asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_asignatura_curso_id_fkey",
+      "source": "curso_asignatura",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "curso_asignatura_profesor_id_fkey",
+      "source": "curso_asignatura",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (profesor_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "profesor_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "estudiante_actualizado_por_fkey",
+      "source": "estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (actualizado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "actualizado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "estudiante_creado_por_fkey",
+      "source": "estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "estudiante_usuario_id_fkey",
+      "source": "estudiante",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "estudiante_apoderado_apoderado_id_fkey",
+      "source": "estudiante_apoderado",
+      "target": "apoderado",
+      "definition": "FOREIGN KEY (apoderado_id) REFERENCES apoderado(id)",
+      "source_columns": [
+        "apoderado_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "estudiante_apoderado_estudiante_id_fkey",
+      "source": "estudiante_apoderado",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "evaluacion_creada_por_fkey",
+      "source": "evaluacion",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "evaluacion_curso_asignatura_id_fkey",
+      "source": "evaluacion",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "evaluacion_publicada_por_fkey",
+      "source": "evaluacion",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (publicada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "publicada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "evento_auditoria_usuario_id_fkey",
+      "source": "evento_auditoria",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "funcionario_usuario_id_fkey",
+      "source": "funcionario",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "intervencion_alerta_id_fkey",
+      "source": "intervencion",
+      "target": "alerta",
+      "definition": "FOREIGN KEY (alerta_id) REFERENCES alerta(id)",
+      "source_columns": [
+        "alerta_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "intervencion_usuario_id_fkey",
+      "source": "intervencion",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "justificacion_ausencia_estudiante_id_fkey",
+      "source": "justificacion_ausencia",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "justificacion_ausencia_registrada_por_fkey",
+      "source": "justificacion_ausencia",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (registrada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "registrada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "justificacion_ausencia_revisada_por_fkey",
+      "source": "justificacion_ausencia",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (revisada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "revisada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "justificacion_ausencia_sesion_id_fkey",
+      "source": "justificacion_ausencia",
+      "target": "sesion_clase",
+      "definition": "FOREIGN KEY (sesion_id) REFERENCES sesion_clase(id)",
+      "source_columns": [
+        "sesion_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "matricula_actualizado_por_fkey",
+      "source": "matricula",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (actualizado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "actualizado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "matricula_creado_por_fkey",
+      "source": "matricula",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "matricula_curso_id_fkey",
+      "source": "matricula",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "matricula_estudiante_id_fkey",
+      "source": "matricula",
+      "target": "estudiante",
+      "definition": "FOREIGN KEY (estudiante_id) REFERENCES estudiante(id)",
+      "source_columns": [
+        "estudiante_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "notificacion_interna_actor_id_fkey",
+      "source": "notificacion_interna",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (actor_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "actor_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "notificacion_interna_caso_id_fkey",
+      "source": "notificacion_interna",
+      "target": "caso_seguimiento",
+      "definition": "FOREIGN KEY (caso_id) REFERENCES caso_seguimiento(id)",
+      "source_columns": [
+        "caso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "notificacion_interna_destinatario_id_fkey",
+      "source": "notificacion_interna",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (destinatario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "destinatario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "periodo_escolar_establecimiento_id_fkey",
+      "source": "periodo_escolar",
+      "target": "establecimiento",
+      "definition": "FOREIGN KEY (establecimiento_id) REFERENCES establecimiento(id)",
+      "source_columns": [
+        "establecimiento_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "profesor_jefatura_curso_id_fkey",
+      "source": "profesor_jefatura",
+      "target": "curso",
+      "definition": "FOREIGN KEY (curso_id) REFERENCES curso(id)",
+      "source_columns": [
+        "curso_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "profesor_jefatura_funcionario_id_fkey",
+      "source": "profesor_jefatura",
+      "target": "funcionario",
+      "definition": "FOREIGN KEY (funcionario_id) REFERENCES funcionario(id)",
+      "source_columns": [
+        "funcionario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "regla_alerta_creada_por_fkey",
+      "source": "regla_alerta",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "sesion_clase_creada_por_fkey",
+      "source": "sesion_clase",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (creada_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "creada_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "sesion_clase_curso_asignatura_id_fkey",
+      "source": "sesion_clase",
+      "target": "curso_asignatura",
+      "definition": "FOREIGN KEY (curso_asignatura_id) REFERENCES curso_asignatura(id)",
+      "source_columns": [
+        "curso_asignatura_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "sesion_usuario_usuario_id_fkey",
+      "source": "sesion_usuario",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "usuario_rol_asignado_por_fkey",
+      "source": "usuario_rol",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (asignado_por) REFERENCES usuario(id)",
+      "source_columns": [
+        "asignado_por"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "usuario_rol_rol_id_fkey",
+      "source": "usuario_rol",
+      "target": "rol",
+      "definition": "FOREIGN KEY (rol_id) REFERENCES rol(id)",
+      "source_columns": [
+        "rol_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    },
+    {
+      "name": "usuario_rol_usuario_id_fkey",
+      "source": "usuario_rol",
+      "target": "usuario",
+      "definition": "FOREIGN KEY (usuario_id) REFERENCES usuario(id)",
+      "source_columns": [
+        "usuario_id"
+      ],
+      "target_columns": [
+        "id"
+      ],
+      "on_delete": "a",
+      "on_update": "a"
+    }
+  ],
+  "views": [
+    "vista_bandeja_alertas"
+  ],
+  "code_version": "0.9.1",
+  "code_commit": "5e9d54a03d45754aada8b1794b15ef46274c17ac",
+  "cutoff": "2026-10-28 America/Santiago",
+  "source": "PostgreSQL 16 catalog after fresh application of migrations 001-010; no production data",
+  "migrations": [
+    {
+      "file": "001_schema.sql",
+      "sha256": "bcb700c5d0dbec51d9b541d2b67cde949b21648a2c6d97c42a4211879cb45e21"
+    },
+    {
+      "file": "002_core_academic.sql",
+      "sha256": "f86af9800e7fc3a54701c72ae94c69485d6db8cff9b35f3587acbf30e2c80411"
+    },
+    {
+      "file": "003_school_domain.sql",
+      "sha256": "cc943901f78c85335f1cf45a8d73eafb857571fc89775d400135999a1ef9e09e"
+    },
+    {
+      "file": "004_teacher_model.sql",
+      "sha256": "c4437512e73654d95ca0f23a4227bbb667889d93e9616a016d09167fe74f22bc"
+    },
+    {
+      "file": "005_student_portal.sql",
+      "sha256": "3905dafbcd4b3c61efeeb285221a8f9f12b7db695db110735a6b3ad8f74e71df"
+    },
+    {
+      "file": "006_sprint4_alertas_justificaciones.sql",
+      "sha256": "ae454a95b48beb911e83562f1157c00d34c11f2d69476649bff6652fbc4e411b"
+    },
+    {
+      "file": "007_sprint3_security.sql",
+      "sha256": "9b0ad940bf25de47b740be446398696d2df0b98cc946beeab4ee76179c955df7"
+    },
+    {
+      "file": "008_school_operations.sql",
+      "sha256": "a3d5569b935bdd9f9311e65ccc2dd66679200796f140445680dc69a587b755bb"
+    },
+    {
+      "file": "009_followup.sql",
+      "sha256": "252a4dc57c0d7ebca589a078bdcd739589843f86b560f5ca03344a396b957573"
+    },
+    {
+      "file": "010_internal_notifications.sql",
+      "sha256": "e4db718971f3795ad650145e6c8a5df25423c5b61d5c23dab9276e2b99aa5de9"
+    }
+  ]
+}
