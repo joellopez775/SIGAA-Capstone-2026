@@ -248,3 +248,29 @@ diapositiva, conceptos, ejemplo, preguntas, pronunciación y referencia técnica
 común. Duración sugerida: 4-5 minutos por integrante.
 
 Versión unificada: `output/pdf/Preparación de presentación/5 noviembre 2026/Guion y material de estudio del equipo SIGAA - 5 noviembre 2026.pdf`. Incluye índice, marcadores por integrante y 22 páginas con numeración continua: Joel 2-8, Agustín 9-15 y Matías 16-22.
+
+## Incremento publicado 0.10.1 - 12 noviembre 2026
+
+En el Sprint 6 se completó el filtro de auditoría por acción, entidad e
+intervalo de fechas de Santiago, con aplicación explícita, limpieza y estado
+accesible. Solo administración puede consultar la bitácora. La API sirve
+hasta 25 eventos por página y conserva el esquema 0.9.1.
+
+Versión pública en https://sigaa.ignisert.com. El respaldo previo se restauró
+en un contenedor aislado y se verificaron 33 tablas. Pasaron 6 pruebas unitarias,
+71 de integración, la compilación web y 8 recorridos HTTPS en cuatro roles
+con dos tamaños de pantalla. En la prueba aislada de 160 lecturas con 8
+concurrentes se observaron 0 fallos y p95 de 35 ms.
+
+- [Informe general](<output/pdf/Informe general de avance - 12 noviembre 2026.pdf>).
+- [Gantt de cierre](<output/pdf/Carta Gantt de cierre - 12 noviembre 2026.pdf>).
+- [Sprint Backlog y dos guiones simulados](<output/pdf/Sprint 6 - Backlog y seguimiento - 12 noviembre 2026.pdf>).
+- [Manual por roles](<output/pdf/Manual de usuario por roles - 12 noviembre 2026.pdf>).
+- [Presentación PDF](<output/pdf/Presentación de avance - 12 noviembre 2026.pdf>) y [PowerPoint editable](<output/presentaciones/Avance SIGAA - 12 noviembre 2026.pptx>).
+- [Guion y material de estudio del equipo](<output/pdf/Guion y material de estudio del equipo SIGAA - 12 noviembre 2026.pdf>).
+- [Evidencias de pruebas y despliegue](output/evidence/nov12/).
+
+Joel expone las diapositivas 1–4, Agustín las 5–8 y Matías las 9–12. La
+ventana de entrega de Fase 2 es del 16 al 21 de noviembre. Quedan pendientes
+la aceptación del PO, revisión del PR #1, ensayos en dispositivos del equipo,
+revisión integral de accesibilidad y validación con una contraparte escolar.

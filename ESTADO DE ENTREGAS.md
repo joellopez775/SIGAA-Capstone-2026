@@ -87,3 +87,23 @@ Las ventanas vienen del cronograma oficial; horario exacto por confirmar en Camp
 Dos guiones simulados de seguimiento no equivalen a ceremonias realizadas. Faltan
 aceptación del PO, revisión del PR, pruebas humanas, carga, accesibilidad, consolidar
 manuales y validar valor con contraparte escolar.
+
+## Corte 12 noviembre 2026 - Sprint 6
+
+Semana 14, Fase 2. La versión 0.10.1 está desplegada por HTTPS. Administración
+puede consultar auditoría por acción, entidad e intervalo en horario de Santiago.
+La base conserva el esquema 0.9.1. Se restauró el respaldo previo en aislamiento
+y pasaron 6 pruebas unitarias, 71 de integración y ocho recorridos HTTPS.
+La carga breve fue de 160 lecturas con 8 concurrentes, 0 fallos y p95 de 35 ms
+en entorno aislado.
+
+El informe, la Gantt de cierre, el Sprint Backlog, el manual por roles y la
+presentación están en `SIGAA/output/pdf/`, dentro de Evidencias Proyecto.
+El guion y material de estudio de los tres integrantes ocupa un único PDF.
+La presentación editable está en `SIGAA/output/presentaciones/` y las
+evidencias técnicas en `SIGAA/output/evidence/nov12/`.
+
+La Gantt asigna responsables y conserva las ventanas del cronograma oficial.
+Los dos guiones de ceremonias son simulaciones. Se mantienen pendientes
+aceptación del PO, revisión del PR #1, pruebas humanas en otros dispositivos,
+revisión de accesibilidad, validación escolar y entrega académica.

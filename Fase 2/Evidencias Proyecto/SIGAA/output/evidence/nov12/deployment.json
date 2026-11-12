@@ -1,0 +1,27 @@
+{
+  "version": "0.10.1",
+  "date": "2026-11-12T17:42:44.370639+00:00",
+  "health": {
+    "status": "ok",
+    "service": "api",
+    "version": "0.10.1"
+  },
+  "backup": {
+    "bytes": 267665,
+    "sha256": "0637ae198b00e64750b9c666b393e69c1d827397dd5c0daa0275e32af55dfee8",
+    "inventoryVerified": true,
+    "restore": "passed",
+    "restoredCounts": {
+      "students": 80,
+      "grades": 640,
+      "attendance": 1280,
+      "tables": 33
+    }
+  },
+  "databaseMigration": false,
+  "previousImages": {
+    "api": "sha256:75d197815ba33f467c4e3f4c457f2cd719c94a5ce6e5641578fdc00447e23ed4",
+    "web": "sha256:1d77e6b48fc3b9cbb56e4be59e91ded9440d2d31822dedccee89a0db191519d9"
+  },
+  "result": "passed"
+}

@@ -125,7 +125,7 @@ export function createApp({
     if (rows[0].intentos > max) fail(429, "try_again_later");
   }
   app.get("/health", (_req, res) =>
-    res.json({ status: "ok", service: "api", version: "0.10.0" }),
+    res.json({ status: "ok", service: "api", version: "0.10.1" }),
   );
   app.get("/db-health", async (_req, res) => {
     await pool.query("SELECT 1");

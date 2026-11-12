@@ -1,0 +1,203 @@
+{
+  "slides": [
+    {
+      "speaker": "Joel",
+      "title": "SIGAA · Avance de calidad",
+      "subtitle": "12 de noviembre de 2026",
+      "points": [
+        "Fase 2 · Semana 14 · Sprint 6",
+        "Auditoría más fácil de consultar",
+        "Preparación para la entrega del 16 al 21 de noviembre"
+      ],
+      "script": "Buenos días. Somos el equipo de SIGAA, una plataforma de gestión académica y seguimiento para colegios y liceos. Estamos en la semana catorce de la Fase 2, en la última semana planificada del Sprint 6. Hoy mostraremos una mejora concreta en la auditoría y las verificaciones que acompañan este incremento. Primero ubicaré el problema y lo que ya funciona. Luego Agustín explicará cómo se filtra la bitácora y qué probamos. Matías cerrará con los pendientes, el calendario y lo que necesitamos acordar para entregar."
+    },
+    {
+      "speaker": "Joel",
+      "title": "Un registro escolar conectado",
+      "subtitle": "Clases, registros académicos y seguimiento en la misma plataforma",
+      "points": [
+        "Docentes registran asistencia, notas y anotaciones",
+        "Estudiantes consultan sus registros publicados y su calendario",
+        "Inspectoría y administración organizan el seguimiento"
+      ],
+      "script": "SIGAA reúne información que un establecimiento puede tener repartida entre planillas y otros registros. El docente administra sus cursos y registra notas, asistencia y anotaciones. El estudiante puede consultar su información publicada y calendario. Inspectoría y administración trabajan con las justificaciones, las alertas y el seguimiento según su acceso. Pensemos en un estudiante con inasistencias reiteradas. Un equipo autorizado puede revisar antecedentes, abrir un caso y registrar una intervención. Ese recorrido ilustra el valor que queremos validar con un establecimiento. La demostración utiliza datos ficticios."
+    },
+    {
+      "speaker": "Joel",
+      "title": "Del panorama general al detalle",
+      "subtitle": "Qué estaba disponible y qué incorpora este corte",
+      "points": [
+        "0.10.0 publicó seis indicadores y la consulta de auditoría",
+        "0.10.1 agrega entidad, fechas, aplicar y limpiar filtros",
+        "La base conserva el esquema 0.9.1"
+      ],
+      "script": "El 5 de noviembre publicamos indicadores institucionales y una vista de auditoría para administración. Los indicadores muestran seis conteos actuales. La auditoría lista autor, fecha, operación y entidad. El avance de hoy mejora esa consulta: se puede combinar acción, entidad y fechas, aplicar los filtros con una acción explícita y limpiarlos cuando haga falta. Esto permite revisar un periodo concreto sin recorrer toda la bitácora. El cambio es de la aplicación y sus consultas. La versión de la API cambia a cero punto diez punto uno y el esquema sigue siendo cero punto nueve punto uno."
+    },
+    {
+      "speaker": "Joel",
+      "title": "Estamos preparando la entrega",
+      "subtitle": "Semana 14 del cronograma docente",
+      "points": [
+        "Sprint 6 · 2 al 14 de noviembre",
+        "Entrega de Fase 2 · 16 al 21 de noviembre",
+        "Retroalimentación · 23 al 28 de noviembre"
+      ],
+      "script": "La ventana planificada del Sprint 6 termina el 14 de noviembre. Estamos preparando el incremento para revisión y reuniendo las evidencias de la Fase 2. La ventana de entrega va del 16 al 21 de noviembre. Después viene la retroalimentación del 23 al 28. El día y la hora concretos se confirman en Campus. Como Product Owner, me corresponde revisar lo presentado y registrar la aceptación o las observaciones cuando corresponda. Con ese contexto, Agustín mostrará cómo se usa la nueva consulta y cómo comprobamos su comportamiento."
+    },
+    {
+      "speaker": "Agustín",
+      "title": "Auditoría por entidad y fechas",
+      "subtitle": "Consulta disponible para administración",
+      "points": [
+        "Combinar acción y entidad exactas",
+        "Acotar desde y hasta en horario de Santiago",
+        "Aplicar con Enter y limpiar para volver al listado"
+      ],
+      "script": "Entramos como administración y abrimos Auditoría. Podemos escribir una entidad, por ejemplo alerta, y escoger un intervalo de fechas. Al pulsar Aplicar filtros, la lista vuelve a la primera página. También se puede enviar el formulario con Enter. Si no hay coincidencias, la pantalla lo indica. Limpiar filtros vuelve al listado general. Las fechas incluyen ambos días en horario de Santiago. Eso importa porque un evento próximo a medianoche puede caer en un día distinto si se interpreta en UTC. El filtro permite seleccionar el día que la persona espera ver en el portal."
+    },
+    {
+      "speaker": "Agustín",
+      "title": "Qué muestra la bitácora",
+      "subtitle": "Autor, fecha, operación y entidad",
+      "points": [
+        "Acceso exclusivo de administración",
+        "Hasta 25 eventos por página",
+        "La respuesta excluye los valores privados del cambio"
+      ],
+      "script": "La bitácora permite saber quién realizó una operación, cuándo y sobre qué entidad. Por ejemplo, una operación puede asociarse a una alerta. Los filtros se aplican en la API y los resultados se ordenan por fecha. La página muestra hasta veinticinco eventos. Los permisos se comprueban en el servidor y la respuesta excluye los valores privados anteriores y nuevos de los cambios. Es una herramienta de trazabilidad. Si alguien pregunta por una auditoría de seguridad externa, eso es otra actividad que debe acreditarse por separado."
+    },
+    {
+      "speaker": "Agustín",
+      "title": "De la pantalla a PostgreSQL",
+      "subtitle": "React y Vite · Node.js y Express · PostgreSQL",
+      "points": [
+        "El formulario envía los filtros a la API",
+        "La API valida permisos y fechas",
+        "PostgreSQL filtra y devuelve la página solicitada"
+      ],
+      "script": "React construye el formulario y Vite prepara la interfaz. Al aplicar los filtros, Express recibe la solicitud en Node.js. La API comprueba que la sesión corresponda a administración, valida las fechas y consulta PostgreSQL. La respuesta contiene el total y la página de resultados. El servidor conserva la misma estructura de base de datos. Docker ejecuta los servicios. Nginx entrega la interfaz y dirige las solicitudes de la API. Cloudflare permite el acceso público por HTTPS. En la presentación basta con seguir el viaje de la solicitud de izquierda a derecha."
+    },
+    {
+      "speaker": "Agustín",
+      "title": "Pruebas y recuperación",
+      "subtitle": "Resultados del corte del 12 de noviembre",
+      "points": [
+        "Regresión en PostgreSQL 16 aislado",
+        "Carga breve de lectura con datos ficticios",
+        "Respaldo restaurado y recorridos HTTPS por rol"
+      ],
+      "script": "Ejecutamos la regresión con una base aislada y añadimos verificaciones de límites de fecha y lecturas concurrentes. En la prueba de fechas, un evento antes de medianoche y otro después deben quedar en días distintos de Santiago. Pasaron seis unitarias y setenta y una de integración. En la carga breve fueron 160 lecturas con ocho concurrentes, cero fallos y p95 de 35 milisegundos en ese entorno. También documentamos respaldo y verificación web. Los recorridos emulan escritorio y teléfono en un mismo Mac. Así podemos mostrar evidencia concreta de lo que comprobamos. Matías explicará qué otras validaciones quedan para cerrar."
+    },
+    {
+      "speaker": "Matías",
+      "title": "Validaciones antes de cerrar",
+      "subtitle": "Revisión funcional, calidad y documentación",
+      "points": [
+        "Aceptación del Product Owner",
+        "Pruebas humanas en otros equipos y revisión de accesibilidad",
+        "Validación de valor con una contraparte escolar"
+      ],
+      "script": "Tenemos un incremento verificable. Para cerrar necesitamos la revisión funcional del Product Owner y registrar sus observaciones. También falta probar desde otros equipos y redes, ampliar la revisión de accesibilidad y definir con el equipo una meta de carga representativa. El manual por roles ayuda a preparar los ensayos. La propuesta de valor debe contrastarse con una contraparte escolar. Por ejemplo, podríamos pedir a inspectoría que recorra un caso y observar qué pasos le resultan claros o difíciles. Es una actividad de validación propuesta."
+    },
+    {
+      "speaker": "Matías",
+      "title": "Gantt de entrega y defensa",
+      "subtitle": "Ventanas del cronograma académico",
+      "points": [
+        "12 al 14 nov · revisar el incremento y cerrar pendientes del Sprint 6",
+        "16 al 21 nov · consolidar y entregar Fase 2",
+        "23 al 28 nov · responder observaciones",
+        "30 nov al 12 dic · presentación final"
+      ],
+      "script": "La Gantt organiza el trabajo desde hoy. Hasta el 14 proponemos revisar el incremento y priorizar los pendientes de calidad. Del 16 al 21 se consolida la evidencia, se revisan los documentos oficiales y se entrega la Fase 2. Del 23 al 28 se atienden observaciones y se prepara la defensa. La presentación final de Fase 3 está programada entre el 30 de noviembre y el 12 de diciembre. Las barras representan ventanas de trabajo. Antes de comprometer una fecha concreta, confirmamos el día y la hora en Campus."
+    },
+    {
+      "speaker": "Matías",
+      "title": "Responsabilidades de cierre",
+      "subtitle": "Focos propuestos con revisión cruzada",
+      "points": [
+        "Joel · prioridades, revisión e integración",
+        "Agustín · manual, interfaz y accesibilidad",
+        "Matías · pruebas, datos y evidencias",
+        "Equipo · entrega y ensayo de defensa"
+      ],
+      "script": "Los tres integrantes desarrollamos, probamos y documentamos. Para ordenar el cierre, proponemos que Joel coordine prioridades, revisión e integración. Agustín se concentra en manual, interfaz y accesibilidad. Mi foco es pruebas, datos y evidencia. Las tareas de entrega y ensayo siguen siendo del equipo. Los focos técnicos y el rol de Scrum Master propuesto para Agustín requieren ratificación. Cada integrante debe revisar el trabajo de otro y dejar evidencia real de las decisiones tomadas."
+    },
+    {
+      "speaker": "Matías",
+      "title": "Próximo paso del equipo",
+      "subtitle": "Revisar, corregir y confirmar la entrega",
+      "points": [
+        "Registrar observaciones sobre la versión publicada",
+        "Confirmar responsables y pruebas del equipo",
+        "Confirmar el horario de entrega en Campus"
+      ],
+      "script": "Para cerrar esta presentación, proponemos revisar la versión publicada y registrar observaciones concretas. Después acordaremos quién ejecuta las pruebas pendientes y confirmaremos el horario de entrega. Los ejemplos de seguimiento que acompañan la documentación están rotulados como simulaciones. Cuando se haga la revisión real, registraremos asistentes, observaciones y decisiones. Así podemos mostrar el avance técnico y planificar el cierre con datos comprobables. Gracias por su atención. Quedamos disponibles para mostrar la consulta de auditoría y responder preguntas."
+    }
+  ],
+  "tasks": [
+    [
+      "SCRUM-38 / 40",
+      "Revisar indicadores y filtros de auditoría",
+      "Joel + equipo",
+      "12–14 nov",
+      "En revisión"
+    ],
+    [
+      "SCRUM-41",
+      "Definir objetivo de carga y ampliar accesibilidad",
+      "Matías / Agustín",
+      "12–14 nov",
+      "En curso"
+    ],
+    [
+      "SCRUM-42",
+      "Revisar respaldo, restauración y reversión",
+      "Joel / Matías",
+      "12–14 nov",
+      "En revisión"
+    ],
+    [
+      "SCRUM-43",
+      "Recorrer y revisar manual por roles",
+      "Agustín / Joel",
+      "12–14 nov",
+      "En revisión"
+    ],
+    [
+      "SCRUM-44",
+      "Contrastar valor con un establecimiento",
+      "Equipo",
+      "12–21 nov",
+      "Pendiente"
+    ],
+    [
+      "SCRUM-52",
+      "Probar Docker y HTTPS en otros equipos",
+      "Equipo",
+      "12–21 nov",
+      "En curso"
+    ],
+    [
+      "SCRUM-45",
+      "Consolidar evidencias y entregar Fase 2",
+      "Equipo",
+      "16–21 nov",
+      "Pendiente"
+    ],
+    [
+      "SCRUM-46",
+      "Responder observaciones y ensayar defensa",
+      "Equipo",
+      "23–28 nov",
+      "Pendiente"
+    ],
+    [
+      "Fase 3",
+      "Presentación final",
+      "Equipo",
+      "30 nov–12 dic",
+      "Horario por confirmar"
+    ]
+  ]
+}

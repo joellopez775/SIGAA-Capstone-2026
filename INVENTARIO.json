@@ -1,6 +1,6 @@
 {
-  "fecha": "2026-11-05",
-  "nota": "Entrega 0.10.0 y preparación individual de exposición del corte 5 noviembre. Excluye archivos privados ignorados; documentos anteriores conservan su corte.",
+  "fecha": "2026-11-12",
+  "nota": "Incremento público 0.10.1 y entregables del 12 de noviembre. Documentos históricos conservan su corte.",
   "archivos": [
     {
       "archivo": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "archivo": "ESTADO DE ENTREGAS.md",
-      "bytes": 6629,
-      "sha256": "089fa6307763fd759320588d3e69c97a1bc18b165e192475e2ed0d9824d5a08b"
+      "bytes": 7748,
+      "sha256": "749a3a5a11a52f3d09655aa8b1b9e362011ac16e641eba5318f36f245ac59389"
     },
     {
       "archivo": "Fase 1/Evidencias Grupales/1.4_APT122_FormativaFase1.docx",
@@ -834,8 +834,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/README.md",
-      "bytes": 16166,
-      "sha256": "9f0d07f5eeb1221a92abf1b0d0a23649bbda51a94cbd467390a076add19991de"
+      "bytes": 17922,
+      "sha256": "163f41e881346b3ba07e70b0bd50cb604f3bc47cfdf860f9bbd7c9b9b2b632f3"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/.dockerignore",
@@ -894,8 +894,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/oversight-routes.js",
-      "bytes": 1829,
-      "sha256": "89ffcce80c99f0c2b06ccec53df40436ae26fdd43d951eef90b47007e04dd903"
+      "bytes": 2536,
+      "sha256": "ce3494c7bac894d831f65d36433ad425a883a42b18d41f82af73ce4fada1a83e"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/populate-demo.js",
@@ -930,7 +930,7 @@
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/school-app.js",
       "bytes": 19036,
-      "sha256": "34963bb57ff6ecfcb2cdd5c100acf7566f51e53984a7d467bec5d3cb5857de91"
+      "sha256": "7e5514d8a424ffdd3a9945b2105817bd32fce2eec6d885cb7db3936473ce161c"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/src/security.js",
@@ -989,8 +989,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/oversight.test.js",
-      "bytes": 4117,
-      "sha256": "cd7f48949e82418f1a73cbcf25cc9ede5e8e036f5cb17247b3b557d30cb20718"
+      "bytes": 5718,
+      "sha256": "0df1ddb67736ff94ba64b67de0a938b3336b952623a02e4bb7e6c929812ad018"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/api/test/portal-notifications.test.js",
@@ -1043,6 +1043,11 @@
       "sha256": "3e41ba14fece08a68cc4058fec37b8190eb3bfcf0b7b198e4f0b3d0edfb31947"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/AuditFilters.jsx",
+      "bytes": 1288,
+      "sha256": "56e0b9709adf2f7d58272310f39d370c65b7e114937602026e00f033456fb661"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/FollowupPanel.jsx",
       "bytes": 21352,
       "sha256": "d7126a493b8f4b922ad0d71f91de36107c4fb17fcdfed25ec9162679db76c54f"
@@ -1064,8 +1069,8 @@
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/OversightPanel.jsx",
-      "bytes": 2038,
-      "sha256": "322931bd6d89c68e258922536a852f72072e7b240db77c5e3cae90c7d5260644"
+      "bytes": 2355,
+      "sha256": "eaaceaddc9fbc70a2fcb54248030126878ae6f1134c0a4fb5822a3b6c17ead2a"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/apps/web/src/SecureApp.jsx",
@@ -1808,6 +1813,31 @@
       "sha256": "52b683abbcc47d2027c1a2b781d64d5133574ea2d1230b8b9f21816e90d2ec9f"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov12/deployment.json",
+      "bytes": 703,
+      "sha256": "6d4e475772cb1568935e0d59619ab1e22f6afa8c34558c2ef659c5cb29088c16"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov12/https.json",
+      "bytes": 4779,
+      "sha256": "28528a098267d98fa6119b56eafe88e21998af2035c9cf615a873c98ae78b76e"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov12/presentation-content.json",
+      "bytes": 12558,
+      "sha256": "75aeb1a7588367f2280e306ef4e378cae97cc219f0cf68f1ffb3c01f35a3d433"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov12/validation.json",
+      "bytes": 296,
+      "sha256": "3f30796b6108d9af278ab3cd372d6341d3e8c27cfac176dc28344e7bde4773c0"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov12/visuals/auditoria.png",
+      "bytes": 578273,
+      "sha256": "212fd927b5a323ec962db7aa709b9f55e481b4401136c495f4a4c8b8cfa50d13"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/evidence/nov5/backup.json",
       "bytes": 186,
       "sha256": "6330e1ed48690ed30b1e9f6c05204a96bf1e35deb18728310b7ae6204ad83c2b"
@@ -2068,6 +2098,11 @@
       "sha256": "6701344e1ddc1fb3ab7396eac184504053dc6e2a4f7ed701409a55d0865bdfb6"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta Gantt de cierre - 12 noviembre 2026.pdf",
+      "bytes": 63836,
+      "sha256": "d08df6dbd893ed9da5deea8094a67ad44048a6584ad008659325207ca058ace4"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Carta_Gantt_Completa_SIGAA_2026.pdf",
       "bytes": 26555,
       "sha256": "76f85642b7ef1f35e9be62565914b909eb13ec90e2ddd667288acf8f998d202d"
@@ -2108,6 +2143,11 @@
       "sha256": "a287a7bc1ce8064332a6329f99541b3ea0a504cec076e9c3d881a8a51f0da70f"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA - 12 noviembre 2026.pdf",
+      "bytes": 85457,
+      "sha256": "3bbce6447cde2feb17b2787de5fd3b64ea56fa794171609989eb71de7b6c2393"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Guion y material de estudio del equipo SIGAA.pdf",
       "bytes": 906987,
       "sha256": "2ed024057669ab73f48736a9c5fe9844d09d620eeb42890b06e302a74c89ca7b"
@@ -2133,6 +2173,11 @@
       "sha256": "526a7b9aa5f975eaa52e1cb82bbbb59b40f9c1a1e1d4ae495d0c781dc6188f3a"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe general de avance - 12 noviembre 2026.pdf",
+      "bytes": 552962,
+      "sha256": "eea19e758fb436eef4b3651b2208c92170e2f43a1d05a5aec35ba729b329852d"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Informe general de avance - 5 noviembre 2026.pdf",
       "bytes": 684375,
       "sha256": "d3f88a4406bdf7620011480fb76dc98490b53324cd2c06db4c7cd01cff30d8fa"
@@ -2156,6 +2201,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Limpieza de etiquetas de ejemplos - SIGAA.pdf",
       "bytes": 45824,
       "sha256": "d34229d1b1c8a1b80ff18dbd627700d8668f6aafea6534d9b1d0f8c83bf4a485"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual de usuario por roles - 12 noviembre 2026.pdf",
+      "bytes": 67496,
+      "sha256": "ba1adfc45822625b500f1c4c57e1897523a6b44fe582974147070f6926157031"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Manual_Actividades_Gantt_Alineado_Cronograma_Oficial_2026.pdf",
@@ -2238,6 +2288,11 @@
       "sha256": "d151e6a48e278de55260295ea837eb187767c9840996ead352a0a2ebb6a42bdb"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance - 12 noviembre 2026.pdf",
+      "bytes": 562652,
+      "sha256": "8998f0d8e613637bc08ae681bc855fe943e1f3105296b2da8be6f96c3ab8dc84"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Presentación de avance - 5 noviembre 2026.pdf",
       "bytes": 1246277,
       "sha256": "a51c1b52c8a80ccbd31df27f3b0f0514cc2723ede5847c660cd156ded9b0b58c"
@@ -2303,6 +2358,11 @@
       "sha256": "f122161e450f043b2019af816a7623dbfce068a3f0d0efdae88d690ddb7ade3f"
     },
     {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 6 - Backlog y seguimiento - 12 noviembre 2026.pdf",
+      "bytes": 62213,
+      "sha256": "cbbb07f6c84c98917ee04137928dee7ed586032736b7a76498e3979c298ed587"
+    },
+    {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/Sprint 6 - Backlog y seguimiento - 5 noviembre 2026.pdf",
       "bytes": 62739,
       "sha256": "f63afb5f78fb25867171d1685c37a4339036784b7ed8d0bded3752abfa8a2f0c"
@@ -2321,6 +2381,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/pdf/UML de flujos persistentes - SIGAA.pdf",
       "bytes": 75252,
       "sha256": "c58511b39ce1f3f9089e6a22b216e4b63b265b999c1f09b99e1789a6197bcf47"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance SIGAA - 12 noviembre 2026.pptx",
+      "bytes": 639748,
+      "sha256": "4ec9fefc6ff9fd85e1460245774a682f1b83242fed93c6f3e77aeb2dc52e82e4"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/output/presentaciones/Avance SIGAA - 5 noviembre 2026.pptx",
@@ -2361,6 +2426,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-development-091-pdfs.py",
       "bytes": 23170,
       "sha256": "6f7c122a4d85701ebbd5b2d60dce20e56ab4c698557b101d01848ceeec6e3ba7"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-november-12-pdfs.py",
+      "bytes": 19400,
+      "sha256": "11f8808e71716dfda962e8a9b5e3cc0bed9fc2f304fff6b4302d90f9244eb4b4"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/generate-november-delivery.py",
@@ -2486,6 +2556,11 @@
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-hosted.mjs",
       "bytes": 4737,
       "sha256": "828ba6b1c68b7b2a7ffc7a20a03b50a8cc9d43672256901fda9f76d6c0254091"
+    },
+    {
+      "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-november-12-https.mjs",
+      "bytes": 6875,
+      "sha256": "61be76a96601a6f6e21e59811c1db5253b3cbffde84bdeb087fc0932e8e302ee"
     },
     {
       "archivo": "Fase 2/Evidencias Proyecto/SIGAA/scripts/verify-operations-browser.mjs",

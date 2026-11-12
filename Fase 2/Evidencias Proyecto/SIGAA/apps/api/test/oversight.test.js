@@ -29,3 +29,37 @@ after(async()=>{await stop();await pool?.end();if(manager){await manager.query('
 test('oversight denies anonymous, student and teacher access',async()=>{for(const role of [null,'student','teacher'])for(const path of ['/oversight/indicators','/oversight/audit'])assert.equal((await call(path,'GET',undefined,role)).status,role?403:401);});
 test('indicators return exact database counts without personal records',async()=>{const d=await ok('/oversight/indicators');assert.equal(d.indicators.courses,Number((await pool.query("SELECT count(*) FROM curso WHERE estado='activo'")).rows[0].count));assert.equal(Object.keys(d.indicators).length,6);assert(!JSON.stringify(d).includes('@'));});
 test('audit pagination, exact filters and payload privacy',async()=>{await pool.query("INSERT INTO evento_auditoria(accion,entidad,valor_nuevo) VALUES('oversight_check','test',$1)",[{privateSecret:'must-not-be-returned'}]);const d=await ok('/oversight/audit?action=oversight_check');assert.equal(d.total,1);assert.equal(d.events.length,1);assert(!JSON.stringify(d).includes('must-not-be-returned'));assert(!('valor_nuevo' in d.events[0]));assert.equal((await ok('/oversight/audit?page=2&action=oversight_check')).events.length,0);for(const q of ['page=0','page=1.2','page=no','action='+ 'a'.repeat(81)])assert.equal((await call('/oversight/audit?'+q)).status,400);});
+
+test('audit combines entity and inclusive Santiago dates without crossing midnight', async () => {
+  await pool.query(`INSERT INTO evento_auditoria(accion,entidad,creado_en) VALUES
+    ('date_check','test','2026-11-12T02:59:59Z'),
+    ('date_check','test','2026-11-12T03:00:00Z'),
+    ('date_check','test','2026-11-13T02:59:59Z'),
+    ('date_check','test','2026-11-13T03:00:00Z'),
+    ('date_check','another','2026-11-12T15:00:00Z')`);
+  const filtered = await ok('/oversight/audit?action=date_check&entity=test&from=2026-11-12&to=2026-11-12');
+  assert.equal(filtered.total, 2);
+  assert.deepEqual(filtered.events.map(event => new Date(event.creado_en).toISOString()), [
+    '2026-11-13T02:59:59.000Z', '2026-11-12T03:00:00.000Z',
+  ]);
+  for (const invalid of ['from=2026-02-30', 'from=2026-11-13&to=2026-11-12', 'entity=x&entity=y']) {
+    assert.equal((await call('/oversight/audit?'+invalid)).status, 400);
+  }
+});
+
+test('small concurrent read workload completes on isolated PostgreSQL', async t => {
+  const times = [];
+  await Promise.all(Array.from({length: 8}, async (_, worker) => {
+    for (let request = 0; request < 20; request++) {
+      const path = (worker + request) % 2 ? '/oversight/indicators' : '/oversight/audit?entity=test';
+      const start = performance.now();
+      await ok(path);
+      times.push(performance.now() - start);
+    }
+  }));
+  times.sort((a,b)=>a-b);
+  t.diagnostic(JSON.stringify({
+    profile: 'isolated-synthetic-read-smoke', concurrency: 8, requests: times.length,
+    p95Ms: Math.round(times[Math.ceil(times.length * .95) - 1]), failures: 0,
+  }));
+});
