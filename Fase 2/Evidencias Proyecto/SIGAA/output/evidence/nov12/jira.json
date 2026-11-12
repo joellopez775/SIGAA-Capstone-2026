@@ -1,0 +1,132 @@
+{
+  "cut": "2026-11-12",
+  "jiraBoard": "https://sigaa-duoc-2026.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog",
+  "release": "0.10.1",
+  "releaseCommit": "accf5c1",
+  "sprints": [
+    {
+      "id": 40,
+      "state": "active",
+      "name": "Sprint 6 - Calidad",
+      "startDate": "2026-11-02T12:00:00.000Z",
+      "endDate": "2026-11-14T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Indicadores, auditoría, pruebas integrales, manuales y preparación de entrega. Incluir prueba aislada de respaldo/restauración. Sin declarar aceptación ni ceremonias realizadas."
+    },
+    {
+      "id": 39,
+      "state": "future",
+      "name": "Sprint 7 - Entrega",
+      "startDate": "2026-11-16T12:00:00.000Z",
+      "endDate": "2026-11-28T21:00:00.000Z",
+      "originBoardId": 1,
+      "goal": "Entrega y presentación de Fase 2 del 16 al 21 de noviembre; correcciones y retrospectiva tras feedback. Defensa final 30 de noviembre al 12 de diciembre se mantiene fuera de esta ventana."
+    }
+  ],
+  "sprint6": {
+    "issues": 6,
+    "points": 37
+  },
+  "updatedIssues": [
+    {
+      "key": "SCRUM-38",
+      "summary": "PB-026 Indicadores agregados",
+      "status": "En revisión",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 8
+    },
+    {
+      "key": "SCRUM-40",
+      "summary": "PB-028 Auditoría de cambios sensibles",
+      "status": "En revisión",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 8
+    },
+    {
+      "key": "SCRUM-41",
+      "summary": "PB-029 Pruebas integrales seguridad y rendimiento",
+      "status": "En curso",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 8
+    },
+    {
+      "key": "SCRUM-42",
+      "summary": "PB-030 Manual técnico y despliegue",
+      "status": "En revisión",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 5
+    },
+    {
+      "key": "SCRUM-43",
+      "summary": "PB-031 Manual de usuario",
+      "status": "En revisión",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 5
+    },
+    {
+      "key": "SCRUM-44",
+      "summary": "PB-032 Innovación y propuesta de valor",
+      "status": "Pendiente",
+      "hasCut": true,
+      "sprints": [
+        40
+      ],
+      "points": 3
+    },
+    {
+      "key": "SCRUM-45",
+      "summary": "PB-033 Entrega final Fase 2",
+      "status": "Pendiente",
+      "hasCut": true,
+      "sprints": [
+        39
+      ],
+      "points": 8
+    },
+    {
+      "key": "SCRUM-46",
+      "summary": "PB-034 Defensa y retrospectiva del proyecto",
+      "status": "Pendiente",
+      "hasCut": true,
+      "sprints": [],
+      "points": 5
+    },
+    {
+      "key": "SCRUM-52",
+      "summary": "PB-040 Docker de equipo y aislamiento de servidor",
+      "status": "En curso",
+      "hasCut": true,
+      "sprints": [
+        1
+      ],
+      "points": 8
+    }
+  ],
+  "transition": {
+    "key": "SCRUM-43",
+    "from": "Pendiente",
+    "to": "En revisión"
+  },
+  "createdIssues": 0,
+  "createdSprints": 0,
+  "meetingsRecorded": 0,
+  "notes": [
+    "Las tarjetas SCRUM-46 y SCRUM-52 se incluyen como dependencias del plan de cierre, con su ubicación de Jira conservada.",
+    "Los guiones del PDF son simulaciones. La aceptación del PO y el cierre de sprint siguen pendientes."
+  ]
+}

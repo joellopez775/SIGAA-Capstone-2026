@@ -274,3 +274,8 @@ Joel expone las diapositivas 1–4, Agustín las 5–8 y Matías las 9–12. La
 ventana de entrega de Fase 2 es del 16 al 21 de noviembre. Quedan pendientes
 la aceptación del PO, revisión del PR #1, ensayos en dispositivos del equipo,
 revisión integral de accesibilidad y validación con una contraparte escolar.
+
+[Jira Sprint 6](https://sigaa-duoc-2026.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog)
+conserva seis historias y 37 puntos planificados. El manual (SCRUM-43) pasó
+a En revisión. El [registro de Jira](output/evidence/nov12/jira.json) recoge
+los estados y la ubicación comprobada de las nueve tarjetas actualizadas.
